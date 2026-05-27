@@ -1,5 +1,6 @@
-<script setup>
+<script setup lang="ts">
 const colorMode = useColorMode();
+const {locale, t} = useI18n();
 
 const isDark = computed({
     get() {
@@ -9,12 +10,19 @@ const isDark = computed({
         colorMode.preference = _isDark ? "dark" : "light";
     }
 });
+
+const label = computed(() => {
+    void locale.value;
+
+    return t(isDark.value ? "theme.switchToLight" : "theme.switchToDark");
+});
 </script>
 
 <template>
     <ClientOnly v-if="!colorMode?.forced">
         <UButton
-            :icon="isDark ? 'mdi:white-balance-sunny' : 'mdi:weather-night'"
+            :aria-label="label"
+            :icon="isDark ? 'i-lucide-sun' : 'i-lucide-moon'"
             color="neutral"
             variant="ghost"
             size="xl"

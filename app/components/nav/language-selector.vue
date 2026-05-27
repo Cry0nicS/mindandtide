@@ -4,7 +4,9 @@ import {extractLocaleCode} from "#shared/utils/helpers";
 
 const {setLocale, t} = useI18n();
 
-const items = [
+const label = computed(() => t("language.label"));
+
+const items = computed(() => [
     {
         label: t("language.en"),
         value: LOCALE_META.en,
@@ -15,16 +17,17 @@ const items = [
         value: LOCALE_META.de,
         onClick: () => setLocale(extractLocaleCode(LOCALE_META.de))
     }
-];
+]);
 </script>
 
 <template>
     <UDropdownMenu :items="items">
         <UButton
-            icon="mdi:translate"
+            :aria-label="label"
+            icon="i-lucide-languages"
             color="neutral"
             variant="ghost">
-            <span class="hidden lg:inline">{{ t("language.label") }}</span>
+            <span class="hidden lg:inline">{{ label }}</span>
         </UButton>
     </UDropdownMenu>
 </template>

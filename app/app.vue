@@ -1,44 +1,37 @@
 <script setup lang="ts">
 import * as locales from "@nuxt/ui/locale";
-import {extractLocaleIso} from "#shared/utils/helpers";
 
 const {themedFavicon} = useUtils();
-const {locale} = useI18n();
+const {locale, t} = useI18n();
+const i18nHead = useLocaleHead({seo: true});
 
-const lang = computed(() => locales[locale.value].code);
+const uiLocale = computed(() => (locale.value === "de" ? locales.de : locales.en));
 
-useHead({
-    meta: [{name: "viewport", content: "width=device-width, initial-scale=1"}],
-    link: [{rel: "icon", href: "/favicon.ico"}],
-    htmlAttrs: {
-        lang: "en"
-    }
-});
-
-const title = "Blue Desert";
-const description = "Learning & Retreats";
+const baseTitle = computed(() => t("site.name"));
+const description = computed(() => t("site.description"));
 
 useSeoMeta({
-    ogLocale: () => extractLocaleIso(locale.value),
+    description: () => description.value,
+    ogDescription: () => description.value,
+    ogTitle: () => baseTitle.value,
     ogType: "website",
-    title,
-    description,
-    ogTitle: title,
-    ogDescription: description,
-    ogImage: "https://ui.nuxt.com/assets/templates/nuxt/starter-light.png",
-    twitterCard: "summary_large_image"
+    title: () => baseTitle.value,
+    twitterCard: "summary"
 });
 
-useHead({
-    link: [{rel: "icon", href: themedFavicon}],
-    htmlAttrs: {
-        lang
-    }
-});
+useHead(() => ({
+    htmlAttrs: i18nHead.value.htmlAttrs,
+    link: [...(i18nHead.value.link ?? []), {rel: "icon", href: themedFavicon.value}],
+    meta: [...(i18nHead.value.meta ?? [])],
+    titleTemplate: (titleChunk) =>
+        titleChunk && titleChunk !== baseTitle.value
+            ? `${titleChunk} | ${baseTitle.value}`
+            : baseTitle.value
+}));
 </script>
 
 <template>
-    <UApp :locale="locales[locale]">
+    <UApp :locale="uiLocale">
         <NuxtRouteAnnouncer />
         <NuxtLoadingIndicator />
         <NuxtLayout>

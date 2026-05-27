@@ -2,6 +2,7 @@ const MIN_LENGTH = 3;
 const MAX_LENGTH = 72;
 
 export default {
+    extends: ["@commitlint/config-conventional"],
     rules: {
         "body-case": [2, "always", "sentence-case"],
         "body-full-stop": [2, "always"],

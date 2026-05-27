@@ -5,101 +5,52 @@ export const useNavItems = () => {
     const {t, locale} = useI18n();
     const localePath = useLocalePath();
 
-    const headerDesktop = computed<NavigationMenuItem[]>(() => {
+    const navigationItems = computed<
+        Record<"contact" | "home" | "imprint" | "privacy", NavigationMenuItem>
+    >(() => {
         void locale.value;
 
-        return [
-            {
+        return {
+            contact: {
+                label: t("pages.contact"),
+                to: localePath("/privacy/contact"),
+                icon: "i-lucide-mail"
+            },
+            home: {
                 label: t("pages.home"),
                 to: localePath("/"),
-                icon: "mdi:home-outline"
+                icon: "i-lucide-house"
             },
-            {
-                label: t("pages.program"),
-                to: localePath("/program"),
-                icon: "mdi:clipboard-edit-outline"
-            },
-            {
-                label: t("pages.contact"),
-                to: localePath("/privacy/contact"),
-                icon: "mdi:email-outline"
-            },
-            {
-                label: t("pages.aboutUs"),
-                to: localePath("/about-us"),
-                icon: "mdi:card-account-details-outline"
-            }
-        ];
-    });
-
-    const headerMobile = computed<NavigationMenuItem[]>(() => {
-        void locale.value;
-
-        return [
-            {
-                label: t("pages.home"),
-                to: localePath("/"),
-                icon: "mdi:home-outline"
-            },
-            {
-                label: t("pages.program"),
-                to: localePath("/program"),
-                icon: "mdi:clipboard-edit-outline"
-            },
-            {
-                label: t("pages.contact"),
-                to: localePath("/privacy/contact"),
-                icon: "mdi:email-outline"
-            },
-            {
+            imprint: {
                 label: t("pages.imprint"),
                 to: localePath("/privacy/imprint"),
-                icon: "mdi:information-outline"
+                icon: "i-lucide-info"
             },
-            {
+            privacy: {
                 label: t("pages.privacy"),
                 to: localePath("/privacy"),
-                icon: "mdi:shield-account-outline"
-            },
-            {
-                label: t("pages.aboutUs"),
-                to: localePath("/aboud-us"),
-                icon: "mdi:card-account-details-outline"
+                icon: "i-lucide-shield-user"
             }
-        ];
+        };
     });
 
-    const footer = computed<NavigationMenuItem[]>(() => {
-        void locale.value;
+    const headerDesktop = computed<NavigationMenuItem[]>(() => [
+        navigationItems.value.home,
+        navigationItems.value.contact
+    ]);
 
-        return [
-            {
-                label: t("pages.program"),
-                to: localePath("/program"),
-                icon: "mdi:clipboard-edit-outline"
-            },
-            {
-                label: t("pages.contact"),
-                to: localePath("/privacy/contact"),
-                icon: "mdi:email-outline"
-            },
-            {
-                label: t("pages.aboutUs"),
-                to: localePath("/about-us"),
-                icon: "mdi:card-account-details-outline"
-            },
-            {
-                label: t("pages.imprint"),
-                to: localePath("/privacy/imprint"),
-                icon: "mdi:information-outline"
-            },
-            {
-                label: t("pages.privacy"),
-                to: localePath("/privacy"),
-                icon: "mdi:shield-account-outline"
-            }
-        ];
-    });
+    const headerMobile = computed<NavigationMenuItem[]>(() => [
+        navigationItems.value.home,
+        navigationItems.value.contact,
+        navigationItems.value.imprint,
+        navigationItems.value.privacy
+    ]);
+
+    const footer = computed<NavigationMenuItem[]>(() => [
+        navigationItems.value.contact,
+        navigationItems.value.imprint,
+        navigationItems.value.privacy
+    ]);
 
     return {footer, headerDesktop, headerMobile};
 };

@@ -29,14 +29,7 @@ const {footer: navItems} = useNavItems();
                 <UNavigationMenu :items="navItems" />
             </template>
             <template #social>
-                <NavThemeToggle>
-                    <template #dark-mode>
-                        <span>Light mode</span>
-                    </template>
-                    <template #light-mode>
-                        <span>Dark mode</span>
-                    </template>
-                </NavThemeToggle>
+                <NavThemeToggle />
                 <NavLanguageSelector />
             </template>
         </NavFooter>

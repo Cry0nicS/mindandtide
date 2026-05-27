@@ -1,5 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import {DEFAULT_LOCALE, i18nPages} from "./shared/utils/constants";
+import {DEFAULT_LOCALE, i18nPages, LOCALE_META} from "./shared/utils/constants";
 
 export default defineNuxtConfig({
     colorMode: {
@@ -15,6 +15,7 @@ export default defineNuxtConfig({
         }
     },
     i18n: {
+        baseUrl: "https://blue-desert.com",
         // Disable custom route with page components.
         customRoutes: "config",
         defaultLocale: DEFAULT_LOCALE,
@@ -25,11 +26,22 @@ export default defineNuxtConfig({
         },
         langDir: "locales/",
         locales: [
-            {code: "en", file: "en.ts", iso: "en-US", name: "English"},
-            {code: "de", file: "de.ts", iso: "de-DE", name: "Deutsch"}
+            {
+                code: LOCALE_META.en.code,
+                file: "en.ts",
+                language: LOCALE_META.en.language,
+                name: LOCALE_META.en.name
+            },
+            {
+                code: LOCALE_META.de.code,
+                file: "de.ts",
+                language: LOCALE_META.de.language,
+                name: LOCALE_META.de.name
+            }
         ],
         pages: i18nPages,
-        strategy: "prefix_except_default"
+        strategy: "prefix_except_default",
+        vueI18n: "./i18n.config.ts"
     },
     image: {
         format: ["webp"],
@@ -61,7 +73,7 @@ export default defineNuxtConfig({
     },
     site: {
         description: "Welcome to Blue Desert.",
-        name: "Blue desert",
+        name: "Blue Desert",
         url: "https://blue-desert.com"
     },
     sitemap: {

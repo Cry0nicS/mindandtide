@@ -1,22 +1,26 @@
 <script setup lang="ts">
 const {headerDesktop, headerMobile} = useNavItems();
+const {t} = useI18n();
+const localePath = useLocalePath();
+
+const title = computed(() => t("site.name"));
 </script>
 <template>
     <UHeader
         class="h-17.5"
         mode="modal"
+        :title="title"
+        :to="localePath('/')"
         :menu="{transition: true}"
         :ui="{
             body: 'flex justify-center text-2xl'
         }">
         <template #title>
             <ColorScheme
-                placeholder="Logo"
+                :placeholder="title"
                 tag="span">
                 <ClientOnly>
-                    <NuxtLink to="/">
-                        <AppLogo class="h-10 w-auto" />
-                    </NuxtLink>
+                    <AppLogo class="h-10 w-auto" />
                 </ClientOnly>
             </ColorScheme>
         </template>
