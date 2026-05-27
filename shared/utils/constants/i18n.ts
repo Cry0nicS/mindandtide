@@ -15,8 +15,8 @@ export const i18nPages = {
         de: "/privacy/impressum"
     },
     "privacy/contact": {
-        en: "/privacy/contact",
-        de: "/privacy/kontakt"
+        en: "/contact",
+        de: "/kontakt"
     }
 } as const satisfies NuxtI18nOptions["pages"];
 

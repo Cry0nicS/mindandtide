@@ -13,7 +13,7 @@ const links = computed<ButtonProps[]>(() => {
     return [
         {
             label: t("pages.contact"),
-            to: localePath("/privacy/contact"),
+            to: localePath("/contact"),
             trailingIcon: "i-lucide-arrow-right",
             size: "xl"
         },

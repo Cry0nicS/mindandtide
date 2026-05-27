@@ -57,7 +57,14 @@ export default defineNuxtConfig({
             xl: 1280
         }
     },
-    modules: ["@nuxt/eslint", "@nuxt/ui", "@nuxt/image", "@nuxtjs/i18n", "@nuxtjs/seo"],
+    modules: [
+        "@nuxt/eslint",
+        "@nuxt/ui",
+        "@nuxt/image",
+        "nuxt-zod-i18n",
+        "@nuxtjs/i18n",
+        "@nuxtjs/seo"
+    ],
     ogImage: {
         enabled: false
     },
@@ -66,7 +73,11 @@ export default defineNuxtConfig({
     },
     runtimeConfig: {
         mailgunBaseUrl: process.env.NUXT_MAILGUN_BASE_URL || "",
+        mailgunBcc: process.env.NUXT_MAILGUN_BCC || "",
+        mailgunDomain: process.env.NUXT_MAILGUN_DOMAIN || "",
         mailgunKey: process.env.NUXT_MAILGUN_KEY || "",
+        mailgunRecipient: process.env.NUXT_MAILGUN_RECIPIENT || "",
+        mailgunSender: process.env.NUXT_MAILGUN_SENDER || "",
         public: {
             nodeEnv: process.env.NUXT_PUBLIC_NODE_ENV || "development"
         }
@@ -85,5 +96,11 @@ export default defineNuxtConfig({
     },
     ui: {
         colorMode: true
+    },
+    zodI18n: {
+        localeCodesMapping: {
+            "de-DE": "de",
+            "en-GB": "en"
+        }
     }
 });

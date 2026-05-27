@@ -13,7 +13,7 @@ export const useNavItems = () => {
         return {
             contact: {
                 label: t("pages.contact"),
-                to: localePath("/privacy/contact"),
+                to: localePath("/contact"),
                 icon: "i-lucide-mail"
             },
             home: {
