@@ -6,17 +6,41 @@
     --font-serif: "Cardo", serif;
     --font-heading: "Playfair Display", serif;
 
-    --color-green-50: #effdf5;
-    --color-green-100: #d9fbe8;
-    --color-green-200: #b3f5d1;
-    --color-green-300: #75edae;
-    --color-green-400: #00dc82;
-    --color-green-500: #00c16a;
-    --color-green-600: #00a155;
-    --color-green-700: #007f45;
-    --color-green-800: #016538;
-    --color-green-900: #0a5331;
-    --color-green-950: #052e16;
+    --color-ocean-50: #eefafa;
+    --color-ocean-100: #d0f0ef;
+    --color-ocean-200: #a6dfdd;
+    --color-ocean-300: #70c9c8;
+    --color-ocean-400: #39adb1;
+    --color-ocean-500: #158f98;
+    --color-ocean-600: #10737d;
+    --color-ocean-700: #115c66;
+    --color-ocean-800: #134a54;
+    --color-ocean-900: #123f48;
+    --color-ocean-950: #08262d;
+
+    --color-sand-50: #fcf8f1;
+    --color-sand-100: #f6ecd9;
+    --color-sand-200: #ecd7af;
+    --color-sand-300: #dfbd80;
+    --color-sand-400: #d09d52;
+    --color-sand-500: #c28236;
+    --color-sand-600: #a2632a;
+    --color-sand-700: #834b27;
+    --color-sand-800: #6c3f27;
+    --color-sand-900: #5b3524;
+    --color-sand-950: #331b11;
+
+    --color-coast-50: #f8faf9;
+    --color-coast-100: #edf2f1;
+    --color-coast-200: #d7e2e0;
+    --color-coast-300: #b6cbc8;
+    --color-coast-400: #8cadab;
+    --color-coast-500: #688f90;
+    --color-coast-600: #4f7478;
+    --color-coast-700: #3f5d63;
+    --color-coast-800: #1f4556;
+    --color-coast-900: #14324a;
+    --color-coast-950: #0b2033;
 }
 
 @layer base {
