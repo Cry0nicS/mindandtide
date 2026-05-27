@@ -2,7 +2,9 @@
 @import "@nuxt/ui";
 
 @theme static {
-    --font-sans: "Public Sans", sans-serif;
+    --font-sans: "Cardo", serif;
+    --font-serif: "Cardo", serif;
+    --font-heading: "Playfair Display", serif;
 
     --color-green-50: #effdf5;
     --color-green-100: #d9fbe8;
@@ -15,4 +17,19 @@
     --color-green-800: #016538;
     --color-green-900: #0a5331;
     --color-green-950: #052e16;
+}
+
+@layer base {
+    html {
+        font-family: var(--font-sans), sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: var(--font-heading), sans-serif;
+    }
 }
