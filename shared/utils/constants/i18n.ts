@@ -14,7 +14,7 @@ export const i18nPages = {
         en: "/privacy/imprint",
         de: "/privacy/impressum"
     },
-    "privacy/contact": {
+    "contact/index": {
         en: "/contact",
         de: "/kontakt"
     }
