@@ -3,7 +3,11 @@ export default defineAppConfig({
         colors: {
             neutral: "coast",
             primary: "ocean",
-            secondary: "sand"
+            secondary: "sand",
+            success: "sage",
+            info: "ocean",
+            warning: "sand",
+            error: "clay"
         }
     }
 });
