@@ -21,6 +21,7 @@
         "@nuxt/ui": "^4.8.0",
         "@nuxtjs/i18n": "^10.4.0",
         "@nuxtjs/seo": "^5.1.3",
+        "@vercel/analytics": "^2.0.1",
         "mailgun.js": "^13.1.0",
         "nuxt": "^4.4.6",
         "nuxt-zod-i18n": "^1.12.1",

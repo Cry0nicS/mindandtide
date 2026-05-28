@@ -4,9 +4,11 @@ export default {
         copyright: "Copyright © {year}"
     },
     cookieBanner: {
-        title: "Cookie Hinweis",
+        title: "Datenschutzhinweis",
         description:
-            "Wir verwenden essenzielle Cookies, die für den Betrieb dieser Website erforderlich sind. Zusätzlich setzen wir funktionale Cookies und anonymisierte Analytics. Wir sammeln keine personenbezogenen Daten."
+            "Wir speichern nur notwendige Einstellungen wie Sprache, Theme und den Status dieses Hinweises. Vercel Web Analytics läuft ohne Cookies und erfasst anonymisierte Nutzungsdaten.",
+        privacy: "Datenschutz",
+        accept: "Verstanden"
     },
     pages: {
         home: "Startseite",
@@ -69,11 +71,12 @@ export default {
                 },
                 cookies: {
                     title: "Cookies, Sprache und Theme",
-                    body: "Die Website kann technisch notwendige Cookies oder vergleichbare Speichermechanismen verwenden, etwa für die bevorzugte Sprache, die Darstellung im hellen oder dunklen Modus und notwendige Formular- oder Sitzungszustände. Diese Funktionen dienen nicht dem Tracking, sondern der Bedienbarkeit und Stabilität der Website."
+                    body: "Die Website speichert nur notwendige Einstellungen, etwa Sprache, helles oder dunkles Theme, Formular- oder Sitzungszustände und ob dieser Datenschutzhinweis bereits bestätigt wurde. Diese Funktionen dienen nicht dem Tracking, sondern der Bedienbarkeit und Stabilität der Website.",
+                    action: "Datenschutzhinweis anzeigen"
                 },
                 analytics: {
                     title: "Analyse und Tracking",
-                    body: "Diese Datenschutzhinweise beschreiben keine konkrete Analyse-Software, solange im Projekt keine solche Lösung aktiv eingebunden ist. Falls später Matomo, Plausible, Google Analytics oder ein ähnliches Werkzeug eingesetzt wird, müssen Zweck, Rechtsgrundlage, Speicherdauer, Opt-out-Möglichkeiten und Anbieterangaben ergänzt werden."
+                    body: "Diese Website nutzt Vercel Web Analytics, um grundlegende Nutzungsmuster zu verstehen und die Website zu verbessern. Laut Vercel verwendet Web Analytics keine Cookies und speichert anonymisierte Analysedaten. Besucher werden über einen täglich wechselnden Hash aus der eingehenden Anfrage erkannt, sodass sie nicht über verschiedene Tage oder Websites hinweg verfolgt werden können."
                 },
                 legalBasis: {
                     title: "Rechtsgrundlagen",

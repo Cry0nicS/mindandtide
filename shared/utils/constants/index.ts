@@ -7,3 +7,6 @@
  */
 export * from "./contact";
 export * from "./i18n";
+
+export const COOKIE_NOTICE_SHOW_EVENT = "blue-desert:show-cookie-notice";
+export const COOKIE_STORAGE_KEY = "blue-desert-cookie-notice-dismissed";

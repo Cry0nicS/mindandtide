@@ -61,6 +61,7 @@ export default defineNuxtConfig({
         "@nuxt/eslint",
         "@nuxt/ui",
         "@nuxt/image",
+        "@vercel/analytics",
         "nuxt-zod-i18n",
         "@nuxtjs/i18n",
         "@nuxtjs/seo"

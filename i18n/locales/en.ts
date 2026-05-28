@@ -4,9 +4,11 @@ export default {
         copyright: "Copyright © {year}"
     },
     cookieBanner: {
-        title: "Cookie Notice",
+        title: "Privacy notice",
         description:
-            "We use essential cookies required for this website to function. We also use functional cookies and anonymized analytics to improve the site. We do not collect personal data."
+            "We only store necessary preferences such as language, theme and this notice state. Vercel Web Analytics runs without cookies and records anonymized usage data.",
+        privacy: "Privacy policy",
+        accept: "Got it"
     },
     pages: {
         home: "Home",
@@ -69,11 +71,12 @@ export default {
                 },
                 cookies: {
                     title: "Cookies, language and theme",
-                    body: "The website may use technically necessary cookies or comparable storage mechanisms, for example for the preferred language, light or dark mode and necessary form or session state. These functions are not used for tracking, but for usability and stability."
+                    body: "The website stores only necessary preferences, such as language, light or dark mode, form or session state and whether this privacy notice has already been acknowledged. These functions are not used for tracking, but for usability and stability.",
+                    action: "Show privacy notice"
                 },
                 analytics: {
                     title: "Analytics and tracking",
-                    body: "This privacy notice does not describe a specific analytics tool unless such a solution is actively integrated in the project. If Matomo, Plausible, Google Analytics or a similar tool is added later, purpose, legal basis, retention period, opt-out options and provider details must be added."
+                    body: "This website uses Vercel Web Analytics to understand basic usage patterns and improve the website. According to Vercel, Web Analytics does not use cookies and stores anonymized analytics data. Visitors are identified through a daily rotating hash derived from the incoming request, so they cannot be tracked across different days or websites."
                 },
                 legalBasis: {
                     title: "Legal bases",

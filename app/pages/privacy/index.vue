@@ -4,7 +4,9 @@ import {
     COMPANY_ADDRESS_STREET,
     COMPANY_COUNTRY,
     COMPANY_NAME,
-    CONTACT_EMAIL_ADDRESS
+    CONTACT_EMAIL_ADDRESS,
+    COOKIE_NOTICE_SHOW_EVENT,
+    COOKIE_STORAGE_KEY
 } from "#shared/utils/constants";
 
 const {t} = useI18n();
@@ -17,6 +19,16 @@ const controllerAddress = computed(() => [
     COMPANY_ADDRESS_CITY,
     COMPANY_COUNTRY
 ]);
+
+function showCookieBanner() {
+    try {
+        localStorage.removeItem(COOKIE_STORAGE_KEY);
+    } catch {
+        // The banner can still be reopened for the current session if storage is unavailable.
+    }
+
+    window.dispatchEvent(new Event(COOKIE_NOTICE_SHOW_EVENT));
+}
 
 const overviewItems = computed(() => [
     {
@@ -55,7 +67,8 @@ const privacySections = computed(() => [
     {
         icon: "i-lucide-cookie",
         title: t("pages.privacyPage.sections.cookies.title"),
-        body: t("pages.privacyPage.sections.cookies.body")
+        body: t("pages.privacyPage.sections.cookies.body"),
+        action: t("pages.privacyPage.sections.cookies.action")
     },
     {
         icon: "i-lucide-chart-no-axes-column",
@@ -192,10 +205,22 @@ useSeoMeta({
                         v-for="section in privacySections"
                         :key="section.title"
                         :title="section.title"
-                        :description="section.body"
                         :icon="section.icon"
                         variant="subtle"
-                        class="flex-1 basis-full lg:basis-[calc(50%-0.75rem)]" />
+                        class="flex-1 basis-full lg:basis-[calc(50%-0.75rem)]">
+                        <template #description>
+                            <div class="space-y-4">
+                                <p>{{ section.body }}</p>
+
+                                <UButton
+                                    v-if="section.action"
+                                    icon="i-lucide-cookie"
+                                    @click="showCookieBanner">
+                                    {{ section.action }}
+                                </UButton>
+                            </div>
+                        </template>
+                    </UPageCard>
                 </div>
             </UPageSection>
 
