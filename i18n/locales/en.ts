@@ -11,12 +11,219 @@ export default {
         accept: "Got it"
     },
     pages: {
-        home: "Home",
+        home: "Seminars",
         privacy: "Privacy",
         imprint: "Imprint",
         contact: "Contact",
         program: "Program",
         aboutUs: "About us",
+        homePage: {
+            seo: {
+                title: "Resilience seminar by the sea | Blue Desert",
+                description:
+                    "A calm, experiential seminar in Dahab for resilience, stress management and renewed agency in professional life."
+            },
+            hero: {
+                eyebrow: "Blue Desert seminar",
+                title: "Resilience and stress management in professional life",
+                subheadline: "Experience. Understand. Strengthen.",
+                supportingText: "A seminar with experiential methods in Dahab, Egypt.",
+                meta: "Dahab, Egypt",
+                imageAlt: "Calm coastline with mountains in the background near Dahab in Egypt"
+            },
+            intro: {
+                eyebrow: "What the seminar is about",
+                title: "Gain clarity. Expand your room for action.",
+                paragraphs: {
+                    first: "Professional life often brings high demands, constant availability and complex decisions. Over time, this drains energy, concentration and inner balance.",
+                    second: "This seminar invites you to step back for a moment, to a place that creates spaciousness: Dahab on the Red Sea.",
+                    third: "Through experiential methods, you strengthen your resilience, learn to recognize stress patterns and develop effective strategies for more calm and clarity.",
+                    fourth: "You combine reflection, practical exercises and exchange in a small group with the restorative force of nature."
+                },
+                features: {
+                    experiential: {
+                        title: "Experiential",
+                        description: "Learning through experience, sensing and reflection."
+                    },
+                    holistic: {
+                        title: "Holistic",
+                        description: "Bringing body, mind and emotions into balance."
+                    },
+                    personal: {
+                        title: "Personal & appreciative",
+                        description: "Small group, protected space and individual guidance."
+                    },
+                    nature: {
+                        title: "Inspired by nature",
+                        description: "Using the openness of desert and sea as a source of strength."
+                    }
+                }
+            },
+            goals: {
+                eyebrow: "Seminar goals",
+                title: "What you will take away",
+                items: {
+                    patterns: "Recognize and better understand stress patterns",
+                    resources: "Activate and strengthen your own resources",
+                    resilience: "Build resilience in professional life",
+                    strategies: "Develop effective strategies for managing stress",
+                    clarity: "Gain clarity and set priorities",
+                    selfCare: "Deepen mindfulness and self-care",
+                    capacity: "Sustain your capacity over the long term"
+                }
+            },
+            process: {
+                eyebrow: "Flow & content",
+                title: "Practical. Deep. Sustainable.",
+                description:
+                    "The seminar combines input, interaction and experience. You work practically with your own topics and apply what you learn directly.",
+                imageAlt:
+                    "Small seminar group sitting in a circle on the beach and working together",
+                items: {
+                    selfKnowledge: {
+                        title: "Self-awareness",
+                        description: "Recognize stressors and understand inner patterns"
+                    },
+                    resources: {
+                        title: "Resource work",
+                        description: "Activate your own sources of strength"
+                    },
+                    methods: {
+                        title: "Method competence",
+                        description: "Breath, mindfulness and cognitive tools"
+                    },
+                    resilience: {
+                        title: "Strengthen resilience",
+                        description: "Working with pressure, change and uncertainty"
+                    },
+                    transfer: {
+                        title: "Transfer into daily life",
+                        description: "Concrete strategies for your professional routine"
+                    }
+                },
+                closing:
+                    "Between the sessions there is time for reflection, exchange, movement, sea and quiet."
+            },
+            schedule: {
+                columns: {
+                    time: "Time",
+                    monday: "Monday - Understanding",
+                    tuesday: "Tuesday - Environment & Context",
+                    wednesday: "Wednesday - Body",
+                    thursday: "Thursday - Breathing & Integration",
+                    friday: "Friday - Transfer & Application"
+                },
+                rows: {
+                    row1: {
+                        time: "09:00 - 09:45",
+                        monday: "Welcome, introduction and objectives",
+                        tuesday:
+                            "Foundations: Effects of maritime environments on stress and the nervous system",
+                        wednesday: "Foundations of physiological stress responses",
+                        thursday: "Foundations of breath-based stress regulation",
+                        friday: "Introduction: Self-awareness and temporal structuring of stress"
+                    },
+                    row2: {
+                        time: "09:45 - 10:30",
+                        monday: "Foundations of stress development and processing",
+                        tuesday: "Consolidation: Environment, perception, and stress regulation",
+                        wednesday: "Analysis and perception of bodily tension patterns",
+                        thursday: "Analysis of breathing patterns in the context of stress",
+                        friday: "Guided practice: Body-based stress regulation (TRE according to Dr. Berceli)"
+                    },
+                    row3: {
+                        time: "10:30 - 11:15",
+                        monday: "Individual stress patterns in the professional context",
+                        tuesday: "Analysis of using environmental factors for stress regulation",
+                        wednesday: "Movement and perception in the context of stress regulation",
+                        thursday:
+                            "Guided practice: Breath-based regulation (Marcus Blacker method)",
+                        friday: "Deepening and reflection of practice (TRE according to Dr. Berceli)"
+                    },
+                    break1: {
+                        time: "11:15 - 11:30",
+                        monday: "Break",
+                        tuesday: "Break",
+                        wednesday: "Break",
+                        thursday: "Break",
+                        friday: "Break"
+                    },
+                    row4: {
+                        time: "11:30 - 12:15",
+                        monday: "Introduction to perception and resource-based work (participatory photography)",
+                        tuesday: "Guided practice: Body regulation in water (floating)",
+                        wednesday:
+                            "Introduction to body-based regulation methods (TRE according to Dr. Berceli)",
+                        thursday: "Introduction to self-reflection and evaluation methods",
+                        friday: "Development of individual action strategies (SMART goals)"
+                    },
+                    row5: {
+                        time: "12:15 - 13:00",
+                        monday: "Guided practice: Participatory photography",
+                        tuesday: "Deepening of practice (floating) and reflection",
+                        wednesday:
+                            "Guided practice: Body-based stress regulation (TRE according to Dr. Berceli)",
+                        thursday: "Integration: Linking breath, body, and environment",
+                        friday: "Specification and feedback on individual transfer strategies"
+                    },
+                    break2: {
+                        time: "13:00 - 14:00",
+                        monday: "Lunch",
+                        tuesday: "Lunch",
+                        wednesday: "Lunch",
+                        thursday: "Lunch",
+                        friday: "Lunch"
+                    },
+                    row6: {
+                        time: "14:00 - 14:45",
+                        monday: "Reflection and transfer to professional life",
+                        tuesday:
+                            "Reflection on experiences with nature-based methods and transfer to professional life",
+                        wednesday:
+                            "Reflection on body-based stress responses and transfer to professional life",
+                        thursday:
+                            "Reflection and integration: Development of individual stress-regulation strategies for professional life",
+                        friday: "Self-evaluation and sustainable transfer: Consolidation of learning outcomes"
+                    }
+                }
+            },
+            download: {
+                label: "Download the program overview as a PDF",
+                fileName: "blue-desert-seminar-overview.pdf"
+            },
+            organization: {
+                eyebrow: "Framework & practical details",
+                title: "The essentials at a glance",
+                items: {
+                    date: {
+                        title: "Date",
+                        description: "24 to 31 October 2025, 7 seminar days"
+                    },
+                    place: {
+                        title: "Location",
+                        description: "Dahab, Egypt, on the Red Sea"
+                    },
+                    group: {
+                        title: "Group",
+                        description: "6 to 12 participants, small group for focused exchange"
+                    },
+                    accommodation: {
+                        title: "Accommodation",
+                        description: "Carefully selected accommodation close to the sea"
+                    },
+                    times: {
+                        title: "Seminar times",
+                        description: "Morning and afternoon with breaks and space for integration"
+                    }
+                },
+                note: "Arrival on the previous day and departure on the following day are recommended. Flights, transfers and accommodation are not included in the seminar fee."
+            },
+            cta: {
+                title: "Do you have questions or would you like to learn more?",
+                description: "We look forward to hearing from you.",
+                action: "Send enquiry"
+            }
+        },
         privacyPage: {
             seo: {
                 title: "Privacy Policy | Blue Desert",
