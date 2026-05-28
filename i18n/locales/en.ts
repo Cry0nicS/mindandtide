@@ -59,18 +59,38 @@ export default {
                     }
                 }
             },
-            goals: {
-                eyebrow: "Seminar goals",
-                title: "What you will take away",
+            takeaways: {
+                headline: "Seminar goals",
+                title: "What you take with you",
+                description:
+                    "By the end of the seminar, you will have concrete tools and new perspectives that you can apply directly in everyday life.",
                 items: {
-                    patterns: "Recognize and better understand stress patterns",
-                    resources: "Activate and strengthen your own resources",
-                    resilience: "Build resilience in professional life",
-                    strategies: "Develop effective strategies for managing stress",
-                    clarity: "Gain clarity and set priorities",
-                    selfCare: "Deepen mindfulness and self-care",
-                    capacity: "Sustain your capacity over the long term"
-                }
+                    clarity: {
+                        title: "Clearer thinking",
+                        description: "You gain structure and confidence in your decisions."
+                    },
+                    stress: {
+                        title: "Stress competence",
+                        description: "You learn to respond to pressure with more composure."
+                    },
+                    resilience: {
+                        title: "Stronger resilience",
+                        description: "You build inner strength and adaptability."
+                    },
+                    routines: {
+                        title: "Healthy routines",
+                        description: "You develop habits that work in daily life."
+                    },
+                    balance: {
+                        title: "Energy and balance",
+                        description: "You reconnect with more energy and ease."
+                    },
+                    impact: {
+                        title: "Lasting impact",
+                        description: "You integrate changes that remain."
+                    }
+                },
+                quote: "Understand, experience, and integrate knowledge into everyday life, for lasting change."
             },
             process: {
                 eyebrow: "Flow & content",

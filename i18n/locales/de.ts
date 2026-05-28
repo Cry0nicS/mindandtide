@@ -60,18 +60,38 @@ export default {
                     }
                 }
             },
-            goals: {
-                eyebrow: "Ziele des Seminars",
+            takeaways: {
+                headline: "Ziele des Seminars",
                 title: "Was Sie mitnehmen",
+                description:
+                    "Am Ende des Seminars verfügen Sie über konkrete Werkzeuge und neue Perspektiven, die Sie direkt in Ihrem Alltag anwenden können.",
                 items: {
-                    patterns: "Stressmuster erkennen und besser verstehen",
-                    resources: "Eigene Ressourcen aktivieren und stärken",
-                    resilience: "Resilienz im beruflichen Alltag aufbauen",
-                    strategies: "Wirksame Strategien zur Stressbewältigung entwickeln",
-                    clarity: "Klarheit gewinnen und Prioritäten setzen",
-                    selfCare: "Achtsamkeit und Selbstfürsorge vertiefen",
-                    capacity: "Leistungsfähigkeit nachhaltig erhalten"
-                }
+                    clarity: {
+                        title: "Klarheit im Denken",
+                        description: "Sie gewinnen Struktur und Entscheidungssicherheit."
+                    },
+                    stress: {
+                        title: "Stresskompetenz",
+                        description: "Sie lernen, mit Druck gelassener umzugehen."
+                    },
+                    resilience: {
+                        title: "Resilienz stärken",
+                        description: "Sie bauen innere Stärke und Anpassungsfähigkeit auf."
+                    },
+                    routines: {
+                        title: "Gesunde Routinen",
+                        description: "Sie entwickeln alltagstaugliche Gewohnheiten."
+                    },
+                    balance: {
+                        title: "Energie und Balance",
+                        description: "Sie finden zurück zu mehr Energie und Lebensfreude."
+                    },
+                    impact: {
+                        title: "Nachhaltige Wirkung",
+                        description: "Sie integrieren Veränderungen, die bleiben."
+                    }
+                },
+                quote: "Wissen verstehen, erleben und in den Alltag integrieren, für nachhaltige Veränderung."
             },
             process: {
                 eyebrow: "Ablauf & Inhalte",

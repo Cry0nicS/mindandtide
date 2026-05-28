@@ -54,20 +54,6 @@ const introFeatures = computed(() => {
     ];
 });
 
-const goals = computed(() => {
-    void locale.value;
-
-    return [
-        {description: t("pages.homePage.goals.items.patterns")},
-        {description: t("pages.homePage.goals.items.resources")},
-        {description: t("pages.homePage.goals.items.resilience")},
-        {description: t("pages.homePage.goals.items.strategies")},
-        {description: t("pages.homePage.goals.items.clarity")},
-        {description: t("pages.homePage.goals.items.selfCare")},
-        {description: t("pages.homePage.goals.items.capacity")}
-    ];
-});
-
 const processItems = computed(() => {
     void locale.value;
 
@@ -181,26 +167,7 @@ useSeoMeta({
                 </div>
             </LandingPageSection>
 
-            <LandingPageSection
-                :eyebrow="t('pages.homePage.goals.eyebrow')"
-                :title="t('pages.homePage.goals.title')"
-                orientation="horizontal"
-                muted>
-                <template #body>
-                    <LandingFeatureList
-                        :items="goals"
-                        compact />
-                </template>
-
-                <div class="flex min-h-64 items-center justify-center">
-                    <div
-                        class="text-primary/70 border-primary/20 bg-elevated/35 flex size-48 items-center justify-center rounded-full border sm:size-56">
-                        <UIcon
-                            name="i-lucide-sunrise"
-                            class="size-28 stroke-1 sm:size-36" />
-                    </div>
-                </div>
-            </LandingPageSection>
+            <LandingTakeaways />
 
             <LandingPageSection
                 :eyebrow="t('pages.homePage.process.eyebrow')"
