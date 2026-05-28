@@ -3,6 +3,11 @@ export default {
         comingSoon: "Coming soon",
         copyright: "Copyright © {year}"
     },
+    cookieBanner: {
+        title: "Cookie Notice",
+        description:
+            "We use essential cookies required for this website to function. We also use functional cookies and anonymized analytics to improve the site. We do not collect personal data."
+    },
     pages: {
         home: "Home",
         privacy: "Privacy",

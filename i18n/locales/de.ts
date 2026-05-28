@@ -3,6 +3,11 @@ export default {
         comingSoon: "Demnächst verfügbar",
         copyright: "Copyright © {year}"
     },
+    cookieBanner: {
+        title: "Cookie Hinweis",
+        description:
+            "Wir verwenden essenzielle Cookies, die für den Betrieb dieser Website erforderlich sind. Zusätzlich setzen wir funktionale Cookies und anonymisierte Analytics. Wir sammeln keine personenbezogenen Daten."
+    },
     pages: {
         home: "Startseite",
         privacy: "Datenschutz",
