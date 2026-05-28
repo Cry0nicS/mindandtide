@@ -12,7 +12,7 @@ export const i18nPages = {
     },
     "privacy/imprint": {
         en: "/privacy/imprint",
-        de: "/privacy/impressum"
+        de: "/datenschutz/impressum"
     },
     "contact/index": {
         en: "/contact",
