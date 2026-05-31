@@ -9,3 +9,12 @@ import type {LocaleCodes, LocaleMeta} from "#shared/utils/types";
 export function extractLocaleCode(locale: LocaleCodes | LocaleMeta): LocaleCodes {
     return (typeof locale === "string" ? locale : locale.code) as LocaleCodes;
 }
+
+/**
+ * Returns the current date and time in a human-readable format.
+ */
+export const getPrettyPrintNow = () =>
+    new Date().toLocaleString("de-DE", {
+        dateStyle: "medium",
+        timeStyle: "short"
+    });

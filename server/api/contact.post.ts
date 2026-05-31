@@ -1,9 +1,10 @@
 import type {ContactFormData, ContactSubject} from "~~/shared/utils/schemas";
 import Mailgun from "mailgun.js";
 import {contactFormSchema} from "~~/shared/utils/schemas";
+import {getPrettyPrintNow} from "#shared/utils/helpers";
 
 const subjectLabels: Record<ContactSubject, string> = {
-    educationalLeave: "Educational leave",
+    educationalLeave: "Bildungsurlaub",
     retreats: "Retreats",
     groupOffers: "Group offers",
     general: "General enquiry"
@@ -11,7 +12,7 @@ const subjectLabels: Record<ContactSubject, string> = {
 
 const createTextBody = (message: ContactFormData) =>
     `
-New contact message received:
+New contact message received at ${getPrettyPrintNow()}:
 
 First name: ${message.firstName}
 Last name: ${message.lastName}
@@ -67,7 +68,7 @@ export default defineEventHandler(async (event) => {
             "from": config.mailgunSender,
             "to": config.mailgunRecipient,
             ...(config.mailgunBcc ? {bcc: config.mailgunBcc} : {}),
-            "subject": `Contact request from ${parsed.data.firstName} ${parsed.data.lastName}`,
+            "subject": `${subjectLabels[parsed.data.subject]} request from ${parsed.data.firstName} ${parsed.data.lastName}`,
             "text": createTextBody(parsed.data),
             "h:Reply-To": parsed.data.email
         });

@@ -1,4 +1,4 @@
-export const CONTACT_EMAIL_ADDRESS = "hallo@blue-desert.com";
+export const CONTACT_EMAIL_ADDRESS = "info@blue-desert.com";
 export const CONTACT_PHONE = "+49 38303 123456";
 export const COMPANY_NAME = "Blue Desert Learning & Retreats GmbH";
 export const COMPANY_REPRESENTATIVE = "Maria Beispiel";
