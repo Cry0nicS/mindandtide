@@ -25,7 +25,11 @@ const title = computed(() => t("site.name"));
             </ColorScheme>
         </template>
 
-        <UNavigationMenu :items="headerDesktop" />
+        <UNavigationMenu
+            color="secondary"
+            :highlight="true"
+            highlight-color="secondary"
+            :items="headerDesktop" />
 
         <template #right>
             <NavThemeToggle />
@@ -34,6 +38,9 @@ const title = computed(() => t("site.name"));
 
         <template #body>
             <UNavigationMenu
+                color="secondary"
+                :highlight="true"
+                highlight-color="secondary"
                 :items="headerMobile"
                 orientation="vertical"
                 class="-mx-2.5" />

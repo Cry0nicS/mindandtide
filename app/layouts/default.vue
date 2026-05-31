@@ -26,7 +26,11 @@ const {footer: navItems} = useNavItems();
 
         <NavFooter>
             <template #navigation>
-                <UNavigationMenu :items="navItems" />
+                <UNavigationMenu
+                    color="secondary"
+                    :highlight="true"
+                    highlight-color="secondary"
+                    :items="navItems" />
             </template>
             <template #social>
                 <NavThemeToggle />
