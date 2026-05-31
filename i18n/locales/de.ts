@@ -411,31 +411,13 @@ export default {
         title: "Kontakt aufnehmen",
         intro: "Sie haben Fragen zu unseren Bildungsurlauben, Retreats oder Gruppenangeboten? Schreiben Sie uns gerne eine Nachricht. Wir melden uns so schnell wie möglich zurück.",
         details: {
-            heading: "Direkter Kontakt",
-            emailLabel: "E-Mail",
-            phoneLabel: "Telefon",
-            phoneValue: "Nach Vereinbarung"
-        },
-        cards: {
             heading: "So erreichen Sie uns",
-            social: {
-                title: "Social Media",
-                description:
-                    "Folgen Sie unseren aktuellen Einblicken und schreiben Sie uns dort eine kurze Nachricht.",
-                action: "Kanäle ansehen"
-            },
-            email: {
-                title: "E-Mail",
-                description:
-                    "Senden Sie uns Ihre Frage mit ein paar Details. Wir antworten persönlich und zeitnah.",
-                action: "E-Mail schreiben"
-            },
-            phone: {
-                title: "Telefon",
-                description:
-                    "Teilen Sie uns Ihre Telefonnummer mit, wenn Sie einen Rückruf wünschen.",
-                action: "Rückruf anfragen"
-            }
+            emailLabel: "E-Mail",
+            emailValue: "Fülle das Formular aus oder schick uns direkt eine E-Mail.",
+            phoneLabel: "Telefon",
+            phoneValue: "Vereinbare einen Termin mit uns über das Kontaktformular.",
+            socialMediaLabel: "Social Media",
+            socialMediaValue: "Folge unseren neuesten Updates oder schick uns eine DM."
         },
         form: {
             title: "Nachricht senden",

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type {FormSubmitEvent} from "@nuxt/ui";
 import type {ContactFormData, ContactFormState} from "~~/shared/utils/schemas";
-import {CONTACT_EMAIL_ADDRESS} from "~~/shared/utils/constants";
+import {CONTACT_EMAIL_ADDRESS, INSTAGRAM_CHANNEL, INSTAGRAM_URL} from "~~/shared/utils/constants";
 import {
     contactFormSchema,
     contactSubjectValues,
@@ -21,28 +21,6 @@ const subjectItems = computed(() => {
         label: t(`contact.form.subject.options.${value}`),
         value
     }));
-});
-
-const contactCards = computed(() => {
-    void locale.value;
-
-    return [
-        {
-            icon: "i-lucide-share-2",
-            title: t("contact.cards.social.title"),
-            description: t("contact.cards.social.description")
-        },
-        {
-            icon: "i-lucide-mail",
-            title: t("contact.cards.email.title"),
-            description: t("contact.cards.email.description")
-        },
-        {
-            icon: "i-lucide-phone",
-            title: t("contact.cards.phone.title"),
-            description: t("contact.cards.phone.description")
-        }
-    ];
 });
 
 useSeoMeta({
@@ -98,10 +76,10 @@ const onSubmit = async (event: FormSubmitEvent<ContactFormData>) => {
                         <h2 class="text-highlighted text-xl font-semibold">
                             {{ t("contact.details.heading") }}
                         </h2>
-                        <dl class="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-1">
+                        <dl class="mt-5 grid gap-8 sm:grid-cols-2 lg:grid-cols-1">
                             <div class="flex gap-4">
                                 <div
-                                    class="bg-primary/10 text-primary flex size-10 shrink-0 items-center justify-center rounded-md">
+                                    class="bg-secondary/10 text-highlighted flex size-10 shrink-0 items-center justify-center rounded-md">
                                     <UIcon
                                         name="i-lucide-mail"
                                         class="size-5" />
@@ -110,6 +88,9 @@ const onSubmit = async (event: FormSubmitEvent<ContactFormData>) => {
                                     <dt class="text-muted text-sm">
                                         {{ t("contact.details.emailLabel") }}
                                     </dt>
+                                    <dd class="text-highlighted font-medium">
+                                        {{ t("contact.details.emailValue") }}
+                                    </dd>
                                     <dd class="text-highlighted font-medium">
                                         <ULink
                                             :to="`mailto:${CONTACT_EMAIL_ADDRESS}`"
@@ -133,6 +114,30 @@ const onSubmit = async (event: FormSubmitEvent<ContactFormData>) => {
                                     </dt>
                                     <dd class="text-highlighted font-medium">
                                         {{ t("contact.details.phoneValue") }}
+                                    </dd>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4">
+                                <div
+                                    class="bg-secondary/30 text-highlighted flex size-10 shrink-0 items-center justify-center rounded-md">
+                                    <UIcon
+                                        name="i-lucide:instagram"
+                                        class="size-5" />
+                                </div>
+                                <div>
+                                    <dt class="text-muted text-sm">
+                                        {{ t("contact.details.socialMediaLabel") }}
+                                    </dt>
+                                    <dd class="text-highlighted font-medium">
+                                        {{ t("contact.details.socialMediaValue") }}
+                                    </dd>
+                                    <dd class="text-highlighted font-medium">
+                                        <ULink
+                                            :to="`${INSTAGRAM_URL}`"
+                                            class="hover:text-primary">
+                                            {{ INSTAGRAM_CHANNEL }}
+                                        </ULink>
                                     </dd>
                                 </div>
                             </div>
@@ -263,34 +268,6 @@ const onSubmit = async (event: FormSubmitEvent<ContactFormData>) => {
                             :label="t('contact.form.submit')" />
                     </UForm>
                 </UCard>
-            </section>
-
-            <section class="space-y-5">
-                <h2 class="text-highlighted text-2xl font-semibold">
-                    {{ t("contact.cards.heading") }}
-                </h2>
-                <div class="grid gap-4 md:grid-cols-3">
-                    <UCard
-                        v-for="card in contactCards"
-                        :key="card.title"
-                        variant="subtle"
-                        :ui="{body: 'space-y-4'}">
-                        <div
-                            class="bg-primary/10 text-primary flex size-11 items-center justify-center rounded-md">
-                            <UIcon
-                                :name="card.icon"
-                                class="size-5" />
-                        </div>
-                        <div class="space-y-2">
-                            <h3 class="text-highlighted text-lg font-semibold">
-                                {{ card.title }}
-                            </h3>
-                            <p class="text-muted leading-7">
-                                {{ card.description }}
-                            </p>
-                        </div>
-                    </UCard>
-                </div>
             </section>
         </div>
     </UContainer>

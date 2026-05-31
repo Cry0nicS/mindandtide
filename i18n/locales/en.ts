@@ -410,30 +410,13 @@ export default {
         title: "Get in touch",
         intro: "Do you have questions about our educational leave programs, retreats or group offers? Send us a message and we will get back to you as soon as possible.",
         details: {
-            heading: "Direct contact",
-            emailLabel: "Email",
-            phoneLabel: "Phone",
-            phoneValue: "By appointment"
-        },
-        cards: {
             heading: "Ways to reach us",
-            social: {
-                title: "Social media",
-                description:
-                    "Follow our latest updates and send us a short message on our social channels.",
-                action: "View channels"
-            },
-            email: {
-                title: "Email",
-                description:
-                    "Send your question with a few details. We will respond personally and promptly.",
-                action: "Write an email"
-            },
-            phone: {
-                title: "Phone",
-                description: "Share your phone number with us if you would like a callback.",
-                action: "Request callback"
-            }
+            emailLabel: "Email",
+            emailValue: "Fill in the form or send us a direct email.",
+            phoneLabel: "Phone",
+            phoneValue: "Schedule an appointment with us using the contact form.",
+            socialMediaLabel: "Social media",
+            socialMediaValue: "Follow our latest updates OR send us a DM."
         },
         form: {
             title: "Send a message",
