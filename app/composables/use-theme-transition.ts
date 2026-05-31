@@ -5,8 +5,6 @@ type ThemeTransitionOptions = {
     easing?: string;
 };
 
-type TransitionCallback = () => void | Promise<void>;
-
 export const useThemeTransition = (options: ThemeTransitionOptions = {}) => {
     const colorMode = useColorMode();
 
@@ -23,37 +21,14 @@ export const useThemeTransition = (options: ThemeTransitionOptions = {}) => {
         setTheme(nextTheme.value);
     };
 
-    const getTransitionOrigin = (event?: Event) => {
-        if (event instanceof MouseEvent) {
-            return {
-                x: event.clientX,
-                y: event.clientY
-            };
+    const toggleThemeWithTransition = (event?: MouseEvent) => {
+        if (!event || !import.meta.client || !document.startViewTransition) {
+            toggleTheme();
+            return;
         }
 
-        const element = event?.target instanceof Element ? event.target : document.activeElement;
-
-        if (element instanceof Element) {
-            const {left, top, width, height} = element.getBoundingClientRect();
-
-            return {
-                x: left + width / 2,
-                y: top + height / 2
-            };
-        }
-
-        return {
-            x: window.innerWidth / 2,
-            y: window.innerHeight / 2
-        };
-    };
-
-    const runWithTransition = (callback: TransitionCallback, event?: Event) => {
-        if (!import.meta.client || !document.startViewTransition) {
-            return Promise.resolve(callback());
-        }
-
-        const {x, y} = getTransitionOrigin(event);
+        const x = event.clientX;
+        const y = event.clientY;
 
         const endRadius = Math.hypot(
             Math.max(x, window.innerWidth - x),
@@ -61,37 +36,28 @@ export const useThemeTransition = (options: ThemeTransitionOptions = {}) => {
         );
 
         const transition = document.startViewTransition(() => {
-            return callback();
+            toggleTheme();
         });
 
-        void transition.ready
-            .then(() => {
-                document.documentElement.animate(
-                    {
-                        clipPath: [
-                            `circle(0px at ${x}px ${y}px)`,
-                            `circle(${endRadius}px at ${x}px ${y}px)`
-                        ]
-                    },
-                    {
-                        duration,
-                        easing,
-                        pseudoElement: "::view-transition-new(root)"
-                    }
-                );
-            })
-            .catch(() => {});
-
-        return transition.updateCallbackDone;
-    };
-
-    const toggleThemeWithTransition = (event?: MouseEvent) => {
-        return runWithTransition(toggleTheme, event);
+        transition.ready.then(() => {
+            document.documentElement.animate(
+                {
+                    clipPath: [
+                        `circle(0px at ${x}px ${y}px)`,
+                        `circle(${endRadius}px at ${x}px ${y}px)`
+                    ]
+                },
+                {
+                    duration,
+                    easing,
+                    pseudoElement: "::view-transition-new(root)"
+                }
+            );
+        });
     };
 
     return {
         nextTheme,
-        runWithTransition,
         setTheme,
         toggleTheme,
         toggleThemeWithTransition
