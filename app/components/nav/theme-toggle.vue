@@ -1,6 +1,9 @@
 <script setup lang="ts">
+import {useThemeTransition} from "~/composables/use-theme-transition";
+
 const colorMode = useColorMode();
 const {locale, t} = useI18n();
+const {nextTheme, toggleThemeWithTransition} = useThemeTransition();
 
 const isDark = computed({
     get() {
@@ -22,11 +25,11 @@ const label = computed(() => {
     <ClientOnly v-if="!colorMode?.forced">
         <UButton
             :aria-label="label"
-            :icon="isDark ? 'i-lucide-sun' : 'i-lucide-moon'"
+            :icon="`i-lucide-${nextTheme === 'light' ? 'sun' : 'moon'}`"
             color="neutral"
             variant="ghost"
             size="xl"
-            @click="isDark = !isDark" />
+            @click="toggleThemeWithTransition" />
 
         <template #fallback>
             <div class="size-8" />
