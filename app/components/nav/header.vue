@@ -43,7 +43,11 @@ const title = computed(() => t("site.name"));
                 highlight-color="secondary"
                 :items="headerMobile"
                 orientation="vertical"
-                class="-mx-2.5" />
+                :ui="{
+                    list: 'flex flex-col gap-4',
+                    linkLabel: 'text-2xl',
+                    linkLeadingIcon: 'size-6'
+                }" />
         </template>
     </UHeader>
 </template>
