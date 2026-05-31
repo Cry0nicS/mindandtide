@@ -25,7 +25,7 @@
         "nuxt": "^4.4.6",
         "nuxt-zod-i18n": "^1.12.1",
         "typescript": "^6.0.3",
-        "zod": "^4.4.3"
+        "zod": "^3.25.76"
     },
     "devDependencies": {
         "@antfu/eslint-config": "^9.0.0",
