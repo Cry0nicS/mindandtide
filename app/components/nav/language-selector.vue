@@ -2,20 +2,26 @@
 import {LOCALE_META} from "#shared/utils/constants";
 import {extractLocaleCode} from "#shared/utils/helpers";
 
-const {setLocale, t} = useI18n();
+const {locale, setLocale, t} = useI18n();
 
 const label = computed(() => t("language.label"));
 
 const items = computed(() => [
     {
+        icon: "circle-flags:en-us",
         label: t("language.en"),
         value: LOCALE_META.en,
-        onClick: () => setLocale(extractLocaleCode(LOCALE_META.en))
+        type: "checkbox" as const,
+        checked: locale.value === LOCALE_META.en.code,
+        onUpdateChecked: () => setLocale(extractLocaleCode(LOCALE_META.en))
     },
     {
+        icon: "circle-flags:de",
         label: t("language.de"),
         value: LOCALE_META.de,
-        onClick: () => setLocale(extractLocaleCode(LOCALE_META.de))
+        type: "checkbox" as const,
+        checked: locale.value === LOCALE_META.de.code,
+        onUpdateChecked: () => setLocale(extractLocaleCode(LOCALE_META.de))
     }
 ]);
 </script>
