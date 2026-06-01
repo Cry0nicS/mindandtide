@@ -43,16 +43,14 @@ const takeawayItems = computed(() => {
         :title="t('pages.homePage.takeaways.title')"
         :description="t('pages.homePage.takeaways.description')"
         :ui="{
-            container: 'w-full max-w-6xl py-10 sm:py-14 lg:py-16 px-0 sm:px-0 lg:px-0',
             wrapper: 'text-center',
             headline: 'font-semibold uppercase tracking-[0.28em] text-secondary',
             title: 'mx-auto max-w-2xl text-4xl text-highlighted sm:text-5xl',
             description: 'mx-auto max-w-2xl text-muted'
         }"
-        class="text-center">
-        <UCard
-            variant="outline"
-            class="border-default w-full rounded-lg"
+        class="border-default w-full rounded-lg border text-center">
+        <UPageCard
+            variant="ghost"
             :ui="{
                 body: 'p-5 sm:p-8 lg:p-10'
             }">
@@ -95,6 +93,6 @@ const takeawayItems = computed(() => {
                     {{ t("pages.homePage.takeaways.quote") }}
                 </p>
             </div>
-        </UCard>
+        </UPageCard>
     </UPageSection>
 </template>

@@ -59,6 +59,33 @@ export default {
                     }
                 }
             },
+            writerSummary: {
+                eyebrow: "Learning approach",
+                title: "Experience-based methods and place-based learning between sea and desert",
+                text: "A five-day seminar near Dahab designed to strengthen resilience, support stress regulation, and activate sustainable balance in professional life. Through structured learning, guided practice, and time for reflection, participants engage both mind and body while developing capacities that support long-term personal and professional growth.",
+                highlights: {
+                    place: {
+                        title: "Learning with place",
+                        description:
+                            "Sea, desert and quiet surroundings actively support attention and recovery."
+                    },
+                    method: {
+                        title: "Guided practice",
+                        description:
+                            "Concepts are connected with body, breath, perception and reflection."
+                    },
+                    transfer: {
+                        title: "Work-life transfer",
+                        description:
+                            "Each step is linked back to professional routines and decisions."
+                    }
+                }
+            },
+            seminarAbout: {
+                title: "What the seminar is about",
+                description:
+                    "Professional life today often unfolds under conditions of constant pressure, cognitive overload, and insufficient recovery. This seminar creates a structured learning space in which participants explore stress more clearly, deepen self-awareness, and develop practical strategies for regulation, resilience, and balance. What makes the seminar distinctive is its place-based learning approach. Dahab is not simply the location of the seminar; it is part of the method itself, offering an environment in which sea, desert, openness, and reduced sensory intensity support attention, reflection, and a deeper engagement with stress and recovery."
+            },
             takeaways: {
                 headline: "Seminar goals",
                 title: "What you take with you",
@@ -124,7 +151,54 @@ export default {
                 closing:
                     "Between the sessions there is time for reflection, exchange, movement, sea and quiet."
             },
+            contentMethods: {
+                eyebrow: "Content, methods and structure",
+                title: "Conceptual clarity. Guided experience. Practical transfer.",
+                description:
+                    "The seminar follows a carefully structured learning process that combines conceptual understanding, guided experience, reflection, and transfer into professional life. Across five thematic days, participants work with body-based, breath-based, perceptual, and reflective methods in a way that is both intellectually grounded and practically applicable.",
+                steps: {
+                    understand: {
+                        title: "Understand stress",
+                        description:
+                            "You map how pressure develops and how your own system responds in professional situations."
+                    },
+                    experience: {
+                        title: "Practice regulation",
+                        description:
+                            "Guided methods make regulation tangible through body, breath, perception and reflection."
+                    },
+                    transfer: {
+                        title: "Anchor change",
+                        description:
+                            "You translate insights into realistic routines, decisions and recovery strategies."
+                    }
+                },
+                content: {
+                    title: "Content includes",
+                    items: {
+                        stressDevelopment: "Stress development and stress processing",
+                        nervousSystem: "Stress, the nervous system, and bodily responses",
+                        personalPatterns: "Individual stress patterns in professional contexts",
+                        environment: "Environmental and contextual dimensions of regulation",
+                        transfer: "Transfer into everyday professional life"
+                    }
+                },
+                methods: {
+                    title: "Methods include",
+                    items: {
+                        reflection: "Guided reflection and transfer-oriented exercises",
+                        body: "Body-based stress regulation, including TRE-based elements",
+                        breath: "Breath-based regulation practices",
+                        photography:
+                            "Participatory photography and resource-oriented perception work",
+                        floating: "Floating and water-based body regulation sessions"
+                    }
+                }
+            },
             schedule: {
+                title: "Schedule",
+                description:
+                    "Weekly plan: The schedule is structured across five seminar days and combines conceptual input, guided practice, reflection, and transfer.",
                 columns: {
                     time: "Time",
                     monday: "Monday - Understanding",
@@ -204,6 +278,71 @@ export default {
                         thursday:
                             "Reflection and integration: Development of individual stress-regulation strategies for professional life",
                         friday: "Self-evaluation and sustainable transfer: Consolidation of learning outcomes"
+                    }
+                }
+            },
+            programEssentials: {
+                title: "Essentials at a glance",
+                items: {
+                    duration: {
+                        title: "5-day seminar",
+                        description: "A compact learning format across five thematic seminar days"
+                    },
+                    units: {
+                        title: "6 teaching units per day",
+                        description: "Structured rhythm with input, practice, and reflection"
+                    },
+                    group: {
+                        title: "6-12 participants",
+                        description: "Small group for focused exchange and individual attention"
+                    },
+                    location: {
+                        title: "Dahab, Egypt",
+                        description: "Learning between the Red Sea and the desert"
+                    },
+                    language: {
+                        title: "Seminar language",
+                        description: "English"
+                    },
+                    materials: {
+                        title: "Bilingual materials",
+                        description: "German bilingual materials are provided"
+                    }
+                }
+            },
+            additionalGoals: {
+                eyebrow: "Professional transfer",
+                title: "From insight to usable everyday practice",
+                items: {
+                    models: "Understand key models of stress development",
+                    patterns: "Recognize personal stress patterns in professional life",
+                    methods: "Apply body-, breath-, and perception-based methods",
+                    resources: "Strengthen awareness of personal resources",
+                    strategies: "Develop transferable strategies for professional situations",
+                    evaluation: "Reflect on learning processes and evaluate effectiveness"
+                }
+            },
+            whyDahab: {
+                eyebrow: "Why this place",
+                title: "Why Dahab?",
+                imageAlt: "Open landscape with warm light, suggesting spaciousness and quiet",
+                description:
+                    "Dahab offers a learning environment that is difficult to recreate in everyday professional settings. The combination of maritime surroundings, desert landscape, spaciousness, and reduced sensory density supports concentration, reflection, and a more attentive engagement with perception, regulation, and recovery. In this seminar, place is not an aesthetic backdrop. It is an integral part of the educational concept."
+            },
+            team: {
+                title: "Meet the team",
+                items: {
+                    silvia: {
+                        title: "Dr. Silvia-Lucretia Nicola",
+                        description: "Pedagogical and academic lead"
+                    },
+                    marcus: {
+                        title: "Marcus Blacker",
+                        description: "Body- and breath-based stress regulation"
+                    },
+                    ahmad: {
+                        title: "Ahmad Nemr",
+                        description: "Support for water-based practice sessions"
                     }
                 }
             },
