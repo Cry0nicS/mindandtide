@@ -28,15 +28,15 @@ const props = withDefaults(defineProps<Props>(), {
         :headline="props.eyebrow"
         :title="props.title"
         :links="props.links"
-        class="relative isolate overflow-hidden"
+        class="border-default relative isolate overflow-hidden rounded-lg border shadow-sm"
         :ui="{
             container:
-                'relative z-10 flex min-h-[32rem] items-center py-20 sm:py-24 lg:min-h-[42rem] lg:items-start lg:pt-36 lg:pb-24',
+                'relative z-10 flex min-h-[30rem] items-center py-16 sm:min-h-[34rem] sm:py-20 lg:min-h-[38rem] lg:items-start lg:pt-32 lg:pb-24',
             wrapper: 'max-w-3xl',
             header: 'items-start text-left',
             headline:
                 'text-secondary text-xs font-semibold uppercase tracking-[0.28em] text-left justify-start',
-            title: 'font-heading text-highlighted text-6xl font-semibold leading-tight tracking-tight text-pretty sm:text-6xl',
+            title: 'font-heading text-highlighted text-4xl font-semibold leading-tight text-pretty sm:text-5xl lg:text-6xl',
             description: 'mt-5 max-w-2xl text-left',
             footer: 'mt-8',
             links: 'justify-start'
@@ -61,7 +61,7 @@ const props = withDefaults(defineProps<Props>(), {
             <div class="space-y-4">
                 <p
                     v-if="props.subheadline"
-                    class="text-primary text-xl leading-8 font-semibold sm:text-2xl">
+                    class="text-secondary text-xl leading-8 font-semibold sm:text-2xl">
                     {{ props.subheadline }}
                 </p>
 

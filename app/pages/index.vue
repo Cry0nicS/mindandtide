@@ -3,6 +3,7 @@ import type {ButtonProps} from "@nuxt/ui";
 import LandingDownloadCard from "~/components/landing/landing-download-card.vue";
 import LandingFeatureList from "~/components/landing/landing-feature-list.vue";
 import LandingHero from "~/components/landing/landing-hero.vue";
+import LandingInfoGrid from "~/components/landing/landing-info-grid.vue";
 import LandingPageCard from "~/components/landing/landing-page-card.vue";
 import LandingPageSection from "~/components/landing/landing-page-section.vue";
 
@@ -180,7 +181,7 @@ useSeoMeta({
 </script>
 
 <template>
-    <div>
+    <div class="pb-4">
         <LandingHero
             :image-src="heroImage"
             :image-alt="t('pages.homePage.hero.imageAlt')"
@@ -192,28 +193,29 @@ useSeoMeta({
 
         <UPageSection
             :ui="{
-                container: 'py-10 sm:py-14 lg:py-16',
+                container: 'px-0 sm:px-0 lg:px-0 py-12 sm:py-16 lg:py-20',
                 wrapper: 'mx-auto max-w-5xl'
             }">
-            <div class="border-default rounded-lg border p-6 sm:p-8 lg:p-10">
-                <div class="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+            <div
+                class="border-default bg-elevated/55 rounded-lg border p-6 shadow-sm backdrop-blur sm:p-8 lg:p-10">
+                <div class="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
                     <div>
                         <p class="text-secondary text-xs font-semibold tracking-[0.28em] uppercase">
                             {{ t("pages.homePage.seminarAbout.eyebrow") }}
                         </p>
 
                         <h2
-                            class="text-highlighted mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
+                            class="text-highlighted mt-4 text-3xl leading-tight font-semibold text-pretty sm:text-4xl lg:text-5xl">
                             {{ t("pages.homePage.seminarAbout.title") }}
                         </h2>
                     </div>
 
-                    <div class="border-default space-y-5 lg:border-l lg:pl-8">
-                        <p class="text-muted text-lg leading-8">
+                    <div class="border-default space-y-5 lg:border-l lg:pl-10">
+                        <p class="text-muted text-base leading-7 sm:text-lg sm:leading-8">
                             {{ t("pages.homePage.seminarAbout.intro") }}
                         </p>
 
-                        <p class="text-muted leading-8">
+                        <p class="text-muted leading-7 sm:leading-8">
                             {{ t("pages.homePage.seminarAbout.closing") }}
                         </p>
                     </div>
@@ -221,34 +223,35 @@ useSeoMeta({
             </div>
         </UPageSection>
 
-        <UContainer>
-            <LandingTakeaways />
-        </UContainer>
+        <LandingTakeaways />
 
         <UPageSection
             :title="t('pages.homePage.stepper.title')"
+            class="border-default bg-elevated/45 mt-10 rounded-lg border shadow-sm backdrop-blur sm:mt-12 lg:mt-14"
             :ui="{
-                container: 'py-12 sm:py-16 lg:py-20',
-                wrapper: 'mx-auto max-w-5xl',
+                container: 'py-8 sm:py-10 lg:py-12',
+                wrapper: 'mx-auto max-w-2xl',
                 header: 'text-center',
-                title: 'text-4xl sm:text-5xl',
-                body: 'mt-10 space-y-8'
+                title: 'font-heading text-highlighted text-3xl font-semibold leading-tight text-pretty sm:text-4xl lg:text-5xl',
+                body: 'mt-8 space-y-6 sm:space-y-8'
             }">
-            <div class="mx-auto max-w-4xl">
+            <div
+                class="border-default bg-muted/30 mx-auto max-w-4xl rounded-lg border p-4 sm:p-6 lg:p-8">
                 <UStepper
                     :items="contentMethodSteps"
                     :ui="{
                         root: 'w-full',
+                        header: 'gap-2 sm:gap-4',
+                        trigger: 'bg-elevated ring ring-primary/20',
+                        separator: 'bg-accented',
                         item: 'text-center',
-                        title: 'text-highlighted text-sm font-semibold',
-                        description: 'text-muted text-sm leading-5'
+                        title: 'text-highlighted text-xs font-semibold sm:text-sm',
+                        description: 'text-muted text-xs leading-5 sm:text-sm'
                     }" />
             </div>
 
             <div class="space-y-4">
-                <LandingPageCard
-                    :title="t('pages.homePage.contentMethods.methods.title')"
-                    class="bg-elevated/70">
+                <LandingPageCard :title="t('pages.homePage.contentMethods.methods.title')">
                     <LandingFeatureList
                         :items="methodIncludesItems"
                         compact />
@@ -264,15 +267,17 @@ useSeoMeta({
         <LandingPageSection
             :title="t('pages.homePage.stepper.title')"
             orientation="horizontal"
-            reverse>
-            <ol class="mx-auto flex h-full max-w-[420px] flex-col justify-center gap-8">
+            reverse
+            class="border-default bg-elevated/45 mt-10 rounded-lg border shadow-sm backdrop-blur sm:mt-12 lg:mt-14">
+            <ol
+                class="border-default bg-muted/30 mx-auto flex h-full max-w-[440px] flex-col justify-center gap-8 rounded-lg border p-5 sm:p-6">
                 <li
                     v-for="(item, index) in contentMethodSteps"
                     :key="item.title"
                     class="relative flex gap-4">
                     <div
                         v-if="index !== contentMethodSteps.length - 1"
-                        class="bg-border absolute top-10 left-5 h-[calc(100%+2rem)] w-px" />
+                        class="bg-accented absolute top-10 left-5 h-[calc(100%+2rem)] w-px" />
 
                     <div
                         class="bg-primary/15 text-primary ring-primary/20 z-10 flex size-10 shrink-0 items-center justify-center rounded-full ring-1">
@@ -295,9 +300,7 @@ useSeoMeta({
 
             <template #body>
                 <div class="flex h-full flex-col justify-center gap-4">
-                    <LandingPageCard
-                        :title="t('pages.homePage.contentMethods.methods.title')"
-                        class="bg-elevated/70">
+                    <LandingPageCard :title="t('pages.homePage.contentMethods.methods.title')">
                         <LandingFeatureList
                             :items="methodIncludesItems"
                             compact />
@@ -314,34 +317,19 @@ useSeoMeta({
         </LandingPageSection>
 
         <UPageSection
-            class="m-0 p-0"
-            :ui="{container: 'p-0 m-0'}">
-            <div class="border-default bg-elevated/75 rounded-lg border p-5 sm:p-6 lg:p-8">
-                <div class="grid gap-4 sm:grid-cols-5">
-                    <div
-                        v-for="item in infoItems"
-                        :key="item.title"
-                        class="border-default rounded-lg border bg-white/55 p-4 dark:bg-white/5">
-                        <div
-                            class="bg-primary/10 text-primary ring-primary/15 flex size-9 items-center justify-center rounded-md ring-1">
-                            <UIcon
-                                :name="item.icon"
-                                class="text-primary size-6" />
-                        </div>
-                        <h3 class="text-highlighted mt-4 text-lg font-semibold">
-                            {{ item.title }}
-                        </h3>
-                        <p class="text-muted mt-2 text-sm leading-6">
-                            {{ item.description }}
-                        </p>
-                    </div>
-                </div>
+            :ui="{
+                container: 'px-0 sm:px-0 lg:px-0 py-12 sm:py-16 lg:py-20',
+                wrapper: 'mx-auto max-w-6xl'
+            }">
+            <div
+                class="border-default bg-elevated/55 rounded-lg border p-5 shadow-sm backdrop-blur sm:p-6 lg:p-8">
+                <LandingInfoGrid :items="infoItems" />
 
-                <div class="border-default mt-6 flex gap-3 border-t pt-5">
+                <div class="border-default mt-6 flex gap-3 border-t pt-5 sm:mt-8 sm:pt-6">
                     <UIcon
                         name="i-lucide-info"
                         class="text-primary mt-1 size-5 shrink-0" />
-                    <p class="text-muted leading-7">
+                    <p class="text-muted text-sm leading-6 sm:text-base sm:leading-7">
                         {{ t("pages.homePage.organization.note") }}
                     </p>
                 </div>
@@ -351,22 +339,39 @@ useSeoMeta({
         <UPageSection
             title="Seminar Dates"
             :links="seminarScheduleLinks"
-            :ui="{wrapper: 'flex flex-col gap-8'}">
+            class="border-default bg-elevated/45 rounded-lg border shadow-sm backdrop-blur"
+            :ui="{
+                container: 'py-8 sm:py-10 lg:py-12',
+                wrapper: 'mx-auto max-w-2xl text-center',
+                header: 'text-center',
+                title: 'font-heading text-highlighted text-3xl font-semibold leading-tight text-pretty sm:text-4xl',
+                body: 'mt-8',
+                footer: 'mt-8',
+                links: 'justify-center gap-3'
+            }">
             <template #body>
-                <UPageGrid>
-                    <UPageCard
+                <div class="grid gap-4 sm:grid-cols-3">
+                    <div
                         v-for="(card, index) in seminarSchedule"
                         :key="index"
-                        v-bind="card"
-                        :ui="{
-                            wrapper: 'flex flex-col flex-none items-center text-center',
-                            leading: 'flex flex-row justify-center w-full',
-                            leadingIcon: 'size-12 text-secondary',
-                            body: 'flex flex-col gap-2 justify-center text-center',
-                            title: 'whitespace-pre-line text-3xl font-semibold',
-                            description: 'whitespace-pre-line text-muted'
-                        }" />
-                </UPageGrid>
+                        class="border-default bg-muted/30 flex h-full flex-col items-center rounded-lg border p-5 text-center sm:p-6">
+                        <div
+                            class="bg-secondary/10 text-secondary ring-secondary/20 flex size-12 items-center justify-center rounded-lg ring-1">
+                            <UIcon
+                                :name="card.icon"
+                                class="size-6" />
+                        </div>
+
+                        <h3
+                            class="text-highlighted mt-4 text-2xl leading-tight font-semibold whitespace-pre-line">
+                            {{ card.title }}
+                        </h3>
+
+                        <p class="text-muted mt-3 text-sm leading-6 whitespace-pre-line">
+                            {{ card.description }}
+                        </p>
+                    </div>
+                </div>
             </template>
         </UPageSection>
 
@@ -374,9 +379,10 @@ useSeoMeta({
             :eyebrow="t('pages.homePage.participants.eyebrow')"
             :title="t('pages.homePage.participants.title')"
             orientation="horizontal"
-            reverse>
+            reverse
+            class="border-default bg-elevated/45 mt-10 rounded-lg border shadow-sm backdrop-blur sm:mt-12 lg:mt-14">
             <template #description>
-                <p class="text-muted leading-8">
+                <p class="text-muted leading-7 sm:text-lg sm:leading-8">
                     {{ t("pages.homePage.participants.description") }}
                 </p>
             </template>
@@ -384,53 +390,59 @@ useSeoMeta({
             <template #body>
                 <div class="space-y-6">
                     <LandingFeatureList :items="participantItems" />
-                    <p class="text-muted leading-8">
+                    <p class="text-muted leading-7 sm:leading-8">
                         {{ t("pages.homePage.participants.closing") }}
                     </p>
                 </div>
             </template>
 
-            <div class="border-default bg-muted/40 overflow-hidden rounded-lg border">
+            <div class="mx-auto w-full max-w-md">
                 <NuxtImg
                     :src="processImage"
                     :alt="t('pages.homePage.participants.imageAlt')"
-                    width="960"
-                    height="720"
-                    sizes="100vw sm:100vw lg:50vw"
-                    class="aspect-[4/3] w-full object-cover" />
+                    width="800"
+                    height="1000"
+                    sizes="100vw sm:100vw lg:40vw"
+                    class="aspect-[4/5] w-full rounded-lg object-cover" />
             </div>
         </LandingPageSection>
 
-        <UPageSection
-            :headline="t('pages.homePage.whyDahab.eyebrow')"
+        <LandingPageSection
+            :eyebrow="t('pages.homePage.whyDahab.eyebrow')"
             :title="t('pages.homePage.whyDahab.title')"
-            :description="t('pages.homePage.whyDahab.description')"
             orientation="horizontal"
-            :ui="{
-                description: 'whitespace-pre-line '
-            }">
-            <NuxtImg
-                :src="placeImage"
-                :alt="t('pages.homePage.whyDahab.imageAlt')"
-                width="960"
-                height="540"
-                sizes="100vw sm:100vw lg:45vw"
-                class="aspect-[16/9] w-full object-cover" />
-        </UPageSection>
+            class="border-default bg-elevated/45 mt-10 rounded-lg border shadow-sm backdrop-blur sm:mt-12 lg:mt-14">
+            <template #description>
+                <p class="text-muted leading-7 whitespace-pre-line sm:text-lg sm:leading-8">
+                    {{ t("pages.homePage.whyDahab.description") }}
+                </p>
+            </template>
+
+            <div class="mx-auto w-full max-w-md">
+                <NuxtImg
+                    :src="placeImage"
+                    :alt="t('pages.homePage.whyDahab.imageAlt')"
+                    width="800"
+                    height="1000"
+                    sizes="100vw sm:100vw lg:40vw"
+                    class="aspect-[4/5] w-full rounded-lg object-cover" />
+            </div>
+        </LandingPageSection>
 
         <UPageSection
             :title="t('pages.homePage.cta.title')"
             :description="t('pages.homePage.cta.description')"
             :action-label="t('pages.homePage.cta.action')"
             :links="contactCta"
-            class="bg-muted/50"
+            class="border-default bg-elevated/55 mt-10 rounded-lg border shadow-sm backdrop-blur sm:mt-12 lg:mt-14"
             icon="i-lucide-waves"
             :ui="{
                 container: 'py-12 sm:py-14 lg:py-16',
                 wrapper: 'mx-auto max-w-2xl',
-                title: 'font-heading text-highlighted text-center text-2xl font-semibold tracking-tight sm:text-3xl',
+                title: 'font-heading text-highlighted text-center text-2xl leading-tight font-semibold sm:text-3xl',
                 description: 'text-muted mx-auto mt-3 max-w-xl text-center leading-7',
-                leadingIcon: 'text-secondary size-9 opacity-70'
+                leadingIcon: 'text-secondary size-9 opacity-80',
+                links: 'justify-center'
             }" />
     </div>
 </template>

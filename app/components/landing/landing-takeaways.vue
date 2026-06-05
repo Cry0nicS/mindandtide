@@ -43,27 +43,25 @@ const takeawayItems = computed(() => {
         :title="t('pages.homePage.takeaways.title')"
         :description="t('pages.homePage.takeaways.description')"
         :ui="{
-            wrapper: 'text-center',
-            headline: 'font-semibold uppercase tracking-[0.28em] text-secondary',
-            title: 'mx-auto max-w-2xl text-4xl text-highlighted sm:text-5xl',
-            description: 'mx-auto max-w-2xl text-muted'
+            container: 'py-8 sm:py-10 lg:py-12',
+            wrapper: 'mx-auto max-w-2xl text-center',
+            headline: 'text-secondary text-xs font-semibold uppercase tracking-[0.26em]',
+            title: 'font-heading mx-auto max-w-2xl text-3xl font-semibold leading-tight text-highlighted sm:text-4xl lg:text-5xl',
+            description: 'mx-auto max-w-2xl text-muted leading-7 sm:text-lg sm:leading-8',
+            body: 'mt-8'
         }"
-        class="border-default w-full rounded-lg border text-center">
-        <UPageCard
-            variant="ghost"
-            :ui="{
-                body: 'p-5 sm:p-8 lg:p-10'
-            }">
+        class="border-default bg-elevated/55 w-full rounded-lg border text-center shadow-sm backdrop-blur">
+        <div class="space-y-5 sm:space-y-6">
             <div class="grid gap-4 sm:grid-cols-2">
                 <div
                     v-for="item in takeawayItems"
                     :key="item.title"
-                    class="border-default flex gap-4 rounded-lg border bg-white/60 p-4 text-left dark:bg-white/5">
+                    class="border-default bg-muted/35 flex gap-4 rounded-lg border p-4 text-left sm:p-5">
                     <div
-                        class="bg-primary/10 text-primary flex size-12 shrink-0 items-center justify-center rounded-md">
+                        class="bg-primary/10 text-primary ring-primary/20 flex size-11 shrink-0 items-center justify-center rounded-lg ring-1">
                         <UIcon
                             :name="item.icon"
-                            class="size-6"
+                            class="size-5"
                             aria-hidden="true" />
                     </div>
 
@@ -80,12 +78,12 @@ const takeawayItems = computed(() => {
             </div>
 
             <div
-                class="border-default mt-6 flex flex-col gap-4 rounded-lg border bg-white/70 p-5 text-left sm:flex-row sm:items-center sm:p-6 dark:bg-white/5">
+                class="border-primary/20 bg-primary/10 flex flex-col gap-4 rounded-lg border p-5 text-left sm:flex-row sm:items-center sm:p-6">
                 <div
-                    class="bg-primary text-inverted flex size-12 shrink-0 items-center justify-center rounded-full">
+                    class="bg-primary text-inverted flex size-11 shrink-0 items-center justify-center rounded-full">
                     <UIcon
                         name="i-lucide-quote"
-                        class="size-6"
+                        class="size-5"
                         aria-hidden="true" />
                 </div>
 
@@ -93,6 +91,6 @@ const takeawayItems = computed(() => {
                     {{ t("pages.homePage.takeaways.quote") }}
                 </p>
             </div>
-        </UPageCard>
+        </div>
     </UPageSection>
 </template>

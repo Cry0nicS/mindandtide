@@ -20,5 +20,5 @@ const props = withDefaults(defineProps<Props>(), {
         :description="props.description"
         orientation="horizontal"
         :reverse="props.reverse"
-        class="bg-elevated/70 shadow-none" />
+        class="h-full" />
 </template>
