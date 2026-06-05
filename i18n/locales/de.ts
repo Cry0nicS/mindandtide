@@ -11,377 +11,491 @@ export default {
         accept: "Verstanden"
     },
     pages: {
-        home: "Seminare",
+        home: "Startseite",
         privacy: "Datenschutz",
         imprint: "Impressum",
         contact: "Kontakt",
+        seminars: "Seminare",
+        retreats: "Retreats",
         program: "Programm",
         aboutUs: "Über uns",
+        indexPage: {
+            seo: {
+                title: "Lernen und Retreats im Südsinai | Blue Desert",
+                description:
+                    "Blue Desert bietet erfahrungsorientierte Seminare in Dahab und erholsame Retreats in Nuweibaa für nachhaltige Balance, Klarheit und Regeneration."
+            },
+            hero: {
+                eyebrow: "Blue Desert",
+                title: "Lernen, Erholung und Veränderung am Roten Meer",
+                subheadline: "Zwei Wege, um unter Druck wieder mehr Raum zu finden",
+                supportingText:
+                    "Blue Desert verbindet strukturiertes Lernen, verkörperte Praxis und die ruhigen Landschaften des Südsinai.",
+                meta: "Dahab und Nuweibaa, Ägypten",
+                imageAlt:
+                    "Weite Wüstenlandschaft im Südsinai mit warmem Licht und offenem Horizont",
+                seminarsAction: "Seminare entdecken",
+                retreatsAction: "Retreats entdecken"
+            },
+            story: {
+                eyebrow: "Die gemeinsame Idee",
+                title: "Ein ortsbezogener Ansatz für nachhaltige Balance",
+                description:
+                    "Blue Desert entsteht aus einer einfachen Überzeugung: Bedeutende Veränderung braucht mehr als Information. Sie braucht Zeit, Praxis, Aufmerksamkeit und eine Umgebung, in der das Nervensystem genug zur Ruhe kommt, um wirklich zu lernen.",
+                items: {
+                    place: {
+                        title: "Lernen mit dem Ort",
+                        description:
+                            "Rotes Meer, Wüste und Berge sind Teil der Erfahrung und schaffen Raum für Aufmerksamkeit, Reflexion und Erholung."
+                    },
+                    practice: {
+                        title: "Erfahrung vor Theorie",
+                        description:
+                            "Methoden werden durch direkte Erfahrung, angeleitete Reflexion und einfache Praktiken erforscht, die sich in den Alltag übertragen lassen."
+                    },
+                    transfer: {
+                        title: "Veränderung, die mitreist",
+                        description:
+                            "Beide Formate unterstützen dabei, aus Erkenntnissen realistische Routinen, Entscheidungen und neue Reaktionsweisen unter Druck zu entwickeln."
+                    }
+                }
+            },
+            pathways: {
+                eyebrow: "Wähle deinen Weg",
+                title: "Seminar oder Retreat",
+                description:
+                    "Das Seminar ist ein fokussiertes Lernformat. Das Retreat ist eine tiefere Pause zur Regeneration. Beide Formate teilen dieselbe Sorgfalt für Ort, Praxis und nachhaltigen Transfer.",
+                seminars: {
+                    eyebrow: "Strukturiertes Lernen",
+                    title: "Seminare in Dahab",
+                    description:
+                        "Ein fünftägiges Seminar für Menschen, die praktische Stressregulation, Resilienz und transferorientiertes Lernen in einer kleinen Gruppe suchen.",
+                    meta: "Dahab, Ägypten",
+                    action: "Mehr über Seminare",
+                    imageAlt: "Ruhige Strandlandschaft mit Palmen und klarem Wasser nahe Dahab"
+                },
+                retreats: {
+                    eyebrow: "Erholsame Vertiefung",
+                    title: "Retreats in Nuweibaa",
+                    description:
+                        "Ein langsameres Retreatformat für Menschen, die Abstand gewinnen, Kapazität regenerieren und sich mit Körper, Atem, Meer und Wüste verbinden möchten.",
+                    meta: "Nuweibaa, Ägypten",
+                    action: "Mehr über Retreats",
+                    imageAlt: "Klares Wasser und offenes Meer in Ägypten"
+                }
+            },
+            bridge: {
+                eyebrow: "Wie beides zusammenhängt",
+                title: "Unterschiedliche Formate, eine Philosophie",
+                description:
+                    "Das Seminar beginnt bei den Anforderungen des beruflichen Alltags und entwickelt praktische Werkzeuge dafür. Das Retreat beginnt mit Weite und Regeneration und begleitet von dort aus Reflexion, Regulation und Wiederverbindung." +
+                    "\n\nBeide Formate sind bewusst klein, erfahrungsorientiert und in den Landschaften des Südsinai verankert. Du kannst das Format wählen, das zu deiner aktuellen Lebensphase passt.",
+                imageAlt: "Ruhiges Wasser des Roten Meeres und Küste als Bild für Retreat und Weite"
+            },
+            cta: {
+                title: "Du bist unsicher, welches Format passt?",
+                description:
+                    "Erzähl uns, wonach du suchst, und wir unterstützen dich dabei, den passenden nächsten Schritt zu finden.",
+                action: "Kontakt aufnehmen"
+            }
+        },
         homePage: {
             seo: {
                 title: "Resilienzseminar am Meer | Blue Desert",
                 description:
-                    "Ein ruhiges, erfahrungsorientiertes Seminar in Dahab für Resilienz, Stressbewältigung und neue Handlungsspielräume im beruflichen Alltag."
+                    "Ein ruhiges, erfahrungsorientiertes Seminar in Dahab für Resilienz, Stressregulation und neue Handlungsfähigkeit im Berufsleben."
             },
             hero: {
-                eyebrow: "Blue Desert Seminar",
-                title: "Resilienz und Stressbewältigung im beruflichen Alltag",
-                subheadline: "Erleben. Verstehen. Stärken.",
+                eyebrow: "Unsere Seminare",
+                title: "Nachhaltige Balance unter Druck finden",
+                subheadline: "Stress zähmen. Muster durchbrechen. Klarheit zurückgewinnen",
                 supportingText:
-                    "Ein Seminar mit erfahrungsorientierten Methoden in Dahab, Ägypten.",
+                    "Ein fünftägiges Seminar zur Stressregulation in einer erholsamen Umgebung am Meer",
                 meta: "Dahab, Ägypten",
-                imageAlt: "Ruhige Meeresküste mit Bergen im Hintergrund bei Dahab in Ägypten"
-            },
-            intro: {
-                eyebrow: "Worum es im Seminar geht",
-                title: "Klarheit gewinnen. Handlungsspielräume erweitern.",
-                paragraphs: {
-                    first: "Beruflicher Alltag bedeutet häufig hohe Anforderungen, ständige Erreichbarkeit und komplexe Entscheidungen. Auf Dauer zehrt das an Kraft, Konzentration und innerer Balance.",
-                    second: "Dieses Seminar lädt Sie ein, einen Schritt herauszutreten, an einen Ort, der Weite schafft: Dahab am Roten Meer.",
-                    third: "Mit erfahrungsorientierten Methoden stärken Sie Ihre Resilienz, lernen Stressmuster zu erkennen und entwickeln wirksame Strategien für mehr Gelassenheit und Klarheit.",
-                    fourth: "Sie verbinden Reflexion, praktische Übungen und Austausch in einer kleinen Gruppe mit der Kraft der Natur."
-                },
-                features: {
-                    experiential: {
-                        title: "Erfahrungsorientiert",
-                        description: "Lernen durch Erleben, Spüren und Reflektieren."
-                    },
-                    holistic: {
-                        title: "Ganzheitlich",
-                        description: "Körper, Geist und Emotionen miteinander in Balance bringen."
-                    },
-                    personal: {
-                        title: "Persönlich & wertschätzend",
-                        description: "Kleine Gruppe, geschützter Raum, individuelle Begleitung."
-                    },
-                    nature: {
-                        title: "Inspiriert von der Natur",
-                        description: "Die Weite der Wüste und des Meeres als Kraftquelle nutzen."
-                    }
-                }
-            },
-            writerSummary: {
-                eyebrow: "Lernansatz",
-                title: "Erfahrungsbasierte Methoden und ortsbezogenes Lernen zwischen Meer und Wüste",
-                text: "Ein fünftägiges Seminar nahe Dahab, das Resilienz stärkt, Stressregulation unterstützt und nachhaltige Balance im beruflichen Leben aktiviert. Durch strukturiertes Lernen, angeleitete Praxis und Zeit für Reflexion beziehen die Teilnehmenden Geist und Körper ein und entwickeln Fähigkeiten, die langfristiges persönliches und berufliches Wachstum unterstützen.",
-                highlights: {
-                    place: {
-                        title: "Lernen mit dem Ort",
-                        description:
-                            "Meer, Wüste und ruhige Umgebung unterstützen Aufmerksamkeit und Erholung aktiv."
-                    },
-                    method: {
-                        title: "Angeleitete Praxis",
-                        description:
-                            "Konzepte werden mit Körper, Atem, Wahrnehmung und Reflexion verbunden."
-                    },
-                    transfer: {
-                        title: "Transfer in den Beruf",
-                        description:
-                            "Jeder Schritt wird auf berufliche Routinen und Entscheidungen zurückbezogen."
-                    }
-                }
+                imageAlt: "Ruhige Küste mit Bergen im Hintergrund nahe Dahab in Ägypten"
             },
             seminarAbout: {
-                title: "Worum es im Seminar geht",
-                description:
-                    "Berufliches Leben findet heute häufig unter Bedingungen von dauerhaftem Druck, kognitiver Überlastung und unzureichender Erholung statt. Dieses Seminar schafft einen strukturierten Lernraum, in dem Teilnehmende Stress klarer erkunden, Selbstwahrnehmung vertiefen und praktische Strategien für Regulation, Resilienz und Balance entwickeln. Das Besondere ist der ortsbezogene Lernansatz. Dahab ist nicht nur der Ort des Seminars, sondern Teil der Methode selbst: Eine Umgebung, in der Meer, Wüste, Weite und reduzierte Reizdichte Aufmerksamkeit, Reflexion und eine tiefere Auseinandersetzung mit Stress und Erholung unterstützen."
+                eyebrow: "Der Ausgangspunkt",
+                title: "Vom Problem zur Möglichkeit",
+                intro: "Berufliches Leben steht heute oft unter dauerhaftem Druck. Wachsende Unsicherheit, zunehmende Sorgeverantwortung und ein beschleunigter Alltag können zu mentaler Überlastung führen und echte Erholung erschweren.",
+                closing:
+                    "Das Seminar schafft Raum, um zu verstehen, wie Stress durch individuelle Gewohnheiten, Umfelder und tägliche Anforderungen geprägt wird, und um praktische Strategien zu entwickeln, die du in dein persönliches und berufliches Leben integrieren kannst."
             },
             takeaways: {
-                headline: "Ziele des Seminars",
-                title: "Was Sie mitnehmen",
-                description:
-                    "Am Ende des Seminars verfügen Sie über konkrete Werkzeuge und neue Perspektiven, die Sie direkt in Ihrem Alltag anwenden können.",
+                headline: "Unser Ansatz",
+                title: "Was macht dieses Seminar besonders?",
+                description: "Textplatzhalter",
                 items: {
                     clarity: {
-                        title: "Klarheit im Denken",
-                        description: "Sie gewinnen Struktur und Entscheidungssicherheit."
+                        title: "Erfahrungsbasiertes Lernen",
+                        description:
+                            "Anstatt nur mit abstrakten Konzepten zu arbeiten, beginnt das Seminar bei der eigenen Erfahrung. Durch angeleitete Übungen, Beobachtung und Reflexion erkundest du, wie Stress in deinem Leben sichtbar wird, und entwickelst Erkenntnisse, die persönlich bedeutsam und relevant sind."
                     },
                     stress: {
-                        title: "Stresskompetenz",
-                        description: "Sie lernen, mit Druck gelassener umzugehen."
+                        title: "Begleitete Erkundung",
+                        description:
+                            "Es gibt nicht die eine Lösung, die für alle passt. Du lernst verschiedene körper-, atem-, wahrnehmungs- und reflexionsbasierte Ansätze kennen und findest heraus, welche Methoden zu deiner Situation, Persönlichkeit und beruflichen Realität passen."
                     },
                     resilience: {
-                        title: "Resilienz stärken",
-                        description: "Sie bauen innere Stärke und Anpassungsfähigkeit auf."
+                        title: "Eine ganzheitliche Perspektive",
+                        description:
+                            "Stress betrifft nicht nur den Kopf. Das Seminar betrachtet das Zusammenspiel von Körper, Geist, Emotionen und Umgebung und schafft ein breiteres Verständnis von Resilienz und nachhaltigem Wohlbefinden."
                     },
                     routines: {
-                        title: "Gesunde Routinen",
-                        description: "Sie entwickeln alltagstaugliche Gewohnheiten."
+                        title: "Lernen mit dem Ort",
+                        description:
+                            "Wo wir lernen, macht einen Unterschied. Das Seminar findet bewusst in Dahab statt. Meer, Wüste und Berge sind nicht nur Kulisse, sondern werden in den Lernprozess einbezogen. Einfachheit, weniger Ablenkung und ein langsamerer Rhythmus schaffen Raum für Reflexion, Aufmerksamkeit und Erholung."
                     },
                     balance: {
-                        title: "Energie und Balance",
-                        description: "Sie finden zurück zu mehr Energie und Lebensfreude."
+                        title: "Kleine Gruppe",
+                        description:
+                            "Mit einer begrenzten Teilnehmendenzahl bietet das Seminar Raum für echten Austausch, persönliches Feedback und individuelle Begleitung während des gesamten Lernprozesses."
                     },
                     impact: {
-                        title: "Nachhaltige Wirkung",
-                        description: "Sie integrieren Veränderungen, die bleiben."
-                    }
-                },
-                quote: "Wissen verstehen, erleben und in den Alltag integrieren, für nachhaltige Veränderung."
-            },
-            process: {
-                eyebrow: "Ablauf & Inhalte",
-                title: "Praxisnah. Tiefgehend. Nachhaltig.",
-                description:
-                    "Das Seminar kombiniert Input, Interaktion und Erfahrung. Sie arbeiten praxisnah an Ihren Themen und wenden das Gelernte direkt an.",
-                imageAlt: "Kleine Seminargruppe sitzt im Kreis am Strand und arbeitet gemeinsam",
-                items: {
-                    selfKnowledge: {
-                        title: "Selbsterkenntnis",
-                        description: "Stressoren erkennen und innere Muster verstehen"
-                    },
-                    resources: {
-                        title: "Ressourcenarbeit",
-                        description: "Eigene Kraftquellen aktivieren"
-                    },
-                    methods: {
-                        title: "Methodenkompetenz",
-                        description: "Atem, Achtsamkeit und kognitive Tools"
-                    },
-                    resilience: {
-                        title: "Resilienz stärken",
-                        description: "Umgang mit Druck, Veränderung und Unsicherheit"
-                    },
-                    transfer: {
                         title: "Transfer in den Alltag",
-                        description: "Konkrete Strategien für Ihren Berufsalltag"
+                        description:
+                            "Das Ziel ist nicht, dem täglichen Druck zu entfliehen, sondern ihm anders zu begegnen. Du entwickelst realistische Strategien, die du auch lange nach dem Seminar an deinen beruflichen und persönlichen Kontext anpassen kannst."
                     }
                 },
-                closing:
-                    "Zwischen den Einheiten bleibt Zeit für Reflexion, Austausch, Bewegung, Meer und Stille."
+                quote: "Verstehen, erleben und Wissen in den Alltag integrieren, für nachhaltige Veränderung."
+            },
+            stepper: {
+                title: "Was dich erwartet",
+                understand: {
+                    title: "Stress verstehen",
+                    description:
+                        "Du erkennst, wie Druck entsteht und wie dein eigenes System in beruflichen Situationen darauf reagiert."
+                },
+                experience: {
+                    title: "Regulation üben",
+                    description:
+                        "Angeleitete Methoden machen Regulation über Körper, Atem, Wahrnehmung und Reflexion erfahrbar."
+                },
+                transfer: {
+                    title: "Veränderung verankern",
+                    description:
+                        "Du übersetzt Erkenntnisse in realistische Routinen, Entscheidungen und Erholungsstrategien."
+                }
             },
             contentMethods: {
-                eyebrow: "Inhalte, Methoden und Struktur",
-                title: "Konzeptuelle Klarheit. Angeleitete Erfahrung. Praktischer Transfer.",
-                description:
-                    "Das Seminar folgt einem sorgfältig strukturierten Lernprozess, der konzeptuelles Verstehen, angeleitete Erfahrung, Reflexion und Transfer in das berufliche Leben verbindet. Über fünf thematische Tage arbeiten die Teilnehmenden mit körperbasierten, atembasierten, wahrnehmungsorientierten und reflexiven Methoden, die fachlich fundiert und praktisch anwendbar sind.",
-                steps: {
-                    understand: {
-                        title: "Stress verstehen",
-                        description:
-                            "Sie ordnen ein, wie Druck entsteht und wie Ihr eigenes System in beruflichen Situationen reagiert."
-                    },
-                    experience: {
-                        title: "Regulation üben",
-                        description:
-                            "Angeleitete Methoden machen Regulation über Körper, Atem, Wahrnehmung und Reflexion erfahrbar."
-                    },
-                    transfer: {
-                        title: "Veränderung verankern",
-                        description:
-                            "Sie übersetzen Erkenntnisse in realistische Routinen, Entscheidungen und Erholungsstrategien."
-                    }
-                },
-                content: {
-                    title: "Inhalte",
-                    items: {
-                        stressDevelopment: "Stressentstehung und Stressverarbeitung",
-                        nervousSystem: "Stress, Nervensystem und körperliche Reaktionen",
-                        personalPatterns: "Individuelle Stressmuster in beruflichen Kontexten",
-                        environment: "Umwelt- und Kontextdimensionen von Regulation",
-                        transfer: "Transfer in den beruflichen Alltag"
-                    }
-                },
                 methods: {
-                    title: "Methoden",
+                    title: "Methoden im Seminar",
                     items: {
                         reflection: "Angeleitete Reflexion und transferorientierte Übungen",
-                        body: "Körperbasierte Stressregulation, einschließlich TRE-Elementen",
-                        breath: "Atembasierte Regulationspraxis",
+                        body: "Körperbasierte Stressregulation, einschließlich TRE-basierter Elemente",
+                        breath: "Atembasierte Regulationspraktiken",
                         photography:
                             "Partizipative Fotografie und ressourcenorientierte Wahrnehmungsarbeit",
-                        floating: "Floating und wasserbasierte Körperregulation"
-                    }
-                }
-            },
-            schedule: {
-                title: "Zeitplan",
-                description:
-                    "Wochenplan: Der Ablauf ist über fünf Seminartage strukturiert und verbindet konzeptuellen Input, angeleitete Praxis, Reflexion und Transfer.",
-                columns: {
-                    time: "Zeit",
-                    monday: "Montag - Verstehen",
-                    tuesday: "Dienstag - Umwelt & Kontext",
-                    wednesday: "Mittwoch - Körper",
-                    thursday: "Donnerstag - Atmung & Integration",
-                    friday: "Freitag - Transfer & Anwendung"
-                },
-                rows: {
-                    row1: {
-                        time: "09:00 - 09:45",
-                        monday: "Begrüßung, Einführung und Ziele",
-                        tuesday:
-                            "Grundlagen: Wirkung maritimer Umgebungen auf Stress und Nervensystem",
-                        wednesday: "Grundlagen physiologischer Stressreaktionen",
-                        thursday: "Grundlagen atembasierter Stressregulation",
-                        friday: "Einführung: Selbstwahrnehmung und zeitliche Strukturierung von Stress"
-                    },
-                    row2: {
-                        time: "09:45 - 10:30",
-                        monday: "Grundlagen der Stressentstehung und -verarbeitung",
-                        tuesday: "Konsolidierung: Umwelt, Wahrnehmung und Stressregulation",
-                        wednesday: "Analyse und Wahrnehmung körperlicher Spannungsmuster",
-                        thursday: "Analyse von Atemmustern im Kontext von Stress",
-                        friday: "Angeleitete Praxis: Körperbasierte Stressregulation (TRE nach Dr. Berceli)"
-                    },
-                    row3: {
-                        time: "10:30 - 11:15",
-                        monday: "Individuelle Stressmuster im beruflichen Kontext",
-                        tuesday: "Analyse der Nutzung von Umweltfaktoren zur Stressregulation",
-                        wednesday: "Bewegung und Wahrnehmung im Kontext von Stressregulation",
-                        thursday:
-                            "Angeleitete Praxis: Atembasierte Regulation (Methode Marcus Blacker)",
-                        friday: "Vertiefung und Reflexion der Praxis (TRE nach Dr. Berceli)"
-                    },
-                    break1: {
-                        time: "11:15 - 11:30",
-                        monday: "Pause",
-                        tuesday: "Pause",
-                        wednesday: "Pause",
-                        thursday: "Pause",
-                        friday: "Pause"
-                    },
-                    row4: {
-                        time: "11:30 - 12:15",
-                        monday: "Einführung in Wahrnehmungs- und ressourcenorientierte Arbeit (Partizipative Fotografie)",
-                        tuesday: "Angeleitete Praxis: Körperregulation im Wasser (Floating)",
-                        wednesday:
-                            "Einführung in körperbasierte Regulationsmethoden (TRE nach Dr. Berceli)",
-                        thursday: "Einführung in Selbstreflexions- und Evaluationsmethoden",
-                        friday: "Entwicklung individueller Handlungsstrategien (SMART-Ziele)"
-                    },
-                    row5: {
-                        time: "12:15 - 13:00",
-                        monday: "Angeleitete Praxis: Partizipative Fotografie",
-                        tuesday: "Vertiefung der Praxis (Floating) und Reflexion",
-                        wednesday:
-                            "Angeleitete Praxis: Körperbasierte Stressregulation (TRE nach Dr. Berceli)",
-                        thursday: "Integration: Verknüpfung von Atem, Körper und Umwelt",
-                        friday: "Präzisierung und Feedback zu individuellen Transferstrategien"
-                    },
-                    break2: {
-                        time: "13:00 - 14:00",
-                        monday: "Mittag",
-                        tuesday: "Mittag",
-                        wednesday: "Mittag",
-                        thursday: "Mittag",
-                        friday: "Mittag"
-                    },
-                    row6: {
-                        time: "14:00 - 14:45",
-                        monday: "Reflexion und Transfer in das berufliche Leben",
-                        tuesday:
-                            "Reflexion von Erfahrungen mit naturbasierten Methoden und Transfer in das berufliche Leben",
-                        wednesday:
-                            "Reflexion körperbasierter Stressreaktionen und Transfer in das berufliche Leben",
-                        thursday:
-                            "Reflexion und Integration: Entwicklung individueller Strategien zur Stressregulation im beruflichen Leben",
-                        friday: "Selbstevaluation und nachhaltiger Transfer: Sicherung der Lernergebnisse"
-                    }
-                }
-            },
-            programEssentials: {
-                title: "Eckdaten auf einen Blick",
-                items: {
-                    duration: {
-                        title: "5-tägiges Seminar",
-                        description: "Ein kompaktes Lernformat über fünf thematische Seminartage"
-                    },
-                    units: {
-                        title: "6 Unterrichtseinheiten pro Tag",
-                        description: "Strukturierter Rhythmus aus Input, Praxis und Reflexion"
-                    },
-                    group: {
-                        title: "6-12 Teilnehmende",
-                        description:
-                            "Kleine Gruppe für fokussierten Austausch und individuelle Begleitung"
-                    },
-                    location: {
-                        title: "Dahab, Ägypten",
-                        description: "Lernen zwischen Rotem Meer und Wüste"
-                    },
-                    language: {
-                        title: "Seminarsprache",
-                        description: "Englisch"
-                    },
-                    materials: {
-                        title: "Zweisprachige Materialien",
-                        description: "Deutschsprachige Begleitmaterialien werden bereitgestellt"
-                    }
-                }
-            },
-            additionalGoals: {
-                eyebrow: "Transfer in den Berufsalltag",
-                title: "Vom Verstehen zur anwendbaren Praxis",
-                items: {
-                    models: "Zentrale Modelle der Stressentstehung verstehen",
-                    patterns: "Persönliche Stressmuster im beruflichen Leben erkennen",
-                    methods: "Körper-, Atem- und Wahrnehmungsmethoden anwenden",
-                    resources: "Bewusstsein für persönliche Ressourcen stärken",
-                    strategies: "Übertragbare Strategien für berufliche Situationen entwickeln",
-                    evaluation: "Lernprozesse reflektieren und Wirksamkeit einschätzen"
-                }
-            },
-            whyDahab: {
-                eyebrow: "Warum dieser Ort",
-                title: "Warum Dahab?",
-                imageAlt: "Weite Landschaft in warmem Licht als Symbol für Ruhe und Offenheit",
-                description:
-                    "Dahab bietet eine Lernumgebung, die im beruflichen Alltag nur schwer herzustellen ist. Die Verbindung aus maritimer Umgebung, Wüstenlandschaft, Weite und reduzierter Reizdichte unterstützt Konzentration, Reflexion und eine aufmerksamere Auseinandersetzung mit Wahrnehmung, Regulation und Erholung. In diesem Seminar ist der Ort keine ästhetische Kulisse. Er ist ein integraler Bestandteil des pädagogischen Konzepts."
-            },
-            team: {
-                title: "Team",
-                items: {
-                    silvia: {
-                        title: "Dr. Silvia-Lucretia Nicola",
-                        description: "Pädagogische und akademische Leitung"
-                    },
-                    marcus: {
-                        title: "Marcus Blacker",
-                        description: "Körper- und atembasierte Stressregulation"
-                    },
-                    ahmad: {
-                        title: "Ahmad Nemr",
-                        description: "Begleitung wasserbasierter Praxiseinheiten"
+                        floating: "Floating und wasserbasierte Einheiten zur Körperregulation"
                     }
                 }
             },
             download: {
                 label: "Programmübersicht als PDF herunterladen",
-                fileName: "blue-desert-seminar-programm.pdf"
+                fileName: "blue-desert-seminaruebersicht.pdf"
             },
             organization: {
-                eyebrow: "Rahmen & Organisatorisches",
-                title: "Alles Wichtige auf einen Blick",
                 items: {
                     date: {
-                        title: "Termin",
-                        description: "24. bis 31. Oktober 2025, 7 Seminartage"
+                        title: "5 Tage Seminar mit 6 Einheiten à 45 Minuten pro Tag",
+                        description:
+                            "Ein kompaktes Lernformat über fünf thematische Seminartage mit Input, Praxis und Reflexion."
                     },
                     place: {
-                        title: "Ort",
-                        description: "Dahab, Ägypten, am Roten Meer"
+                        title: "Ort: Dahab, Ägypten, am Roten Meer",
+                        description:
+                            "Bei Bedarf unterstützen wir dich gerne bei der Organisation von Flughafentransfers."
                     },
                     group: {
-                        title: "Gruppe",
+                        title: "6 bis 15 Teilnehmende",
                         description:
-                            "6 bis 12 Teilnehmerinnen, kleine Gruppe für intensiven Austausch"
+                            "Ein kleiner Gruppenrahmen ermöglicht fokussierten Austausch, persönliches Feedback und individuelle Aufmerksamkeit."
                     },
                     accommodation: {
-                        title: "Unterkunft",
-                        description: "Sorgfältig ausgewählte Unterkünfte in Meeresnähe"
+                        title: "Seminarsprache: Englisch",
+                        description:
+                            "Deutsch-englische zweisprachige Materialien werden während des gesamten Seminars bereitgestellt."
                     },
                     times: {
-                        title: "Seminarzeiten",
-                        description: "Vormittag und Nachmittag mit Pausen und Raum für Integration"
+                        title: "Seminargebühr: 695 €/Person",
+                        description:
+                            "Die Seminargebühr beinhaltet keine Unterkunft. Wir unterstützen dich gerne dabei, eine Unterkunft zu finden, die zu deinen Wünschen und deinem Budget passt."
                     }
                 },
-                note: "Anreise am Vortag und Abreise am Folgetag werden empfohlen. Flug, Transfer und Unterkunft sind nicht im Seminarpreis enthalten."
+                note: "Die Anreise am Vortag und die Abreise am Folgetag werden empfohlen. Flüge, Transfers und Unterkunft sind nicht in der Seminargebühr enthalten."
+            },
+            seminarSchedule: {
+                title: "Seminartermine",
+                items: {
+                    october2026: {
+                        title: "12-16\nOktober 2026",
+                        description: "Anmeldung geschlossen"
+                    },
+                    november2026: {
+                        title: "9-13\nNovember 2026",
+                        description: "Anmeldung geöffnet\nAnmeldeschluss: 10. Oktober 2026"
+                    },
+                    upcoming2027: {
+                        title: "2027",
+                        description: "Weitere Termine folgen"
+                    }
+                },
+                actions: {
+                    apply: "Jetzt anmelden",
+                    requestInformation: "Informationen anfragen"
+                }
+            },
+            participants: {
+                eyebrow: "Die Teilnehmenden",
+                title: "Für wen ist dieses Seminar geeignet?",
+                description: "Dieses Seminar kann gut zu dir passen, wenn du:",
+                imageAlt: "Ruhige Strandlandschaft mit Palmen, hellem Sand und blauem Wasser",
+                items: {
+                    demandingEnvironment: {
+                        title: "Anspruchsvolles berufliches Umfeld",
+                        description: "Du erlebst anhaltenden Druck oder eine hohe Arbeitsbelastung."
+                    },
+                    stressRegulation: {
+                        title: "Praktische Stressregulation",
+                        description:
+                            "Du suchst erfahrungsbasierte Ansätze, um Stress besser zu regulieren."
+                    },
+                    resilience: {
+                        title: "Resilienz und Erholung",
+                        description:
+                            "Du möchtest Resilienz, Regeneration und nachhaltige Balance stärken, bevor Stress überwältigend wird."
+                    },
+                    directExperience: {
+                        title: "Lernen durch Erfahrung",
+                        description:
+                            "Du interessierst dich für direkte Erfahrung, Reflexion und angeleitete Praxis."
+                    },
+                    naturalEnvironments: {
+                        title: "Verbundenheit mit Natur",
+                        description:
+                            "Du fühlst dich mit natürlichen Umgebungen verbunden und erlebst, dass die Nähe zum Meer dein Wohlbefinden und deine Klarheit unterstützt."
+                    },
+                    placeBasedLearning: {
+                        title: "Ortsbezogenes Lernen",
+                        description:
+                            "Du bist neugierig darauf, welche Rolle Umgebung für Aufmerksamkeit, Erholung und persönliche Entwicklung spielen kann."
+                    }
+                },
+                closing:
+                    "Vorerfahrung mit Meditation, Atemarbeit oder ähnlichen Praktiken ist nicht erforderlich."
+            },
+            whyDahab: {
+                eyebrow: "Warum dieser Ort",
+                title: "Warum für ein Seminar nach Dahab reisen?",
+                imageAlt: "Offene Landschaft in warmem Licht, die Weite und Ruhe vermittelt",
+                description:
+                    "Eingebettet zwischen dem Roten Meer und den Bergen des Südsinai zieht Dahab seit Langem Menschen an, die Einfachheit, Naturverbundenheit und ein langsameres Lebenstempo suchen. Ursprünglich ein kleines Beduinen-Fischerdorf, hat sich der Ort trotz seiner Entwicklung zu einem internationalen Ziel für Taucher, Remote Worker und Reisende viel von seiner entspannten Atmosphäre bewahrt." +
+                    "\n\nMit ganzjährigem Sonnenschein, einer ruhigen Atmosphäre und dem Ruf, eines der sichersten und gastfreundlichsten Reiseziele der Region zu sein, bietet Dahab ein Umfeld, das Lernen und Erholung gleichermaßen unterstützt. Ob Zeit am Meer, Ausflüge in die Wüste, lokale Wellnessangebote oder bewusstes Verlangsamen: Teilnehmende finden viele Möglichkeiten, neben dem Seminar neue Kraft zu sammeln."
             },
             cta: {
-                title: "Sie haben Fragen oder möchten mehr erfahren?",
-                description: "Wir freuen uns auf Ihre Nachricht.",
+                title: "Hast du Fragen oder möchtest du mehr erfahren?",
+                description: "Wir freuen uns auf deine Nachricht.",
+                action: "Anfrage senden"
+            }
+        },
+        retreatsPage: {
+            seo: {
+                title: "Retreat in Nuweibaa, Ägypten | Blue Desert",
+                description:
+                    "Ein erholsames Blue Desert Retreat in Nuweibaa für Nervensystemregulation, Regeneration und Wiederverbindung am Roten Meer."
+            },
+            hero: {
+                eyebrow: "Unsere Retreats",
+                title: "Zurück in den eigenen Rhythmus in Nuweibaa",
+                subheadline: "Langsamer werden. Regulieren. Wieder verbinden",
+                supportingText:
+                    "Ein Retreat für Regeneration, Reflexion und verkörperte Praxis zwischen Meer, Wüste und Bergen",
+                meta: "Nuweibaa, Ägypten",
+                imageAlt:
+                    "Klares Wasser des Roten Meeres und offene Küste nahe Nuweibaa im Südsinai"
+            },
+            seminarAbout: {
+                eyebrow: "Die Einladung",
+                title: "Von Überlastung zu Weite",
+                intro: "Modernes Leben belohnt oft ständige Erreichbarkeit, Tempo und Leistung. Mit der Zeit kann es dadurch schwerer werden, wirklich tief zu ruhen, nach innen zu hören oder wahrzunehmen, was der Körper getragen hat.",
+                closing:
+                    "Das Retreat schafft eine geschützte Pause in Nuweibaa: Zeit, um anzukommen, dich wieder mit deinem eigenen Rhythmus zu verbinden und Praktiken zu erkunden, die nachhaltige Regeneration über die Tage am Meer hinaus unterstützen."
+            },
+            takeaways: {
+                headline: "Unser Ansatz",
+                title: "Was macht dieses Retreat besonders?",
+                description: "Textplatzhalter",
+                items: {
+                    clarity: {
+                        title: "Erholsames Tempo",
+                        description:
+                            "Das Retreat ist bewusst großzügig gestaltet. Die Tage verbinden angeleitete Praxis, stille Zeit, naturbasierte Reflexion und genügend Raum, um Erlebtes zu verarbeiten, ohne von einer Aktivität zur nächsten gedrängt zu werden."
+                    },
+                    stress: {
+                        title: "Sanfte Begleitung",
+                        description:
+                            "Du wirst durch körper-, atem-, wahrnehmungs- und reflexionsbasierte Methoden begleitet. Im Mittelpunkt steht nicht Leistung, sondern Wahrnehmen, Anpassen und Auswählen, was für dein Nervensystem hilfreich ist."
+                    },
+                    resilience: {
+                        title: "Körper und Umgebung",
+                        description:
+                            "Regeneration wird als Zusammenspiel von Körper, Geist, Emotionen und Umgebung verstanden. Meer, Wüste und Berge unterstützen ein spürbares Erleben von Weite, Einfachheit und Orientierung."
+                    },
+                    routines: {
+                        title: "Lernen mit Nuweibaa",
+                        description:
+                            "Nuweibaa hat einen ruhigeren Rhythmus als viele Reiseorte. Die offene Küste, die Stille der Wüste und das langsamere Tempo werden bewusst in die Retreat-Erfahrung einbezogen."
+                    },
+                    balance: {
+                        title: "Kleine Gruppe",
+                        description:
+                            "Eine begrenzte Gruppengröße schafft genug Nähe für echten Austausch und bewahrt zugleich die Privatsphäre und Ruhe, die viele Menschen in einem erholsamen Retreat brauchen."
+                    },
+                    impact: {
+                        title: "Integration nach der Rückkehr",
+                        description:
+                            "Das Retreat ist nicht als Flucht aus dem Alltag gedacht. Es unterstützt dich dabei zu erkennen, was dich regeneriert und wie kleine Praktiken in alltägliche Routinen zurückfinden können."
+                    }
+                },
+                quote: "Pausieren, lauschen und mit Praktiken zurückkehren, die Erholung im Alltag unterstützen."
+            },
+            stepper: {
+                title: "Was dich erwartet",
+                understand: {
+                    title: "Ankommen und landen",
+                    description:
+                        "Du verlangsamst das Tempo, orientierst dich am Ort und gibst deinem System Zeit, präsent zu werden."
+                },
+                experience: {
+                    title: "Kapazität regenerieren",
+                    description:
+                        "Sanfte Praktiken mit Atem, Körper, Wasser und Wahrnehmung unterstützen Erholung und Regulation."
+                },
+                transfer: {
+                    title: "Mit Rhythmus zurückkehren",
+                    description:
+                        "Du erkennst einfache Routinen und Entscheidungen, die dich auch zu Hause weiter unterstützen können."
+                }
+            },
+            contentMethods: {
+                methods: {
+                    title: "Methoden im Retreat",
+                    items: {
+                        reflection: "Angeleitete Reflexion, Journaling und Integrationsimpulse",
+                        body: "Sanfte körperbasierte Regulations- und Erdungspraktiken",
+                        breath: "Atembasierte Praktiken zum Beruhigen und Kraftsammeln",
+                        photography:
+                            "Wahrnehmungsspaziergänge und ressourcenorientierte Fotografieübungen",
+                        floating: "Meerbasierte Entspannung und wasserunterstützte Regulation"
+                    }
+                }
+            },
+            download: {
+                label: "Retreatübersicht als PDF herunterladen",
+                fileName: "blue-desert-retreatuebersicht.pdf"
+            },
+            organization: {
+                items: {
+                    date: {
+                        title: "7 Tage Retreat mit täglichen angeleiteten Einheiten",
+                        description:
+                            "Ein langsameres Format mit Praxis, Reflexion, Naturzeit und Integration über die Woche hinweg."
+                    },
+                    place: {
+                        title: "Ort: Nuweibaa, Ägypten, am Roten Meer",
+                        description:
+                            "Bei Bedarf unterstützen wir dich gerne bei der Anreiseplanung und bei Flughafentransfers."
+                    },
+                    group: {
+                        title: "6 bis 12 Teilnehmende",
+                        description:
+                            "Ein kleiner Gruppenrahmen, der gemeinsame Erfahrung, Privatsphäre und persönliche Aufmerksamkeit verbindet."
+                    },
+                    accommodation: {
+                        title: "Retreatsprache: Englisch",
+                        description:
+                            "Deutsch-englische zweisprachige Materialien werden während des gesamten Retreats bereitgestellt."
+                    },
+                    times: {
+                        title: "Retreatgebühr: ab 890 EUR/Person",
+                        description:
+                            "Unterkunftsoptionen unterscheiden sich je nach Wunsch und Budget. Wir unterstützen dich gerne dabei, einen passenden Ort zum Wohnen zu finden."
+                    }
+                },
+                note: "Die Anreise am Vortag und die Abreise am Folgetag werden empfohlen. Flüge, Transfers und Unterkunft sind nicht enthalten, sofern nicht anders angegeben."
+            },
+            seminarSchedule: {
+                title: "Retreattermine",
+                items: {
+                    october2026: {
+                        title: "Frühjahr\n2027",
+                        description: "Erster Termin in Planung"
+                    },
+                    november2026: {
+                        title: "Herbst\n2027",
+                        description: "Interessentenliste geöffnet"
+                    },
+                    upcoming2027: {
+                        title: "2028",
+                        description: "Weitere Termine folgen"
+                    }
+                },
+                actions: {
+                    apply: "Auf Interessentenliste",
+                    requestInformation: "Informationen anfragen"
+                }
+            },
+            participants: {
+                eyebrow: "Die Teilnehmenden",
+                title: "Für wen ist dieses Retreat geeignet?",
+                description: "Dieses Retreat kann gut zu dir passen, wenn du:",
+                imageAlt: "Weite Wüstenlandschaft mit warmem Licht und offenem Raum im Südsinai",
+                items: {
+                    demandingEnvironment: {
+                        title: "Eine echte Pause brauchst",
+                        description:
+                            "Du fühlst dich müde, überreizt oder bereit, aus ständigen Anforderungen auszusteigen."
+                    },
+                    stressRegulation: {
+                        title: "Sanfte Regulation suchst",
+                        description:
+                            "Du suchst einfache, erfahrungsbasierte Wege, um dein System zu beruhigen und zu regenerieren."
+                    },
+                    resilience: {
+                        title: "Erholung und Klarheit wünschst",
+                        description:
+                            "Du möchtest Kapazität wieder aufbauen, dich mit dir selbst verbinden und klarer spüren, wohin es weitergehen kann."
+                    },
+                    directExperience: {
+                        title: "Erfahrungsorientierte Praxis magst",
+                        description:
+                            "Du schätzt direkte Erfahrung, Reflexion, Naturzeit und eine angeleitete, aber großzügige Begleitung."
+                    },
+                    naturalEnvironments: {
+                        title: "Dich durch Natur erholst",
+                        description:
+                            "Du erlebst Meer, Wüste und offene Horizonte als unterstützend für Ruhe, Aufmerksamkeit und inneres Stillwerden."
+                    },
+                    placeBasedLearning: {
+                        title: "Neugierig auf Rhythmus bist",
+                        description:
+                            "Du möchtest erforschen, wie Ort, Tagesrhythmus und kleine Rituale dein Wohlbefinden nach dem Retreat unterstützen können."
+                    }
+                },
+                closing:
+                    "Vorerfahrung mit Meditation, Atemarbeit oder ähnlichen Praktiken ist nicht erforderlich."
+            },
+            whyDahab: {
+                eyebrow: "Warum dieser Ort",
+                title: "Warum für ein Retreat nach Nuweibaa reisen?",
+                imageAlt: "Offene Wüstenstraße und Berge im warmen Abendlicht im Südsinai",
+                description:
+                    "Nuweibaa liegt an der Ostküste des Südsinai zwischen dem Roten Meer und den Wüstenbergen. Der Ort ist für eine ruhigere, weitläufigere Atmosphäre bekannt als viele größere Ferienorte, mit langen Stränden, einfachen Camps und einem starken Gefühl von Horizont." +
+                    "\n\nFür ein Retreat macht das einen Unterschied. Die Landschaft lädt zu einem langsameren Rhythmus ein: mit dem Meer aufwachen, Zeit in der Wüste verbringen, das wechselnde Licht auf den Bergen beobachten und dem Nervensystem erlauben, sich an Einfachheit zu orientieren. Nuweibaa bietet einen Rahmen, in dem Ruhe, Reflexion und Wiederverbindung ohne den Druck entstehen können, jeden Moment ausfüllen zu müssen."
+            },
+            cta: {
+                title: "Hast du Fragen oder möchtest du mehr erfahren?",
+                description: "Wir freuen uns auf deine Nachricht.",
                 action: "Anfrage senden"
             }
         },

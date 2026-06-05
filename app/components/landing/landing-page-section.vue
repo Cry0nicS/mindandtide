@@ -28,15 +28,14 @@ const props = withDefaults(defineProps<Props>(), {
         :title="props.title"
         :description="props.description"
         :orientation="props.orientation"
-        :reverse="props.reverse"
-        :class="[props.muted && 'bg-muted/60', props.class]"
+        :class="[props.muted && 'landing-section-muted', props.class]"
         :ui="{
-            container: 'py-10 sm:py-14 lg:py-16 gap-8 sm:gap-10 lg:gap-14',
-            wrapper: 'max-w-2xl',
-            headline: 'text-secondary text-xs font-semibold uppercase tracking-[0.26em]',
-            title: 'font-heading text-highlighted text-3xl font-semibold leading-tight tracking-tight text-pretty sm:text-4xl lg:text-5xl',
-            description: 'text-muted mt-5 max-w-2xl text-base leading-8 sm:text-lg',
-            body: 'mt-6',
+            container: 'py-12 sm:py-16 lg:py-20 gap-8 sm:gap-10 lg:gap-14',
+            wrapper: ['max-w-2xl', props.reverse && 'lg:order-last'].filter(Boolean).join(' '),
+            headline: 'landing-eyebrow',
+            title: 'landing-title',
+            description: 'landing-description mt-5 max-w-2xl text-base',
+            body: 'mt-8',
             features: 'gap-4'
         }">
         <template
@@ -49,6 +48,12 @@ const props = withDefaults(defineProps<Props>(), {
             v-if="$slots.body"
             #body>
             <slot name="body" />
+        </template>
+
+        <template
+            v-if="$slots.footer"
+            #footer>
+            <slot name="footer" />
         </template>
 
         <slot />

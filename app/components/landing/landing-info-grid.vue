@@ -22,8 +22,8 @@ const props = defineProps<Props>();
             :icon="item.icon"
             :title="item.title"
             :description="item.description"
-            class="bg-elevated/70 h-full"
-            icon-class="rounded-md bg-transparent ring-0 text-primary size-10"
+            class="h-full"
+            icon-class="size-10"
             orientation="vertical" />
     </div>
 </template>

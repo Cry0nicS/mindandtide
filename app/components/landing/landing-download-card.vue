@@ -11,28 +11,29 @@ defineProps<Props>();
 <template>
     <UCard
         variant="subtle"
-        class="border-default rounded-lg">
+        class="landing-card"
+        :ui="{body: 'p-0'}">
         <ULink
             :to="to"
             external
             :download="fileName"
             target="_blank"
-            class="group flex items-center justify-between gap-5">
+            class="group hover:bg-muted/40 flex items-center justify-between gap-4 rounded-lg p-4 transition-colors sm:gap-5 sm:p-5">
             <span class="flex min-w-0 items-center gap-4">
-                <span class="text-primary flex size-11 shrink-0 items-center justify-center">
+                <span class="landing-icon size-11">
                     <UIcon
                         name="i-lucide-file-text"
-                        class="size-8" />
+                        class="size-5" />
                 </span>
 
-                <span class="text-primary text-lg font-semibold">
+                <span class="text-highlighted text-base font-semibold sm:text-lg">
                     {{ label }}
                 </span>
             </span>
 
             <UIcon
                 name="i-lucide-download"
-                class="text-secondary size-8 shrink-0 transition-transform group-hover:translate-x-1" />
+                class="text-secondary size-5 shrink-0 transition-transform group-hover:translate-x-1" />
         </ULink>
     </UCard>
 </template>

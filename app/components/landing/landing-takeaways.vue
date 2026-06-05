@@ -1,37 +1,47 @@
 <script setup lang="ts">
+interface Props {
+    contentKey?: string;
+}
+
+const props = withDefaults(defineProps<Props>(), {
+    contentKey: "pages.homePage"
+});
+
 const {t} = useI18n();
+
+const tk = (path: string) => `${props.contentKey}.takeaways.${path}`;
 
 const takeawayItems = computed(() => {
     return [
         {
             icon: "i-lucide-lightbulb",
-            title: t("pages.homePage.takeaways.items.clarity.title"),
-            description: t("pages.homePage.takeaways.items.clarity.description")
+            title: t(tk("items.clarity.title")),
+            description: t(tk("items.clarity.description"))
         },
         {
             icon: "i-lucide-sun-medium",
-            title: t("pages.homePage.takeaways.items.stress.title"),
-            description: t("pages.homePage.takeaways.items.stress.description")
+            title: t(tk("items.stress.title")),
+            description: t(tk("items.stress.description"))
         },
         {
             icon: "i-lucide-shield-check",
-            title: t("pages.homePage.takeaways.items.resilience.title"),
-            description: t("pages.homePage.takeaways.items.resilience.description")
+            title: t(tk("items.resilience.title")),
+            description: t(tk("items.resilience.description"))
         },
         {
             icon: "i-lucide-calendar-check",
-            title: t("pages.homePage.takeaways.items.routines.title"),
-            description: t("pages.homePage.takeaways.items.routines.description")
+            title: t(tk("items.routines.title")),
+            description: t(tk("items.routines.description"))
         },
         {
             icon: "i-lucide-waves",
-            title: t("pages.homePage.takeaways.items.balance.title"),
-            description: t("pages.homePage.takeaways.items.balance.description")
+            title: t(tk("items.balance.title")),
+            description: t(tk("items.balance.description"))
         },
         {
             icon: "i-lucide-sprout",
-            title: t("pages.homePage.takeaways.items.impact.title"),
-            description: t("pages.homePage.takeaways.items.impact.description")
+            title: t(tk("items.impact.title")),
+            description: t(tk("items.impact.description"))
         }
     ];
 });
@@ -39,31 +49,28 @@ const takeawayItems = computed(() => {
 
 <template>
     <UPageSection
-        :headline="t('pages.homePage.takeaways.headline')"
-        :title="t('pages.homePage.takeaways.title')"
-        :description="t('pages.homePage.takeaways.description')"
+        :headline="t(tk('headline'))"
+        :title="t(tk('title'))"
+        :description="t(tk('description'))"
         :ui="{
-            wrapper: 'text-center',
-            headline: 'font-semibold uppercase tracking-[0.28em] text-secondary',
-            title: 'mx-auto max-w-2xl text-4xl text-highlighted sm:text-5xl',
-            description: 'mx-auto max-w-2xl text-muted'
+            container: 'py-8 sm:py-10 lg:py-12',
+            wrapper: 'mx-auto max-w-2xl text-center',
+            headline: 'landing-eyebrow',
+            title: 'landing-title mx-auto max-w-2xl',
+            description: 'landing-description mx-auto max-w-2xl',
+            body: 'mt-8'
         }"
-        class="border-default w-full rounded-lg border text-center">
-        <UPageCard
-            variant="ghost"
-            :ui="{
-                body: 'p-5 sm:p-8 lg:p-10'
-            }">
+        class="landing-section-strong text-center">
+        <div class="space-y-5 sm:space-y-6">
             <div class="grid gap-4 sm:grid-cols-2">
                 <div
                     v-for="item in takeawayItems"
                     :key="item.title"
-                    class="border-default flex gap-4 rounded-lg border bg-white/60 p-4 text-left dark:bg-white/5">
-                    <div
-                        class="bg-primary/10 text-primary flex size-12 shrink-0 items-center justify-center rounded-md">
+                    class="landing-item-card flex gap-4 p-4 text-left sm:p-5">
+                    <div class="landing-icon size-11">
                         <UIcon
                             :name="item.icon"
-                            class="size-6"
+                            class="size-5"
                             aria-hidden="true" />
                     </div>
 
@@ -80,19 +87,18 @@ const takeawayItems = computed(() => {
             </div>
 
             <div
-                class="border-default mt-6 flex flex-col gap-4 rounded-lg border bg-white/70 p-5 text-left sm:flex-row sm:items-center sm:p-6 dark:bg-white/5">
-                <div
-                    class="bg-primary text-inverted flex size-12 shrink-0 items-center justify-center rounded-full">
+                class="landing-item-card flex flex-col gap-4 p-5 text-left sm:flex-row sm:items-center sm:p-6">
+                <div class="landing-icon landing-icon-solid size-11 rounded-full">
                     <UIcon
                         name="i-lucide-quote"
-                        class="size-6"
+                        class="size-5"
                         aria-hidden="true" />
                 </div>
 
                 <p class="text-highlighted text-base leading-7">
-                    {{ t("pages.homePage.takeaways.quote") }}
+                    {{ t(tk("quote")) }}
                 </p>
             </div>
-        </UPageCard>
+        </div>
     </UPageSection>
 </template>

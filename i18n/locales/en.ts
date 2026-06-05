@@ -11,12 +11,93 @@ export default {
         accept: "Got it"
     },
     pages: {
-        home: "Seminars",
+        home: "Home",
         privacy: "Privacy",
         imprint: "Imprint",
         contact: "Contact",
+        seminars: "Seminars",
+        retreats: "Retreats",
         program: "Program",
         aboutUs: "About us",
+        indexPage: {
+            seo: {
+                title: "Learning and retreats in South Sinai | Blue Desert",
+                description:
+                    "Blue Desert offers experiential seminars in Dahab and restorative retreats in Nuweibaa for sustainable balance, clarity and recovery."
+            },
+            hero: {
+                eyebrow: "Blue Desert",
+                title: "Learning, recovery and change by the Red Sea",
+                subheadline: "Two paths for finding more space under pressure",
+                supportingText:
+                    "Blue Desert brings together structured learning, embodied practice and the quiet landscapes of South Sinai.",
+                meta: "Dahab and Nuweibaa, Egypt",
+                imageAlt: "Wide desert landscape in South Sinai with warm light and open horizon",
+                seminarsAction: "Explore seminars",
+                retreatsAction: "Explore retreats"
+            },
+            story: {
+                eyebrow: "The shared idea",
+                title: "A place-based approach to sustainable balance",
+                description:
+                    "Blue Desert is built around a simple belief: meaningful change needs more than information. It needs time, practice, attention and an environment that helps the nervous system settle enough to learn.",
+                items: {
+                    place: {
+                        title: "Learning with place",
+                        description:
+                            "The Red Sea, desert and mountains are woven into the experience, creating space for attention, reflection and recovery."
+                    },
+                    practice: {
+                        title: "Experience before theory",
+                        description:
+                            "Methods are explored through direct experience, guided reflection and simple practices that can be adapted to daily life."
+                    },
+                    transfer: {
+                        title: "Change that travels home",
+                        description:
+                            "Both formats are designed to help insights become realistic routines, decisions and ways of responding under pressure."
+                    }
+                }
+            },
+            pathways: {
+                eyebrow: "Choose your path",
+                title: "Seminar or retreat",
+                description:
+                    "The seminar is a focused learning format. The retreat is a deeper pause for renewal. Both share the same care for place, practice and lasting transfer.",
+                seminars: {
+                    eyebrow: "Structured learning",
+                    title: "Seminars in Dahab",
+                    description:
+                        "A five-day seminar for people who want practical stress regulation, resilience and transfer-oriented learning in a small group.",
+                    meta: "Dahab, Egypt",
+                    action: "Read about seminars",
+                    imageAlt: "Quiet beach landscape with palms and clear water near Dahab"
+                },
+                retreats: {
+                    eyebrow: "Restorative immersion",
+                    title: "Retreats in Nuweibaa",
+                    description:
+                        "A slower retreat format for people who want to step back, restore capacity and reconnect with body, breath, sea and desert.",
+                    meta: "Nuweibaa, Egypt",
+                    action: "Read about retreats",
+                    imageAlt: "Clear water and open sea in Egypt"
+                }
+            },
+            bridge: {
+                eyebrow: "How they connect",
+                title: "Different formats, one philosophy",
+                description:
+                    "The seminar starts with the demands of everyday professional life and builds practical tools around them. The retreat begins with spaciousness and recovery, then gently supports reflection, regulation and reconnection." +
+                    "\n\nBoth are intentionally small, experiential and grounded in the landscapes of South Sinai. You can choose the format that fits your current season.",
+                imageAlt: "Calm Red Sea water and coastline, suggesting retreat and spaciousness"
+            },
+            cta: {
+                title: "Not sure which format fits?",
+                description:
+                    "Tell us what you are looking for and we will help you find the right next step.",
+                action: "Contact us"
+            }
+        },
         homePage: {
             seo: {
                 title: "Resilience seminar by the sea | Blue Desert",
@@ -24,165 +105,78 @@ export default {
                     "A calm, experiential seminar in Dahab for resilience, stress management and renewed agency in professional life."
             },
             hero: {
-                eyebrow: "Blue Desert seminar",
-                title: "Resilience and stress management in professional life",
-                subheadline: "Experience. Understand. Strengthen.",
-                supportingText: "A seminar with experiential methods in Dahab, Egypt.",
+                eyebrow: "Our Seminars",
+                title: "Finding Sustainable Balance Under Pressure",
+                subheadline: "Tame stress. Break patterns. Regain clarity",
+                supportingText:
+                    "A five-day seminar on stress regulation in a restorative setting by the sea",
                 meta: "Dahab, Egypt",
                 imageAlt: "Calm coastline with mountains in the background near Dahab in Egypt"
             },
-            intro: {
-                eyebrow: "What the seminar is about",
-                title: "Gain clarity. Expand your room for action.",
-                paragraphs: {
-                    first: "Professional life often brings high demands, constant availability and complex decisions. Over time, this drains energy, concentration and inner balance.",
-                    second: "This seminar invites you to step back for a moment, to a place that creates spaciousness: Dahab on the Red Sea.",
-                    third: "Through experiential methods, you strengthen your resilience, learn to recognize stress patterns and develop effective strategies for more calm and clarity.",
-                    fourth: "You combine reflection, practical exercises and exchange in a small group with the restorative force of nature."
-                },
-                features: {
-                    experiential: {
-                        title: "Experiential",
-                        description: "Learning through experience, sensing and reflection."
-                    },
-                    holistic: {
-                        title: "Holistic",
-                        description: "Bringing body, mind and emotions into balance."
-                    },
-                    personal: {
-                        title: "Personal & appreciative",
-                        description: "Small group, protected space and individual guidance."
-                    },
-                    nature: {
-                        title: "Inspired by nature",
-                        description: "Using the openness of desert and sea as a source of strength."
-                    }
-                }
-            },
-            writerSummary: {
-                eyebrow: "Learning approach",
-                title: "Experience-based methods and place-based learning between sea and desert",
-                text: "A five-day seminar near Dahab designed to strengthen resilience, support stress regulation, and activate sustainable balance in professional life. Through structured learning, guided practice, and time for reflection, participants engage both mind and body while developing capacities that support long-term personal and professional growth.",
-                highlights: {
-                    place: {
-                        title: "Learning with place",
-                        description:
-                            "Sea, desert and quiet surroundings actively support attention and recovery."
-                    },
-                    method: {
-                        title: "Guided practice",
-                        description:
-                            "Concepts are connected with body, breath, perception and reflection."
-                    },
-                    transfer: {
-                        title: "Work-life transfer",
-                        description:
-                            "Each step is linked back to professional routines and decisions."
-                    }
-                }
-            },
             seminarAbout: {
-                title: "What the seminar is about",
-                description:
-                    "Professional life today often unfolds under conditions of constant pressure, cognitive overload, and insufficient recovery. This seminar creates a structured learning space in which participants explore stress more clearly, deepen self-awareness, and develop practical strategies for regulation, resilience, and balance. What makes the seminar distinctive is its place-based learning approach. Dahab is not simply the location of the seminar; it is part of the method itself, offering an environment in which sea, desert, openness, and reduced sensory intensity support attention, reflection, and a deeper engagement with stress and recovery."
+                eyebrow: "The starting point",
+                title: "From Problem to Possibility",
+                intro: "Professional life today often unfolds under constant pressure. Growing uncertainty, rising care responsibilities and an accelerated pace of life can create cognitive overload and make genuine recovery more difficult.",
+                closing:
+                    "The seminar creates space to understand how stress is shaped by individual habits, environments and daily demands, and to develop practical strategies that can be integrated into personal and professional life."
             },
             takeaways: {
-                headline: "Seminar goals",
-                title: "What you take with you",
-                description:
-                    "By the end of the seminar, you will have concrete tools and new perspectives that you can apply directly in everyday life.",
+                headline: "Our approach",
+                title: "What makes this seminar different?",
+                description: "Text placeholder",
                 items: {
                     clarity: {
-                        title: "Clearer thinking",
-                        description: "You gain structure and confidence in your decisions."
+                        title: "Experience-Based Learning",
+                        description:
+                            "Rather than focusing on abstract concepts alone, the seminar starts with lived experience. Through guided exercises, observation, and reflection, participants explore how stress shows up in their own lives and develop insights that are personally meaningful and relevant."
                     },
                     stress: {
-                        title: "Stress competence",
-                        description: "You learn to respond to pressure with more composure."
+                        title: "Guided Exploration",
+                        description:
+                            "There is no single solution that works for everyone. Participants are introduced to a range of body-, breath-, perception-, and reflection-based approaches and are encouraged to discover which methods best fit their individual circumstances, personalities, and professional realities."
                     },
                     resilience: {
-                        title: "Stronger resilience",
-                        description: "You build inner strength and adaptability."
+                        title: "A Holistic Perspective",
+                        description:
+                            "Stress affects more than the mind alone. The seminar explores the interaction between body, mind, emotions, and environment, creating a broader understanding of resilience and sustainable well-being."
                     },
                     routines: {
-                        title: "Healthy routines",
-                        description: "You develop habits that work in daily life."
+                        title: "Learning with Place",
+                        description:
+                            "Where we learn matters. The seminar takes place in Dahab for a reason. The sea, desert, and surrounding mountains are not a geographical coincidence; they are intentionally woven into the learning process. Simplicity, fewer distractions, and a slower rhythm create room for reflection, attention, and recovery."
                     },
                     balance: {
-                        title: "Energy and balance",
-                        description: "You reconnect with more energy and ease."
+                        title: "Small Group Setting",
+                        description:
+                            "With a limited number of participants, the seminar offers space for meaningful exchange, personal feedback, and individual support throughout the learning process."
                     },
                     impact: {
-                        title: "Lasting impact",
-                        description: "You integrate changes that remain."
+                        title: "Transfer to Everyday Life",
+                        description:
+                            "The goal is not to escape daily pressures but to engage with them differently. Participants develop realistic strategies that can be adapted to their own professional and personal contexts long after the seminar has ended."
                     }
                 },
                 quote: "Understand, experience, and integrate knowledge into everyday life, for lasting change."
             },
-            process: {
-                eyebrow: "Flow & content",
-                title: "Practical. Deep. Sustainable.",
-                description:
-                    "The seminar combines input, interaction and experience. You work practically with your own topics and apply what you learn directly.",
-                imageAlt:
-                    "Small seminar group sitting in a circle on the beach and working together",
-                items: {
-                    selfKnowledge: {
-                        title: "Self-awareness",
-                        description: "Recognize stressors and understand inner patterns"
-                    },
-                    resources: {
-                        title: "Resource work",
-                        description: "Activate your own sources of strength"
-                    },
-                    methods: {
-                        title: "Method competence",
-                        description: "Breath, mindfulness and cognitive tools"
-                    },
-                    resilience: {
-                        title: "Strengthen resilience",
-                        description: "Working with pressure, change and uncertainty"
-                    },
-                    transfer: {
-                        title: "Transfer into daily life",
-                        description: "Concrete strategies for your professional routine"
-                    }
+            stepper: {
+                title: "What can you expect",
+                understand: {
+                    title: "Understand stress",
+                    description:
+                        "You map how pressure develops and how your own system responds in professional situations."
                 },
-                closing:
-                    "Between the sessions there is time for reflection, exchange, movement, sea and quiet."
+                experience: {
+                    title: "Practice regulation",
+                    description:
+                        "Guided methods make regulation tangible through body, breath, perception and reflection."
+                },
+                transfer: {
+                    title: "Anchor change",
+                    description:
+                        "You translate insights into realistic routines, decisions and recovery strategies."
+                }
             },
             contentMethods: {
-                eyebrow: "Content, methods and structure",
-                title: "Conceptual clarity. Guided experience. Practical transfer.",
-                description:
-                    "The seminar follows a carefully structured learning process that combines conceptual understanding, guided experience, reflection, and transfer into professional life. Across five thematic days, participants work with body-based, breath-based, perceptual, and reflective methods in a way that is both intellectually grounded and practically applicable.",
-                steps: {
-                    understand: {
-                        title: "Understand stress",
-                        description:
-                            "You map how pressure develops and how your own system responds in professional situations."
-                    },
-                    experience: {
-                        title: "Practice regulation",
-                        description:
-                            "Guided methods make regulation tangible through body, breath, perception and reflection."
-                    },
-                    transfer: {
-                        title: "Anchor change",
-                        description:
-                            "You translate insights into realistic routines, decisions and recovery strategies."
-                    }
-                },
-                content: {
-                    title: "Content includes",
-                    items: {
-                        stressDevelopment: "Stress development and stress processing",
-                        nervousSystem: "Stress, the nervous system, and bodily responses",
-                        personalPatterns: "Individual stress patterns in professional contexts",
-                        environment: "Environmental and contextual dimensions of regulation",
-                        transfer: "Transfer into everyday professional life"
-                    }
-                },
                 methods: {
                     title: "Methods include",
                     items: {
@@ -195,187 +189,305 @@ export default {
                     }
                 }
             },
-            schedule: {
-                title: "Schedule",
-                description:
-                    "Weekly plan: The schedule is structured across five seminar days and combines conceptual input, guided practice, reflection, and transfer.",
-                columns: {
-                    time: "Time",
-                    monday: "Monday - Understanding",
-                    tuesday: "Tuesday - Environment & Context",
-                    wednesday: "Wednesday - Body",
-                    thursday: "Thursday - Breathing & Integration",
-                    friday: "Friday - Transfer & Application"
-                },
-                rows: {
-                    row1: {
-                        time: "09:00 - 09:45",
-                        monday: "Welcome, introduction and objectives",
-                        tuesday:
-                            "Foundations: Effects of maritime environments on stress and the nervous system",
-                        wednesday: "Foundations of physiological stress responses",
-                        thursday: "Foundations of breath-based stress regulation",
-                        friday: "Introduction: Self-awareness and temporal structuring of stress"
-                    },
-                    row2: {
-                        time: "09:45 - 10:30",
-                        monday: "Foundations of stress development and processing",
-                        tuesday: "Consolidation: Environment, perception, and stress regulation",
-                        wednesday: "Analysis and perception of bodily tension patterns",
-                        thursday: "Analysis of breathing patterns in the context of stress",
-                        friday: "Guided practice: Body-based stress regulation (TRE according to Dr. Berceli)"
-                    },
-                    row3: {
-                        time: "10:30 - 11:15",
-                        monday: "Individual stress patterns in the professional context",
-                        tuesday: "Analysis of using environmental factors for stress regulation",
-                        wednesday: "Movement and perception in the context of stress regulation",
-                        thursday:
-                            "Guided practice: Breath-based regulation (Marcus Blacker method)",
-                        friday: "Deepening and reflection of practice (TRE according to Dr. Berceli)"
-                    },
-                    break1: {
-                        time: "11:15 - 11:30",
-                        monday: "Break",
-                        tuesday: "Break",
-                        wednesday: "Break",
-                        thursday: "Break",
-                        friday: "Break"
-                    },
-                    row4: {
-                        time: "11:30 - 12:15",
-                        monday: "Introduction to perception and resource-based work (participatory photography)",
-                        tuesday: "Guided practice: Body regulation in water (floating)",
-                        wednesday:
-                            "Introduction to body-based regulation methods (TRE according to Dr. Berceli)",
-                        thursday: "Introduction to self-reflection and evaluation methods",
-                        friday: "Development of individual action strategies (SMART goals)"
-                    },
-                    row5: {
-                        time: "12:15 - 13:00",
-                        monday: "Guided practice: Participatory photography",
-                        tuesday: "Deepening of practice (floating) and reflection",
-                        wednesday:
-                            "Guided practice: Body-based stress regulation (TRE according to Dr. Berceli)",
-                        thursday: "Integration: Linking breath, body, and environment",
-                        friday: "Specification and feedback on individual transfer strategies"
-                    },
-                    break2: {
-                        time: "13:00 - 14:00",
-                        monday: "Lunch",
-                        tuesday: "Lunch",
-                        wednesday: "Lunch",
-                        thursday: "Lunch",
-                        friday: "Lunch"
-                    },
-                    row6: {
-                        time: "14:00 - 14:45",
-                        monday: "Reflection and transfer to professional life",
-                        tuesday:
-                            "Reflection on experiences with nature-based methods and transfer to professional life",
-                        wednesday:
-                            "Reflection on body-based stress responses and transfer to professional life",
-                        thursday:
-                            "Reflection and integration: Development of individual stress-regulation strategies for professional life",
-                        friday: "Self-evaluation and sustainable transfer: Consolidation of learning outcomes"
-                    }
-                }
-            },
-            programEssentials: {
-                title: "Essentials at a glance",
-                items: {
-                    duration: {
-                        title: "5-day seminar",
-                        description: "A compact learning format across five thematic seminar days"
-                    },
-                    units: {
-                        title: "6 teaching units per day",
-                        description: "Structured rhythm with input, practice, and reflection"
-                    },
-                    group: {
-                        title: "6-12 participants",
-                        description: "Small group for focused exchange and individual attention"
-                    },
-                    location: {
-                        title: "Dahab, Egypt",
-                        description: "Learning between the Red Sea and the desert"
-                    },
-                    language: {
-                        title: "Seminar language",
-                        description: "English"
-                    },
-                    materials: {
-                        title: "Bilingual materials",
-                        description: "German bilingual materials are provided"
-                    }
-                }
-            },
-            additionalGoals: {
-                eyebrow: "Professional transfer",
-                title: "From insight to usable everyday practice",
-                items: {
-                    models: "Understand key models of stress development",
-                    patterns: "Recognize personal stress patterns in professional life",
-                    methods: "Apply body-, breath-, and perception-based methods",
-                    resources: "Strengthen awareness of personal resources",
-                    strategies: "Develop transferable strategies for professional situations",
-                    evaluation: "Reflect on learning processes and evaluate effectiveness"
-                }
-            },
-            whyDahab: {
-                eyebrow: "Why this place",
-                title: "Why Dahab?",
-                imageAlt: "Open landscape with warm light, suggesting spaciousness and quiet",
-                description:
-                    "Dahab offers a learning environment that is difficult to recreate in everyday professional settings. The combination of maritime surroundings, desert landscape, spaciousness, and reduced sensory density supports concentration, reflection, and a more attentive engagement with perception, regulation, and recovery. In this seminar, place is not an aesthetic backdrop. It is an integral part of the educational concept."
-            },
-            team: {
-                title: "Meet the team",
-                items: {
-                    silvia: {
-                        title: "Dr. Silvia-Lucretia Nicola",
-                        description: "Pedagogical and academic lead"
-                    },
-                    marcus: {
-                        title: "Marcus Blacker",
-                        description: "Body- and breath-based stress regulation"
-                    },
-                    ahmad: {
-                        title: "Ahmad Nemr",
-                        description: "Support for water-based practice sessions"
-                    }
-                }
-            },
             download: {
                 label: "Download the program overview as a PDF",
                 fileName: "blue-desert-seminar-overview.pdf"
             },
             organization: {
-                eyebrow: "Framework & practical details",
-                title: "The essentials at a glance",
                 items: {
                     date: {
-                        title: "Date",
-                        description: "24 to 31 October 2025, 7 seminar days"
+                        title: "5 days seminar with 6 units á 45 min per day",
+                        description:
+                            "A compact learning format across five thematic seminar days structured around: input, practice, and reflection"
                     },
                     place: {
-                        title: "Location",
-                        description: "Dahab, Egypt, on the Red Sea"
+                        title: "Location: Dahab, Egypt, at the Red Sea",
+                        description: "Support with airport transfers can be provided if needed."
                     },
                     group: {
-                        title: "Group",
-                        description: "6 to 12 participants, small group for focused exchange"
+                        title: "6-15 participants",
+                        description:
+                            "A small-group setting that allows focused exchange, personal feedback, and individual attention."
                     },
                     accommodation: {
-                        title: "Accommodation",
-                        description: "Carefully selected accommodation close to the sea"
+                        title: "Seminar language: English",
+                        description:
+                            "German and English bilingual materials are provided throughout the seminar."
                     },
                     times: {
-                        title: "Seminar times",
-                        description: "Morning and afternoon with breaks and space for integration"
+                        title: "Seminar fee: 695€/pers",
+                        description:
+                            "The seminar fee does not include accommodation. We are happy to assist you in finding a place to stay that suits your preferences and budget."
                     }
                 },
                 note: "Arrival on the previous day and departure on the following day are recommended. Flights, transfers and accommodation are not included in the seminar fee."
+            },
+            seminarSchedule: {
+                title: "Seminar Dates",
+                items: {
+                    october2026: {
+                        title: "12-16\nOctober 2026",
+                        description: "Registration closed"
+                    },
+                    november2026: {
+                        title: "9-13\nNovember 2026",
+                        description: "Open for registration\nApplication deadline: 10 October 2026"
+                    },
+                    upcoming2027: {
+                        title: "2027",
+                        description: "Additional dates coming soon"
+                    }
+                },
+                actions: {
+                    apply: "Apply now",
+                    requestInformation: "Request information"
+                }
+            },
+            participants: {
+                eyebrow: "The participants",
+                title: "Who is this seminar for?",
+                description: "This seminar may be a good fit if you:",
+                imageAlt: "Quiet beach landscape with palm trees, bright sand and calm blue water",
+                items: {
+                    demandingEnvironment: {
+                        title: "Demanding professional environment",
+                        description: "You experience ongoing pressure or high workloads."
+                    },
+                    stressRegulation: {
+                        title: "Practical stress regulation",
+                        description:
+                            "You are looking for experience-based approaches to regulate stress."
+                    },
+                    resilience: {
+                        title: "Resilience and recovery",
+                        description:
+                            "You want to strengthen resilience, recovery and sustainable balance before stress becomes overwhelming."
+                    },
+                    directExperience: {
+                        title: "Learning through experience",
+                        description:
+                            "You are interested in direct experience, reflection and guided practice."
+                    },
+                    naturalEnvironments: {
+                        title: "Connection to nature",
+                        description:
+                            "You feel connected to natural environments and find that being near the sea supports your well-being and clarity."
+                    },
+                    placeBasedLearning: {
+                        title: "Place-based learning",
+                        description:
+                            "You are curious about the role environment can play in attention, recovery and personal development."
+                    }
+                },
+                closing:
+                    "No previous experience with meditation, breathwork or similar practices is required."
+            },
+            whyDahab: {
+                eyebrow: "Why this place",
+                title: "Why travel to Dahab for a seminar?",
+                imageAlt: "Open landscape with warm light, suggesting spaciousness and quiet",
+                description:
+                    "Nestled between the Red Sea and the mountains of South Sinai, Dahab has long attracted people seeking simplicity, connection to nature, and a slower pace of life. Originally a small Bedouin fishing village, it has retained much of its relaxed character despite becoming an international destination for divers, remote workers, and travellers." +
+                    "\n\nWith its year-round sunshine, relaxed atmosphere, and reputation as one of the safest and most welcoming destinations in the region, Dahab offers an environment that supports both learning and recovery. Whether spending time by the sea, exploring the desert, joining local wellness activities, or simply slowing down, participants have many opportunities to recharge alongside the seminar experience."
+            },
+            cta: {
+                title: "Do you have questions or would you like to learn more?",
+                description: "We look forward to hearing from you.",
+                action: "Send enquiry"
+            }
+        },
+        retreatsPage: {
+            seo: {
+                title: "Retreat in Nuweibaa, Egypt | Blue Desert",
+                description:
+                    "A restorative Blue Desert retreat in Nuweibaa for nervous system regulation, recovery and reconnection by the Red Sea."
+            },
+            hero: {
+                eyebrow: "Our Retreats",
+                title: "Return to Rhythm in Nuweibaa",
+                subheadline: "Slow down. Regulate. Reconnect",
+                supportingText:
+                    "A retreat for recovery, reflection and embodied practice between sea, desert and mountains",
+                meta: "Nuweibaa, Egypt",
+                imageAlt: "Clear Red Sea water and open coastline near Nuweibaa in South Sinai"
+            },
+            seminarAbout: {
+                eyebrow: "The invitation",
+                title: "From Overload to Spaciousness",
+                intro: "Modern life often rewards constant availability, speed and performance. Over time, this can make it difficult to rest deeply, listen inwardly or notice what the body has been carrying.",
+                closing:
+                    "The retreat creates a protected pause in Nuweibaa: time to settle, reconnect with your own rhythm and explore practices that support sustainable recovery beyond the days by the sea."
+            },
+            takeaways: {
+                headline: "Our approach",
+                title: "What makes this retreat different?",
+                description: "Text placeholder",
+                items: {
+                    clarity: {
+                        title: "Restorative Pace",
+                        description:
+                            "The retreat is intentionally spacious. Days include guided practice, quiet time, nature-based reflection and enough room for participants to digest what emerges without being rushed from one activity to the next."
+                    },
+                    stress: {
+                        title: "Gentle Guidance",
+                        description:
+                            "Participants are supported through body-, breath-, perception- and reflection-based methods. The focus is not performance, but noticing, adapting and choosing what feels useful for your own nervous system."
+                    },
+                    resilience: {
+                        title: "Body and Environment",
+                        description:
+                            "Recovery is approached as an interaction between body, mind, emotions and surroundings. The sea, desert and mountain landscape help create a felt sense of space, simplicity and orientation."
+                    },
+                    routines: {
+                        title: "Learning with Nuweibaa",
+                        description:
+                            "Nuweibaa offers a quieter rhythm than many travel destinations. The openness of the coastline, the stillness of the desert and the slower pace are intentionally woven into the retreat experience."
+                    },
+                    balance: {
+                        title: "Small Group Setting",
+                        description:
+                            "A limited group size creates enough intimacy for meaningful exchange while preserving the privacy and quiet that many people need during a restorative retreat."
+                    },
+                    impact: {
+                        title: "Integration after Return",
+                        description:
+                            "The retreat is not designed as an escape from life. It supports participants in recognizing what restores them and how small practices can be carried back into everyday routines."
+                    }
+                },
+                quote: "Pause, listen, and return with practices that support recovery in ordinary life."
+            },
+            stepper: {
+                title: "What can you expect",
+                understand: {
+                    title: "Arrive and settle",
+                    description:
+                        "You slow the pace, orient to the place and give your system time to become present."
+                },
+                experience: {
+                    title: "Restore capacity",
+                    description:
+                        "Gentle practices with breath, body, water and perception support recovery and regulation."
+                },
+                transfer: {
+                    title: "Return with rhythm",
+                    description:
+                        "You identify simple routines and choices that can continue supporting you at home."
+                }
+            },
+            contentMethods: {
+                methods: {
+                    title: "Methods include",
+                    items: {
+                        reflection: "Guided reflection, journaling and integration prompts",
+                        body: "Gentle body-based regulation and grounding practices",
+                        breath: "Breath-based practices for settling and restoring energy",
+                        photography: "Perception walks and resource-oriented photography exercises",
+                        floating: "Sea-based relaxation and water-supported regulation sessions"
+                    }
+                }
+            },
+            download: {
+                label: "Download the retreat overview as a PDF",
+                fileName: "blue-desert-retreat-overview.pdf"
+            },
+            organization: {
+                items: {
+                    date: {
+                        title: "7 days retreat with daily guided sessions",
+                        description:
+                            "A slower format with practice, reflection, nature time and integration across the week."
+                    },
+                    place: {
+                        title: "Location: Nuweibaa, Egypt, at the Red Sea",
+                        description:
+                            "Support with arrival planning and airport transfers can be provided if needed."
+                    },
+                    group: {
+                        title: "6-12 participants",
+                        description:
+                            "A small-group setting that balances shared experience, privacy and personal attention."
+                    },
+                    accommodation: {
+                        title: "Retreat language: English",
+                        description:
+                            "German and English bilingual materials are provided throughout the retreat."
+                    },
+                    times: {
+                        title: "Retreat fee: from 890 EUR/person",
+                        description:
+                            "Accommodation options vary by preference and budget. We are happy to help you find a fitting place to stay."
+                    }
+                },
+                note: "Arrival on the previous day and departure on the following day are recommended. Flights, transfers and accommodation are not included unless stated otherwise."
+            },
+            seminarSchedule: {
+                title: "Retreat Dates",
+                items: {
+                    october2026: {
+                        title: "Spring\n2027",
+                        description: "First date in planning"
+                    },
+                    november2026: {
+                        title: "Autumn\n2027",
+                        description: "Interest list open"
+                    },
+                    upcoming2027: {
+                        title: "2028",
+                        description: "Additional dates coming soon"
+                    }
+                },
+                actions: {
+                    apply: "Join interest list",
+                    requestInformation: "Request information"
+                }
+            },
+            participants: {
+                eyebrow: "The participants",
+                title: "Who is this retreat for?",
+                description: "This retreat may be a good fit if you:",
+                imageAlt: "Wide desert landscape with warm light and open space in South Sinai",
+                items: {
+                    demandingEnvironment: {
+                        title: "Need a real pause",
+                        description:
+                            "You feel tired, overstimulated or ready to step out of constant demands."
+                    },
+                    stressRegulation: {
+                        title: "Want gentle regulation",
+                        description:
+                            "You are looking for simple, experience-based ways to settle and restore your system."
+                    },
+                    resilience: {
+                        title: "Seek recovery and clarity",
+                        description:
+                            "You want time to recover capacity, reconnect with yourself and regain a clearer sense of direction."
+                    },
+                    directExperience: {
+                        title: "Prefer experiential practice",
+                        description:
+                            "You value direct experience, reflection, nature time and guided but spacious support."
+                    },
+                    naturalEnvironments: {
+                        title: "Feel restored by nature",
+                        description:
+                            "You experience sea, desert and open horizons as supportive for rest, attention and inner quiet."
+                    },
+                    placeBasedLearning: {
+                        title: "Are curious about rhythm",
+                        description:
+                            "You want to explore how place, daily rhythm and small rituals can support well-being after the retreat."
+                    }
+                },
+                closing:
+                    "No previous experience with meditation, breathwork or similar practices is required."
+            },
+            whyDahab: {
+                eyebrow: "Why this place",
+                title: "Why travel to Nuweibaa for a retreat?",
+                imageAlt: "Open desert road and mountains in warm evening light in South Sinai",
+                description:
+                    "Nuweibaa sits on the eastern coast of South Sinai, between the Red Sea and the desert mountains. It is known for a quieter, more spacious atmosphere than many larger resort towns, with long beaches, simple camps and a strong sense of horizon." +
+                    "\n\nFor a retreat, this matters. The landscape invites a slower rhythm: waking with the sea, spending time in the desert, watching light change across the mountains and letting the nervous system orient to simplicity. Nuweibaa offers a setting where rest, reflection and reconnection can unfold without the pressure to consume every moment."
             },
             cta: {
                 title: "Do you have questions or would you like to learn more?",

@@ -69,7 +69,12 @@ export default defineNuxtConfig({
         enabled: false
     },
     routeRules: {
-        "/": {prerender: true}
+        "/": {prerender: true},
+        "/de": {prerender: true},
+        "/de/retreats": {prerender: true},
+        "/de/seminare": {prerender: true},
+        "/retreats": {prerender: true},
+        "/seminars": {prerender: true}
     },
     runtimeConfig: {
         mailgunBaseUrl: process.env.NUXT_MAILGUN_BASE_URL || "",
