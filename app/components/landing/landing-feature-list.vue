@@ -21,8 +21,7 @@ const props = withDefaults(defineProps<Props>(), {
             v-for="item in props.items"
             :key="`${item.title ?? item.description}`"
             class="flex gap-3.5">
-            <span
-                class="bg-primary/10 text-primary ring-primary/20 mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-full ring-1">
+            <span class="landing-icon mt-0.5 size-6 rounded-full">
                 <UIcon
                     :name="item.icon ?? 'i-lucide-check'"
                     class="size-3.5" />

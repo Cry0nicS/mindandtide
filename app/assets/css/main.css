@@ -91,6 +91,68 @@
     }
 }
 
+@layer components {
+    .landing-section {
+        @apply border-default bg-elevated/45 rounded-lg border shadow-sm backdrop-blur;
+    }
+
+    .landing-section-strong {
+        @apply border-default bg-elevated/55 rounded-lg border shadow-sm backdrop-blur;
+    }
+
+    .landing-section-spaced {
+        @apply mt-10 sm:mt-12 lg:mt-14;
+    }
+
+    .landing-section-muted {
+        @apply bg-muted/30;
+    }
+
+    .landing-eyebrow {
+        @apply text-secondary text-xs font-semibold tracking-[0.26em] uppercase;
+    }
+
+    .landing-title {
+        @apply font-heading text-highlighted text-3xl leading-tight font-semibold text-pretty sm:text-4xl lg:text-5xl;
+    }
+
+    .landing-title-compact {
+        @apply font-heading text-highlighted text-3xl leading-tight font-semibold text-pretty sm:text-4xl;
+    }
+
+    .landing-description {
+        @apply text-muted leading-7 sm:text-lg sm:leading-8;
+    }
+
+    .landing-card {
+        @apply bg-muted/30 shadow-sm backdrop-blur;
+    }
+
+    .landing-panel {
+        @apply border-default bg-muted/30 rounded-lg border;
+    }
+
+    .landing-item-card {
+        @apply border-default bg-muted/30 rounded-lg border;
+    }
+
+    .landing-icon {
+        @apply bg-primary/10 text-primary ring-primary/20 flex shrink-0 items-center justify-center rounded-lg ring-1;
+    }
+
+    .landing-icon-secondary {
+        @apply bg-secondary/10 text-secondary ring-secondary/20;
+    }
+
+    .landing-icon-solid {
+        @apply bg-primary text-inverted;
+    }
+
+    .landing-media-frame {
+        @apply border-default bg-elevated/70 overflow-hidden rounded-lg border shadow-sm;
+    }
+}
+
 :root,
 .light {
     --ui-primary: var(--color-ocean-500);

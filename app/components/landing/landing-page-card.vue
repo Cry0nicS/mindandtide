@@ -1,11 +1,13 @@
 <script setup lang="ts">
 type CardOrientation = "horizontal" | "vertical";
+type CardVariant = "solid" | "outline" | "soft" | "subtle";
 
 interface Props {
     icon?: string;
     title?: string;
     description?: string;
     orientation?: CardOrientation;
+    variant?: CardVariant;
     reverse?: boolean;
     class?: string;
     iconClass?: string;
@@ -16,6 +18,7 @@ const props = withDefaults(defineProps<Props>(), {
     title: undefined,
     description: undefined,
     orientation: "vertical",
+    variant: "subtle",
     reverse: false,
     class: undefined,
     iconClass: undefined
@@ -24,8 +27,8 @@ const props = withDefaults(defineProps<Props>(), {
 
 <template>
     <UCard
-        variant="subtle"
-        class="border-default bg-elevated/70 rounded-lg border shadow-sm backdrop-blur"
+        :variant="props.variant"
+        class="landing-card"
         :class="props.class"
         :ui="{body: 'p-5 sm:p-6 lg:p-7'}">
         <div
@@ -36,7 +39,7 @@ const props = withDefaults(defineProps<Props>(), {
             ]">
             <div
                 v-if="props.icon"
-                class="bg-primary/10 text-primary ring-primary/20 flex shrink-0 items-center justify-center rounded-lg ring-1"
+                class="landing-icon"
                 :class="[
                     props.orientation === 'horizontal' ? 'size-12' : 'size-11',
                     props.iconClass

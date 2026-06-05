@@ -28,7 +28,7 @@ const props = withDefaults(defineProps<Props>(), {
         :headline="props.eyebrow"
         :title="props.title"
         :links="props.links"
-        class="border-default relative isolate overflow-hidden rounded-lg border shadow-sm"
+        class="landing-media-frame relative isolate"
         :ui="{
             container:
                 'relative z-10 flex min-h-[30rem] items-center py-16 sm:min-h-[34rem] sm:py-20 lg:min-h-[38rem] lg:items-start lg:pt-32 lg:pb-24',
@@ -77,8 +77,7 @@ const props = withDefaults(defineProps<Props>(), {
             v-if="props.metaText"
             #body>
             <div class="text-highlighted flex items-center gap-3 text-base font-semibold">
-                <span
-                    class="bg-secondary/15 text-secondary ring-secondary/20 flex size-8 items-center justify-center rounded-full ring-1">
+                <span class="landing-icon landing-icon-secondary size-8 rounded-full">
                     <UIcon
                         :name="props.metaIcon"
                         class="size-4" />

@@ -11,7 +11,7 @@ defineProps<Props>();
 <template>
     <UCard
         variant="subtle"
-        class="border-default bg-elevated/70 rounded-lg border shadow-sm backdrop-blur"
+        class="landing-card"
         :ui="{body: 'p-0'}">
         <ULink
             :to="to"
@@ -20,8 +20,7 @@ defineProps<Props>();
             target="_blank"
             class="group hover:bg-muted/40 flex items-center justify-between gap-4 rounded-lg p-4 transition-colors sm:gap-5 sm:p-5">
             <span class="flex min-w-0 items-center gap-4">
-                <span
-                    class="bg-primary/10 text-primary ring-primary/20 flex size-11 shrink-0 items-center justify-center rounded-lg ring-1">
+                <span class="landing-icon size-11">
                     <UIcon
                         name="i-lucide-file-text"
                         class="size-5" />

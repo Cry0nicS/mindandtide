@@ -196,26 +196,24 @@ useSeoMeta({
                 container: 'px-0 sm:px-0 lg:px-0 py-12 sm:py-16 lg:py-20',
                 wrapper: 'mx-auto max-w-5xl'
             }">
-            <div
-                class="border-default bg-elevated/55 rounded-lg border p-6 shadow-sm backdrop-blur sm:p-8 lg:p-10">
+            <div class="landing-section-strong p-6 sm:p-8 lg:p-10">
                 <div class="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
                     <div>
-                        <p class="text-secondary text-xs font-semibold tracking-[0.28em] uppercase">
+                        <p class="landing-eyebrow">
                             {{ t("pages.homePage.seminarAbout.eyebrow") }}
                         </p>
 
-                        <h2
-                            class="text-highlighted mt-4 text-3xl leading-tight font-semibold text-pretty sm:text-4xl lg:text-5xl">
+                        <h2 class="landing-title mt-4">
                             {{ t("pages.homePage.seminarAbout.title") }}
                         </h2>
                     </div>
 
                     <div class="border-default space-y-5 lg:border-l lg:pl-10">
-                        <p class="text-muted text-base leading-7 sm:text-lg sm:leading-8">
+                        <p class="landing-description text-base">
                             {{ t("pages.homePage.seminarAbout.intro") }}
                         </p>
 
-                        <p class="text-muted leading-7 sm:leading-8">
+                        <p class="landing-description">
                             {{ t("pages.homePage.seminarAbout.closing") }}
                         </p>
                     </div>
@@ -227,16 +225,15 @@ useSeoMeta({
 
         <UPageSection
             :title="t('pages.homePage.stepper.title')"
-            class="border-default bg-elevated/45 mt-10 rounded-lg border shadow-sm backdrop-blur sm:mt-12 lg:mt-14"
+            class="landing-section landing-section-spaced"
             :ui="{
                 container: 'py-8 sm:py-10 lg:py-12',
                 wrapper: 'mx-auto max-w-2xl',
                 header: 'text-center',
-                title: 'font-heading text-highlighted text-3xl font-semibold leading-tight text-pretty sm:text-4xl lg:text-5xl',
+                title: 'landing-title',
                 body: 'mt-8 space-y-6 sm:space-y-8'
             }">
-            <div
-                class="border-default bg-muted/30 mx-auto max-w-4xl rounded-lg border p-4 sm:p-6 lg:p-8">
+            <div class="landing-panel mx-auto max-w-4xl p-4 sm:p-6 lg:p-8">
                 <UStepper
                     :items="contentMethodSteps"
                     :ui="{
@@ -268,9 +265,9 @@ useSeoMeta({
             :title="t('pages.homePage.stepper.title')"
             orientation="horizontal"
             reverse
-            class="border-default bg-elevated/45 mt-10 rounded-lg border shadow-sm backdrop-blur sm:mt-12 lg:mt-14">
+            class="landing-section landing-section-spaced">
             <ol
-                class="border-default bg-muted/30 mx-auto flex h-full max-w-[440px] flex-col justify-center gap-8 rounded-lg border p-5 sm:p-6">
+                class="landing-panel mx-auto flex h-full max-w-[440px] flex-col justify-center gap-8 p-5 sm:p-6">
                 <li
                     v-for="(item, index) in contentMethodSteps"
                     :key="item.title"
@@ -279,8 +276,7 @@ useSeoMeta({
                         v-if="index !== contentMethodSteps.length - 1"
                         class="bg-accented absolute top-10 left-5 h-[calc(100%+2rem)] w-px" />
 
-                    <div
-                        class="bg-primary/15 text-primary ring-primary/20 z-10 flex size-10 shrink-0 items-center justify-center rounded-full ring-1">
+                    <div class="landing-icon z-10 size-10 rounded-full">
                         <UIcon
                             :name="item.icon"
                             class="size-5" />
@@ -321,8 +317,7 @@ useSeoMeta({
                 container: 'px-0 sm:px-0 lg:px-0 py-12 sm:py-16 lg:py-20',
                 wrapper: 'mx-auto max-w-6xl'
             }">
-            <div
-                class="border-default bg-elevated/55 rounded-lg border p-5 shadow-sm backdrop-blur sm:p-6 lg:p-8">
+            <div class="landing-section-strong p-5 sm:p-6 lg:p-8">
                 <LandingInfoGrid :items="infoItems" />
 
                 <div class="border-default mt-6 flex gap-3 border-t pt-5 sm:mt-8 sm:pt-6">
@@ -339,38 +334,41 @@ useSeoMeta({
         <UPageSection
             title="Seminar Dates"
             :links="seminarScheduleLinks"
-            class="border-default bg-elevated/45 rounded-lg border shadow-sm backdrop-blur"
+            class="landing-section"
             :ui="{
                 container: 'py-8 sm:py-10 lg:py-12',
                 wrapper: 'mx-auto max-w-2xl text-center',
                 header: 'text-center',
-                title: 'font-heading text-highlighted text-3xl font-semibold leading-tight text-pretty sm:text-4xl',
+                title: 'landing-title-compact',
                 body: 'mt-8',
                 footer: 'mt-8',
                 links: 'justify-center gap-3'
             }">
             <template #body>
                 <div class="grid gap-4 sm:grid-cols-3">
-                    <div
+                    <UCard
                         v-for="(card, index) in seminarSchedule"
                         :key="index"
-                        class="border-default bg-muted/30 flex h-full flex-col items-center rounded-lg border p-5 text-center sm:p-6">
-                        <div
-                            class="bg-secondary/10 text-secondary ring-secondary/20 flex size-12 items-center justify-center rounded-lg ring-1">
-                            <UIcon
-                                :name="card.icon"
-                                class="size-6" />
-                        </div>
+                        variant="subtle"
+                        class="landing-card h-full text-center"
+                        :ui="{body: 'flex h-full flex-col items-center p-5 sm:p-6'}">
+                        <template #default>
+                            <div class="landing-icon landing-icon-secondary size-12">
+                                <UIcon
+                                    :name="card.icon"
+                                    class="size-6" />
+                            </div>
 
-                        <h3
-                            class="text-highlighted mt-4 text-2xl leading-tight font-semibold whitespace-pre-line">
-                            {{ card.title }}
-                        </h3>
+                            <h3
+                                class="text-highlighted mt-4 text-2xl leading-tight font-semibold whitespace-pre-line">
+                                {{ card.title }}
+                            </h3>
 
-                        <p class="text-muted mt-3 text-sm leading-6 whitespace-pre-line">
-                            {{ card.description }}
-                        </p>
-                    </div>
+                            <p class="text-muted mt-3 text-sm leading-6 whitespace-pre-line">
+                                {{ card.description }}
+                            </p>
+                        </template>
+                    </UCard>
                 </div>
             </template>
         </UPageSection>
@@ -380,9 +378,9 @@ useSeoMeta({
             :title="t('pages.homePage.participants.title')"
             orientation="horizontal"
             reverse
-            class="border-default bg-elevated/45 mt-10 rounded-lg border shadow-sm backdrop-blur sm:mt-12 lg:mt-14">
+            class="landing-section landing-section-spaced">
             <template #description>
-                <p class="text-muted leading-7 sm:text-lg sm:leading-8">
+                <p class="landing-description">
                     {{ t("pages.homePage.participants.description") }}
                 </p>
             </template>
@@ -390,20 +388,20 @@ useSeoMeta({
             <template #body>
                 <div class="space-y-6">
                     <LandingFeatureList :items="participantItems" />
-                    <p class="text-muted leading-7 sm:leading-8">
+                    <p class="landing-description">
                         {{ t("pages.homePage.participants.closing") }}
                     </p>
                 </div>
             </template>
 
-            <div class="mx-auto w-full max-w-md">
+            <div class="landing-media-frame mx-auto w-full max-w-md">
                 <NuxtImg
                     :src="processImage"
                     :alt="t('pages.homePage.participants.imageAlt')"
                     width="800"
                     height="1000"
                     sizes="100vw sm:100vw lg:40vw"
-                    class="aspect-[4/5] w-full rounded-lg object-cover" />
+                    class="aspect-[4/5] w-full object-cover" />
             </div>
         </LandingPageSection>
 
@@ -411,21 +409,21 @@ useSeoMeta({
             :eyebrow="t('pages.homePage.whyDahab.eyebrow')"
             :title="t('pages.homePage.whyDahab.title')"
             orientation="horizontal"
-            class="border-default bg-elevated/45 mt-10 rounded-lg border shadow-sm backdrop-blur sm:mt-12 lg:mt-14">
+            class="landing-section landing-section-spaced">
             <template #description>
-                <p class="text-muted leading-7 whitespace-pre-line sm:text-lg sm:leading-8">
+                <p class="landing-description whitespace-pre-line">
                     {{ t("pages.homePage.whyDahab.description") }}
                 </p>
             </template>
 
-            <div class="mx-auto w-full max-w-md">
+            <div class="landing-media-frame mx-auto w-full max-w-md">
                 <NuxtImg
                     :src="placeImage"
                     :alt="t('pages.homePage.whyDahab.imageAlt')"
                     width="800"
                     height="1000"
                     sizes="100vw sm:100vw lg:40vw"
-                    class="aspect-[4/5] w-full rounded-lg object-cover" />
+                    class="aspect-[4/5] w-full object-cover" />
             </div>
         </LandingPageSection>
 
@@ -434,13 +432,13 @@ useSeoMeta({
             :description="t('pages.homePage.cta.description')"
             :action-label="t('pages.homePage.cta.action')"
             :links="contactCta"
-            class="border-default bg-elevated/55 mt-10 rounded-lg border shadow-sm backdrop-blur sm:mt-12 lg:mt-14"
+            class="landing-section-strong landing-section-spaced"
             icon="i-lucide-waves"
             :ui="{
                 container: 'py-12 sm:py-14 lg:py-16',
                 wrapper: 'mx-auto max-w-2xl',
-                title: 'font-heading text-highlighted text-center text-2xl leading-tight font-semibold sm:text-3xl',
-                description: 'text-muted mx-auto mt-3 max-w-xl text-center leading-7',
+                title: 'landing-title-compact text-center text-2xl sm:text-3xl',
+                description: 'landing-description mx-auto mt-3 max-w-xl text-center text-base',
                 leadingIcon: 'text-secondary size-9 opacity-80',
                 links: 'justify-center'
             }" />
