@@ -19,13 +19,13 @@ defineProps<Props>();
             target="_blank"
             class="group flex items-center justify-between gap-5">
             <span class="flex min-w-0 items-center gap-4">
-                <span class="text-primary flex size-11 shrink-0 items-center justify-center">
+                <span class="text-muted flex size-11 shrink-0 items-center justify-center">
                     <UIcon
                         name="i-lucide-file-text"
                         class="size-8" />
                 </span>
 
-                <span class="text-primary text-lg font-semibold">
+                <span class="text-muted text-lg font-semibold">
                     {{ label }}
                 </span>
             </span>

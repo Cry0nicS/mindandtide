@@ -51,6 +51,12 @@ const props = withDefaults(defineProps<Props>(), {
             <slot name="body" />
         </template>
 
+        <template
+            v-if="$slots.footer"
+            #footer>
+            <slot name="footer" />
+        </template>
+
         <slot />
     </UPageSection>
 </template>
