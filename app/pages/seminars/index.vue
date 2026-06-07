@@ -243,21 +243,19 @@ const placeImage =
 
         <LandingTakeaways :content-key="contentKey" />
 
-        <UPageSection :ui="{container: 'py-0 sm:py-0 lg:py-0'}">
-            <NuxtImg
-                :src="processImage"
-                :alt="t(tk('image.imageAlt'))"
-                width="1216"
-                height="684"
-                sizes="100vw sm:100vw lg:40vw"
-                class="landing-section-spaced aspect-video w-full object-cover" />
-        </UPageSection>
+        <NuxtImg
+            :src="processImage"
+            :alt="t(tk('image.imageAlt'))"
+            width="1216"
+            height="684"
+            sizes="100vw sm:100vw lg:40vw"
+            class="landing-section-spaced aspect-video w-full object-cover" />
 
         <UPageSection
             :title="t(tk('stepper.title'))"
-            class="landing-section landing-section-spaced"
+            class="landing-section"
             :ui="{
-                container: 'py-4 sm:py-4 lg:py-4',
+                container: 'py-10 sm:py-12 lg:py-14',
                 wrapper: 'mx-auto max-w-2xl',
                 header: 'text-center',
                 title: 'landing-title',

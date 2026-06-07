@@ -197,15 +197,13 @@ const placeImage =
             </div>
         </UPageSection>
 
-        <UPageSection :ui="{container: 'py-0 sm:py-0 lg:py-0'}">
-            <NuxtImg
-                :src="processImage"
-                :alt="t(tk('image.imageAlt'))"
-                width="1216"
-                height="684"
-                sizes="100vw sm:100vw lg:40vw"
-                class="landing-section-spaced aspect-video w-full object-cover" />
-        </UPageSection>
+        <NuxtImg
+            :src="processImage"
+            :alt="t(tk('image.imageAlt'))"
+            width="1216"
+            height="684"
+            sizes="100vw sm:100vw lg:40vw"
+            class="landing-section-spaced aspect-video w-full object-cover" />
 
         <LandingTakeaways :content-key="contentKey" />
 
