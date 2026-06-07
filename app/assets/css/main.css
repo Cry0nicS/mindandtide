@@ -93,11 +93,7 @@
 
 @layer components {
     .landing-section {
-        @apply border-default bg-elevated/45 rounded-lg border shadow-sm backdrop-blur;
-    }
-
-    .landing-section-strong {
-        @apply border-default bg-elevated/55 rounded-lg border shadow-sm backdrop-blur;
+        @apply bg-elevated/45 backdrop-blur;
     }
 
     .landing-section-spaced {
@@ -125,7 +121,7 @@
     }
 
     .landing-card {
-        @apply bg-muted/30 shadow-sm backdrop-blur;
+        @apply bg-muted/30 backdrop-blur;
     }
 
     .landing-panel {
@@ -146,10 +142,6 @@
 
     .landing-icon-solid {
         @apply bg-primary text-inverted;
-    }
-
-    .landing-media-frame {
-        @apply border-default bg-elevated/70 overflow-hidden rounded-lg border shadow-sm;
     }
 }
 

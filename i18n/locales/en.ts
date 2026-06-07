@@ -36,29 +36,6 @@ export default {
                 seminarsAction: "Explore seminars",
                 retreatsAction: "Explore retreats"
             },
-            story: {
-                eyebrow: "The shared idea",
-                title: "A place-based approach to sustainable balance",
-                description:
-                    "Blue Desert is built around a simple belief: meaningful change needs more than information. It needs time, practice, attention and an environment that helps the nervous system settle enough to learn.",
-                items: {
-                    place: {
-                        title: "Learning with place",
-                        description:
-                            "The Red Sea, desert and mountains are woven into the experience, creating space for attention, reflection and recovery."
-                    },
-                    practice: {
-                        title: "Experience before theory",
-                        description:
-                            "Methods are explored through direct experience, guided reflection and simple practices that can be adapted to daily life."
-                    },
-                    transfer: {
-                        title: "Change that travels home",
-                        description:
-                            "Both formats are designed to help insights become realistic routines, decisions and ways of responding under pressure."
-                    }
-                }
-            },
             pathways: {
                 eyebrow: "Choose your path",
                 title: "Seminar or retreat",
@@ -82,23 +59,9 @@ export default {
                     action: "Read about retreats",
                     imageAlt: "Clear water and open sea in Egypt"
                 }
-            },
-            bridge: {
-                eyebrow: "How they connect",
-                title: "Different formats, one philosophy",
-                description:
-                    "The seminar starts with the demands of everyday professional life and builds practical tools around them. The retreat begins with spaciousness and recovery, then gently supports reflection, regulation and reconnection." +
-                    "\n\nBoth are intentionally small, experiential and grounded in the landscapes of South Sinai. You can choose the format that fits your current season.",
-                imageAlt: "Calm Red Sea water and coastline, suggesting retreat and spaciousness"
-            },
-            cta: {
-                title: "Not sure which format fits?",
-                description:
-                    "Tell us what you are looking for and we will help you find the right next step.",
-                action: "Contact us"
             }
         },
-        homePage: {
+        seminarsPage: {
             seo: {
                 title: "Resilience seminar by the sea | Blue Desert",
                 description:
@@ -155,8 +118,10 @@ export default {
                         description:
                             "The goal is not to escape daily pressures but to engage with them differently. Participants develop realistic strategies that can be adapted to their own professional and personal contexts long after the seminar has ended."
                     }
-                },
-                quote: "Understand, experience, and integrate knowledge into everyday life, for lasting change."
+                }
+            },
+            image: {
+                altImage: "Calm coastline with mountains in the background near Dahab in Egypt"
             },
             stepper: {
                 title: "What can you expect",
@@ -190,19 +155,17 @@ export default {
                 }
             },
             download: {
-                label: "Download the program overview as a PDF",
-                fileName: "blue-desert-seminar-overview.pdf"
+                title: "Download the seminar overview as a PDF",
+                description: "Here you will be able to find the details of the seminar....",
+                label: "Download the program overview as a PDF"
             },
             organization: {
+                title: "Essentials at a glance",
                 items: {
                     date: {
                         title: "5 days seminar with 6 units á 45 min per day",
                         description:
                             "A compact learning format across five thematic seminar days structured around: input, practice, and reflection"
-                    },
-                    place: {
-                        title: "Location: Dahab, Egypt, at the Red Sea",
-                        description: "Support with airport transfers can be provided if needed."
                     },
                     group: {
                         title: "6-15 participants",
@@ -288,7 +251,11 @@ export default {
                 imageAlt: "Open landscape with warm light, suggesting spaciousness and quiet",
                 description:
                     "Nestled between the Red Sea and the mountains of South Sinai, Dahab has long attracted people seeking simplicity, connection to nature, and a slower pace of life. Originally a small Bedouin fishing village, it has retained much of its relaxed character despite becoming an international destination for divers, remote workers, and travellers." +
-                    "\n\nWith its year-round sunshine, relaxed atmosphere, and reputation as one of the safest and most welcoming destinations in the region, Dahab offers an environment that supports both learning and recovery. Whether spending time by the sea, exploring the desert, joining local wellness activities, or simply slowing down, participants have many opportunities to recharge alongside the seminar experience."
+                    "\n\nWith its year-round sunshine, relaxed atmosphere, and reputation as one of the safest and most welcoming destinations in the region, Dahab offers an environment that supports both learning and recovery. Whether spending time by the sea, exploring the desert, joining local wellness activities, or simply slowing down, participants have many opportunities to recharge alongside the seminar experience.",
+                actions: {
+                    apply: "Read more",
+                    requestInformation: "Request information"
+                }
             },
             cta: {
                 title: "Do you have questions or would you like to learn more?",
@@ -309,7 +276,11 @@ export default {
                 supportingText:
                     "A retreat for recovery, reflection and embodied practice between sea, desert and mountains",
                 meta: "Nuweibaa, Egypt",
-                imageAlt: "Clear Red Sea water and open coastline near Nuweibaa in South Sinai"
+                imageAlt: "Clear Red Sea water and open coastline near Nuweibaa in South Sinai",
+                actions: {
+                    apply: "Read more",
+                    requestInformation: "Request information"
+                }
             },
             seminarAbout: {
                 eyebrow: "The invitation",
@@ -317,6 +288,9 @@ export default {
                 intro: "Modern life often rewards constant availability, speed and performance. Over time, this can make it difficult to rest deeply, listen inwardly or notice what the body has been carrying.",
                 closing:
                     "The retreat creates a protected pause in Nuweibaa: time to settle, reconnect with your own rhythm and explore practices that support sustainable recovery beyond the days by the sea."
+            },
+            image: {
+                imageAlt: "Calm coastline with mountains in the background near Dahab in Egypt"
             },
             takeaways: {
                 headline: "Our approach",
@@ -353,44 +327,10 @@ export default {
                         description:
                             "The retreat is not designed as an escape from life. It supports participants in recognizing what restores them and how small practices can be carried back into everyday routines."
                     }
-                },
-                quote: "Pause, listen, and return with practices that support recovery in ordinary life."
-            },
-            stepper: {
-                title: "What can you expect",
-                understand: {
-                    title: "Arrive and settle",
-                    description:
-                        "You slow the pace, orient to the place and give your system time to become present."
-                },
-                experience: {
-                    title: "Restore capacity",
-                    description:
-                        "Gentle practices with breath, body, water and perception support recovery and regulation."
-                },
-                transfer: {
-                    title: "Return with rhythm",
-                    description:
-                        "You identify simple routines and choices that can continue supporting you at home."
                 }
-            },
-            contentMethods: {
-                methods: {
-                    title: "Methods include",
-                    items: {
-                        reflection: "Guided reflection, journaling and integration prompts",
-                        body: "Gentle body-based regulation and grounding practices",
-                        breath: "Breath-based practices for settling and restoring energy",
-                        photography: "Perception walks and resource-oriented photography exercises",
-                        floating: "Sea-based relaxation and water-supported regulation sessions"
-                    }
-                }
-            },
-            download: {
-                label: "Download the retreat overview as a PDF",
-                fileName: "blue-desert-retreat-overview.pdf"
             },
             organization: {
+                title: "Essentials at a glance",
                 items: {
                     date: {
                         title: "7 days retreat with daily guided sessions",
@@ -419,27 +359,6 @@ export default {
                     }
                 },
                 note: "Arrival on the previous day and departure on the following day are recommended. Flights, transfers and accommodation are not included unless stated otherwise."
-            },
-            seminarSchedule: {
-                title: "Retreat Dates",
-                items: {
-                    october2026: {
-                        title: "Spring\n2027",
-                        description: "First date in planning"
-                    },
-                    november2026: {
-                        title: "Autumn\n2027",
-                        description: "Interest list open"
-                    },
-                    upcoming2027: {
-                        title: "2028",
-                        description: "Additional dates coming soon"
-                    }
-                },
-                actions: {
-                    apply: "Join interest list",
-                    requestInformation: "Request information"
-                }
             },
             participants: {
                 eyebrow: "The participants",
@@ -481,13 +400,17 @@ export default {
                 closing:
                     "No previous experience with meditation, breathwork or similar practices is required."
             },
-            whyDahab: {
+            whyNuweibaa: {
                 eyebrow: "Why this place",
                 title: "Why travel to Nuweibaa for a retreat?",
                 imageAlt: "Open desert road and mountains in warm evening light in South Sinai",
                 description:
                     "Nuweibaa sits on the eastern coast of South Sinai, between the Red Sea and the desert mountains. It is known for a quieter, more spacious atmosphere than many larger resort towns, with long beaches, simple camps and a strong sense of horizon." +
-                    "\n\nFor a retreat, this matters. The landscape invites a slower rhythm: waking with the sea, spending time in the desert, watching light change across the mountains and letting the nervous system orient to simplicity. Nuweibaa offers a setting where rest, reflection and reconnection can unfold without the pressure to consume every moment."
+                    "\n\nFor a retreat, this matters. The landscape invites a slower rhythm: waking with the sea, spending time in the desert, watching light change across the mountains and letting the nervous system orient to simplicity. Nuweibaa offers a setting where rest, reflection and reconnection can unfold without the pressure to consume every moment.",
+                actions: {
+                    apply: "Read more",
+                    requestInformation: "Request information"
+                }
             },
             cta: {
                 title: "Do you have questions or would you like to learn more?",

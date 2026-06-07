@@ -53,14 +53,14 @@ const takeawayItems = computed(() => {
         :title="t(tk('title'))"
         :description="t(tk('description'))"
         :ui="{
-            container: 'py-8 sm:py-10 lg:py-12',
+            container: 'py-0 sm:py-0 lg:py-0',
             wrapper: 'mx-auto max-w-2xl text-center',
             headline: 'landing-eyebrow',
             title: 'landing-title mx-auto max-w-2xl',
             description: 'landing-description mx-auto max-w-2xl',
             body: 'mt-8'
         }"
-        class="landing-section-strong text-center">
+        class="landing-section-spaced text-center">
         <div class="space-y-5 sm:space-y-6">
             <div class="grid gap-4 sm:grid-cols-2">
                 <div
@@ -84,20 +84,6 @@ const takeawayItems = computed(() => {
                         </p>
                     </div>
                 </div>
-            </div>
-
-            <div
-                class="landing-item-card flex flex-col gap-4 p-5 text-left sm:flex-row sm:items-center sm:p-6">
-                <div class="landing-icon landing-icon-solid size-11 rounded-full">
-                    <UIcon
-                        name="i-lucide-quote"
-                        class="size-5"
-                        aria-hidden="true" />
-                </div>
-
-                <p class="text-highlighted text-base leading-7">
-                    {{ t(tk("quote")) }}
-                </p>
             </div>
         </div>
     </UPageSection>

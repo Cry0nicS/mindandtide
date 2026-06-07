@@ -63,7 +63,8 @@ export default defineNuxtConfig({
         "@nuxt/image",
         "nuxt-zod-i18n",
         "@nuxtjs/i18n",
-        "@nuxtjs/seo"
+        "@nuxtjs/seo",
+        "@nuxtjs/device"
     ],
     ogImage: {
         enabled: false

@@ -28,7 +28,7 @@ const props = withDefaults(defineProps<Props>(), {
         :headline="props.eyebrow"
         :title="props.title"
         :links="props.links"
-        class="landing-media-frame relative isolate"
+        class="relative isolate"
         :ui="{
             container:
                 'relative z-10 flex min-h-[30rem] items-center py-16 sm:min-h-[34rem] sm:py-20 lg:min-h-[38rem] lg:items-start lg:pt-32 lg:pb-24',
