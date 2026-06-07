@@ -11,11 +11,20 @@ import {
     CONTACT_PHONE
 } from "#shared/utils/constants";
 
+interface LegalCardLine {
+    label: string;
+    to?: string;
+    external?: boolean;
+}
+
+interface LegalCard {
+    icon: string;
+    title: string;
+    lines: LegalCardLine[];
+}
+
 const {locale, t} = useI18n();
 const localePath = useLocalePath();
-
-const title = computed(() => t("pages.impressum.hero.title"));
-const description = computed(() => t("pages.impressum.hero.intro"));
 
 const heroLinks = computed<ButtonProps[]>(() => {
     void locale.value;
@@ -24,21 +33,20 @@ const heroLinks = computed<ButtonProps[]>(() => {
         {
             label: t("pages.contact"),
             to: localePath("/contact"),
-            icon: "i-lucide-mail",
             color: "primary",
-            variant: "solid"
+            trailingIcon: "i-lucide-arrow-right"
         },
         {
             label: t("pages.privacy"),
             to: localePath("/privacy"),
-            icon: "i-lucide-shield-user",
             color: "neutral",
-            variant: "subtle"
+            variant: "outline",
+            trailingIcon: "i-lucide-shield-user"
         }
     ];
 });
 
-const cards = computed(() => {
+const legalCards = computed<LegalCard[]>(() => {
     void locale.value;
 
     return [
@@ -82,15 +90,29 @@ const cards = computed(() => {
             ]
         },
         {
-            icon: "i-lucide-info",
+            icon: "i-lucide-scale",
             title: t("pages.impressum.sections.disputeResolution.title"),
             lines: [
                 {label: t("pages.impressum.sections.disputeResolution.content")},
                 {
                     label: t("pages.impressum.sections.disputeResolution.linkLabel"),
-                    to: t("pages.impressum.sections.disputeResolution.linkUrl")
+                    to: t("pages.impressum.sections.disputeResolution.linkUrl"),
+                    external: true
                 }
             ]
+        }
+    ];
+});
+
+const ctaLinks = computed<ButtonProps[]>(() => {
+    void locale.value;
+
+    return [
+        {
+            label: t("pages.impressum.cta.action"),
+            to: localePath("/contact"),
+            color: "primary",
+            trailingIcon: "i-lucide-arrow-right"
         }
     ];
 });
@@ -101,56 +123,113 @@ useSeoMeta({
     ogTitle: () => t("pages.impressum.meta.title"),
     title: () => t("pages.impressum.meta.title")
 });
+
+const heroImage =
+    "https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=2400&q=80";
+const reviewImage =
+    "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80";
 </script>
 
 <template>
-    <UPage>
-        <UPageHero
-            :headline="t('pages.imprint')"
-            :title="title"
-            :description="description"
+    <div class="bg-elevated/55 pb-4">
+        <LandingHero
+            :image-src="heroImage"
+            :image-alt="t('pages.impressum.hero.imageAlt')"
+            :eyebrow="t('pages.impressum.hero.eyebrow')"
+            :title="t('pages.impressum.hero.title')"
+            :subheadline="t('pages.impressum.hero.subheadline')"
+            :supporting-text="t('pages.impressum.hero.intro')"
+            :meta-text="t('pages.impressum.hero.meta')"
+            meta-icon="i-lucide-scale"
             :links="heroLinks" />
 
-        <UPageBody class="pb-0">
-            <UPageSection>
-                <div class="flex flex-col flex-wrap items-stretch gap-6 px-0 lg:flex-row">
-                    <UPageCard
-                        v-for="card in cards"
+        <UPageSection
+            :headline="t('pages.impressum.sections.provider.eyebrow')"
+            :title="t('pages.impressum.sections.provider.title')"
+            :description="t('pages.impressum.sections.provider.description')"
+            class="landing-section-spaced">
+            <template #body>
+                <div class="grid gap-4 lg:grid-cols-2">
+                    <LandingPageCard
+                        v-for="card in legalCards"
                         :key="card.title"
-                        :title="card.title"
                         :icon="card.icon"
-                        variant="subtle"
-                        class="flex-1 basis-full lg:basis-[calc(50%-0.75rem)]">
-                        <template #description>
+                        :title="card.title"
+                        orientation="horizontal"
+                        class="h-full">
+                        <div
+                            class="text-muted space-y-2 text-sm leading-6 sm:text-base sm:leading-7">
                             <p
                                 v-for="line in card.lines"
                                 :key="line.label">
                                 <NuxtLink
                                     v-if="line.to"
                                     :to="line.to"
+                                    :external="line.external"
                                     class="text-primary hover:text-primary/80 transition-colors">
                                     {{ line.label }}
                                 </NuxtLink>
                                 <span v-else>{{ line.label }}</span>
                             </p>
-                        </template>
-                    </UPageCard>
+                        </div>
+                    </LandingPageCard>
                 </div>
-            </UPageSection>
+            </template>
+        </UPageSection>
 
-            <UPageSection>
-                <UAlert
-                    color="secondary"
-                    variant="subtle"
-                    icon="i-lucide-scale"
-                    :title="t('pages.impressum.sections.legalReview.title')"
-                    :description="t('pages.impressum.sections.legalReview.content')"
-                    :ui="{
-                        root: 'border-default rounded-lg',
-                        title: 'font-serif text-lg text-highlighted',
-                        description: 'text-muted'
-                    }" />
-            </UPageSection>
-        </UPageBody>
-    </UPage>
+        <LandingPageSection
+            :eyebrow="t('pages.impressum.sections.legalReview.eyebrow')"
+            :title="t('pages.impressum.sections.legalReview.title')"
+            orientation="horizontal"
+            class="landing-section landing-section-spaced">
+            <template #description>
+                <p class="landing-description">
+                    {{ t("pages.impressum.sections.legalReview.content") }}
+                </p>
+            </template>
+
+            <template #body>
+                <div class="landing-panel p-5 sm:p-6 lg:p-7">
+                    <div class="flex gap-4">
+                        <span class="landing-icon landing-icon-secondary size-11">
+                            <UIcon
+                                name="i-lucide-file-check-2"
+                                class="size-5" />
+                        </span>
+
+                        <div>
+                            <h3 class="text-highlighted text-lg font-semibold">
+                                {{ t("pages.impressum.sections.legalReview.cardTitle") }}
+                            </h3>
+                            <p class="text-muted mt-2 text-sm leading-6 sm:text-base sm:leading-7">
+                                {{ t("pages.impressum.sections.legalReview.cardDescription") }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </template>
+
+            <NuxtImg
+                :src="reviewImage"
+                :alt="t('pages.impressum.sections.legalReview.imageAlt')"
+                width="800"
+                height="1000"
+                sizes="100vw sm:100vw lg:40vw"
+                class="aspect-4/5 w-full object-cover" />
+        </LandingPageSection>
+
+        <UPageSection
+            :title="t('pages.impressum.cta.title')"
+            :description="t('pages.impressum.cta.description')"
+            :links="ctaLinks"
+            class="landing-section-spaced"
+            icon="i-lucide-mail"
+            :ui="{
+                wrapper: 'mx-auto max-w-2xl',
+                title: 'landing-title-compact text-center text-2xl sm:text-3xl',
+                description: 'landing-description mx-auto mt-3 max-w-xl text-center text-base',
+                leadingIcon: 'text-secondary size-9 opacity-80',
+                links: 'justify-center'
+            }" />
+    </div>
 </template>

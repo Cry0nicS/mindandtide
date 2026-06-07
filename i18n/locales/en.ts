@@ -414,16 +414,18 @@ export default {
                     "Privacy information about contact requests, server logs, technically necessary preferences and your rights under the GDPR."
             },
             hero: {
-                badge: "Privacy",
+                eyebrow: "Privacy",
                 title: "Privacy and data protection",
-                description:
+                subheadline: "Clear information, minimal data",
+                supportingText:
                     "This notice explains which personal data may be processed when you visit this website or contact us.",
-                lastUpdated: "Last updated: 28 May 2026"
+                meta: "Last updated: 28 May 2026",
+                imageAlt: "Open desert mountains in South Sinai with soft evening light"
             },
             controller: {
+                eyebrow: "Responsible contact",
                 title: "Data controller",
-                intro: "The controller responsible for processing personal data on this website is:",
-                mailLabel: "Write an email"
+                intro: "The controller responsible for processing personal data on this website is:"
             },
             overview: {
                 eyebrow: "Overview",
@@ -445,6 +447,12 @@ export default {
                     description:
                         "Language, theme choice and technically necessary state so the website works reliably."
                 }
+            },
+            details: {
+                eyebrow: "Processing details",
+                title: "How data is handled",
+                description:
+                    "The following sections describe the main situations in which data may be processed on this website."
             },
             sections: {
                 hosting: {
@@ -498,6 +506,7 @@ export default {
                 title: "Rights under the GDPR",
                 description:
                     "You can exercise your rights at any time through the contact address listed above.",
+                imageAlt: "Calm Red Sea coastline with bright sand and clear water",
                 access: "Access to stored personal data",
                 rectification: "Rectification of inaccurate or incomplete data",
                 erasure: "Erasure, unless retention duties apply",
@@ -521,12 +530,19 @@ export default {
                     "Mandatory provider information and legal disclosures for this website under German law."
             },
             hero: {
+                eyebrow: "Legal notice",
                 title: "Legal Notice",
-                intro: "Here you can find the legally required information about provider details, responsibilities, and dispute resolution."
+                subheadline: "Provider information and responsibilities",
+                intro: "Here you can find the legally required information about provider details, responsibilities, and dispute resolution.",
+                meta: "Blue Desert Learning & Retreats",
+                imageAlt: "Wide desert road between red rocks and mountains in South Sinai"
             },
             sections: {
                 provider: {
                     title: "Provider information",
+                    eyebrow: "Legal details",
+                    description:
+                        "The following cards summarize the required provider information and contact details for this website.",
                     fields: {
                         vat: "VAT ID",
                         contentResponsible: "Responsible for content"
@@ -552,10 +568,22 @@ export default {
                     linkUrl: "https://ec.europa.eu/consumers/odr/"
                 },
                 legalReview: {
+                    eyebrow: "Review notice",
                     title: "Legal review notice",
                     content:
-                        "This information has been prepared with due care and is reviewed regularly. Changes due to legal or factual updates remain reserved."
+                        "This information has been prepared with due care and is reviewed regularly. Changes due to legal or factual updates remain reserved.",
+                    cardTitle: "Kept under review",
+                    cardDescription:
+                        "Provider details, service disclosures and dispute-resolution information are checked when website functions or legal requirements change.",
+                    imageAlt:
+                        "Open desert landscape with warm light and a road leading toward mountains"
                 }
+            },
+            cta: {
+                title: "Questions about the legal notice?",
+                description:
+                    "Send us a message if you need clarification about provider information or website responsibility.",
+                action: "Contact us"
             }
         }
     },

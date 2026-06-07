@@ -417,16 +417,18 @@ export default {
                     "Datenschutzhinweise zu Kontaktanfragen, Server-Logs, technisch notwendigen Einstellungen und Deinen Rechten nach der DSGVO."
             },
             hero: {
-                badge: "Datenschutz",
+                eyebrow: "Datenschutz",
                 title: "Datenschutz und Datensicherheit",
-                description:
+                subheadline: "Klare Informationen, so wenig Daten wie möglich",
+                supportingText:
                     "Dieser Hinweis erklärt, welche personenbezogenen Daten verarbeitet werden können, wenn Du diese Website besuchst oder Kontakt mit uns aufnimmst.",
-                lastUpdated: "Zuletzt aktualisiert: 28. Mai 2026"
+                meta: "Zuletzt aktualisiert: 28. Mai 2026",
+                imageAlt: "Offene Wüstenberge im Südsinai in weichem Abendlicht"
             },
             controller: {
+                eyebrow: "Verantwortlicher Kontakt",
                 title: "Verantwortliche Stelle",
-                intro: "Verantwortlich für die Verarbeitung personenbezogener Daten auf dieser Website ist:",
-                mailLabel: "E-Mail schreiben"
+                intro: "Verantwortlich für die Verarbeitung personenbezogener Daten auf dieser Website ist:"
             },
             overview: {
                 eyebrow: "Überblick",
@@ -448,6 +450,12 @@ export default {
                     description:
                         "Sprache, Designauswahl und technisch notwendiger Status, damit die Website zuverlässig funktioniert."
                 }
+            },
+            details: {
+                eyebrow: "Details zur Verarbeitung",
+                title: "Wie Daten verarbeitet werden",
+                description:
+                    "Die folgenden Abschnitte beschreiben die wichtigsten Situationen, in denen auf dieser Website Daten verarbeitet werden können."
             },
             sections: {
                 hosting: {
@@ -501,6 +509,7 @@ export default {
                 title: "Rechte nach der DSGVO",
                 description:
                     "Du kannst Deine Rechte jederzeit über die oben genannte Kontaktadresse ausüben.",
+                imageAlt: "Ruhige Küste am Roten Meer mit hellem Sand und klarem Wasser",
                 access: "Auskunft über gespeicherte personenbezogene Daten",
                 rectification: "Berichtigung unrichtiger oder unvollständiger Daten",
                 erasure: "Löschung, sofern keine Aufbewahrungspflichten entgegenstehen",
@@ -524,12 +533,19 @@ export default {
                     "Pflichtangaben zum Anbieter und rechtliche Hinweise zu dieser Website nach deutschem Recht."
             },
             hero: {
+                eyebrow: "Impressum",
                 title: "Impressum",
-                intro: "Hier findest Du die gesetzlich erforderlichen Informationen zu Anbieterangaben, Verantwortlichkeiten und Streitbeilegung."
+                subheadline: "Anbieterangaben und Verantwortlichkeiten",
+                intro: "Hier findest Du die gesetzlich erforderlichen Informationen zu Anbieterangaben, Verantwortlichkeiten und Streitbeilegung.",
+                meta: "Blue Desert Learning & Retreats",
+                imageAlt: "Weite Wüstenstraße zwischen roten Felsen und Bergen im Südsinai"
             },
             sections: {
                 provider: {
                     title: "Anbieterinformationen",
+                    eyebrow: "Rechtliche Angaben",
+                    description:
+                        "Die folgenden Karten fassen die erforderlichen Anbieterinformationen und Kontaktdaten für diese Website zusammen.",
                     fields: {
                         vat: "USt-IdNr.",
                         contentResponsible: "Inhaltlich verantwortlich"
@@ -555,10 +571,22 @@ export default {
                     linkUrl: "https://ec.europa.eu/consumers/odr/"
                 },
                 legalReview: {
+                    eyebrow: "Prüfhinweis",
                     title: "Hinweis zur rechtlichen Prüfung",
                     content:
-                        "Diese Informationen wurden mit Sorgfalt erstellt und werden regelmäßig geprüft. Änderungen aufgrund rechtlicher oder tatsächlicher Aktualisierungen bleiben vorbehalten."
+                        "Diese Informationen wurden mit Sorgfalt erstellt und werden regelmäßig geprüft. Änderungen aufgrund rechtlicher oder tatsächlicher Aktualisierungen bleiben vorbehalten.",
+                    cardTitle: "Wird regelmäßig geprüft",
+                    cardDescription:
+                        "Anbieterangaben, Dienstleisterhinweise und Informationen zur Streitbeilegung werden geprüft, wenn sich Website-Funktionen oder rechtliche Anforderungen ändern.",
+                    imageAlt:
+                        "Offene Wüstenlandschaft mit warmem Licht und einer Straße in Richtung Berge"
                 }
+            },
+            cta: {
+                title: "Fragen zum Impressum?",
+                description:
+                    "Schreib uns eine Nachricht, wenn Du Rückfragen zu Anbieterangaben oder Website-Verantwortlichkeit hast.",
+                action: "Kontakt aufnehmen"
             }
         }
     },

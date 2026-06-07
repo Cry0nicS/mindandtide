@@ -27,6 +27,7 @@ const {footer: navItems} = useNavItems();
         <NavFooter>
             <template #navigation>
                 <UNavigationMenu
+                    class="hidden md:flex"
                     color="secondary"
                     :highlight="true"
                     highlight-color="secondary"
