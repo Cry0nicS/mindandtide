@@ -115,6 +115,38 @@ const infoItems = computed(() => {
     ];
 });
 
+const activityItems = computed(() => {
+    void locale.value;
+
+    return [
+        {
+            icon: "i-lucide-waves",
+            title: t(tk("activities.items.scuba.title")),
+            description: t(tk("activities.items.scuba.description"))
+        },
+        {
+            icon: "i-lucide-footprints",
+            title: t(tk("activities.items.camel.title")),
+            description: t(tk("activities.items.camel.description"))
+        },
+        {
+            icon: "i-lucide-mountain",
+            title: t(tk("activities.items.safari.title")),
+            description: t(tk("activities.items.safari.description"))
+        },
+        {
+            icon: "i-lucide-fish",
+            title: t(tk("activities.items.snorkeling.title")),
+            description: t(tk("activities.items.snorkeling.description"))
+        },
+        {
+            icon: "i-lucide-flame",
+            title: t(tk("activities.items.bedouinDinner.title")),
+            description: t(tk("activities.items.bedouinDinner.description"))
+        }
+    ];
+});
+
 const contactCta = computed<ButtonProps[]>(() => {
     return [
         {
@@ -277,6 +309,21 @@ const placeImage =
                 sizes="100vw sm:100vw lg:40vw"
                 class="aspect-4/5 w-full object-cover" />
         </LandingPageSection>
+
+        <UPageSection
+            :title="t(tk('activities.title'))"
+            :description="t(tk('activities.description'))"
+            orientation="horizontal"
+            reverse
+            :features="activityItems">
+            <NuxtImg
+                :src="placeImage"
+                :alt="t(tk('whyNuweibaa.imageAlt'))"
+                width="800"
+                height="1000"
+                sizes="100vw sm:100vw lg:40vw"
+                class="aspect-4/5 w-full object-cover" />
+        </UPageSection>
 
         <UPageSection
             :title="t(tk('cta.title'))"

@@ -401,6 +401,38 @@ export default {
                     requestInformation: "Request information"
                 }
             },
+            activities: {
+                title: "Activities around the retreat",
+                description:
+                    "Along with the retreat program, Nuweibaa and its surroundings offer various ways to connect with the desert and the sea. Here are some activities you can experience during your stay.",
+                items: {
+                    scuba: {
+                        title: "Scuba Diving",
+                        description:
+                            "Explore the clear waters and vibrant coral reefs of the Red Sea."
+                    },
+                    camel: {
+                        title: "Camel Riding",
+                        description:
+                            "Experience the timeless rhythm of the desert on a short camel ride along the coast or through the wadis."
+                    },
+                    safari: {
+                        title: "Desert Safari",
+                        description:
+                            "Venture deeper into the Sinai mountains with a jeep safari, discovering unique rock formations and silence."
+                    },
+                    snorkeling: {
+                        title: "Snorkeling",
+                        description:
+                            "Discover the underwater life just steps from the shore in the warm coastal waters."
+                    },
+                    bedouinDinner: {
+                        title: "Bedouin Dinner",
+                        description:
+                            "Share traditional tea and food prepared over an open fire under a clear starry sky."
+                    }
+                }
+            },
             cta: {
                 title: "Do you have questions or would you like to learn more?",
                 description: "We look forward to hearing from you.",

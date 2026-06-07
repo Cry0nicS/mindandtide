@@ -404,6 +404,38 @@ export default {
                     requestInformation: "Informationen anfordern"
                 }
             },
+            activities: {
+                title: "Aktivitäten rund um das Retreat",
+                description:
+                    "Neben dem Retreat-Programm bieten Nuweibaa und die Umgebung verschiedene Möglichkeiten, sich mit der Wüste und dem Meer zu verbinden. Hier sind einige Aktivitäten, die Sie während Ihres Aufenthalts erleben können.",
+                items: {
+                    scuba: {
+                        title: "Gerätetauchen",
+                        description:
+                            "Erkunden Sie das klare Wasser und die lebendigen Korallenriffe des Roten Meeres."
+                    },
+                    camel: {
+                        title: "Kamelreiten",
+                        description:
+                            "Erleben Sie den zeitlosen Rhythmus der Wüste bei einem kurzen Kamelritt entlang der Küste oder durch die Wadis."
+                    },
+                    safari: {
+                        title: "Wüstensafari",
+                        description:
+                            "Tauchen Sie mit einer Jeep-Safari tiefer in die Sinai-Berge ein und entdecken Sie einzigartige Felsformationen und Stille."
+                    },
+                    snorkeling: {
+                        title: "Schnorcheln",
+                        description:
+                            "Entdecken Sie die Unterwasserwelt nur wenige Schritte vom Ufer entfernt in den warmen Küstengewässern."
+                    },
+                    bedouinDinner: {
+                        title: "Beduinen-Dinner",
+                        description:
+                            "Teilen Sie traditionellen Tee und über offenem Feuer zubereitetes Essen unter einem klaren Sternenhimmel."
+                    }
+                }
+            },
             cta: {
                 title: "Hast Du Fragen oder möchtest Du mehr erfahren?",
                 description: "Wir freuen uns, von Dir zu hören.",
