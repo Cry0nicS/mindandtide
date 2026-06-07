@@ -69,7 +69,7 @@ useSeoMeta({
 </script>
 
 <template>
-    <div class="pb-4">
+    <div class="landing-page pb-4">
         <LandingHero
             :image-src="heroImage"
             :image-alt="t('pages.indexPage.hero.imageAlt')"

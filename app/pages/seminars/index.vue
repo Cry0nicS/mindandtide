@@ -201,7 +201,7 @@ const placeImage =
 </script>
 
 <template>
-    <div class="bg-elevated/55 pb-4">
+    <div class="landing-page">
         <LandingHero
             :image-src="heroImage"
             :image-alt="t(tk('hero.imageAlt'))"
@@ -257,7 +257,7 @@ const placeImage =
             :title="t(tk('stepper.title'))"
             class="landing-section landing-section-spaced"
             :ui="{
-                container: 'py-0 sm:py-0 lg:py-0',
+                container: 'py-4 sm:py-4 lg:py-4',
                 wrapper: 'mx-auto max-w-2xl',
                 header: 'text-center',
                 title: 'landing-title',
@@ -297,7 +297,7 @@ const placeImage =
                     }">
                     <aside
                         class="border-default flex h-full w-full flex-col justify-center lg:border-l lg:pl-12">
-                        <div class="border-default bg-elevated/70 rounded-lg border p-5 sm:p-6">
+                        <div class="landing-panel p-5 sm:p-6">
                             <div class="flex items-start justify-between gap-5">
                                 <div
                                     class="bg-primary/10 text-primary ring-primary/15 flex size-12 shrink-0 items-center justify-center rounded-md ring-1">
@@ -440,7 +440,7 @@ const placeImage =
             :title="t(tk('whyDahab.title'))"
             orientation="horizontal"
             :links="whyDahabLinks"
-            class="landing-section landing-section-spaced">
+            class="landing-section-spaced">
             <template #description>
                 <p class="landing-description whitespace-pre-line">
                     {{ t(tk("whyDahab.description")) }}
@@ -461,7 +461,7 @@ const placeImage =
             :description="t(tk('cta.description'))"
             :action-label="t(tk('cta.action'))"
             :links="contactCta"
-            class="landing-section-spaced"
+            class="landing-section-spaced landing-section"
             icon="i-lucide-waves"
             :ui="{
                 wrapper: 'mx-auto max-w-2xl',

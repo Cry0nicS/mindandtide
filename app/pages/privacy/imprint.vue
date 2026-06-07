@@ -131,7 +131,7 @@ const reviewImage =
 </script>
 
 <template>
-    <div class="bg-elevated/55 pb-4">
+    <div class="landing-page pb-4">
         <LandingHero
             :image-src="heroImage"
             :image-alt="t('pages.impressum.hero.imageAlt')"
@@ -181,7 +181,7 @@ const reviewImage =
             :eyebrow="t('pages.impressum.sections.legalReview.eyebrow')"
             :title="t('pages.impressum.sections.legalReview.title')"
             orientation="horizontal"
-            class="landing-section landing-section-spaced">
+            class="landing-section-spaced">
             <template #description>
                 <p class="landing-description">
                     {{ t("pages.impressum.sections.legalReview.content") }}

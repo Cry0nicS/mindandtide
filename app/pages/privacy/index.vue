@@ -164,7 +164,7 @@ const rightsImage =
 </script>
 
 <template>
-    <div class="bg-elevated/55 pb-4">
+    <div class="landing-page pb-4">
         <LandingHero
             :image-src="heroImage"
             :image-alt="t('pages.privacyPage.hero.imageAlt')"

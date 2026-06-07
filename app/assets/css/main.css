@@ -92,8 +92,12 @@
 }
 
 @layer components {
+    .landing-page {
+        background: var(--landing-page-bg);
+    }
+
     .landing-section {
-        @apply bg-elevated/45 backdrop-blur;
+        background: var(--landing-section-bg);
     }
 
     .landing-section-spaced {
@@ -101,7 +105,9 @@
     }
 
     .landing-section-muted {
-        @apply bg-muted/30;
+        background: var(--landing-panel-bg);
+        border: 1px solid var(--landing-card-border);
+        border-radius: 0.5rem;
     }
 
     .landing-eyebrow {
@@ -121,15 +127,27 @@
     }
 
     .landing-card {
-        @apply bg-muted/30 backdrop-blur;
+        background-color: var(--landing-card-bg) !important;
+        border: 1px solid var(--landing-card-border);
+        --tw-ring-color: var(--landing-card-border) !important;
+        box-shadow: 0 18px 60px -52px var(--landing-card-shadow);
+        backdrop-filter: blur(8px);
     }
 
     .landing-panel {
-        @apply border-default bg-muted/30 rounded-lg border;
+        background-color: var(--landing-card-bg) !important;
+        border: 1px solid var(--landing-card-border);
+        --tw-ring-color: var(--landing-card-border) !important;
+        border-radius: 0.5rem;
+        box-shadow: 0 18px 60px -52px var(--landing-card-shadow);
     }
 
     .landing-item-card {
-        @apply border-default bg-muted/30 rounded-lg border;
+        background-color: var(--landing-card-bg) !important;
+        border: 1px solid var(--landing-card-border);
+        --tw-ring-color: var(--landing-card-border) !important;
+        border-radius: 0.5rem;
+        box-shadow: 0 18px 60px -52px var(--landing-card-shadow);
     }
 
     .landing-icon {
@@ -172,6 +190,13 @@
 
     --ui-bg-inverted: var(--color-coast-950);
     --ui-border-inverted: var(--color-coast-950);
+
+    --landing-page-bg: #fbfdfc;
+    --landing-section-bg: #edf5f2;
+    --landing-panel-bg: #f0f7f5;
+    --landing-card-bg: rgba(232, 241, 239, 0.76);
+    --landing-card-border: #c2d9d4;
+    --landing-card-shadow: rgba(8, 40, 66, 0.14);
 }
 
 .dark {
@@ -200,6 +225,13 @@
 
     --ui-bg-inverted: #fffaf0;
     --ui-border-inverted: var(--color-coast-50);
+
+    --landing-page-bg: #15394d;
+    --landing-section-bg: #1a4356;
+    --landing-panel-bg: #173d52;
+    --landing-card-bg: rgba(8, 36, 58, 0.34);
+    --landing-card-border: #356d78;
+    --landing-card-shadow: rgba(0, 0, 0, 0.36);
 }
 
 /* Theme transition */

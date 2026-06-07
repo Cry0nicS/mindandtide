@@ -156,7 +156,7 @@ const placeImage =
 </script>
 
 <template>
-    <div class="bg-elevated/55 pb-4">
+    <div class="landing-page">
         <LandingHero
             :image-src="heroImage"
             :image-alt="t(tk('hero.imageAlt'))"
@@ -264,7 +264,7 @@ const placeImage =
             :title="t(tk('whyNuweibaa.title'))"
             orientation="horizontal"
             :links="whyNuweibaaLinks"
-            class="landing-section landing-section-spaced">
+            class="landing-section-spaced">
             <template #description>
                 <p class="landing-description whitespace-pre-line">
                     {{ t(tk("whyNuweibaa.description")) }}
