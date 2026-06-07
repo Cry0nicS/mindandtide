@@ -468,6 +468,74 @@ export default {
                 action: "Anfrage senden"
             }
         },
+        aboutUsPage: {
+            seo: {
+                title: "Über uns | Blue Desert",
+                description:
+                    "Erfahre mehr über Blue Desert, unsere Arbeit im Südsinai und die Menschen hinter den Seminaren und Retreats."
+            },
+            hero: {
+                eyebrow: "Über uns",
+                title: "Ein Ort für Lernen, Erholung und stille Veränderung",
+                subheadline:
+                    "Blue Desert verbindet strukturierte Praxis mit den Landschaften des Südsinai",
+                supportingText:
+                    "Unsere Arbeit bringt erfahrungsbasiertes Lernen, körperorientierte Regulation und die erholsame Qualität von Meer, Wüste und Bergen zusammen.",
+                meta: "Dahab und Nuweibaa, Ägypten",
+                imageAlt: "Offene Wüstenberge im Südsinai in warmem Abendlicht"
+            },
+            project: {
+                eyebrow: "Das Projekt",
+                title: "Warum wir Blue Desert gegründet haben",
+                description:
+                    "Blue Desert entstand aus einer einfachen Beobachtung: Viele Menschen brauchen nicht noch mehr Druck, noch mehr Lärm oder ein weiteres abstraktes Versprechen zur Selbstentwicklung. Sie brauchen Raum, Struktur und eine Umgebung, die hilft wahrzunehmen, was in Körper, Geist und Alltag bereits geschieht.\n\nDas Projekt verbindet professionelles Lernen, angeleitete Praxis und ortsbezogene Erfahrung. Unsere Seminare und Retreats unterstützen Stressregulation, Erholung und nachhaltige Veränderung, ohne daraus eine neue Form von Leistung zu machen.",
+                imageAlt: "Ruhige Küste am Roten Meer mit Bergen im Hintergrund"
+            },
+            whyEgypt: {
+                eyebrow: "Warum Ägypten",
+                title: "Eine Landschaft, die Perspektive schafft",
+                description:
+                    "Ägypten verbindet Tiefe, Weite und Einfachheit auf besondere Weise. Im Südsinai treffen das Rote Meer, offene Wüstenflächen und Berglandschaften aufeinander und schaffen eine Umgebung, die weit wirkt, ohne leer zu sein.\n\nFür unsere Arbeit ist das wichtig. Der Kontrast aus Wasser, Stein, Licht und Horizont unterstützt Aufmerksamkeit und hilft Teilnehmenden, aus gewohnten Mustern herauszutreten. Ägypten ist für uns keine Kulisse. Der Ort ist Teil der Lernumgebung.",
+                imageAlt: "Wüstenstraße mit Blick auf Berge im Südsinai"
+            },
+            whyDahab: {
+                eyebrow: "Warum Dahab",
+                title: "Ein fokussierter Rahmen für Seminare",
+                description:
+                    "Dahab verbindet gute Erreichbarkeit, natürliche Schönheit und einen entspannten Alltagsrhythmus. Der Ort bietet genug Struktur für ein klares Seminarformat und hält Teilnehmende gleichzeitig nah an Meer, Wüste und Bergen.\n\nDamit eignet sich Dahab besonders für Lernprozesse, die sowohl Fokus als auch Erholung brauchen. Zwischen den Seminareinheiten können Teilnehmende langsamer werden, am Wasser entlanggehen und Inhalte wirken lassen.",
+                imageAlt: "Ruhige Strandlandschaft mit klarem Wasser nahe Dahab"
+            },
+            whyNuweibaa: {
+                eyebrow: "Warum Nuweibaa",
+                title: "Ein stillerer Ort für Retreats",
+                description:
+                    "Nuweibaa hat einen langsameren und offeneren Charakter. Lange Strände, einfache Camps und weite Blicke schaffen Abstand von ständiger Reizüberflutung.\n\nFür Retreats ist diese Qualität zentral. Der Ort unterstützt Ruhe, Reflexion und Wiederverbindung, ohne viel von den Teilnehmenden zu verlangen. Er gibt dem Nervensystem Raum, sich an Stille, Rhythmus und Einfachheit zu orientieren.",
+                imageAlt: "Weite Küstenlinie und offenes Meer nahe Nuweibaa"
+            },
+            team: {
+                eyebrow: "Die Menschen hinter Blue Desert",
+                title: "Lerne das Team kennen",
+                description:
+                    "Blue Desert wird von Menschen geprägt, die unterschiedliche Perspektiven auf Lernen, Regulation, Bewegung, Ort und Gastfreundschaft einbringen.",
+                members: {
+                    silvia: {
+                        name: "Dr. Silvia-Lucretia Nicola",
+                        role: "Pädagogische und akademische Leitung",
+                        imageAlt: "Porträt von Dr. Silvia-Lucretia Nicola"
+                    },
+                    marcus: {
+                        name: "Marcus Blacker",
+                        role: "Körper- und atembasierte Stressregulation",
+                        imageAlt: "Porträt von Marcus Blacker"
+                    },
+                    ahmad: {
+                        name: "Ahmad Nemr",
+                        role: "Unterstützung für wasserbasierte Praxiseinheiten",
+                        imageAlt: "Porträt von Ahmad Nemr"
+                    }
+                }
+            }
+        },
         privacyPage: {
             seo: {
                 title: "Datenschutzerklärung | Blue Desert",

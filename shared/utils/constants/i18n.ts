@@ -14,6 +14,10 @@ export const i18nPages = {
         en: "/retreats",
         de: "/retreats"
     },
+    "about-us/index": {
+        en: "/about-us",
+        de: "/ueber-uns"
+    },
     "privacy/index": {
         en: "/privacy",
         de: "/datenschutz"

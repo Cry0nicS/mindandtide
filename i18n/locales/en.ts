@@ -465,6 +465,74 @@ export default {
                 action: "Send enquiry"
             }
         },
+        aboutUsPage: {
+            seo: {
+                title: "About Blue Desert | Blue Desert",
+                description:
+                    "Learn more about Blue Desert, our work in South Sinai and the people behind the seminars and retreats."
+            },
+            hero: {
+                eyebrow: "About us",
+                title: "A place for learning, recovery and quiet change",
+                subheadline:
+                    "Blue Desert connects structured practice with the landscapes of South Sinai",
+                supportingText:
+                    "Our work brings together experiential learning, body-based regulation and the restorative quality of sea, desert and mountains.",
+                meta: "Dahab and Nuweibaa, Egypt",
+                imageAlt: "Open desert mountains in South Sinai with warm evening light"
+            },
+            project: {
+                eyebrow: "The project",
+                title: "Why we created Blue Desert",
+                description:
+                    "Blue Desert began with a simple observation: many people do not need more pressure, more noise or another abstract self-development promise. They need space, structure and a setting that helps them notice what is already happening in body, mind and daily life.\n\nThe project combines professional learning, guided practice and place-based experience. Our seminars and retreats are designed to support stress regulation, recovery and sustainable change without turning the journey into performance.",
+                imageAlt: "Calm Red Sea coastline with mountains in the background"
+            },
+            whyEgypt: {
+                eyebrow: "Why Egypt",
+                title: "A landscape that invites perspective",
+                description:
+                    "Egypt offers a rare meeting point between depth, openness and simplicity. In South Sinai, the Red Sea, desert plains and mountain ranges create a setting that feels spacious without being empty.\n\nFor our work, this matters. The contrast between water, stone, light and horizon supports attention and helps participants step out of daily patterns. Egypt is not used as decoration in the program. It is part of the learning environment.",
+                imageAlt: "Desert road leading toward mountains in South Sinai"
+            },
+            whyDahab: {
+                eyebrow: "Why Dahab",
+                title: "A focused setting for seminars",
+                description:
+                    "Dahab offers a balance of accessibility, natural beauty and a relaxed everyday rhythm. It has enough structure to host a clear seminar format, while still keeping participants close to sea, desert and mountain landscapes.\n\nThis makes Dahab especially suitable for learning processes that need both focus and recovery. Between seminar sessions, participants can slow down, walk by the water and let the material settle.",
+                imageAlt: "Quiet beach landscape with clear water near Dahab"
+            },
+            whyNuweibaa: {
+                eyebrow: "Why Nuweibaa",
+                title: "A quieter place for retreat",
+                description:
+                    "Nuweibaa has a slower and more open character. Long beaches, simple camps and wide views create a sense of distance from constant stimulation.\n\nFor retreats, this quality is central. The place supports rest, reflection and reconnection without asking much from participants. It gives the nervous system room to orient toward quiet, rhythm and simplicity.",
+                imageAlt: "Wide coastline and open sea near Nuweibaa"
+            },
+            team: {
+                eyebrow: "The people behind Blue Desert",
+                title: "Meet the team",
+                description:
+                    "Blue Desert is shaped by people with different perspectives on learning, regulation, movement, place and hospitality.",
+                members: {
+                    silvia: {
+                        name: "Dr. Silvia-Lucretia Nicola",
+                        role: "Pedagogical and academic lead",
+                        imageAlt: "Portrait of Dr. Silvia-Lucretia Nicola"
+                    },
+                    marcus: {
+                        name: "Marcus Blacker",
+                        role: "Body- and breath-based stress regulation",
+                        imageAlt: "Portrait of Marcus Blacker"
+                    },
+                    ahmad: {
+                        name: "Ahmad Nemr",
+                        role: "Support for water-based practice sessions",
+                        imageAlt: "Portrait of Ahmad Nemr"
+                    }
+                }
+            }
+        },
         privacyPage: {
             seo: {
                 title: "Privacy Policy | Blue Desert",
