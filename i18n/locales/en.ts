@@ -1,6 +1,5 @@
 export default {
     common: {
-        comingSoon: "Coming soon",
         copyright: "Copyright © {year}"
     },
     cookieBanner: {
@@ -17,7 +16,6 @@ export default {
         contact: "Contact",
         seminars: "Seminars",
         retreats: "Retreats",
-        program: "Program",
         aboutUs: "About us",
         indexPage: {
             seo: {
@@ -37,10 +35,6 @@ export default {
                 retreatsAction: "Explore retreats"
             },
             pathways: {
-                eyebrow: "Choose your path",
-                title: "Seminar or retreat",
-                description:
-                    "The seminar is a focused learning format. The retreat is a deeper pause for renewal. Both share the same care for place, practice and lasting transfer.",
                 seminars: {
                     eyebrow: "Structured learning",
                     title: "Seminars in Dahab",
@@ -121,7 +115,7 @@ export default {
                 }
             },
             image: {
-                altImage: "Calm coastline with mountains in the background near Dahab in Egypt"
+                imageAlt: "Calm coastline with mountains in the background near Dahab in Egypt"
             },
             stepper: {
                 title: "What can you expect",
@@ -336,11 +330,6 @@ export default {
                         title: "7 days retreat with daily guided sessions",
                         description:
                             "A slower format with practice, reflection, nature time and integration across the week."
-                    },
-                    place: {
-                        title: "Location: Nuweibaa, Egypt, at the Red Sea",
-                        description:
-                            "Support with arrival planning and airport transfers can be provided if needed."
                     },
                     group: {
                         title: "6-12 participants",

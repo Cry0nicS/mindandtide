@@ -1,13 +1,12 @@
 export default {
     common: {
-        comingSoon: "Demnächst verfügbar",
         copyright: "Copyright © {year}"
     },
     cookieBanner: {
         title: "Datenschutzhinweis",
         description:
-            "Wir speichern nur notwendige Einstellungen wie Sprache, Theme und den Status dieses Hinweises. Vercel Web Analytics läuft ohne Cookies und erfasst anonymisierte Nutzungsdaten.",
-        privacy: "Datenschutz",
+            "Wir speichern nur notwendige Einstellungen wie Sprache, Design und den Status dieses Hinweises. Vercel Web Analytics läuft ohne Cookies und erfasst anonymisierte Nutzungsdaten.",
+        privacy: "Datenschutzerklärung",
         accept: "Verstanden"
     },
     pages: {
@@ -17,93 +16,51 @@ export default {
         contact: "Kontakt",
         seminars: "Seminare",
         retreats: "Retreats",
-        program: "Programm",
         aboutUs: "Über uns",
         indexPage: {
             seo: {
                 title: "Lernen und Retreats im Südsinai | Blue Desert",
                 description:
-                    "Blue Desert bietet erfahrungsorientierte Seminare in Dahab und erholsame Retreats in Nuweibaa für nachhaltige Balance, Klarheit und Regeneration."
+                    "Blue Desert bietet erlebnisorientierte Seminare in Dahab und erholsame Retreats in Nuweibaa für nachhaltige Balance, Klarheit und Regeneration."
             },
             hero: {
                 eyebrow: "Blue Desert",
-                title: "Lernen, Erholung und Veränderung am Roten Meer",
-                subheadline: "Zwei Wege, um unter Druck wieder mehr Raum zu finden",
+                title: "Lernen, Regeneration und Veränderung am Roten Meer",
+                subheadline: "Zwei Wege zu mehr Freiraum unter Druck",
                 supportingText:
-                    "Blue Desert verbindet strukturiertes Lernen, verkörperte Praxis und die ruhigen Landschaften des Südsinai.",
+                    "Blue Desert verbindet strukturiertes Lernen, körperorientierte Praxis und die stillen Landschaften des Südsinai.",
                 meta: "Dahab und Nuweibaa, Ägypten",
                 imageAlt:
                     "Weite Wüstenlandschaft im Südsinai mit warmem Licht und offenem Horizont",
                 seminarsAction: "Seminare entdecken",
                 retreatsAction: "Retreats entdecken"
             },
-            story: {
-                eyebrow: "Die gemeinsame Idee",
-                title: "Ein ortsbezogener Ansatz für nachhaltige Balance",
-                description:
-                    "Blue Desert entsteht aus einer einfachen Überzeugung: Bedeutende Veränderung braucht mehr als Information. Sie braucht Zeit, Praxis, Aufmerksamkeit und eine Umgebung, in der das Nervensystem genug zur Ruhe kommt, um wirklich zu lernen.",
-                items: {
-                    place: {
-                        title: "Lernen mit dem Ort",
-                        description:
-                            "Rotes Meer, Wüste und Berge sind Teil der Erfahrung und schaffen Raum für Aufmerksamkeit, Reflexion und Erholung."
-                    },
-                    practice: {
-                        title: "Erfahrung vor Theorie",
-                        description:
-                            "Methoden werden durch direkte Erfahrung, angeleitete Reflexion und einfache Praktiken erforscht, die sich in den Alltag übertragen lassen."
-                    },
-                    transfer: {
-                        title: "Veränderung, die mitreist",
-                        description:
-                            "Beide Formate unterstützen dabei, aus Erkenntnissen realistische Routinen, Entscheidungen und neue Reaktionsweisen unter Druck zu entwickeln."
-                    }
-                }
-            },
             pathways: {
-                eyebrow: "Wähle deinen Weg",
-                title: "Seminar oder Retreat",
-                description:
-                    "Das Seminar ist ein fokussiertes Lernformat. Das Retreat ist eine tiefere Pause zur Regeneration. Beide Formate teilen dieselbe Sorgfalt für Ort, Praxis und nachhaltigen Transfer.",
                 seminars: {
                     eyebrow: "Strukturiertes Lernen",
                     title: "Seminare in Dahab",
                     description:
                         "Ein fünftägiges Seminar für Menschen, die praktische Stressregulation, Resilienz und transferorientiertes Lernen in einer kleinen Gruppe suchen.",
                     meta: "Dahab, Ägypten",
-                    action: "Mehr über Seminare",
+                    action: "Mehr über Seminare erfahren",
                     imageAlt: "Ruhige Strandlandschaft mit Palmen und klarem Wasser nahe Dahab"
                 },
                 retreats: {
-                    eyebrow: "Erholsame Vertiefung",
+                    eyebrow: "Erholsames Eintauchen",
                     title: "Retreats in Nuweibaa",
                     description:
-                        "Ein langsameres Retreatformat für Menschen, die Abstand gewinnen, Kapazität regenerieren und sich mit Körper, Atem, Meer und Wüste verbinden möchten.",
+                        "Ein langsameres Retreat-Format für Menschen, die Abstand gewinnen, neue Kraft schöpfen und sich wieder mit Körper, Atem, Meer und Wüste verbinden möchten.",
                     meta: "Nuweibaa, Ägypten",
-                    action: "Mehr über Retreats",
+                    action: "Mehr über Retreats erfahren",
                     imageAlt: "Klares Wasser und offenes Meer in Ägypten"
                 }
-            },
-            bridge: {
-                eyebrow: "Wie beides zusammenhängt",
-                title: "Unterschiedliche Formate, eine Philosophie",
-                description:
-                    "Das Seminar beginnt bei den Anforderungen des beruflichen Alltags und entwickelt praktische Werkzeuge dafür. Das Retreat beginnt mit Weite und Regeneration und begleitet von dort aus Reflexion, Regulation und Wiederverbindung." +
-                    "\n\nBeide Formate sind bewusst klein, erfahrungsorientiert und in den Landschaften des Südsinai verankert. Du kannst das Format wählen, das zu deiner aktuellen Lebensphase passt.",
-                imageAlt: "Ruhiges Wasser des Roten Meeres und Küste als Bild für Retreat und Weite"
-            },
-            cta: {
-                title: "Du bist unsicher, welches Format passt?",
-                description:
-                    "Erzähl uns, wonach du suchst, und wir unterstützen dich dabei, den passenden nächsten Schritt zu finden.",
-                action: "Kontakt aufnehmen"
             }
         },
-        homePage: {
+        seminarsPage: {
             seo: {
                 title: "Resilienzseminar am Meer | Blue Desert",
                 description:
-                    "Ein ruhiges, erfahrungsorientiertes Seminar in Dahab für Resilienz, Stressregulation und neue Handlungsfähigkeit im Berufsleben."
+                    "Ein ruhiges, erfahrungsbasiertes Seminar in Dahab für Resilienz, Stressmanagement und neue Handlungsfähigkeit im Berufsleben."
             },
             hero: {
                 eyebrow: "Unsere Seminare",
@@ -112,14 +69,14 @@ export default {
                 supportingText:
                     "Ein fünftägiges Seminar zur Stressregulation in einer erholsamen Umgebung am Meer",
                 meta: "Dahab, Ägypten",
-                imageAlt: "Ruhige Küste mit Bergen im Hintergrund nahe Dahab in Ägypten"
+                imageAlt: "Ruhige Küstenlinie mit Bergen im Hintergrund nahe Dahab in Ägypten"
             },
             seminarAbout: {
                 eyebrow: "Der Ausgangspunkt",
                 title: "Vom Problem zur Möglichkeit",
-                intro: "Berufliches Leben steht heute oft unter dauerhaftem Druck. Wachsende Unsicherheit, zunehmende Sorgeverantwortung und ein beschleunigter Alltag können zu mentaler Überlastung führen und echte Erholung erschweren.",
+                intro: "Das heutige Berufsleben steht oft unter dauerhaftem Druck. Wachsende Unsicherheit, zunehmende Sorgeverantwortung und ein beschleunigter Lebensrhythmus können kognitive Überlastung erzeugen und echte Erholung erschweren.",
                 closing:
-                    "Das Seminar schafft Raum, um zu verstehen, wie Stress durch individuelle Gewohnheiten, Umfelder und tägliche Anforderungen geprägt wird, und um praktische Strategien zu entwickeln, die du in dein persönliches und berufliches Leben integrieren kannst."
+                    "Das Seminar schafft Raum, um zu verstehen, wie Stress durch individuelle Gewohnheiten, Umgebungen und tägliche Anforderungen geprägt wird, und um praktische Strategien zu entwickeln, die sich in das private und berufliche Leben integrieren lassen."
             },
             takeaways: {
                 headline: "Unser Ansatz",
@@ -129,42 +86,44 @@ export default {
                     clarity: {
                         title: "Erfahrungsbasiertes Lernen",
                         description:
-                            "Anstatt nur mit abstrakten Konzepten zu arbeiten, beginnt das Seminar bei der eigenen Erfahrung. Durch angeleitete Übungen, Beobachtung und Reflexion erkundest du, wie Stress in deinem Leben sichtbar wird, und entwickelst Erkenntnisse, die persönlich bedeutsam und relevant sind."
+                            "Anstatt sich nur auf abstrakte Konzepte zu konzentrieren, setzt das Seminar bei der gelebten Erfahrung an. Durch angeleitete Übungen, Beobachtung und Reflexion erkundest Du, wie Stress in Deinem eigenen Leben sichtbar wird, und entwickelst Erkenntnisse, die persönlich bedeutsam und relevant sind."
                     },
                     stress: {
                         title: "Begleitete Erkundung",
                         description:
-                            "Es gibt nicht die eine Lösung, die für alle passt. Du lernst verschiedene körper-, atem-, wahrnehmungs- und reflexionsbasierte Ansätze kennen und findest heraus, welche Methoden zu deiner Situation, Persönlichkeit und beruflichen Realität passen."
+                            "Es gibt keine einzelne Lösung, die für alle funktioniert. Du lernst verschiedene körper-, atem-, wahrnehmungs- und reflexionsbasierte Ansätze kennen und wirst ermutigt, herauszufinden, welche Methoden am besten zu Deinen individuellen Umständen, Deiner Persönlichkeit und Deiner beruflichen Realität passen."
                     },
                     resilience: {
                         title: "Eine ganzheitliche Perspektive",
                         description:
-                            "Stress betrifft nicht nur den Kopf. Das Seminar betrachtet das Zusammenspiel von Körper, Geist, Emotionen und Umgebung und schafft ein breiteres Verständnis von Resilienz und nachhaltigem Wohlbefinden."
+                            "Stress betrifft nicht nur den Geist. Das Seminar betrachtet das Zusammenspiel von Körper, Geist, Emotionen und Umgebung und schafft so ein breiteres Verständnis von Resilienz und nachhaltigem Wohlbefinden."
                     },
                     routines: {
                         title: "Lernen mit dem Ort",
                         description:
-                            "Wo wir lernen, macht einen Unterschied. Das Seminar findet bewusst in Dahab statt. Meer, Wüste und Berge sind nicht nur Kulisse, sondern werden in den Lernprozess einbezogen. Einfachheit, weniger Ablenkung und ein langsamerer Rhythmus schaffen Raum für Reflexion, Aufmerksamkeit und Erholung."
+                            "Wo wir lernen, macht einen Unterschied. Das Seminar findet bewusst in Dahab statt. Meer, Wüste und die umliegenden Berge sind kein geografischer Zufall, sondern werden gezielt in den Lernprozess eingebunden. Einfachheit, weniger Ablenkung und ein langsamerer Rhythmus schaffen Raum für Reflexion, Aufmerksamkeit und Erholung."
                     },
                     balance: {
                         title: "Kleine Gruppe",
                         description:
-                            "Mit einer begrenzten Teilnehmendenzahl bietet das Seminar Raum für echten Austausch, persönliches Feedback und individuelle Begleitung während des gesamten Lernprozesses."
+                            "Mit einer begrenzten Teilnehmerzahl bietet das Seminar Raum für echten Austausch, persönliches Feedback und individuelle Unterstützung während des gesamten Lernprozesses."
                     },
                     impact: {
                         title: "Transfer in den Alltag",
                         description:
-                            "Das Ziel ist nicht, dem täglichen Druck zu entfliehen, sondern ihm anders zu begegnen. Du entwickelst realistische Strategien, die du auch lange nach dem Seminar an deinen beruflichen und persönlichen Kontext anpassen kannst."
+                            "Das Ziel ist nicht, dem täglichen Druck zu entfliehen, sondern ihm anders zu begegnen. Du entwickelst realistische Strategien, die Du auch lange nach dem Seminar an Deinen beruflichen und privaten Kontext anpassen kannst."
                     }
-                },
-                quote: "Verstehen, erleben und Wissen in den Alltag integrieren, für nachhaltige Veränderung."
+                }
+            },
+            image: {
+                imageAlt: "Ruhige Küstenlinie mit Bergen im Hintergrund nahe Dahab in Ägypten"
             },
             stepper: {
-                title: "Was dich erwartet",
+                title: "Was Dich erwartet",
                 understand: {
                     title: "Stress verstehen",
                     description:
-                        "Du erkennst, wie Druck entsteht und wie dein eigenes System in beruflichen Situationen darauf reagiert."
+                        "Du erkennst, wie Druck entsteht und wie Dein eigenes System in beruflichen Situationen darauf reagiert."
                 },
                 experience: {
                     title: "Regulation üben",
@@ -179,11 +138,11 @@ export default {
             },
             contentMethods: {
                 methods: {
-                    title: "Methoden im Seminar",
+                    title: "Methoden sind unter anderem",
                     items: {
                         reflection: "Angeleitete Reflexion und transferorientierte Übungen",
                         body: "Körperbasierte Stressregulation, einschließlich TRE-basierter Elemente",
-                        breath: "Atembasierte Regulationspraktiken",
+                        breath: "Atembasierte Regulationsübungen",
                         photography:
                             "Partizipative Fotografie und ressourcenorientierte Wahrnehmungsarbeit",
                         floating: "Floating und wasserbasierte Einheiten zur Körperregulation"
@@ -191,65 +150,63 @@ export default {
                 }
             },
             download: {
-                label: "Programmübersicht als PDF herunterladen",
-                fileName: "blue-desert-seminaruebersicht.pdf"
+                title: "Seminarübersicht als PDF herunterladen",
+                description: "Hier findest Du die Details zum Seminar....",
+                label: "Programmübersicht als PDF herunterladen"
             },
             organization: {
+                title: "Das Wichtigste auf einen Blick",
                 items: {
                     date: {
-                        title: "5 Tage Seminar mit 6 Einheiten à 45 Minuten pro Tag",
+                        title: "5-tägiges Seminar mit 6 Einheiten à 45 Min. pro Tag",
                         description:
-                            "Ein kompaktes Lernformat über fünf thematische Seminartage mit Input, Praxis und Reflexion."
-                    },
-                    place: {
-                        title: "Ort: Dahab, Ägypten, am Roten Meer",
-                        description:
-                            "Bei Bedarf unterstützen wir dich gerne bei der Organisation von Flughafentransfers."
+                            "Ein kompaktes Lernformat über fünf thematische Seminartage mit Struktur aus Input, Praxis und Reflexion"
                     },
                     group: {
-                        title: "6 bis 15 Teilnehmende",
+                        title: "6-15 Teilnehmende",
                         description:
-                            "Ein kleiner Gruppenrahmen ermöglicht fokussierten Austausch, persönliches Feedback und individuelle Aufmerksamkeit."
+                            "Ein Kleingruppenformat, das fokussierten Austausch, persönliches Feedback und individuelle Aufmerksamkeit ermöglicht."
                     },
                     accommodation: {
                         title: "Seminarsprache: Englisch",
                         description:
-                            "Deutsch-englische zweisprachige Materialien werden während des gesamten Seminars bereitgestellt."
+                            "Deutsch- und englischsprachige Materialien werden während des gesamten Seminars bereitgestellt."
                     },
                     times: {
                         title: "Seminargebühr: 695 €/Person",
                         description:
-                            "Die Seminargebühr beinhaltet keine Unterkunft. Wir unterstützen dich gerne dabei, eine Unterkunft zu finden, die zu deinen Wünschen und deinem Budget passt."
+                            "Die Seminargebühr beinhaltet keine Unterkunft. Wir unterstützen Dich gern dabei, eine Unterkunft zu finden, die zu Deinen Wünschen und Deinem Budget passt."
                     }
                 },
-                note: "Die Anreise am Vortag und die Abreise am Folgetag werden empfohlen. Flüge, Transfers und Unterkunft sind nicht in der Seminargebühr enthalten."
+                note: "Anreise am Vortag und Abreise am Folgetag werden empfohlen. Flüge, Transfers und Unterkunft sind nicht in der Seminargebühr enthalten."
             },
             seminarSchedule: {
                 title: "Seminartermine",
                 items: {
                     october2026: {
-                        title: "12-16\nOktober 2026",
+                        title: "12.-16.\nOktober 2026",
                         description: "Anmeldung geschlossen"
                     },
                     november2026: {
-                        title: "9-13\nNovember 2026",
-                        description: "Anmeldung geöffnet\nAnmeldeschluss: 10. Oktober 2026"
+                        title: "9.-13.\nNovember 2026",
+                        description: "Anmeldung offen\nBewerbungsfrist: 10. Oktober 2026"
                     },
                     upcoming2027: {
                         title: "2027",
-                        description: "Weitere Termine folgen"
+                        description: "Weitere Termine folgen in Kürze"
                     }
                 },
                 actions: {
                     apply: "Jetzt anmelden",
-                    requestInformation: "Informationen anfragen"
+                    requestInformation: "Informationen anfordern"
                 }
             },
             participants: {
                 eyebrow: "Die Teilnehmenden",
                 title: "Für wen ist dieses Seminar geeignet?",
-                description: "Dieses Seminar kann gut zu dir passen, wenn du:",
-                imageAlt: "Ruhige Strandlandschaft mit Palmen, hellem Sand und blauem Wasser",
+                description: "Dieses Seminar kann gut zu Dir passen, wenn Du:",
+                imageAlt:
+                    "Ruhige Strandlandschaft mit Palmen, hellem Sand und ruhigem blauem Wasser",
                 items: {
                     demandingEnvironment: {
                         title: "Anspruchsvolles berufliches Umfeld",
@@ -258,22 +215,22 @@ export default {
                     stressRegulation: {
                         title: "Praktische Stressregulation",
                         description:
-                            "Du suchst erfahrungsbasierte Ansätze, um Stress besser zu regulieren."
+                            "Du suchst erfahrungsbasierte Ansätze, um Stress zu regulieren."
                     },
                     resilience: {
                         title: "Resilienz und Erholung",
                         description:
-                            "Du möchtest Resilienz, Regeneration und nachhaltige Balance stärken, bevor Stress überwältigend wird."
+                            "Du möchtest Resilienz, Erholung und nachhaltige Balance stärken, bevor Stress überwältigend wird."
                     },
                     directExperience: {
                         title: "Lernen durch Erfahrung",
                         description:
-                            "Du interessierst dich für direkte Erfahrung, Reflexion und angeleitete Praxis."
+                            "Du interessierst Dich für direkte Erfahrung, Reflexion und angeleitete Praxis."
                     },
                     naturalEnvironments: {
-                        title: "Verbundenheit mit Natur",
+                        title: "Verbindung zur Natur",
                         description:
-                            "Du fühlst dich mit natürlichen Umgebungen verbunden und erlebst, dass die Nähe zum Meer dein Wohlbefinden und deine Klarheit unterstützt."
+                            "Du fühlst Dich mit natürlichen Umgebungen verbunden und merkst, dass Dir die Nähe zum Meer Wohlbefinden und Klarheit schenkt."
                     },
                     placeBasedLearning: {
                         title: "Ortsbezogenes Lernen",
@@ -287,14 +244,18 @@ export default {
             whyDahab: {
                 eyebrow: "Warum dieser Ort",
                 title: "Warum für ein Seminar nach Dahab reisen?",
-                imageAlt: "Offene Landschaft in warmem Licht, die Weite und Ruhe vermittelt",
+                imageAlt: "Offene Landschaft mit warmem Licht, die Weite und Ruhe vermittelt",
                 description:
-                    "Eingebettet zwischen dem Roten Meer und den Bergen des Südsinai zieht Dahab seit Langem Menschen an, die Einfachheit, Naturverbundenheit und ein langsameres Lebenstempo suchen. Ursprünglich ein kleines Beduinen-Fischerdorf, hat sich der Ort trotz seiner Entwicklung zu einem internationalen Ziel für Taucher, Remote Worker und Reisende viel von seiner entspannten Atmosphäre bewahrt." +
-                    "\n\nMit ganzjährigem Sonnenschein, einer ruhigen Atmosphäre und dem Ruf, eines der sichersten und gastfreundlichsten Reiseziele der Region zu sein, bietet Dahab ein Umfeld, das Lernen und Erholung gleichermaßen unterstützt. Ob Zeit am Meer, Ausflüge in die Wüste, lokale Wellnessangebote oder bewusstes Verlangsamen: Teilnehmende finden viele Möglichkeiten, neben dem Seminar neue Kraft zu sammeln."
+                    "Eingebettet zwischen dem Roten Meer und den Bergen des Südsinai zieht Dahab seit Langem Menschen an, die Einfachheit, Naturverbundenheit und ein langsameres Lebenstempo suchen. Ursprünglich ein kleines Beduinen-Fischerdorf, hat Dahab trotz seiner Entwicklung zu einem internationalen Ziel für Taucher, Remote Worker und Reisende viel von seinem entspannten Charakter bewahrt." +
+                    "\n\nMit ganzjährigem Sonnenschein, entspannter Atmosphäre und dem Ruf, eines der sichersten und gastfreundlichsten Ziele der Region zu sein, bietet Dahab eine Umgebung, die Lernen und Erholung unterstützt. Ob Zeit am Meer, Ausflüge in die Wüste, lokale Wellness-Angebote oder einfaches Entschleunigen: Teilnehmende finden viele Möglichkeiten, begleitend zum Seminar neue Energie zu tanken.",
+                actions: {
+                    apply: "Mehr erfahren",
+                    requestInformation: "Informationen anfordern"
+                }
             },
             cta: {
-                title: "Hast du Fragen oder möchtest du mehr erfahren?",
-                description: "Wir freuen uns auf deine Nachricht.",
+                title: "Hast Du Fragen oder möchtest Du mehr erfahren?",
+                description: "Wir freuen uns, von Dir zu hören.",
                 action: "Anfrage senden"
             }
         },
@@ -309,17 +270,24 @@ export default {
                 title: "Zurück in den eigenen Rhythmus in Nuweibaa",
                 subheadline: "Langsamer werden. Regulieren. Wieder verbinden",
                 supportingText:
-                    "Ein Retreat für Regeneration, Reflexion und verkörperte Praxis zwischen Meer, Wüste und Bergen",
+                    "Ein Retreat für Erholung, Reflexion und körperorientierte Praxis zwischen Meer, Wüste und Bergen",
                 meta: "Nuweibaa, Ägypten",
                 imageAlt:
-                    "Klares Wasser des Roten Meeres und offene Küste nahe Nuweibaa im Südsinai"
+                    "Klares Wasser des Roten Meeres und offene Küstenlinie nahe Nuweibaa im Südsinai",
+                actions: {
+                    apply: "Mehr erfahren",
+                    requestInformation: "Informationen anfordern"
+                }
             },
             seminarAbout: {
                 eyebrow: "Die Einladung",
                 title: "Von Überlastung zu Weite",
-                intro: "Modernes Leben belohnt oft ständige Erreichbarkeit, Tempo und Leistung. Mit der Zeit kann es dadurch schwerer werden, wirklich tief zu ruhen, nach innen zu hören oder wahrzunehmen, was der Körper getragen hat.",
+                intro: "Das moderne Leben belohnt oft ständige Verfügbarkeit, Tempo und Leistung. Mit der Zeit kann es dadurch schwieriger werden, tief zu ruhen, nach innen zu hören oder wahrzunehmen, was der Körper getragen hat.",
                 closing:
-                    "Das Retreat schafft eine geschützte Pause in Nuweibaa: Zeit, um anzukommen, dich wieder mit deinem eigenen Rhythmus zu verbinden und Praktiken zu erkunden, die nachhaltige Regeneration über die Tage am Meer hinaus unterstützen."
+                    "Das Retreat schafft eine geschützte Pause in Nuweibaa: Zeit, anzukommen, Dich wieder mit Deinem eigenen Rhythmus zu verbinden und Praktiken zu erkunden, die nachhaltige Erholung über die Tage am Meer hinaus unterstützen."
+            },
+            image: {
+                imageAlt: "Ruhige Küstenlinie mit Bergen im Hintergrund nahe Dahab in Ägypten"
             },
             takeaways: {
                 headline: "Unser Ansatz",
@@ -329,187 +297,130 @@ export default {
                     clarity: {
                         title: "Erholsames Tempo",
                         description:
-                            "Das Retreat ist bewusst großzügig gestaltet. Die Tage verbinden angeleitete Praxis, stille Zeit, naturbasierte Reflexion und genügend Raum, um Erlebtes zu verarbeiten, ohne von einer Aktivität zur nächsten gedrängt zu werden."
+                            "Das Retreat ist bewusst großzügig gestaltet. Die Tage umfassen angeleitete Praxis, stille Zeit, naturbasierte Reflexion und genügend Raum, damit Teilnehmende verarbeiten können, was auftaucht, ohne von einer Aktivität zur nächsten gedrängt zu werden."
                     },
                     stress: {
                         title: "Sanfte Begleitung",
                         description:
-                            "Du wirst durch körper-, atem-, wahrnehmungs- und reflexionsbasierte Methoden begleitet. Im Mittelpunkt steht nicht Leistung, sondern Wahrnehmen, Anpassen und Auswählen, was für dein Nervensystem hilfreich ist."
+                            "Teilnehmende werden durch körper-, atem-, wahrnehmungs- und reflexionsbasierte Methoden unterstützt. Im Fokus steht nicht Leistung, sondern Wahrnehmen, Anpassen und Entscheiden, was für das eigene Nervensystem hilfreich ist."
                     },
                     resilience: {
                         title: "Körper und Umgebung",
                         description:
-                            "Regeneration wird als Zusammenspiel von Körper, Geist, Emotionen und Umgebung verstanden. Meer, Wüste und Berge unterstützen ein spürbares Erleben von Weite, Einfachheit und Orientierung."
+                            "Erholung wird als Zusammenspiel von Körper, Geist, Emotionen und Umgebung verstanden. Meer, Wüste und Berglandschaft helfen, ein spürbares Gefühl von Weite, Einfachheit und Orientierung entstehen zu lassen."
                     },
                     routines: {
                         title: "Lernen mit Nuweibaa",
                         description:
-                            "Nuweibaa hat einen ruhigeren Rhythmus als viele Reiseorte. Die offene Küste, die Stille der Wüste und das langsamere Tempo werden bewusst in die Retreat-Erfahrung einbezogen."
+                            "Nuweibaa bietet einen ruhigeren Rhythmus als viele Reiseziele. Die Offenheit der Küste, die Stille der Wüste und das langsamere Tempo werden bewusst in die Retreat-Erfahrung eingebunden."
                     },
                     balance: {
                         title: "Kleine Gruppe",
                         description:
-                            "Eine begrenzte Gruppengröße schafft genug Nähe für echten Austausch und bewahrt zugleich die Privatsphäre und Ruhe, die viele Menschen in einem erholsamen Retreat brauchen."
+                            "Eine begrenzte Gruppengröße schafft genug Nähe für echten Austausch und bewahrt zugleich die Privatsphäre und Ruhe, die viele Menschen während eines erholsamen Retreats brauchen."
                     },
                     impact: {
                         title: "Integration nach der Rückkehr",
                         description:
-                            "Das Retreat ist nicht als Flucht aus dem Alltag gedacht. Es unterstützt dich dabei zu erkennen, was dich regeneriert und wie kleine Praktiken in alltägliche Routinen zurückfinden können."
-                    }
-                },
-                quote: "Pausieren, lauschen und mit Praktiken zurückkehren, die Erholung im Alltag unterstützen."
-            },
-            stepper: {
-                title: "Was dich erwartet",
-                understand: {
-                    title: "Ankommen und landen",
-                    description:
-                        "Du verlangsamst das Tempo, orientierst dich am Ort und gibst deinem System Zeit, präsent zu werden."
-                },
-                experience: {
-                    title: "Kapazität regenerieren",
-                    description:
-                        "Sanfte Praktiken mit Atem, Körper, Wasser und Wahrnehmung unterstützen Erholung und Regulation."
-                },
-                transfer: {
-                    title: "Mit Rhythmus zurückkehren",
-                    description:
-                        "Du erkennst einfache Routinen und Entscheidungen, die dich auch zu Hause weiter unterstützen können."
-                }
-            },
-            contentMethods: {
-                methods: {
-                    title: "Methoden im Retreat",
-                    items: {
-                        reflection: "Angeleitete Reflexion, Journaling und Integrationsimpulse",
-                        body: "Sanfte körperbasierte Regulations- und Erdungspraktiken",
-                        breath: "Atembasierte Praktiken zum Beruhigen und Kraftsammeln",
-                        photography:
-                            "Wahrnehmungsspaziergänge und ressourcenorientierte Fotografieübungen",
-                        floating: "Meerbasierte Entspannung und wasserunterstützte Regulation"
+                            "Das Retreat ist nicht als Flucht aus dem Leben gedacht. Es unterstützt Teilnehmende dabei zu erkennen, was sie stärkt und wie kleine Praktiken in den Alltag zurückgetragen werden können."
                     }
                 }
-            },
-            download: {
-                label: "Retreatübersicht als PDF herunterladen",
-                fileName: "blue-desert-retreatuebersicht.pdf"
             },
             organization: {
+                title: "Das Wichtigste auf einen Blick",
                 items: {
                     date: {
-                        title: "7 Tage Retreat mit täglichen angeleiteten Einheiten",
+                        title: "7-tägiges Retreat mit täglich angeleiteten Einheiten",
                         description:
                             "Ein langsameres Format mit Praxis, Reflexion, Naturzeit und Integration über die Woche hinweg."
                     },
-                    place: {
-                        title: "Ort: Nuweibaa, Ägypten, am Roten Meer",
-                        description:
-                            "Bei Bedarf unterstützen wir dich gerne bei der Anreiseplanung und bei Flughafentransfers."
-                    },
                     group: {
-                        title: "6 bis 12 Teilnehmende",
+                        title: "6-12 Teilnehmende",
                         description:
-                            "Ein kleiner Gruppenrahmen, der gemeinsame Erfahrung, Privatsphäre und persönliche Aufmerksamkeit verbindet."
+                            "Ein Kleingruppenformat, das gemeinsame Erfahrung, Privatsphäre und persönliche Aufmerksamkeit ausbalanciert."
                     },
                     accommodation: {
-                        title: "Retreatsprache: Englisch",
+                        title: "Retreat-Sprache: Englisch",
                         description:
-                            "Deutsch-englische zweisprachige Materialien werden während des gesamten Retreats bereitgestellt."
+                            "Deutsch- und englischsprachige Materialien werden während des gesamten Retreats bereitgestellt."
                     },
                     times: {
-                        title: "Retreatgebühr: ab 890 EUR/Person",
+                        title: "Retreat-Gebühr: ab 890 EUR/Person",
                         description:
-                            "Unterkunftsoptionen unterscheiden sich je nach Wunsch und Budget. Wir unterstützen dich gerne dabei, einen passenden Ort zum Wohnen zu finden."
+                            "Unterkunftsoptionen variieren je nach Wunsch und Budget. Wir helfen Dir gern dabei, eine passende Unterkunft zu finden."
                     }
                 },
-                note: "Die Anreise am Vortag und die Abreise am Folgetag werden empfohlen. Flüge, Transfers und Unterkunft sind nicht enthalten, sofern nicht anders angegeben."
-            },
-            seminarSchedule: {
-                title: "Retreattermine",
-                items: {
-                    october2026: {
-                        title: "Frühjahr\n2027",
-                        description: "Erster Termin in Planung"
-                    },
-                    november2026: {
-                        title: "Herbst\n2027",
-                        description: "Interessentenliste geöffnet"
-                    },
-                    upcoming2027: {
-                        title: "2028",
-                        description: "Weitere Termine folgen"
-                    }
-                },
-                actions: {
-                    apply: "Auf Interessentenliste",
-                    requestInformation: "Informationen anfragen"
-                }
+                note: "Anreise am Vortag und Abreise am Folgetag werden empfohlen. Flüge, Transfers und Unterkunft sind nicht enthalten, sofern nicht anders angegeben."
             },
             participants: {
                 eyebrow: "Die Teilnehmenden",
                 title: "Für wen ist dieses Retreat geeignet?",
-                description: "Dieses Retreat kann gut zu dir passen, wenn du:",
+                description: "Dieses Retreat kann gut zu Dir passen, wenn Du:",
                 imageAlt: "Weite Wüstenlandschaft mit warmem Licht und offenem Raum im Südsinai",
                 items: {
                     demandingEnvironment: {
                         title: "Eine echte Pause brauchst",
                         description:
-                            "Du fühlst dich müde, überreizt oder bereit, aus ständigen Anforderungen auszusteigen."
+                            "Du fühlst Dich müde, überreizt oder bereit, aus ständigen Anforderungen auszusteigen."
                     },
                     stressRegulation: {
                         title: "Sanfte Regulation suchst",
                         description:
-                            "Du suchst einfache, erfahrungsbasierte Wege, um dein System zu beruhigen und zu regenerieren."
+                            "Du suchst einfache, erfahrungsbasierte Wege, um zur Ruhe zu kommen und Dein System zu regenerieren."
                     },
                     resilience: {
-                        title: "Erholung und Klarheit wünschst",
+                        title: "Erholung und Klarheit suchst",
                         description:
-                            "Du möchtest Kapazität wieder aufbauen, dich mit dir selbst verbinden und klarer spüren, wohin es weitergehen kann."
+                            "Du möchtest Zeit, um Kraft zurückzugewinnen, Dich wieder mit Dir selbst zu verbinden und klarer zu spüren, wohin es gehen soll."
                     },
                     directExperience: {
-                        title: "Erfahrungsorientierte Praxis magst",
+                        title: "Erfahrungsorientierte Praxis bevorzugst",
                         description:
-                            "Du schätzt direkte Erfahrung, Reflexion, Naturzeit und eine angeleitete, aber großzügige Begleitung."
+                            "Du schätzt direkte Erfahrung, Reflexion, Zeit in der Natur und angeleitete, zugleich großzügige Unterstützung."
                     },
                     naturalEnvironments: {
-                        title: "Dich durch Natur erholst",
+                        title: "Von Natur gestärkt wirst",
                         description:
-                            "Du erlebst Meer, Wüste und offene Horizonte als unterstützend für Ruhe, Aufmerksamkeit und inneres Stillwerden."
+                            "Du erlebst Meer, Wüste und offene Horizonte als unterstützend für Ruhe, Aufmerksamkeit und innere Stille."
                     },
                     placeBasedLearning: {
                         title: "Neugierig auf Rhythmus bist",
                         description:
-                            "Du möchtest erforschen, wie Ort, Tagesrhythmus und kleine Rituale dein Wohlbefinden nach dem Retreat unterstützen können."
+                            "Du möchtest erkunden, wie Ort, Tagesrhythmus und kleine Rituale Dein Wohlbefinden nach dem Retreat unterstützen können."
                     }
                 },
                 closing:
                     "Vorerfahrung mit Meditation, Atemarbeit oder ähnlichen Praktiken ist nicht erforderlich."
             },
-            whyDahab: {
+            whyNuweibaa: {
                 eyebrow: "Warum dieser Ort",
                 title: "Warum für ein Retreat nach Nuweibaa reisen?",
                 imageAlt: "Offene Wüstenstraße und Berge im warmen Abendlicht im Südsinai",
                 description:
-                    "Nuweibaa liegt an der Ostküste des Südsinai zwischen dem Roten Meer und den Wüstenbergen. Der Ort ist für eine ruhigere, weitläufigere Atmosphäre bekannt als viele größere Ferienorte, mit langen Stränden, einfachen Camps und einem starken Gefühl von Horizont." +
-                    "\n\nFür ein Retreat macht das einen Unterschied. Die Landschaft lädt zu einem langsameren Rhythmus ein: mit dem Meer aufwachen, Zeit in der Wüste verbringen, das wechselnde Licht auf den Bergen beobachten und dem Nervensystem erlauben, sich an Einfachheit zu orientieren. Nuweibaa bietet einen Rahmen, in dem Ruhe, Reflexion und Wiederverbindung ohne den Druck entstehen können, jeden Moment ausfüllen zu müssen."
+                    "Nuweibaa liegt an der Ostküste des Südsinai, zwischen dem Roten Meer und den Wüstenbergen. Der Ort ist bekannt für eine ruhigere, großzügigere Atmosphäre als viele größere Ferienorte, mit langen Stränden, einfachen Camps und einem starken Gefühl von Horizont." +
+                    "\n\nFür ein Retreat ist das wichtig. Die Landschaft lädt zu einem langsameren Rhythmus ein: mit dem Meer aufwachen, Zeit in der Wüste verbringen, beobachten, wie sich das Licht über den Bergen verändert, und dem Nervensystem erlauben, sich an Einfachheit zu orientieren. Nuweibaa bietet einen Rahmen, in dem Ruhe, Reflexion und Wiederverbindung entstehen können, ohne den Druck, jeden Moment ausfüllen zu müssen.",
+                actions: {
+                    apply: "Mehr erfahren",
+                    requestInformation: "Informationen anfordern"
+                }
             },
             cta: {
-                title: "Hast du Fragen oder möchtest du mehr erfahren?",
-                description: "Wir freuen uns auf deine Nachricht.",
+                title: "Hast Du Fragen oder möchtest Du mehr erfahren?",
+                description: "Wir freuen uns, von Dir zu hören.",
                 action: "Anfrage senden"
             }
         },
         privacyPage: {
             seo: {
-                title: "Datenschutz | Blue Desert",
+                title: "Datenschutzerklärung | Blue Desert",
                 description:
-                    "Datenschutzhinweise zu Kontaktaufnahme, Server-Logs, technisch notwendigen Einstellungen und deinen Rechten nach der DSGVO."
+                    "Datenschutzhinweise zu Kontaktanfragen, Server-Logs, technisch notwendigen Einstellungen und Deinen Rechten nach der DSGVO."
             },
             hero: {
                 badge: "Datenschutz",
-                title: "Datenschutz und Privatsphäre",
+                title: "Datenschutz und Datensicherheit",
                 description:
-                    "Diese Hinweise erklären, welche personenbezogenen Daten beim Besuch dieser Website und bei einer Kontaktaufnahme verarbeitet werden.",
+                    "Dieser Hinweis erklärt, welche personenbezogenen Daten verarbeitet werden können, wenn Du diese Website besuchst oder Kontakt mit uns aufnimmst.",
                 lastUpdated: "Zuletzt aktualisiert: 28. Mai 2026"
             },
             controller: {
@@ -521,87 +432,87 @@ export default {
                 eyebrow: "Überblick",
                 title: "Welche Daten verarbeitet werden können",
                 description:
-                    "Die Website ist bewusst schlank gehalten. Personenbezogene Daten entstehen vor allem dann, wenn du die Seite besuchst, technische Einstellungen nutzt oder Kontakt aufnimmst.",
+                    "Die Website ist bewusst schlank gehalten. Personenbezogene Daten entstehen vor allem, wenn Du die Seite besuchst, technische Einstellungen nutzt oder Kontakt mit uns aufnimmst.",
                 technical: {
                     title: "Technische Daten",
                     description:
-                        "IP-Adresse, Browser, Betriebssystem, Zeitpunkt des Zugriffs, aufgerufene Seiten und Server-Log-Daten."
+                        "IP-Adresse, Browser, Betriebssystem, Zugriffszeit, besuchte Seiten und Server-Log-Daten."
                 },
                 contact: {
-                    title: "Kontaktangaben",
+                    title: "Kontaktdaten",
                     description:
-                        "Name, E-Mail-Adresse, Nachricht und freiwillige Angaben, wenn du das Kontaktformular nutzt oder eine E-Mail sendest."
+                        "Name, E-Mail-Adresse, Nachricht und freiwillige Angaben, wenn Du das Kontaktformular nutzt oder eine E-Mail sendest."
                 },
                 preferences: {
-                    title: "Seiteneinstellungen",
+                    title: "Website-Einstellungen",
                     description:
-                        "Sprache, Theme-Auswahl und technisch notwendige Zustände, damit die Website zuverlässig funktioniert."
+                        "Sprache, Designauswahl und technisch notwendiger Status, damit die Website zuverlässig funktioniert."
                 }
             },
             sections: {
                 hosting: {
                     title: "Hosting und Server-Logfiles",
-                    body: "Beim Aufruf der Website verarbeitet der Hosting-Anbieter technische Zugriffsdaten, damit die Seite ausgeliefert, stabil betrieben und gegen Missbrauch geschützt werden kann. Dazu können IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Dateien, Referrer, Browser- und Betriebssysteminformationen gehören. Die Verarbeitung erfolgt auf Grundlage berechtigter Interessen an einem sicheren und zuverlässigen Betrieb der Website."
+                    body: "Beim Aufruf der Website verarbeitet der Hosting-Anbieter technische Zugriffsdaten, damit die Seite ausgeliefert, zuverlässig betrieben und vor Missbrauch geschützt werden kann. Dazu können IP-Adresse, Datum und Uhrzeit des Zugriffs, angeforderte Dateien, Referrer, Browserinformationen und Informationen zum Betriebssystem gehören. Die Verarbeitung beruht auf berechtigten Interessen am sicheren und zuverlässigen Betrieb der Website."
                 },
                 contactForm: {
                     title: "Kontaktformular und Mailgun",
-                    body: "Wenn du das Kontaktformular nutzt, werden deine Angaben verarbeitet, um deine Anfrage zu beantworten. Die Nachricht kann über Mailgun versendet werden. Mailgun ist dabei als technischer E-Mail-Dienstleister eingebunden. Vor Veröffentlichung müssen der konkrete Mailgun-Vertrag, die Region, mögliche Unterauftragnehmer und ein Auftragsverarbeitungsvertrag geprüft werden."
+                    body: "Wenn Du das Kontaktformular nutzt, werden Deine Angaben verarbeitet, um Deine Anfrage zu beantworten. Die Nachricht kann über Mailgun versendet werden. Mailgun wird als technischer E-Mail-Dienstleister eingesetzt. Vor Veröffentlichung müssen der konkrete Mailgun-Vertrag, die Region, mögliche Unterauftragsverarbeiter und die Vereinbarung zur Auftragsverarbeitung geprüft werden."
                 },
                 email: {
                     title: "E-Mail-Kommunikation",
-                    body: "Wenn du per E-Mail Kontakt aufnimmst, werden deine E-Mail-Adresse, der Inhalt deiner Nachricht und weitere freiwillige Angaben verarbeitet, um die Anfrage zu bearbeiten. Je nach Inhalt kann die Speicherung auch zur Dokumentation geschäftlicher Kommunikation erforderlich sein."
+                    body: "Wenn Du uns per E-Mail kontaktierst, werden Deine E-Mail-Adresse, der Nachrichteninhalt und freiwillige Angaben verarbeitet, um die Anfrage zu bearbeiten. Je nach Inhalt kann eine Speicherung auch erforderlich sein, um geschäftliche Kommunikation zu dokumentieren."
                 },
                 cookies: {
-                    title: "Cookies, Sprache und Theme",
-                    body: "Die Website speichert nur notwendige Einstellungen, etwa Sprache, helles oder dunkles Theme, Formular- oder Sitzungszustände und ob dieser Datenschutzhinweis bereits bestätigt wurde. Diese Funktionen dienen nicht dem Tracking, sondern der Bedienbarkeit und Stabilität der Website.",
+                    title: "Cookies, Sprache und Design",
+                    body: "Die Website speichert nur notwendige Einstellungen, etwa Sprache, hellen oder dunklen Modus, Formular- oder Sitzungsstatus und ob dieser Datenschutzhinweis bereits bestätigt wurde. Diese Funktionen werden nicht für Tracking genutzt, sondern für Benutzerfreundlichkeit und Stabilität.",
                     action: "Datenschutzhinweis anzeigen"
                 },
                 analytics: {
                     title: "Analyse und Tracking",
-                    body: "Diese Website nutzt Vercel Web Analytics, um grundlegende Nutzungsmuster zu verstehen und die Website zu verbessern. Laut Vercel verwendet Web Analytics keine Cookies und speichert anonymisierte Analysedaten. Besucher werden über einen täglich wechselnden Hash aus der eingehenden Anfrage erkannt, sodass sie nicht über verschiedene Tage oder Websites hinweg verfolgt werden können."
+                    body: "Diese Website nutzt Vercel Web Analytics, um grundlegende Nutzungsmuster zu verstehen und die Website zu verbessern. Laut Vercel verwendet Web Analytics keine Cookies und speichert anonymisierte Analysedaten. Besucher werden über einen täglich wechselnden Hash identifiziert, der aus der eingehenden Anfrage abgeleitet wird, sodass sie nicht über verschiedene Tage oder Websites hinweg verfolgt werden können."
                 },
                 legalBasis: {
                     title: "Rechtsgrundlagen",
-                    body: "Die Verarbeitung erfolgt je nach Zweck auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO zur Bearbeitung vorvertraglicher oder vertraglicher Anfragen, Art. 6 Abs. 1 lit. c DSGVO zur Erfüllung rechtlicher Pflichten, Art. 6 Abs. 1 lit. f DSGVO für den sicheren Betrieb der Website und Art. 6 Abs. 1 lit. a DSGVO, wenn eine Einwilligung erforderlich ist."
+                    body: "Je nach Zweck beruht die Verarbeitung auf Art. 6 Abs. 1 lit. b DSGVO für die Bearbeitung vorvertraglicher oder vertraglicher Anfragen, Art. 6 Abs. 1 lit. c DSGVO für rechtliche Pflichten, Art. 6 Abs. 1 lit. f DSGVO für den sicheren Website-Betrieb und Art. 6 Abs. 1 lit. a DSGVO, sofern eine Einwilligung erforderlich ist."
                 },
                 retention: {
-                    title: "Speicherdauer und Löschung",
-                    body: "Personenbezogene Daten werden nur so lange gespeichert, wie es für den jeweiligen Zweck erforderlich ist oder gesetzliche Aufbewahrungsfristen bestehen. Kontaktanfragen werden gelöscht, sobald sie abschließend bearbeitet wurden und keine gesetzlichen oder geschäftlichen Aufbewahrungspflichten entgegenstehen. Server-Logfiles werden in der Regel nur kurzfristig gespeichert, sofern keine sicherheitsrelevante Prüfung erforderlich ist."
+                    title: "Speicherung und Löschung",
+                    body: "Personenbezogene Daten werden nur so lange gespeichert, wie es für den jeweiligen Zweck oder gesetzliche Aufbewahrungsfristen erforderlich ist. Kontaktanfragen werden gelöscht, sobald sie vollständig bearbeitet wurden und keine gesetzlichen oder geschäftlichen Aufbewahrungspflichten bestehen. Server-Logfiles werden in der Regel nur kurzfristig gespeichert, sofern keine Sicherheitsprüfung erforderlich ist."
                 },
                 processors: {
-                    title: "Dienstleister und Auftragsverarbeitung",
-                    body: "Für Hosting, technische Wartung und E-Mail-Versand können spezialisierte Dienstleister eingesetzt werden. Diese Dienstleister verarbeiten personenbezogene Daten nur nach Weisung und auf Grundlage geeigneter Verträge, soweit dies rechtlich erforderlich ist. Die tatsächlich eingesetzten Dienstleister müssen vor Veröffentlichung vollständig ergänzt werden."
+                    title: "Dienstleister und Auftragsverarbeiter",
+                    body: "Für Hosting, technische Wartung und E-Mail-Versand können spezialisierte Dienstleister eingesetzt werden. Diese Anbieter verarbeiten personenbezogene Daten nur auf Weisung und auf Grundlage geeigneter Vereinbarungen, sofern dies rechtlich erforderlich ist. Die tatsächlich eingesetzten Anbieter müssen vor Veröffentlichung ergänzt werden."
                 },
                 transfers: {
                     title: "Internationale Datenübermittlungen",
                     body: "Einige technische Dienstleister können Daten außerhalb der Europäischen Union oder des Europäischen Wirtschaftsraums verarbeiten. In solchen Fällen müssen geeignete Garantien geprüft werden, zum Beispiel Angemessenheitsbeschlüsse, Standardvertragsklauseln oder zusätzliche Schutzmaßnahmen."
                 },
                 complaint: {
-                    title: "Beschwerderecht bei einer Aufsichtsbehörde",
-                    body: "Du hast das Recht, dich bei einer Datenschutzaufsichtsbehörde zu beschweren, wenn du der Ansicht bist, dass die Verarbeitung deiner personenbezogenen Daten gegen Datenschutzrecht verstößt. Zuständig kann insbesondere die Aufsichtsbehörde an deinem Wohnort oder am Sitz des Verantwortlichen sein."
+                    title: "Beschwerderecht",
+                    body: "Du hast das Recht, Dich bei einer Datenschutzaufsichtsbehörde zu beschweren, wenn Du der Ansicht bist, dass die Verarbeitung Deiner personenbezogenen Daten gegen Datenschutzrecht verstößt. Zuständig kann insbesondere die Behörde an Deinem Wohnort oder am Sitz der verantwortlichen Stelle sein."
                 },
                 updates: {
-                    title: "Aktualisierung dieser Hinweise",
-                    body: "Diese Datenschutzhinweise können angepasst werden, wenn sich Website-Funktionen, Dienstleister oder rechtliche Anforderungen ändern. Die jeweils aktuelle Fassung ist auf dieser Seite verfügbar."
+                    title: "Aktualisierungen dieses Hinweises",
+                    body: "Dieser Datenschutzhinweis kann aktualisiert werden, wenn sich Website-Funktionen, Dienstleister oder rechtliche Anforderungen ändern. Die aktuelle Version ist auf dieser Seite verfügbar."
                 }
             },
             rights: {
                 eyebrow: "Deine Rechte",
                 title: "Rechte nach der DSGVO",
                 description:
-                    "Du kannst deine Rechte jederzeit über die oben genannte Kontaktadresse geltend machen.",
+                    "Du kannst Deine Rechte jederzeit über die oben genannte Kontaktadresse ausüben.",
                 access: "Auskunft über gespeicherte personenbezogene Daten",
                 rectification: "Berichtigung unrichtiger oder unvollständiger Daten",
-                erasure: "Löschung, soweit keine Aufbewahrungspflichten entgegenstehen",
+                erasure: "Löschung, sofern keine Aufbewahrungspflichten entgegenstehen",
                 restriction: "Einschränkung der Verarbeitung",
                 portability: "Datenübertragbarkeit, soweit anwendbar",
-                objection: "Widerspruch gegen Verarbeitungen auf Grundlage berechtigter Interessen",
+                objection: "Widerspruch gegen Verarbeitung auf Grundlage berechtigter Interessen",
                 withdrawal: "Widerruf einer Einwilligung mit Wirkung für die Zukunft"
             },
             cta: {
                 title: "Fragen zum Datenschutz?",
                 description:
-                    "Schreib uns, wenn du wissen möchtest, welche Daten verarbeitet werden oder wenn du eines deiner Rechte ausüben möchtest.",
+                    "Schreib uns eine Nachricht, wenn Du wissen möchtest, welche Daten verarbeitet werden, oder wenn Du eines Deiner Rechte ausüben möchtest.",
                 contact: "Kontakt aufnehmen",
                 email: "E-Mail senden"
             }
@@ -610,18 +521,18 @@ export default {
             meta: {
                 title: "Impressum | Blue Desert",
                 description:
-                    "Gesetzlich erforderliche Anbieterangaben und rechtliche Informationen für diese Website."
+                    "Pflichtangaben zum Anbieter und rechtliche Hinweise zu dieser Website nach deutschem Recht."
             },
             hero: {
                 title: "Impressum",
-                intro: "Hier findest du die gesetzlich erforderlichen Angaben zum Anbieter, zu Verantwortlichkeiten und zur Streitbeilegung."
+                intro: "Hier findest Du die gesetzlich erforderlichen Informationen zu Anbieterangaben, Verantwortlichkeiten und Streitbeilegung."
             },
             sections: {
                 provider: {
-                    title: "Anbieterangaben",
+                    title: "Anbieterinformationen",
                     fields: {
-                        vat: "Umsatzsteuer-ID",
-                        contentResponsible: "Verantwortlich für den Inhalt"
+                        vat: "USt-IdNr.",
+                        contentResponsible: "Inhaltlich verantwortlich"
                     }
                 },
                 contact: {
@@ -634,19 +545,19 @@ export default {
                     text: "Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG:"
                 },
                 contentResponsible: {
-                    text: "Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:"
+                    text: "Inhaltlich verantwortlich gemäß § 18 Abs. 2 MStV:"
                 },
                 disputeResolution: {
                     title: "Online-Streitbeilegung",
                     content:
                         "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit. Verbraucher können diese Plattform zur Beilegung von Streitigkeiten nutzen. Wir sind weder verpflichtet noch bereit, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.",
-                    linkLabel: "Zur OS-Plattform",
+                    linkLabel: "OS-Plattform öffnen",
                     linkUrl: "https://ec.europa.eu/consumers/odr/"
                 },
                 legalReview: {
                     title: "Hinweis zur rechtlichen Prüfung",
                     content:
-                        "Diese Angaben wurden mit Sorgfalt erstellt und werden regelmäßig geprüft. Änderungen aufgrund rechtlicher oder tatsächlicher Entwicklungen bleiben vorbehalten."
+                        "Diese Informationen wurden mit Sorgfalt erstellt und werden regelmäßig geprüft. Änderungen aufgrund rechtlicher oder tatsächlicher Aktualisierungen bleiben vorbehalten."
                 }
             }
         }
@@ -660,38 +571,38 @@ export default {
         meta: {
             title: "Kontakt aufnehmen",
             description:
-                "Sie haben Fragen zu unseren Bildungsurlauben, Retreats oder Gruppenangeboten? Schreiben Sie uns gerne eine Nachricht."
+                "Hast Du Fragen zu unseren Bildungsurlaub-Programmen, Retreats oder Gruppenangeboten? Schreib uns eine Nachricht."
         },
         title: "Kontakt aufnehmen",
-        intro: "Sie haben Fragen zu unseren Bildungsurlauben, Retreats oder Gruppenangeboten? Schreiben Sie uns gerne eine Nachricht. Wir melden uns so schnell wie möglich zurück.",
+        intro: "Hast Du Fragen zu unseren Bildungsurlaub-Programmen, Retreats oder Gruppenangeboten? Schreib uns eine Nachricht und wir melden uns so bald wie möglich bei Dir.",
         details: {
-            heading: "So erreichen Sie uns",
+            heading: "So erreichst Du uns",
             emailLabel: "E-Mail",
-            emailValue: "Fülle das Formular aus oder schick uns direkt eine E-Mail.",
+            emailValue: "Fülle das Formular aus oder sende uns direkt eine E-Mail.",
             phoneLabel: "Telefon",
-            phoneValue: "Vereinbare einen Termin mit uns über das Kontaktformular.",
+            phoneValue: "Vereinbare über das Kontaktformular einen Termin mit uns.",
             socialMediaLabel: "Social Media",
-            socialMediaValue: "Folge unseren neuesten Updates oder schick uns eine DM."
+            socialMediaValue: "Folge unseren neuesten Updates oder sende uns eine Direktnachricht."
         },
         form: {
             title: "Nachricht senden",
             description:
-                "Füllen Sie das Formular aus und wir melden uns mit den passenden nächsten Schritten.",
+                "Fülle das Formular aus und wir melden uns mit den passenden nächsten Schritten bei Dir.",
             firstName: {
                 label: "Vorname",
-                placeholder: "Ihr Vorname"
+                placeholder: "Dein Vorname"
             },
             lastName: {
                 label: "Nachname",
-                placeholder: "Ihr Nachname"
+                placeholder: "Dein Nachname"
             },
             email: {
                 label: "E-Mail",
-                placeholder: "Ihre E-Mail-Adresse"
+                placeholder: "Deine E-Mail-Adresse"
             },
             phone: {
                 label: "Telefon",
-                placeholder: "Ihre Telefonnummer",
+                placeholder: "Deine Telefonnummer",
                 help: "Optional"
             },
             subject: {
@@ -707,31 +618,31 @@ export default {
             message: {
                 label: "Nachricht",
                 placeholder: "Wie können wir helfen?",
-                help: "Bitte schreiben Sie mindestens ein paar Sätze."
+                help: "Bitte schreibe mindestens ein paar Sätze."
             },
             privacyConsent: {
-                label: "Ich stimme der Verarbeitung meiner Angaben zur Kontaktaufnahme zu.",
-                help: "Ihre Angaben werden nur zur Bearbeitung Ihrer Anfrage verwendet."
+                label: "Ich stimme der Verarbeitung meiner Angaben zum Zweck der Kontaktaufnahme zu.",
+                help: "Deine Angaben werden ausschließlich zur Bearbeitung Deiner Anfrage verwendet."
             },
             submit: "Nachricht senden",
             success: {
                 title: "Vielen Dank",
                 description:
-                    "Ihre Nachricht wurde gesendet. Wir melden uns so schnell wie möglich zurück."
+                    "Deine Nachricht wurde gesendet. Wir melden uns so bald wie möglich bei Dir."
             },
             error: {
                 title: "Nachricht konnte nicht gesendet werden",
                 description:
-                    "Bitte versuchen Sie es später erneut oder kontaktieren Sie uns direkt per E-Mail."
+                    "Bitte versuche es später erneut oder kontaktiere uns direkt per E-Mail."
             }
         },
         validation: {
-            privacyAccepted: "Bitte stimmen Sie der Verarbeitung Ihrer Angaben zu."
+            privacyAccepted: "Bitte stimme der Verarbeitung Deiner Angaben zu."
         }
     },
     theme: {
-        switchToDark: "Zum dunklen Modus wechseln",
-        switchToLight: "Zum hellen Modus wechseln"
+        switchToDark: "In den dunklen Modus wechseln",
+        switchToLight: "In den hellen Modus wechseln"
     },
     language: {
         en: "English",
