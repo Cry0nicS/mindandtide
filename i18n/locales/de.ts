@@ -433,7 +433,33 @@ export default {
                         title: "Beduinen-Dinner",
                         description:
                             "Teilen Sie traditionellen Tee und über offenem Feuer zubereitetes Essen unter einem klaren Sternenhimmel."
+                    },
+                    lastOne: {
+                        title: "Beduinen-Dinner",
+                        description:
+                            "Teilen Sie traditionellen Tee und über offenem Feuer zubereitetes Essen unter einem klaren Sternenhimmel."
                     }
+                }
+            },
+            gallery: {
+                title: "Retreat-Eindrücke",
+                description:
+                    "Ein Eindruck von Meer, Wüste und der großzügigen Ruhe, die die Atmosphäre rund um Nuweibaa prägen.",
+                controls: {
+                    open: "Bild öffnen",
+                    close: "Galerie schließen",
+                    previous: "Vorheriges Bild",
+                    next: "Nächstes Bild"
+                },
+                images: {
+                    redSea: "Klares Wasser des Roten Meeres an einem ruhigen Ufer",
+                    desertRoad: "Offene Wüste mit einer Straße in Richtung niedriger Sinai-Berge",
+                    reef: "Eine schwimmende Person erkundet ein Korallenriff in klarem blauem Wasser",
+                    nightSky: "Sternenhimmel über einer dunklen Berglandschaft",
+                    coast: "Sanfte Wellen laufen auf einen weiten Sandstrand",
+                    journey: "Eine Reise durch offenes Wüstenlicht",
+                    mountains: "Bergpfad mit Dunst und gedeckten Wüstenfarben",
+                    stillness: "Ruhige Naturlandschaft in weichem Abendlicht"
                 }
             },
             cta: {

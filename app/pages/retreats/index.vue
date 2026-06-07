@@ -2,6 +2,7 @@
 import type {ButtonProps} from "@nuxt/ui";
 import LandingFeatureList from "~/components/landing/landing-feature-list.vue";
 import LandingHero from "~/components/landing/landing-hero.vue";
+import LandingImageGallery from "~/components/landing/landing-image-gallery.vue";
 import LandingInfoGrid from "~/components/landing/landing-info-grid.vue";
 import LandingPageSection from "~/components/landing/landing-page-section.vue";
 
@@ -10,6 +11,13 @@ const localePath = useLocalePath();
 
 const contentKey = "pages.retreatsPage";
 const tk = (path: string) => `${contentKey}.${path}`;
+
+interface RetreatGalleryImage {
+    src: string;
+    alt: string;
+    width: number;
+    height: number;
+}
 
 const heroLinks = computed<ButtonProps[]>(() => [
     {
@@ -143,6 +151,11 @@ const activityItems = computed(() => {
             icon: "i-lucide-flame",
             title: t(tk("activities.items.bedouinDinner.title")),
             description: t(tk("activities.items.bedouinDinner.description"))
+        },
+        {
+            icon: "i-lucide-flame",
+            title: t(tk("activities.items.lastOne.title")),
+            description: t(tk("activities.items.lastOne.description"))
         }
     ];
 });
@@ -154,6 +167,72 @@ const contactCta = computed<ButtonProps[]>(() => {
             to: localePath("/contact")
         }
     ];
+});
+
+const galleryImages = computed<RetreatGalleryImage[]>(() => {
+    void locale.value;
+
+    return [
+        {
+            src: "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1200&h=1600&q=80",
+            alt: t(tk("gallery.images.redSea")),
+            width: 1200,
+            height: 1600
+        },
+        {
+            src: "https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1200&h=900&q=80",
+            alt: t(tk("gallery.images.desertRoad")),
+            width: 1200,
+            height: 900
+        },
+        {
+            src: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&h=900&q=80",
+            alt: t(tk("gallery.images.reef")),
+            width: 1200,
+            height: 900
+        },
+        {
+            src: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&h=1600&q=80",
+            alt: t(tk("gallery.images.nightSky")),
+            width: 1200,
+            height: 1600
+        },
+        {
+            src: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&h=900&q=80",
+            alt: t(tk("gallery.images.coast")),
+            width: 1200,
+            height: 900
+        },
+        {
+            src: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&h=900&q=80",
+            alt: t(tk("gallery.images.mountains")),
+            width: 1200,
+            height: 900
+        },
+        {
+            src: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&h=900&q=80",
+            alt: t(tk("gallery.images.stillness")),
+            width: 1200,
+            height: 900
+        },
+        {
+            src: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&h=1600&q=80",
+            alt: t(tk("gallery.images.journey")),
+            width: 1200,
+            height: 1600
+        }
+    ];
+});
+
+const galleryLabels = computed(() => {
+    void locale.value;
+
+    return {
+        open: t(tk("gallery.controls.open")),
+        close: t(tk("gallery.controls.close")),
+        previous: t(tk("gallery.controls.previous")),
+        next: t(tk("gallery.controls.next"))
+    };
 });
 
 const whyNuweibaaLinks = computed<ButtonProps[]>(() => [
@@ -294,7 +373,10 @@ const placeImage =
             :title="t(tk('whyNuweibaa.title'))"
             orientation="horizontal"
             :links="whyNuweibaaLinks"
-            class="landing-section-spaced">
+            class="landing-section-spaced"
+            :ui="{
+                container: 'py-0 sm:py-0 lg:py-0'
+            }">
             <template #description>
                 <p class="landing-description whitespace-pre-line">
                     {{ t(tk("whyNuweibaa.description")) }}
@@ -313,16 +395,15 @@ const placeImage =
         <UPageSection
             :title="t(tk('activities.title'))"
             :description="t(tk('activities.description'))"
-            orientation="horizontal"
-            reverse
-            :features="activityItems">
-            <NuxtImg
-                :src="placeImage"
-                :alt="t(tk('whyNuweibaa.imageAlt'))"
-                width="800"
-                height="1000"
-                sizes="100vw sm:100vw lg:40vw"
-                class="aspect-4/5 w-full object-cover" />
+            orientation="vertical"
+            :features="activityItems"
+            class="landing-section-spaced"
+            :ui="{
+                container: 'py-0 sm:py-0 lg:py-0'
+            }">
+            <LandingImageGallery
+                :images="galleryImages"
+                :labels="galleryLabels" />
         </UPageSection>
 
         <UPageSection

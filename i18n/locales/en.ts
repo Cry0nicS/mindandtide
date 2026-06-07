@@ -430,7 +430,33 @@ export default {
                         title: "Bedouin Dinner",
                         description:
                             "Share traditional tea and food prepared over an open fire under a clear starry sky."
+                    },
+                    lastOne: {
+                        title: "Bedouin Dinner",
+                        description:
+                            "Share traditional tea and food prepared over an open fire under a clear starry sky."
                     }
+                }
+            },
+            gallery: {
+                title: "Retreat impressions",
+                description:
+                    "A glimpse of the sea, desert and spacious quiet that shape the atmosphere around Nuweibaa.",
+                controls: {
+                    open: "Open image",
+                    close: "Close gallery",
+                    previous: "Previous image",
+                    next: "Next image"
+                },
+                images: {
+                    redSea: "Clear Red Sea water beside a quiet shore",
+                    desertRoad: "Open desert road leading toward low Sinai mountains",
+                    reef: "A swimmer exploring coral reef life in clear blue water",
+                    nightSky: "Starry night sky over a dark mountain landscape",
+                    coast: "Soft waves rolling toward a wide sandy beach",
+                    journey: "A road journey through open desert light",
+                    mountains: "Mountain path with mist and muted desert colors",
+                    stillness: "Quiet natural landscape with soft evening light"
                 }
             },
             cta: {
