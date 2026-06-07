@@ -24,7 +24,6 @@ const props = withDefaults(defineProps<Props>(), {
 
 <template>
     <UPageSection
-        :headline="props.eyebrow"
         :title="props.title"
         :description="props.description"
         :orientation="props.orientation"
@@ -32,12 +31,19 @@ const props = withDefaults(defineProps<Props>(), {
         :ui="{
             container: 'py-12 sm:py-16 lg:py-20 gap-8 sm:gap-10 lg:gap-14',
             wrapper: ['max-w-2xl', props.reverse && 'lg:order-last'].filter(Boolean).join(' '),
-            headline: 'landing-eyebrow',
             title: 'landing-title',
             description: 'landing-description mt-5 max-w-2xl text-base',
             body: 'mt-8',
             features: 'gap-4'
         }">
+        <template
+            v-if="props.eyebrow"
+            #headline>
+            <span class="landing-eyebrow">
+                {{ props.eyebrow }}
+            </span>
+        </template>
+
         <template
             v-if="$slots.description"
             #description>

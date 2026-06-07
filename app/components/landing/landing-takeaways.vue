@@ -49,18 +49,22 @@ const takeawayItems = computed(() => {
 
 <template>
     <UPageSection
-        :headline="t(tk('headline'))"
         :title="t(tk('title'))"
         :description="t(tk('description'))"
         :ui="{
             container: 'py-0 sm:py-0 lg:py-0',
             wrapper: 'mx-auto max-w-2xl text-center',
-            headline: 'landing-eyebrow',
             title: 'landing-title mx-auto max-w-2xl',
             description: 'landing-description mx-auto max-w-2xl',
             body: 'mt-8'
         }"
         class="landing-section-spaced text-center">
+        <template #headline>
+            <span class="landing-eyebrow">
+                {{ t(tk("headline")) }}
+            </span>
+        </template>
+
         <div class="space-y-5 sm:space-y-6">
             <div class="grid gap-4 sm:grid-cols-2">
                 <div
