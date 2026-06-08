@@ -48,24 +48,28 @@ const methodIncludesItems = computed(() => {
 
     return [
         {
-            icon: "i-lucide-notebook-pen",
-            description: t(tk("contentMethods.methods.items.reflection"))
-        },
-        {
-            icon: "i-lucide-person-standing",
-            description: t(tk("contentMethods.methods.items.body"))
+            icon: "i-lucide-waves",
+            description: t(tk("contentMethods.methods.items.water"))
         },
         {
             icon: "i-lucide-wind",
             description: t(tk("contentMethods.methods.items.breath"))
         },
         {
+            icon: "i-lucide-person-standing",
+            description: t(tk("contentMethods.methods.items.body"))
+        },
+        {
+            icon: "i-lucide-ear",
+            description: t(tk("contentMethods.methods.items.senses"))
+        },
+        {
             icon: "i-lucide-camera",
             description: t(tk("contentMethods.methods.items.photography"))
         },
         {
-            icon: "i-lucide-waves",
-            description: t(tk("contentMethods.methods.items.floating"))
+            icon: "i-lucide-footprints",
+            description: t(tk("contentMethods.methods.items.walking"))
         }
     ];
 });
@@ -207,7 +211,6 @@ const placeImage =
             :image-alt="t(tk('hero.imageAlt'))"
             :eyebrow="t(tk('hero.eyebrow'))"
             :title="t(tk('hero.title'))"
-            :subheadline="t(tk('hero.subheadline'))"
             :supporting-text="t(tk('hero.supportingText'))"
             :meta-text="t(tk('hero.meta'))" />
 
@@ -241,8 +244,6 @@ const placeImage =
             </div>
         </UPageSection>
 
-        <LandingTakeaways :content-key="contentKey" />
-
         <NuxtImg
             :src="processImage"
             :alt="t(tk('image.imageAlt'))"
@@ -250,6 +251,97 @@ const placeImage =
             height="684"
             sizes="100vw sm:100vw lg:40vw"
             class="landing-section-spaced aspect-video w-full object-cover" />
+
+        <UPageSection
+            :title="t(tk('organization.title'))"
+            class="landing-section-spaced"
+            :ui="{
+                container: 'px-0 sm:px-0 lg:px-0 py-0 sm:py-0 lg:py-0',
+                wrapper: 'mx-auto max-w-6xl'
+            }">
+            <div class="p-5 sm:p-6 lg:p-8">
+                <LandingInfoGrid :items="infoItems" />
+
+                <div class="border-default mt-6 flex gap-3 border-t pt-5 sm:mt-8 sm:pt-6">
+                    <UIcon
+                        name="i-lucide-info"
+                        class="text-primary mt-1 size-5 shrink-0" />
+                    <p class="text-muted text-sm leading-6 sm:text-base sm:leading-7">
+                        {{ t(tk("organization.note")) }}
+                    </p>
+                </div>
+            </div>
+        </UPageSection>
+
+        <UPageSection
+            :title="t(tk('seminarSchedule.title'))"
+            :links="seminarScheduleLinks"
+            class="landing-section"
+            :ui="{
+                container: 'py-8 sm:py-10 lg:py-12',
+                wrapper: 'text-center',
+                header: 'text-center',
+                title: 'landing-title-compact',
+                body: 'mt-8',
+                footer: 'mt-8'
+            }">
+            <template #body>
+                <div class="grid gap-4 sm:grid-cols-3">
+                    <UCard
+                        v-for="(card, index) in seminarSchedule"
+                        :key="index"
+                        variant="subtle"
+                        class="landing-item-card h-full text-center"
+                        :ui="{body: 'flex h-full flex-col items-center p-5 sm:p-6'}">
+                        <template #default>
+                            <div class="landing-icon landing-icon-secondary size-12">
+                                <UIcon
+                                    :name="card.icon"
+                                    class="size-6" />
+                            </div>
+
+                            <h3
+                                class="text-highlighted mt-4 text-2xl leading-tight font-semibold whitespace-pre-line">
+                                {{ card.title }}
+                            </h3>
+
+                            <p class="text-muted mt-3 leading-6 whitespace-pre-line">
+                                {{ card.description }}
+                            </p>
+                        </template>
+                    </UCard>
+                </div>
+            </template>
+        </UPageSection>
+
+        <LandingPageSection
+            :eyebrow="t(tk('participants.eyebrow'))"
+            :title="t(tk('participants.title'))"
+            orientation="horizontal"
+            reverse>
+            <template #description>
+                <p class="landing-description">
+                    {{ t(tk("participants.description")) }}
+                </p>
+            </template>
+
+            <template #body>
+                <div class="space-y-6">
+                    <LandingFeatureList :items="participantItems" />
+                    <p class="landing-description">
+                        {{ t(tk("participants.closing")) }}
+                    </p>
+                </div>
+            </template>
+
+            <NuxtImg
+                :src="processImage"
+                :alt="t(tk('participants.imageAlt'))"
+                width="800"
+                height="1000"
+                sizes="100vw sm:100vw lg:40vw"
+                class="aspect-4/5 w-full object-cover" />
+        </LandingPageSection>
 
         <UPageSection
             :title="t(tk('stepper.title'))"
@@ -342,96 +434,7 @@ const placeImage =
             </div>
         </UPageSection>
 
-        <UPageSection
-            :title="t(tk('organization.title'))"
-            class="landing-section-spaced"
-            :ui="{
-                container: 'px-0 sm:px-0 lg:px-0 py-0 sm:py-0 lg:py-0',
-                wrapper: 'mx-auto max-w-6xl'
-            }">
-            <div class="p-5 sm:p-6 lg:p-8">
-                <LandingInfoGrid :items="infoItems" />
-
-                <div class="border-default mt-6 flex gap-3 border-t pt-5 sm:mt-8 sm:pt-6">
-                    <UIcon
-                        name="i-lucide-info"
-                        class="text-primary mt-1 size-5 shrink-0" />
-                    <p class="text-muted text-sm leading-6 sm:text-base sm:leading-7">
-                        {{ t(tk("organization.note")) }}
-                    </p>
-                </div>
-            </div>
-        </UPageSection>
-
-        <UPageSection
-            :title="t(tk('seminarSchedule.title'))"
-            :links="seminarScheduleLinks"
-            class="landing-section"
-            :ui="{
-                container: 'py-8 sm:py-10 lg:py-12',
-                wrapper: 'text-center',
-                header: 'text-center',
-                title: 'landing-title-compact',
-                body: 'mt-8',
-                footer: 'mt-8'
-            }">
-            <template #body>
-                <div class="grid gap-4 sm:grid-cols-3">
-                    <UCard
-                        v-for="(card, index) in seminarSchedule"
-                        :key="index"
-                        variant="subtle"
-                        class="landing-item-card h-full text-center"
-                        :ui="{body: 'flex h-full flex-col items-center p-5 sm:p-6'}">
-                        <template #default>
-                            <div class="landing-icon landing-icon-secondary size-12">
-                                <UIcon
-                                    :name="card.icon"
-                                    class="size-6" />
-                            </div>
-
-                            <h3
-                                class="text-highlighted mt-4 text-2xl leading-tight font-semibold whitespace-pre-line">
-                                {{ card.title }}
-                            </h3>
-
-                            <p class="text-muted mt-3 leading-6 whitespace-pre-line">
-                                {{ card.description }}
-                            </p>
-                        </template>
-                    </UCard>
-                </div>
-            </template>
-        </UPageSection>
-
-        <LandingPageSection
-            :eyebrow="t(tk('participants.eyebrow'))"
-            :title="t(tk('participants.title'))"
-            orientation="horizontal"
-            reverse>
-            <template #description>
-                <p class="landing-description">
-                    {{ t(tk("participants.description")) }}
-                </p>
-            </template>
-
-            <template #body>
-                <div class="space-y-6">
-                    <LandingFeatureList :items="participantItems" />
-                    <p class="landing-description">
-                        {{ t(tk("participants.closing")) }}
-                    </p>
-                </div>
-            </template>
-
-            <NuxtImg
-                :src="processImage"
-                :alt="t(tk('participants.imageAlt'))"
-                width="800"
-                height="1000"
-                sizes="100vw sm:100vw lg:40vw"
-                class="aspect-4/5 w-full object-cover" />
-        </LandingPageSection>
+        <LandingTakeaways :content-key="contentKey" />
 
         <LandingPageSection
             :eyebrow="t(tk('whyDahab.eyebrow'))"

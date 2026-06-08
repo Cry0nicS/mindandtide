@@ -17,30 +17,28 @@ export default {
         aboutUs: "Über uns",
         seminarsPage: {
             seo: {
-                title: "Resilienzseminar am Meer | Blue Desert",
+                title: "Seminar zur Stressregulation am Meer | Mind & Tide",
                 description:
                     "Ein ruhiges, erfahrungsbasiertes Seminar in Dahab für Resilienz, Stressmanagement und neue Handlungsfähigkeit im Berufsleben."
             },
             hero: {
                 eyebrow: "Unsere Seminare",
-                title: "Nachhaltige Balance unter Druck finden",
-                subheadline: "Stress zähmen. Muster durchbrechen. Klarheit zurückgewinnen",
+                title: "Stressbewältigung im beruflichen Alltag",
                 supportingText:
-                    "Ein fünftägiges Seminar zur Stressregulation in einer erholsamen Umgebung am Meer",
+                    "Ein fünftägiges Seminar zur Vermittlung praktischer Methoden der Stressbewältigung am Roten Meer.",
                 meta: "Dahab, Ägypten",
                 imageAlt: "Ruhige Küstenlinie mit Bergen im Hintergrund nahe Dahab in Ägypten"
             },
             seminarAbout: {
-                eyebrow: "Der Ausgangspunkt",
-                title: "Vom Problem zur Möglichkeit",
-                intro: "Das heutige Berufsleben steht oft unter dauerhaftem Druck. Wachsende Unsicherheit, zunehmende Sorgeverantwortung und ein beschleunigter Lebensrhythmus können kognitive Überlastung erzeugen und echte Erholung erschweren.",
+                eyebrow: "Warum dieses Seminar",
+                title: "Das Gleichgewicht wiederfinden",
+                intro: "Das Berufsleben spielt sich heute oft unter ständigem Druck ab: wachsende Unsicherheit, zunehmende Betreuungsaufgaben und ein immer schneller werdendes Lebenstempo. Zusammen können diese Faktoren zu einer kognitiven Überlastung führen, den Stress verstärken und eine echte Erholung erschweren. Um diesen Herausforderungen zu begegnen, bedarf es mehr als nur kurzfristiger Bewältigungsstrategien. Nachhaltige Veränderungen zu bewirken, erfordert sowohl Verständnis als auch Erfahrung.",
                 closing:
-                    "Das Seminar schafft Raum, um zu verstehen, wie Stress durch individuelle Gewohnheiten, Umgebungen und tägliche Anforderungen geprägt wird, und um praktische Strategien zu entwickeln, die sich in das private und berufliche Leben integrieren lassen."
+                    "Anstatt sich ausschließlich auf theoretisches Wissen über Stress zu konzentrieren – woher er kommt und wie man damit umgeht –, schafft unser Seminar Raum, um zu erkunden, wie Stress durch individuelle Gewohnheiten, Umgebungen und alltägliche Anforderungen geprägt wird. Die Teilnehmenden lernen, ihre eigenen Stressmuster besser zu verstehen und praktische Strategien zu entwickeln, die sich in ihr Privat- und Berufsleben integrieren lassen und so auch unter anhaltendem Druck ein nachhaltiges Gleichgewicht fördern."
             },
             takeaways: {
                 headline: "Unser Ansatz",
                 title: "Was macht dieses Seminar besonders?",
-                description: "Textplatzhalter",
                 items: {
                     clarity: {
                         title: "Erfahrungsbasiertes Lernen",
@@ -58,7 +56,7 @@ export default {
                             "Stress betrifft nicht nur den Geist. Das Seminar betrachtet das Zusammenspiel von Körper, Geist, Emotionen und Umgebung und schafft so ein breiteres Verständnis von Resilienz und nachhaltigem Wohlbefinden."
                     },
                     routines: {
-                        title: "Lernen mit dem Ort",
+                        title: "Ortbezogenes Lernen",
                         description:
                             "Wo wir lernen, macht einen Unterschied. Das Seminar findet bewusst in Dahab statt. Meer, Wüste und die umliegenden Berge sind kein geografischer Zufall, sondern werden gezielt in den Lernprozess eingebunden. Einfachheit, weniger Ablenkung und ein langsamerer Rhythmus schaffen Raum für Reflexion, Aufmerksamkeit und Erholung."
                     },
@@ -97,14 +95,15 @@ export default {
             },
             contentMethods: {
                 methods: {
-                    title: "Methoden sind unter anderem",
+                    title: "Einige der Methoden, die du kennenlernen wirst:",
                     items: {
-                        reflection: "Angeleitete Reflexion und transferorientierte Übungen",
-                        body: "Körperbasierte Stressregulation, einschließlich TRE-basierter Elemente",
-                        breath: "Atembasierte Regulationsübungen",
-                        photography:
-                            "Partizipative Fotografie und ressourcenorientierte Wahrnehmungsarbeit",
-                        floating: "Floating und wasserbasierte Einheiten zur Körperregulation"
+                        Water: "Wasser: Floating und weitere wasserbasierte Regulationsübungen",
+                        Breath: "Atem: Atemarbeit und Atemwahrnehmung",
+                        Body: "Körper: Körperbasierte Stressbewältigungsübungen (einschließlich TRE)",
+                        Senses: "Sinne: Praktiken zur sensorischen Erdung und zur Wahrnehmung der Zeit",
+                        Photography:
+                            "Fotografie: Partizipative Fotografie und visuelle Wahrnehmung",
+                        Walking: "Gehen: Geführte Gehmeditation entlang der Küste"
                     }
                 }
             },
@@ -151,7 +150,7 @@ export default {
                         description: "Anmeldung offen\nBewerbungsfrist: 10. Oktober 2026"
                     },
                     upcoming2027: {
-                        title: "2027",
+                        title: "März-April\n2027",
                         description: "Weitere Termine folgen in Kürze"
                     }
                 },
@@ -220,53 +219,43 @@ export default {
         },
         aboutUsPage: {
             seo: {
-                title: "Über uns | Blue Desert",
+                title: "Über uns | Mind & Tide",
                 description:
-                    "Erfahre mehr über Blue Desert, unsere Arbeit im Südsinai und die Menschen hinter den Seminaren und Retreats."
+                    "Erfahre mehr über Mind & Tide, unsere Arbeit in Dahab und die Menschen hinter den Seminaren."
             },
             hero: {
                 eyebrow: "Über uns",
-                title: "Ein Ort für Lernen, Erholung und stille Veränderung",
-                subheadline:
-                    "Blue Desert verbindet strukturierte Praxis mit den Landschaften des Südsinai",
+                title: "Manchmal wissen wir, was Stress ist.",
+                subheadline: "Oft vergessen wir jedoch, wie er sich im eigenen Körper anfühlt.",
                 supportingText:
-                    "Unsere Arbeit bringt erfahrungsbasiertes Lernen, körperorientierte Regulation und die erholsame Qualität von Meer, Wüste und Bergen zusammen.",
-                meta: "Dahab und Nuweibaa, Ägypten",
+                    "Mind & Tide entstand aus einer persönlichen Suche nach einem besseren Verständnis von Stress, Resilienz und Erholung. Auf diesem Weg wurde deutlich, dass Wissen allein nur ein Teil der Geschichte ist. Wir brauchen auch praktische und persönliche Instrumente, um bewusst mit Stress umzugehen.\n",
                 imageAlt: "Offene Wüstenberge im Südsinai in warmem Abendlicht"
             },
             project: {
                 eyebrow: "Das Projekt",
-                title: "Warum wir Blue Desert gegründet haben",
-                description:
-                    "Blue Desert entstand aus einer einfachen Beobachtung: Viele Menschen brauchen nicht noch mehr Druck, noch mehr Lärm oder ein weiteres abstraktes Versprechen zur Selbstentwicklung. Sie brauchen Raum, Struktur und eine Umgebung, die hilft wahrzunehmen, was in Körper, Geist und Alltag bereits geschieht.\n\nDas Projekt verbindet professionelles Lernen, angeleitete Praxis und ortsbezogene Erfahrung. Unsere Seminare und Retreats unterstützen Stressregulation, Erholung und nachhaltige Veränderung, ohne daraus eine neue Form von Leistung zu machen.",
+                title: "Wie Mind & Tide entstand",
+                description: {
+                    intro:
+                        "Ich bin Silvia und arbeite seit mehr als zehn Jahren als Sozialwissenschaftlerin. Einen Großteil meiner beruflichen Laufbahn habe ich in dynamischen und anspruchsvollen Umgebungen verbracht, in denen Stress, Verantwortung und ständige Entscheidungsfindung zum Alltag gehören. " +
+                        "\n\nNeben meiner akademischen Arbeit habe ich mehr als ein Jahrzehnt lang Erwachsenenbildungsprogramme geleitet und Lernerfahrungen gestaltet, die Menschen dazu ermutigen, unbequeme Fragen zu stellen, Perspektiven auszutauschen und sich mit sich selbst und anderen zu verbinden.",
+                    turningPoint:
+                        "Und obwohl ich mein Leben um Begegnungen und Verbindungen herum aufgebaut habe, trug ich eine erhebliche Entfremdung in mir." +
+                        "\n\nIm Jahr 2023, als ich in Dahab das Tauchen lernte, bat mich mein Tauchlehrer, mich zu entspannen, da ich nicht in der Lage war, unter Wasser abzutauchen. Ich war überrascht. In diesem Moment fühlte ich mich so ruhig wie seit Monaten nicht mehr. Doch mein Körper erzählte eine andere Geschichte. Diese Erfahrung machte mir klar, dass ich zwar intellektuell erklären konnte, was Entspannung ist, aber nicht wirklich wusste, wie sie sich in meinem Körper anfühlt." +
+                        "\n\nSeitdem habe ich verschiedene Ansätze zur Stressbewältigung und Erholung erkundet und nach Wegen gesucht, ein Leben mit mehr Ausgeglichenheit, Ruhe und Achtsamkeit zu führen. Dabei habe ich entdeckt, dass es keine einzige Methode gibt, die für alle funktioniert. Entscheidend ist vielmehr, praktische Werkzeuge zu finden, die sich in den eigenen Alltag integrieren lassen." +
+                        "\n\nDahab wurde zu einem wichtigen Teil dieser Reise. Nicht nur, weil dort diese Erkenntnis entstand, sondern auch, weil die Umgebung selbst eine andere Art des Lernens und Reflektierens ermöglicht. Zwischen Meer, Wüste und einem langsameren Lebensrhythmus fand ich den Raum, Dinge wahrzunehmen, die im Alltag oft unsichtbar bleiben. Die räumliche Distanz zu den üblichen Verpflichtungen und die Einfachheit der Umgebung schufen Platz für echte Reflexion und Veränderung.",
+                    statement: "Mind & Tide entstand aus dieser Erfahrung heraus.",
+                    closing:
+                        "Mit Mind & Tide lade ich Menschen dazu ein, praktische Ansätze zur Stressregulation und Resilienz kennenzulernen, außerhalb ihrer gewohnten Routinen und in einer Umgebung, die Lernen und Reflexion unterstützt. Das fünftägige Seminar verbindet wissenschaftlich fundierte Inhalte, Reflexion und praktische Erfahrungen, um die eigenen Stressmuster besser zu verstehen und nachhaltige Strategien für den Alltag zu entwickeln." +
+                        "\n\nDabei verbinde ich meine Erfahrungen in den Bereichen Bildung, Moderation und internationale Forschung, um Lernräume zu schaffen, die Wissen, persönliche Reflexion, bedeutsame Begegnungen und Entdeckergeist miteinander verbinden." +
+                        "\n\nIch bin überzeugt, dass Lernen dann am wirkungsvollsten ist, wenn es über Klassenzimmer und Konferenzräume hinausgeht, wenn es mit Menschen, Orten und gelebten Erfahrungen verbunden ist."
+                },
                 imageAlt: "Ruhige Küste am Roten Meer mit Bergen im Hintergrund"
             },
-            whyEgypt: {
-                eyebrow: "Warum Ägypten",
-                title: "Eine Landschaft, die Perspektive schafft",
-                description:
-                    "Ägypten verbindet Tiefe, Weite und Einfachheit auf besondere Weise. Im Südsinai treffen das Rote Meer, offene Wüstenflächen und Berglandschaften aufeinander und schaffen eine Umgebung, die weit wirkt, ohne leer zu sein.\n\nFür unsere Arbeit ist das wichtig. Der Kontrast aus Wasser, Stein, Licht und Horizont unterstützt Aufmerksamkeit und hilft Teilnehmenden, aus gewohnten Mustern herauszutreten. Ägypten ist für uns keine Kulisse. Der Ort ist Teil der Lernumgebung.",
-                imageAlt: "Wüstenstraße mit Blick auf Berge im Südsinai"
-            },
-            whyDahab: {
-                eyebrow: "Warum Dahab",
-                title: "Ein fokussierter Rahmen für Seminare",
-                description:
-                    "Dahab verbindet gute Erreichbarkeit, natürliche Schönheit und einen entspannten Alltagsrhythmus. Der Ort bietet genug Struktur für ein klares Seminarformat und hält Teilnehmende gleichzeitig nah an Meer, Wüste und Bergen.\n\nDamit eignet sich Dahab besonders für Lernprozesse, die sowohl Fokus als auch Erholung brauchen. Zwischen den Seminareinheiten können Teilnehmende langsamer werden, am Wasser entlanggehen und Inhalte wirken lassen.",
-                imageAlt: "Ruhige Strandlandschaft mit klarem Wasser nahe Dahab"
-            },
-            whyNuweibaa: {
-                eyebrow: "Warum Nuweibaa",
-                title: "Ein stillerer Ort für Retreats",
-                description:
-                    "Nuweibaa hat einen langsameren und offeneren Charakter. Lange Strände, einfache Camps und weite Blicke schaffen Abstand von ständiger Reizüberflutung.\n\nFür Retreats ist diese Qualität zentral. Der Ort unterstützt Ruhe, Reflexion und Wiederverbindung, ohne viel von den Teilnehmenden zu verlangen. Er gibt dem Nervensystem Raum, sich an Stille, Rhythmus und Einfachheit zu orientieren.",
-                imageAlt: "Weite Küstenlinie und offenes Meer nahe Nuweibaa"
-            },
             team: {
-                eyebrow: "Die Menschen hinter Blue Desert",
+                eyebrow: "Die Menschen hinter Mind & Tide",
                 title: "Lerne das Team kennen",
                 description:
-                    "Blue Desert wird von Menschen geprägt, die unterschiedliche Perspektiven auf Lernen, Regulation, Bewegung, Ort und Gastfreundschaft einbringen.",
+                    "Mind & Tide wird von Menschen geprägt, die unterschiedliche Perspektiven auf Lernen, Regulation, Bewegung, Ort und Gastfreundschaft einbringen.",
                 members: {
                     silvia: {
                         name: "Dr. Silvia-Lucretia Nicola",
@@ -277,18 +266,13 @@ export default {
                         name: "Marcus Blacker",
                         role: "Körper- und atembasierte Stressregulation",
                         imageAlt: "Porträt von Marcus Blacker"
-                    },
-                    ahmad: {
-                        name: "Ahmad Nemr",
-                        role: "Unterstützung für wasserbasierte Praxiseinheiten",
-                        imageAlt: "Porträt von Ahmad Nemr"
                     }
                 }
             }
         },
         privacyPage: {
             seo: {
-                title: "Datenschutzerklärung | Blue Desert",
+                title: "Datenschutzerklärung | Mind & Tide",
                 description:
                     "Datenschutzhinweise zu Kontaktanfragen, Server-Logs, technisch notwendigen Einstellungen und Deinen Rechten nach der DSGVO."
             },
@@ -304,7 +288,7 @@ export default {
             controller: {
                 eyebrow: "Verantwortlicher Kontakt",
                 title: "Verantwortliche Stelle",
-                intro: "Verantwortlich für die Verarbeitung personenbezogener Daten auf dieser Website ist:"
+                intro: "Verantwortlich für die Verarbeitung personenbezogener Daten auf dieser Website ist: Silvia-Lucretia Nicola"
             },
             overview: {
                 eyebrow: "Überblick",
@@ -404,7 +388,7 @@ export default {
         },
         impressum: {
             meta: {
-                title: "Impressum | Blue Desert",
+                title: "Impressum | Mind & Tide",
                 description:
                     "Pflichtangaben zum Anbieter und rechtliche Hinweise zu dieser Website nach deutschem Recht."
             },
@@ -413,7 +397,7 @@ export default {
                 title: "Impressum",
                 subheadline: "Anbieterangaben und Verantwortlichkeiten",
                 intro: "Hier findest Du die gesetzlich erforderlichen Informationen zu Anbieterangaben, Verantwortlichkeiten und Streitbeilegung.",
-                meta: "Blue Desert Learning & Retreats",
+                meta: "Mind & Tide",
                 imageAlt: "Weite Wüstenstraße zwischen roten Felsen und Bergen im Südsinai"
             },
             sections: {
@@ -467,18 +451,17 @@ export default {
         }
     },
     site: {
-        description: "Lernen & Retreats",
-        logoAlt: "Logo von Blue Desert Learning and Retreats",
-        name: "Blue Desert"
+        description: "Seminar zur Stressregulierung",
+        logoAlt: "Logo von Mind & Tide",
+        name: "Mind & Tide"
     },
     contact: {
         meta: {
             title: "Kontakt aufnehmen",
-            description:
-                "Hast Du Fragen zu unseren Bildungsurlaub-Programmen, Retreats oder Gruppenangeboten? Schreib uns eine Nachricht."
+            description: "Hast Du Fragen zu unseren Seminaren? Schreib uns eine Nachricht."
         },
         title: "Kontakt aufnehmen",
-        intro: "Hast Du Fragen zu unseren Bildungsurlaub-Programmen, Retreats oder Gruppenangeboten? Schreib uns eine Nachricht und wir melden uns so bald wie möglich bei Dir.",
+        intro: "Hast Du Fragen zu unseren Seminaren? Schreib uns eine Nachricht und wir melden uns so bald wie möglich bei Dir.",
         details: {
             heading: "So erreichst Du uns",
             emailLabel: "E-Mail",
@@ -514,7 +497,7 @@ export default {
                 placeholder: "Worum geht es?",
                 options: {
                     educationalLeave: "Bildungsurlaub",
-                    retreats: "Retreats",
+                    seminars: "Seminars",
                     groupOffers: "Gruppenangebote",
                     general: "Allgemeine Anfrage"
                 }

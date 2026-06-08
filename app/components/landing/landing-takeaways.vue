@@ -50,7 +50,6 @@ const takeawayItems = computed(() => {
 <template>
     <UPageSection
         :title="t(tk('title'))"
-        :description="t(tk('description'))"
         :ui="{
             container: 'py-0 sm:py-0 lg:py-0',
             wrapper: 'mx-auto max-w-2xl text-center',

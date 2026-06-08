@@ -17,30 +17,28 @@ export default {
         aboutUs: "About us",
         seminarsPage: {
             seo: {
-                title: "Resilience seminar by the sea | Blue Desert",
+                title: "Stress regulation seminar by the sea | Mind & Tide",
                 description:
                     "A calm, experiential seminar in Dahab for resilience, stress management and renewed agency in professional life."
             },
             hero: {
                 eyebrow: "Our Seminars",
-                title: "Finding Sustainable Balance Under Pressure",
-                subheadline: "Tame stress. Break patterns. Regain clarity",
+                title: "Learn About Stress Regulation at the Sea Side",
                 supportingText:
-                    "A five-day seminar on stress regulation in a restorative setting by the sea",
+                    "A five-day seminar exploring practical tools and methods for stress regulation, resilience, and sustainable balance in everyday life",
                 meta: "Dahab, Egypt",
                 imageAlt: "Calm coastline with mountains in the background near Dahab in Egypt"
             },
             seminarAbout: {
-                eyebrow: "The starting point",
-                title: "From Problem to Possibility",
-                intro: "Professional life today often unfolds under constant pressure. Growing uncertainty, rising care responsibilities and an accelerated pace of life can create cognitive overload and make genuine recovery more difficult.",
+                eyebrow: "Why this seminar",
+                title: "Regaining Balance",
+                intro: "Professional life today often unfolds under constant pressure: growing uncertainty, rising care responsibilities, and an increasingly accelerated pace of life. Together, these factors can create cognitive overload, increase stress, and make genuine recovery more difficult. Addressing these challenges requires more than short-term coping strategies. Creating sustainable change requires both understanding and experience.",
                 closing:
-                    "The seminar creates space to understand how stress is shaped by individual habits, environments and daily demands, and to develop practical strategies that can be integrated into personal and professional life."
+                    "Rather than focusing solely on theoretical knowledge about stress—where it comes from and how to deal with it—our seminar creates space to explore how stress is shaped by individual habits, environments, and daily demands.Participants learn to better understand their own stress patterns and develop practical strategies that can be integrated into their personal and professional lives, supporting sustainable balance even under conditions of ongoing pressure."
             },
             takeaways: {
                 headline: "Our approach",
                 title: "What makes this seminar different?",
-                description: "Text placeholder",
                 items: {
                     clarity: {
                         title: "Experience-Based Learning",
@@ -97,14 +95,14 @@ export default {
             },
             contentMethods: {
                 methods: {
-                    title: "Methods include",
+                    title: "Methods you are going to get introduced to:",
                     items: {
-                        reflection: "Guided reflection and transfer-oriented exercises",
-                        body: "Body-based stress regulation, including TRE-based elements",
-                        breath: "Breath-based regulation practices",
-                        photography:
-                            "Participatory photography and resource-oriented perception work",
-                        floating: "Floating and water-based body regulation sessions"
+                        water: "Water: Floating and water-based regulation practices",
+                        breath: "Breath: Breathwork and breathing awareness",
+                        body: "Body: Body-based stress regulation exercises (including TRE)",
+                        senses: "Senses: Sensory grounding and temporal awareness practices",
+                        photography: "Photography: Participatory photography and visual awareness",
+                        walking: "Walking: Guided walking meditation along the coastline"
                     }
                 }
             },
@@ -151,7 +149,7 @@ export default {
                         description: "Open for registration\nApplication deadline: 10 October 2026"
                     },
                     upcoming2027: {
-                        title: "2027",
+                        title: "March-April\n2027",
                         description: "Additional dates coming soon"
                     }
                 },
@@ -219,53 +217,43 @@ export default {
         },
         aboutUsPage: {
             seo: {
-                title: "About Blue Desert | Blue Desert",
+                title: "About Mind & Tide | Mind & Tide",
                 description:
-                    "Learn more about Blue Desert, our work in South Sinai and the people behind the seminars and retreats."
+                    "Learn more about Mind & Tide, our work in Dahab, and the people behind the seminars."
             },
             hero: {
                 eyebrow: "About us",
-                title: "A place for learning, recovery and quiet change",
-                subheadline:
-                    "Blue Desert connects structured practice with the landscapes of South Sinai",
+                title: "Sometimes We Know What Stress Is.",
+                subheadline: "But We Don't Know What It Feels Like.",
                 supportingText:
-                    "Our work brings together experiential learning, body-based regulation and the restorative quality of sea, desert and mountains.",
-                meta: "Dahab and Nuweibaa, Egypt",
+                    "Mind & Tide grew out of a personal journey to better understand stress, resilience, and recovery. Along the way, we discovered that understanding stress is not enough—we need practical ways to work with it.\n",
                 imageAlt: "Open desert mountains in South Sinai with warm evening light"
             },
             project: {
                 eyebrow: "The project",
-                title: "Why we created Blue Desert",
-                description:
-                    "Blue Desert began with a simple observation: many people do not need more pressure, more noise or another abstract self-development promise. They need space, structure and a setting that helps them notice what is already happening in body, mind and daily life.\n\nThe project combines professional learning, guided practice and place-based experience. Our seminars and retreats are designed to support stress regulation, recovery and sustainable change without turning the journey into performance.",
+                title: "How Mind & Tide Came to Life",
+                description: {
+                    intro:
+                        "I am Silvia, and for more than ten years I have worked as a social sciences researcher. I have spent much of my career in dynamic and demanding environments, where stress, responsibility, and constant decision-making are part of everyday life. " +
+                        "\n\nAlongside my academic work, I have spent more than a decade facilitating adult education programs, designing learning experiences that encourage people to ask uncomfortable questions, exchange perspectives, and connect with themselves and others.",
+                    turningPoint:
+                        "And despite building my life around encounters and connections, I was carrying a significant disconnect inside myself." +
+                        "\n\nIn 2023, while learning to dive in Dahab, my instructor asked me to relax because I was unable to descend underwater. I was surprised. At that moment, I felt calmer than I had in months. Yet my body told a different story. That experience made me realize that while I could explain what relaxation was intellectually, I did not truly know what it felt like in my body." +
+                        "\n\nSince then, I have been exploring different approaches to stress regulation and recovery, searching for ways to live with greater balance, calmness, and intention. Along the way, I discovered that there is no single method that works for everyone. What matters is finding practical tools that fit into real lives and real routines." +
+                        "\n\nDahab became an important part of that journey. Not only because it was where this realization happened, but because the environment itself seemed to support a different way of learning and reflecting. Between the sea, the desert, and a slower rhythm of life, I found space to notice things that had remained invisible in the routines of everyday life. The combination of physical distance from daily demands and the simplicity of the environment created room for genuine reflection and change.",
+                    statement: "Mind and Tide grew out of this experience.",
+                    closing:
+                        "Through Mind and Tide, I invite participants to explore practical approaches to stress regulation and resilience while stepping outside their usual routines. The five-day seminar combines evidence-based learning, reflection, and practical experience to help participants better understand their own stress patterns and develop sustainable strategies for everyday life." +
+                        "\n\nI bring together my background in education, facilitation, and international research to create learning experiences that combine knowledge, meaningful encounters, personal reflection, and a sense of exploration." +
+                        "\n\nI believe that learning is most powerful when it moves beyond classrooms and conference rooms, when it is connected to people, places, and lived experience."
+                },
                 imageAlt: "Calm Red Sea coastline with mountains in the background"
             },
-            whyEgypt: {
-                eyebrow: "Why Egypt",
-                title: "A landscape that invites perspective",
-                description:
-                    "Egypt offers a rare meeting point between depth, openness and simplicity. In South Sinai, the Red Sea, desert plains and mountain ranges create a setting that feels spacious without being empty.\n\nFor our work, this matters. The contrast between water, stone, light and horizon supports attention and helps participants step out of daily patterns. Egypt is not used as decoration in the program. It is part of the learning environment.",
-                imageAlt: "Desert road leading toward mountains in South Sinai"
-            },
-            whyDahab: {
-                eyebrow: "Why Dahab",
-                title: "A focused setting for seminars",
-                description:
-                    "Dahab offers a balance of accessibility, natural beauty and a relaxed everyday rhythm. It has enough structure to host a clear seminar format, while still keeping participants close to sea, desert and mountain landscapes.\n\nThis makes Dahab especially suitable for learning processes that need both focus and recovery. Between seminar sessions, participants can slow down, walk by the water and let the material settle.",
-                imageAlt: "Quiet beach landscape with clear water near Dahab"
-            },
-            whyNuweibaa: {
-                eyebrow: "Why Nuweibaa",
-                title: "A quieter place for retreat",
-                description:
-                    "Nuweibaa has a slower and more open character. Long beaches, simple camps and wide views create a sense of distance from constant stimulation.\n\nFor retreats, this quality is central. The place supports rest, reflection and reconnection without asking much from participants. It gives the nervous system room to orient toward quiet, rhythm and simplicity.",
-                imageAlt: "Wide coastline and open sea near Nuweibaa"
-            },
             team: {
-                eyebrow: "The people behind Blue Desert",
+                eyebrow: "The people behind Mind & Tide",
                 title: "Meet the team",
                 description:
-                    "Blue Desert is shaped by people with different perspectives on learning, regulation, movement, place and hospitality.",
+                    "Mind & Tide is shaped by people with different perspectives on learning, regulation, movement, place and hospitality.",
                 members: {
                     silvia: {
                         name: "Dr. Silvia-Lucretia Nicola",
@@ -276,18 +264,13 @@ export default {
                         name: "Marcus Blacker",
                         role: "Body- and breath-based stress regulation",
                         imageAlt: "Portrait of Marcus Blacker"
-                    },
-                    ahmad: {
-                        name: "Ahmad Nemr",
-                        role: "Support for water-based practice sessions",
-                        imageAlt: "Portrait of Ahmad Nemr"
                     }
                 }
             }
         },
         privacyPage: {
             seo: {
-                title: "Privacy Policy | Blue Desert",
+                title: "Privacy Policy | Mind & Tide",
                 description:
                     "Privacy information about contact requests, server logs, technically necessary preferences and your rights under the GDPR."
             },
@@ -303,7 +286,7 @@ export default {
             controller: {
                 eyebrow: "Responsible contact",
                 title: "Data controller",
-                intro: "The controller responsible for processing personal data on this website is:"
+                intro: "The controller responsible for processing personal data on this website is: Silvia-Lucretia Nicola"
             },
             overview: {
                 eyebrow: "Overview",
@@ -403,7 +386,7 @@ export default {
         },
         impressum: {
             meta: {
-                title: "Legal Notice | Blue Desert",
+                title: "Legal Notice | Mind & Tide",
                 description:
                     "Mandatory provider information and legal disclosures for this website under German law."
             },
@@ -412,7 +395,7 @@ export default {
                 title: "Legal Notice",
                 subheadline: "Provider information and responsibilities",
                 intro: "Here you can find the legally required information about provider details, responsibilities, and dispute resolution.",
-                meta: "Blue Desert Learning & Retreats",
+                meta: "Mind & Tide",
                 imageAlt: "Wide desert road between red rocks and mountains in South Sinai"
             },
             sections: {
@@ -466,18 +449,17 @@ export default {
         }
     },
     site: {
-        description: "Learning & Retreats",
-        logoAlt: "Blue Desert Learning and Retreats logo",
-        name: "Blue Desert"
+        description: "Stress Regulation Seminar ",
+        logoAlt: "Mind & Tide logo",
+        name: "Mind & Tide"
     },
     contact: {
         meta: {
             title: "Get in touch",
-            description:
-                "Do you have questions about our educational leave programs, retreats or group offers? Send us a message."
+            description: "Do you have questions about our seminars? Send us a message."
         },
         title: "Get in touch",
-        intro: "Do you have questions about our educational leave programs, retreats or group offers? Send us a message and we will get back to you as soon as possible.",
+        intro: "Do you have questions about our seminars? Send us a message and we will get back to you as soon as possible.",
         details: {
             heading: "Ways to reach us",
             emailLabel: "Email",
@@ -512,7 +494,7 @@ export default {
                 placeholder: "What is this about?",
                 options: {
                     educationalLeave: "Educational leave",
-                    retreats: "Retreats",
+                    seminars: "Seminar",
                     groupOffers: "Group offers",
                     general: "General enquiry"
                 }

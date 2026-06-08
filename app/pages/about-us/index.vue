@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import LandingHero from "~/components/landing/landing-hero.vue";
-import LandingPageSection from "~/components/landing/landing-page-section.vue";
-
 const {locale, t} = useI18n();
 
 const contentKey = "pages.aboutUsPage";
@@ -12,7 +9,7 @@ const teamMembers = computed(() => {
 
     return [
         {
-            icon: "i-lucide-user-round",
+            icon: "i-lucide-graduation-cap",
             image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80",
             name: t(tk("team.members.silvia.name")),
             role: t(tk("team.members.silvia.role")),
@@ -24,13 +21,6 @@ const teamMembers = computed(() => {
             name: t(tk("team.members.marcus.name")),
             role: t(tk("team.members.marcus.role")),
             imageAlt: t(tk("team.members.marcus.imageAlt"))
-        },
-        {
-            icon: "i-lucide-waves",
-            image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80",
-            name: t(tk("team.members.ahmad.name")),
-            role: t(tk("team.members.ahmad.role")),
-            imageAlt: t(tk("team.members.ahmad.imageAlt"))
         }
     ];
 });
@@ -44,13 +34,11 @@ useSeoMeta({
 
 const heroImage =
     "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=2400&q=80";
-const projectImage =
-    "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1600&q=80";
-const egyptImage =
+const seaImage =
+    "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1800&q=80";
+const desertImage =
     "https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1600&q=80";
-const dahabImage =
-    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80";
-const nuweibaaImage =
+const roadImage =
     "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80";
 </script>
 
@@ -62,107 +50,99 @@ const nuweibaaImage =
             :eyebrow="t(tk('hero.eyebrow'))"
             :title="t(tk('hero.title'))"
             :subheadline="t(tk('hero.subheadline'))"
-            :supporting-text="t(tk('hero.supportingText'))"
-            :meta-text="t(tk('hero.meta'))" />
-
-        <LandingPageSection
-            :eyebrow="t(tk('project.eyebrow'))"
-            :title="t(tk('project.title'))"
-            orientation="horizontal"
-            :ui="{container: 'py-10 sm:py-12 lg:py-14'}">
-            <template #description>
-                <p class="landing-description whitespace-pre-line">
-                    {{ t(tk("project.description")) }}
-                </p>
-            </template>
-
-            <NuxtImg
-                :src="projectImage"
-                :alt="t(tk('project.imageAlt'))"
-                width="800"
-                height="1000"
-                sizes="100vw sm:100vw lg:40vw"
-                class="aspect-4/5 w-full object-cover" />
-        </LandingPageSection>
-
-        <LandingPageSection
-            :eyebrow="t(tk('whyEgypt.eyebrow'))"
-            :title="t(tk('whyEgypt.title'))"
-            orientation="horizontal"
-            reverse>
-            <template #description>
-                <p class="landing-description whitespace-pre-line">
-                    {{ t(tk("whyEgypt.description")) }}
-                </p>
-            </template>
-
-            <NuxtImg
-                :src="egyptImage"
-                :alt="t(tk('whyEgypt.imageAlt'))"
-                width="800"
-                height="1000"
-                sizes="100vw sm:100vw lg:40vw"
-                class="aspect-4/5 w-full object-cover" />
-        </LandingPageSection>
-
-        <LandingPageSection
-            :eyebrow="t(tk('whyDahab.eyebrow'))"
-            :title="t(tk('whyDahab.title'))"
-            orientation="horizontal">
-            <template #description>
-                <p class="landing-description whitespace-pre-line">
-                    {{ t(tk("whyDahab.description")) }}
-                </p>
-            </template>
-
-            <NuxtImg
-                :src="dahabImage"
-                :alt="t(tk('whyDahab.imageAlt'))"
-                width="800"
-                height="1000"
-                sizes="100vw sm:100vw lg:40vw"
-                class="aspect-4/5 w-full object-cover" />
-        </LandingPageSection>
-
-        <LandingPageSection
-            :eyebrow="t(tk('whyNuweibaa.eyebrow'))"
-            :title="t(tk('whyNuweibaa.title'))"
-            orientation="horizontal"
-            reverse>
-            <template #description>
-                <p class="landing-description whitespace-pre-line">
-                    {{ t(tk("whyNuweibaa.description")) }}
-                </p>
-            </template>
-
-            <NuxtImg
-                :src="nuweibaaImage"
-                :alt="t(tk('whyNuweibaa.imageAlt'))"
-                width="800"
-                height="1000"
-                sizes="100vw sm:100vw lg:40vw"
-                class="aspect-4/5 w-full object-cover" />
-        </LandingPageSection>
+            :supporting-text="t(tk('hero.supportingText'))" />
 
         <UPageSection
+            :headline="t(tk('project.eyebrow'))"
+            :title="t(tk('project.title'))"
+            :description="t(tk('project.description.intro'))"
+            orientation="horizontal"
+            reverse
+            class="landing-section"
+            :ui="{
+                container: 'py-10 sm:py-12 lg:py-16',
+                wrapper: 'mx-auto max-w-5xl',
+                body: 'mt-0'
+            }">
+            <NuxtImg
+                :src="seaImage"
+                :alt="t(tk('project.imageAlt'))"
+                width="900"
+                height="720"
+                sizes="100vw sm:100vw lg:45vw"
+                class="aspect-5/4 w-full rounded-lg object-cover" />
+        </UPageSection>
+
+        <UPageSection
+            class="landing-section"
+            :ui="{
+                container: 'py-10 sm:py-12 lg:py-16',
+                wrapper: 'mx-auto max-w-5xl',
+                body: 'mt-0'
+            }">
+            <article class="space-y-14 sm:space-y-16 lg:space-y-20">
+                <section class="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
+                    <div class="space-y-5">
+                        <p
+                            class="text-muted text-base leading-8 whitespace-pre-line sm:text-lg sm:leading-9">
+                            {{ t(tk("project.description.turningPoint")) }}
+                        </p>
+                    </div>
+
+                    <div class="space-y-6 lg:sticky lg:top-24">
+                        <NuxtImg
+                            :src="desertImage"
+                            :alt="t(tk('project.imageAlt'))"
+                            width="720"
+                            height="900"
+                            sizes="100vw sm:100vw lg:35vw"
+                            class="aspect-4/5 w-full rounded-lg object-cover" />
+
+                        <blockquote class="landing-panel p-6 text-center sm:p-8">
+                            <p
+                                class="text-highlighted text-2xl leading-tight font-semibold sm:text-3xl">
+                                {{ t(tk("project.description.statement")) }}
+                            </p>
+                        </blockquote>
+                    </div>
+                </section>
+
+                <section class="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+                    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-1">
+                        <NuxtImg
+                            :src="roadImage"
+                            :alt="t(tk('project.imageAlt'))"
+                            width="900"
+                            height="640"
+                            sizes="100vw sm:50vw lg:40vw"
+                            class="aspect-4/3 w-full rounded-lg object-cover" />
+                    </div>
+
+                    <div class="space-y-5 lg:pl-6">
+                        <p
+                            class="text-muted text-base leading-8 whitespace-pre-line sm:text-lg sm:leading-9">
+                            {{ t(tk("project.description.closing")) }}
+                        </p>
+                    </div>
+                </section>
+            </article>
+        </UPageSection>
+
+        <UPageSection
+            :headline="t(tk('team.eyebrow'))"
             :title="t(tk('team.title'))"
             :description="t(tk('team.description'))"
             class="landing-section-spaced"
             :ui="{
-                container: 'py-0 sm:py-0 lg:py-0',
-                wrapper: 'mx-auto max-w-2xl',
+                container: 'py-8 sm:py-10 lg:py-12',
+                wrapper: 'mx-auto max-w-xl',
                 header: 'text-center',
-                title: 'landing-title',
-                description: 'landing-description mx-auto mt-5 max-w-2xl text-base',
-                body: 'mt-10'
+                headline: 'landing-eyebrow',
+                title: 'landing-title-compact',
+                description: 'landing-description mx-auto mt-4 max-w-xl text-sm sm:text-base',
+                body: 'mt-8'
             }">
-            <template #headline>
-                <span class="landing-eyebrow">
-                    {{ t(tk("team.eyebrow")) }}
-                </span>
-            </template>
-
-            <div class="grid gap-5 pb-4 md:grid-cols-3">
+            <div class="mx-auto grid max-w-2xl gap-4 sm:grid-cols-2">
                 <UCard
                     v-for="member in teamMembers"
                     :key="member.name"
@@ -174,28 +154,29 @@ const nuweibaaImage =
                             <NuxtImg
                                 :src="member.image"
                                 :alt="member.imageAlt"
-                                width="720"
-                                height="540"
-                                sizes="100vw sm:50vw lg:33vw"
-                                class="aspect-[4/3] w-full object-cover opacity-80" />
+                                width="520"
+                                height="440"
+                                sizes="100vw sm:320px"
+                                class="aspect-5/4 w-full object-cover opacity-80" />
 
                             <div
-                                class="absolute inset-0 bg-gradient-to-t from-(--ui-bg)/95 via-(--ui-bg)/45 to-transparent" />
+                                class="absolute inset-0 bg-linear-to-t from-(--ui-bg)/95 via-(--ui-bg)/35 to-transparent" />
 
                             <div
-                                class="bg-primary/10 text-primary ring-primary/15 absolute top-5 left-5 flex size-11 items-center justify-center rounded-md ring-1 backdrop-blur">
+                                class="bg-primary/10 text-primary ring-primary/15 absolute top-4 left-4 flex size-9 items-center justify-center rounded-md ring-1 backdrop-blur">
                                 <UIcon
                                     :name="member.icon"
-                                    class="size-5" />
+                                    class="size-4" />
                             </div>
                         </div>
 
-                        <div class="space-y-2 p-5 sm:p-6">
-                            <h3 class="text-highlighted text-xl leading-7 font-semibold">
+                        <div class="space-y-1.5 p-4 sm:p-5">
+                            <h3
+                                class="text-highlighted text-base leading-6 font-semibold sm:text-lg">
                                 {{ member.name }}
                             </h3>
 
-                            <p class="text-muted leading-7">
+                            <p class="text-muted text-sm leading-6">
                                 {{ member.role }}
                             </p>
                         </div>
