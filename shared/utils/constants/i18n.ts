@@ -6,14 +6,6 @@ import type {LocaleCodes} from "../types";
  * Add future pages here only when their page component exists.
  */
 export const i18nPages = {
-    "seminars/index": {
-        en: "/seminars",
-        de: "/seminare"
-    },
-    "retreats/index": {
-        en: "/retreats",
-        de: "/retreats"
-    },
     "about-us/index": {
         en: "/about-us",
         de: "/ueber-uns"

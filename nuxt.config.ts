@@ -73,10 +73,6 @@ export default defineNuxtConfig({
     routeRules: {
         "/": {prerender: true},
         "/de": {prerender: true},
-        "/de/retreats": {prerender: true},
-        "/de/seminare": {prerender: true},
-        "/retreats": {prerender: true},
-        "/seminars": {prerender: true},
         "/about-us": {prerender: true},
         "/de/ueber-uns": {prerender: true}
     },
