@@ -1,12 +1,11 @@
-export const CONTACT_EMAIL_ADDRESS = "info@blue-desert.com";
-export const CONTACT_PHONE = "+49 38303 123456";
+export const CONTACT_EMAIL_ADDRESS = "info@mindandtide.de";
+export const CONTACT_PHONE = "+4917678458130";
 
-export const INSTAGRAM_URL = "https://www.instagram.com/bluedesert.de/";
-export const INSTAGRAM_CHANNEL = "@bluedesert.de";
+export const INSTAGRAM_URL = "https://www.instagram.com/mindandtide.de/";
+export const INSTAGRAM_CHANNEL = "@mindandtide.de";
 
-export const COMPANY_NAME = "Blue Desert Learning & Retreats GmbH";
-export const COMPANY_REPRESENTATIVE = "Maria Beispiel";
-export const COMPANY_VAT_ID = "DE123456789";
-export const COMPANY_ADDRESS_STREET = "Strandweg 12";
-export const COMPANY_ADDRESS_CITY = "18586 Ostseebad Sellin";
+export const COMPANY_NAME = "Silvia-Lucretia Nicola";
+export const COMPANY_REPRESENTATIVE = "Silvia-Lucretia Nicola";
+export const COMPANY_ADDRESS_STREET = "160 Zeppelinstraße";
+export const COMPANY_ADDRESS_CITY = "Potsdam 14471";
 export const COMPANY_COUNTRY = "Deutschland";

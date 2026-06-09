@@ -387,18 +387,11 @@ export default {
                     description:
                         "The following cards summarize the required provider information and contact details for this website.",
                     fields: {
-                        vat: "VAT ID",
                         contentResponsible: "Responsible for content"
                     }
                 },
                 contact: {
                     title: "Contact"
-                },
-                representedBy: {
-                    title: "Represented by"
-                },
-                vat: {
-                    text: "VAT identification number according to Section 27a German VAT Act:"
                 },
                 contentResponsible: {
                     text: "Responsible for content according to Section 18 para. 2 MStV:"

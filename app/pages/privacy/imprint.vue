@@ -5,8 +5,6 @@ import {
     COMPANY_ADDRESS_STREET,
     COMPANY_COUNTRY,
     COMPANY_NAME,
-    COMPANY_REPRESENTATIVE,
-    COMPANY_VAT_ID,
     CONTACT_EMAIL_ADDRESS,
     CONTACT_PHONE
 } from "#shared/utils/constants";
@@ -69,21 +67,10 @@ const legalCards = computed<LegalCard[]>(() => {
             ]
         },
         {
-            icon: "i-lucide-clipboard-signature",
-            title: t("pages.impressum.sections.representedBy.title"),
-            lines: [{label: COMPANY_REPRESENTATIVE}]
-        },
-        {
-            icon: "i-lucide-building-2",
-            title: t("pages.impressum.sections.provider.fields.vat"),
-            lines: [{label: t("pages.impressum.sections.vat.text")}, {label: COMPANY_VAT_ID}]
-        },
-        {
             icon: "i-lucide-landmark",
             title: t("pages.impressum.sections.provider.fields.contentResponsible"),
             lines: [
                 {label: t("pages.impressum.sections.contentResponsible.text")},
-                {label: COMPANY_REPRESENTATIVE},
                 {label: COMPANY_NAME},
                 {label: COMPANY_ADDRESS_STREET},
                 {label: COMPANY_ADDRESS_CITY}

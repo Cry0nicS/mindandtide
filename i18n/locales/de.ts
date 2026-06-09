@@ -389,18 +389,11 @@ export default {
                     description:
                         "Die folgenden Karten fassen die erforderlichen Anbieterinformationen und Kontaktdaten für diese Website zusammen.",
                     fields: {
-                        vat: "USt-IdNr.",
                         contentResponsible: "Inhaltlich verantwortlich"
                     }
                 },
                 contact: {
                     title: "Kontakt"
-                },
-                representedBy: {
-                    title: "Vertreten durch"
-                },
-                vat: {
-                    text: "Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG:"
                 },
                 contentResponsible: {
                     text: "Inhaltlich verantwortlich gemäß § 18 Abs. 2 MStV:"
