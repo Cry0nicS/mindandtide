@@ -18,14 +18,21 @@ export const i18nPages = {
         en: "/privacy/imprint",
         de: "/datenschutz/impressum"
     },
-    "contact/index": {
+    "contact": {
         en: "/contact",
         de: "/kontakt"
     }
 } as const satisfies NuxtI18nOptions["pages"];
 
+export const i18nRouteNames = {
+    aboutUs: "about-us",
+    contact: "contact",
+    imprint: "privacy-imprint",
+    privacy: "privacy"
+} as const;
+
 export const LOCALE_CODES = ["en", "de"] as const;
-export const DEFAULT_LOCALE: LocaleCodes = "en";
+export const DEFAULT_LOCALE: LocaleCodes = "de";
 
 export const LOCALE_META = {
     en: {

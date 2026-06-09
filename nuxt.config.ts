@@ -69,14 +69,12 @@ export default defineNuxtConfig({
     ogImage: {
         enabled: false
     },
-    /* eslint-disable sort-keys */
     routeRules: {
         "/": {prerender: true},
-        "/de": {prerender: true},
-        "/about-us": {prerender: true},
-        "/de/ueber-uns": {prerender: true}
+        "/en": {prerender: true},
+        "/en/about-us": {prerender: true},
+        "/ueber-uns": {prerender: true}
     },
-    /* eslint-enable sort-keys */
     runtimeConfig: {
         mailgunBaseUrl: process.env.NUXT_MAILGUN_BASE_URL || "",
         mailgunBcc: process.env.NUXT_MAILGUN_BCC || "",

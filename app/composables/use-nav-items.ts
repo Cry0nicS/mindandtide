@@ -1,5 +1,6 @@
 import type {NavigationMenuItem} from "@nuxt/ui";
 import {computed} from "vue";
+import {i18nRouteNames} from "#shared/utils/constants";
 
 export const useNavItems = () => {
     const {t, locale} = useI18n();
@@ -13,7 +14,7 @@ export const useNavItems = () => {
         return {
             contact: {
                 label: t("pages.contact"),
-                to: localePath("/contact"),
+                to: localePath(i18nRouteNames.contact),
                 icon: "i-lucide-mail"
             },
             home: {
@@ -23,17 +24,17 @@ export const useNavItems = () => {
             },
             aboutUs: {
                 label: t("pages.aboutUs"),
-                to: localePath("/about-us"),
+                to: localePath(i18nRouteNames.aboutUs),
                 icon: "i-lucide-user-circle"
             },
             imprint: {
                 label: t("pages.imprint"),
-                to: localePath("/privacy/imprint"),
+                to: localePath(i18nRouteNames.imprint),
                 icon: "i-lucide-info"
             },
             privacy: {
                 label: t("pages.privacy"),
-                to: localePath("/privacy"),
+                to: localePath(i18nRouteNames.privacy),
                 icon: "i-lucide-shield-user"
             }
         };

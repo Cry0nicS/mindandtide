@@ -7,7 +7,8 @@ import {
     COMPANY_NAME,
     CONTACT_EMAIL_ADDRESS,
     COOKIE_NOTICE_SHOW_EVENT,
-    COOKIE_STORAGE_KEY
+    COOKIE_STORAGE_KEY,
+    i18nRouteNames
 } from "#shared/utils/constants";
 
 const {locale, t} = useI18n();
@@ -26,7 +27,7 @@ const heroLinks = computed<ButtonProps[]>(() => {
     return [
         {
             label: t("pages.privacyPage.cta.contact"),
-            to: localePath("/contact"),
+            to: localePath(i18nRouteNames.contact),
             color: "primary",
             trailingIcon: "i-lucide-arrow-right"
         },

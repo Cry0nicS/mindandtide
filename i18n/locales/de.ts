@@ -25,16 +25,16 @@ export default {
                 eyebrow: "Unsere Seminare",
                 title: "Stressbewältigung im beruflichen Alltag",
                 supportingText:
-                    "Ein fünftägiges Seminar zur Vermittlung praktischer Methoden der Stressbewältigung am Roten Meer.",
+                    "Ein fünftägiges Seminar zur Vermittlung praktischer Methoden der Stressbewältigung und Selbstregulation am Roten Meer.",
                 meta: "Dahab, Ägypten",
                 imageAlt: "Ruhige Küstenlinie mit Bergen im Hintergrund nahe Dahab in Ägypten"
             },
             seminarAbout: {
                 eyebrow: "Warum dieses Seminar",
-                title: "Das Gleichgewicht wiederfinden",
-                intro: "Das Berufsleben spielt sich heute oft unter ständigem Druck ab: wachsende Unsicherheit, zunehmende Betreuungsaufgaben und ein immer schneller werdendes Lebenstempo. Zusammen können diese Faktoren zu einer kognitiven Überlastung führen, den Stress verstärken und eine echte Erholung erschweren. Um diesen Herausforderungen zu begegnen, bedarf es mehr als nur kurzfristiger Bewältigungsstrategien. Nachhaltige Veränderungen zu bewirken, erfordert sowohl Verständnis als auch Erfahrung.",
+                title: "Meistens wissen wir doch, was Stress ist.\nWieso vergessen wir aber so oft, wie er sich im eigenen Körper anfühlt?",
+                intro: "Die meisten von uns wissen, was Stress ist. Wir lesen darüber, sprechen darüber und erkennen ihn oft bei anderen Menschen. Gleichzeitig verlieren wir jedoch häufig den Kontakt dazu, wie sich Stress in unserem eigenen Körper, unseren Gedanken und unseren alltäglichen Routinen bemerkbar macht – bis er beginnt, unser Wohlbefinden zu beeinträchtigen. Das Berufsleben ist heute oft von ständigem Druck, wachsenden Verantwortlichkeiten und einem immer schnelleren Lebenstempo geprägt. Auch wenn es wichtig ist, Stress zu verstehen, reicht Wissen allein meist nicht aus.",
                 closing:
-                    "Anstatt sich ausschließlich auf theoretisches Wissen über Stress zu konzentrieren – woher er kommt und wie man damit umgeht –, schafft unser Seminar Raum, um zu erkunden, wie Stress durch individuelle Gewohnheiten, Umgebungen und alltägliche Anforderungen geprägt wird. Die Teilnehmenden lernen, ihre eigenen Stressmuster besser zu verstehen und praktische Strategien zu entwickeln, die sich in ihr Privat- und Berufsleben integrieren lassen und so auch unter anhaltendem Druck ein nachhaltiges Gleichgewicht fördern."
+                    "Dieses Seminar schafft Raum, Stress über die Theorie hinaus zu erkunden. Durch Reflexion, angeleitete Übungen und gemeinsames Lernen erkennen die Teilnehmenden ihre eigenen Stressmuster und erproben praktische Ansätze zur Selbstregulation und Erholung. Ziel ist es nicht, Stress vollständig zu vermeiden, sondern einen bewussteren und nachhaltigeren Umgang mit ihm zu entwickeln."
             },
             takeaways: {
                 headline: "Unser Ansatz",
@@ -97,13 +97,13 @@ export default {
                 methods: {
                     title: "Einige der Methoden, die du kennenlernen wirst:",
                     items: {
-                        Water: "Wasser: Floating und weitere wasserbasierte Regulationsübungen",
-                        Breath: "Atem: Atemarbeit und Atemwahrnehmung",
-                        Body: "Körper: Körperbasierte Stressbewältigungsübungen (einschließlich TRE)",
-                        Senses: "Sinne: Praktiken zur sensorischen Erdung und zur Wahrnehmung der Zeit",
-                        Photography:
+                        water: "Wasser: Floating und weitere wasserbasierte Regulationsübungen",
+                        breath: "Atem: Atemarbeit und Atemwahrnehmung",
+                        body: "Körper: Körperbasierte Stressbewältigungsübungen (einschließlich TRE)",
+                        senses: "Sinne: Praktiken zur sensorischen Erdung und zur Wahrnehmung der Zeit",
+                        photography:
                             "Fotografie: Partizipative Fotografie und visuelle Wahrnehmung",
-                        Walking: "Gehen: Geführte Gehmeditation entlang der Küste"
+                        walking: "Gehen: Geführte Gehmeditation entlang der Küste"
                     }
                 }
             },
@@ -116,27 +116,27 @@ export default {
                 title: "Das Wichtigste auf einen Blick",
                 items: {
                     date: {
-                        title: "5-tägiges Seminar mit 6 Einheiten à 45 Min. pro Tag",
+                        title: "5-tägiges Seminar mit 6 Einheiten à 45 Min pro Tag",
                         description:
-                            "Ein kompaktes Lernformat über fünf thematische Seminartage mit Struktur aus Input, Praxis und Reflexion"
+                            "Fünf thematische Seminartage mit einer Mischung aus Input, Praxis und Reflexion."
                     },
                     group: {
                         title: "6-15 Teilnehmende",
                         description:
-                            "Ein Kleingruppenformat, das fokussierten Austausch, persönliches Feedback und individuelle Aufmerksamkeit ermöglicht."
+                            "Kleine Gruppengröße für Austausch, individuelles Feedback und persönliche Begleitung."
                     },
                     accommodation: {
                         title: "Seminarsprache: Englisch",
                         description:
-                            "Deutsch- und englischsprachige Materialien werden während des gesamten Seminars bereitgestellt."
+                            "Deutsch- und englischsprachige Materialien werden während des Seminars bereitgestellt."
                     },
                     times: {
                         title: "Seminargebühr: 695 €/Person",
                         description:
-                            "Die Seminargebühr beinhaltet keine Unterkunft. Wir unterstützen Dich gern dabei, eine Unterkunft zu finden, die zu Deinen Wünschen und Deinem Budget passt."
+                            "Enthalten sind alle Seminarinhalte, Lernmaterialien, angeleitete Übungen sowie die persönliche Begleitung während des gesamten Seminars."
                     }
                 },
-                note: "Anreise am Vortag und Abreise am Folgetag werden empfohlen. Flüge, Transfers und Unterkunft sind nicht in der Seminargebühr enthalten."
+                note: "Anreise am Vortag und Abreise am Folgetag werden empfohlen. Flüge, Transfers und Unterkunft sind nicht in der Seminargebühr enthalten. Wir unterstützen Dich gern dabei, eine Unterkunft zu finden, die zu Deinen Wünschen und Deinem Budget passt."
             },
             seminarSchedule: {
                 title: "Seminartermine",

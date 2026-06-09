@@ -23,18 +23,18 @@ export default {
             },
             hero: {
                 eyebrow: "Our Seminars",
-                title: "Learn About Stress Regulation at the Sea Side",
+                title: "Stress Regulation in Professional Life",
                 supportingText:
-                    "A five-day seminar exploring practical tools and methods for stress regulation, resilience, and sustainable balance in everyday life",
+                    "A five-day seminar exploring practical tools and methods for stress regulation and resilience by the Red Sea.",
                 meta: "Dahab, Egypt",
                 imageAlt: "Calm coastline with mountains in the background near Dahab in Egypt"
             },
             seminarAbout: {
                 eyebrow: "Why this seminar",
-                title: "Regaining Balance",
-                intro: "Professional life today often unfolds under constant pressure: growing uncertainty, rising care responsibilities, and an increasingly accelerated pace of life. Together, these factors can create cognitive overload, increase stress, and make genuine recovery more difficult. Addressing these challenges requires more than short-term coping strategies. Creating sustainable change requires both understanding and experience.",
+                title: "Most of Us Know What Stress Is.\nSo Why Do We So Often Lose Touch With How It Feels in Our Bodies?",
+                intro: "Most of us know what stress is. We read about it, talk about it, and often recognize it in others. Yet we frequently lose touch with how stress shows up in our own bodies, thoughts, and daily routines—until it begins to affect our well-being. Professional life today is often shaped by constant pressure, growing responsibilities, and an accelerating pace of life. While understanding stress is important, knowledge alone is rarely enough.",
                 closing:
-                    "Rather than focusing solely on theoretical knowledge about stress—where it comes from and how to deal with it—our seminar creates space to explore how stress is shaped by individual habits, environments, and daily demands.Participants learn to better understand their own stress patterns and develop practical strategies that can be integrated into their personal and professional lives, supporting sustainable balance even under conditions of ongoing pressure."
+                    "This seminar creates space to explore stress beyond theory. Through reflection, guided practice, and shared learning, participants identify their own stress patterns and experiment with practical approaches to regulation and recovery. The goal is not to eliminate stress, but to develop a more conscious and sustainable way of relating to it."
             },
             takeaways: {
                 headline: "Our approach",
@@ -116,13 +116,12 @@ export default {
                 items: {
                     date: {
                         title: "5 days seminar with 6 units á 45 min per day",
-                        description:
-                            "A compact learning format across five thematic seminar days structured around: input, practice, and reflection"
+                        description: "A combination of learning, practice, and reflection."
                     },
                     group: {
                         title: "6-15 participants",
                         description:
-                            "A small-group setting that allows focused exchange, personal feedback, and individual attention."
+                            "A small-group setting designed for meaningful exchange and individual attention."
                     },
                     accommodation: {
                         title: "Seminar language: English",
@@ -132,10 +131,10 @@ export default {
                     times: {
                         title: "Seminar fee: 695€/pers",
                         description:
-                            "The seminar fee does not include accommodation. We are happy to assist you in finding a place to stay that suits your preferences and budget."
+                            "Includes all seminar sessions, learning materials, guided exercises, and personal support throughout the seminar."
                     }
                 },
-                note: "Arrival on the previous day and departure on the following day are recommended. Flights, transfers and accommodation are not included in the seminar fee."
+                note: "Arrival on the previous day and departure on the following day are recommended. Flights, transfers and accommodation are not included in the seminar fee. We are happy to assist you in finding a place to stay that suits your preferences and budget."
             },
             seminarSchedule: {
                 title: "Seminar Dates",

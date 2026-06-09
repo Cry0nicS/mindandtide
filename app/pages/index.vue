@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type {ButtonProps} from "@nuxt/ui";
+import {i18nRouteNames} from "#shared/utils/constants";
 import LandingFeatureList from "~/components/landing/landing-feature-list.vue";
 import LandingHero from "~/components/landing/landing-hero.vue";
 import LandingInfoGrid from "~/components/landing/landing-info-grid.vue";
@@ -135,7 +136,7 @@ const contactCta = computed<ButtonProps[]>(() => {
     return [
         {
             label: t(tk("cta.action")),
-            to: localePath("/contact")
+            to: localePath(i18nRouteNames.contact)
         }
     ];
 });
@@ -161,13 +162,13 @@ const seminarSchedule = computed(() => [
 const seminarScheduleLinks = computed<ButtonProps[]>(() => [
     {
         label: t(tk("seminarSchedule.actions.apply")),
-        to: localePath("/contact"),
+        to: localePath(i18nRouteNames.contact),
         color: "primary",
         trailingIcon: "i-lucide-arrow-right"
     },
     {
         label: t(tk("seminarSchedule.actions.requestInformation")),
-        to: localePath("/contact"),
+        to: localePath(i18nRouteNames.contact),
         color: "neutral",
         variant: "outline",
         trailingIcon: "i-lucide-arrow-right"
@@ -177,13 +178,13 @@ const seminarScheduleLinks = computed<ButtonProps[]>(() => [
 const whyDahabLinks = computed<ButtonProps[]>(() => [
     {
         label: t(tk("whyDahab.actions.apply")),
-        to: localePath("/contact"),
+        to: localePath(i18nRouteNames.contact),
         color: "primary",
         trailingIcon: "i-lucide-arrow-right"
     },
     {
         label: t(tk("whyDahab.actions.requestInformation")),
-        to: localePath("/contact"),
+        to: localePath(i18nRouteNames.contact),
         color: "neutral",
         variant: "outline",
         trailingIcon: "i-lucide-arrow-right"

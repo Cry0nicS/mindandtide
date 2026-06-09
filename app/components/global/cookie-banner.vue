@@ -1,5 +1,9 @@
 <script setup lang="ts">
-import {COOKIE_NOTICE_SHOW_EVENT, COOKIE_STORAGE_KEY} from "#shared/utils/constants";
+import {
+    COOKIE_NOTICE_SHOW_EVENT,
+    COOKIE_STORAGE_KEY,
+    i18nRouteNames
+} from "#shared/utils/constants";
 
 const showCookieBanner = ref(false);
 const localePath = useLocalePath();
@@ -68,7 +72,7 @@ onBeforeUnmount(() => {
 
                     <div class="flex flex-col gap-2 sm:flex-row sm:justify-end">
                         <UButton
-                            :to="localePath('/privacy')"
+                            :to="localePath(i18nRouteNames.privacy)"
                             color="neutral"
                             variant="outline"
                             icon="i-lucide-shield-user">

@@ -6,7 +6,8 @@ import {
     COMPANY_COUNTRY,
     COMPANY_NAME,
     CONTACT_EMAIL_ADDRESS,
-    CONTACT_PHONE
+    CONTACT_PHONE,
+    i18nRouteNames
 } from "#shared/utils/constants";
 
 interface LegalCardLine {
@@ -30,13 +31,13 @@ const heroLinks = computed<ButtonProps[]>(() => {
     return [
         {
             label: t("pages.contact"),
-            to: localePath("/contact"),
+            to: localePath(i18nRouteNames.contact),
             color: "primary",
             trailingIcon: "i-lucide-arrow-right"
         },
         {
             label: t("pages.privacy"),
-            to: localePath("/privacy"),
+            to: localePath(i18nRouteNames.privacy),
             color: "neutral",
             variant: "outline",
             trailingIcon: "i-lucide-shield-user"
@@ -97,7 +98,7 @@ const ctaLinks = computed<ButtonProps[]>(() => {
     return [
         {
             label: t("pages.impressum.cta.action"),
-            to: localePath("/contact"),
+            to: localePath(i18nRouteNames.contact),
             color: "primary",
             trailingIcon: "i-lucide-arrow-right"
         }
