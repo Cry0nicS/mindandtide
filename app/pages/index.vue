@@ -232,7 +232,7 @@ const placeImage =
                     </div>
 
                     <div class="border-default space-y-5 lg:border-l lg:pl-10">
-                        <p class="landing-description text-base">
+                        <p class="landing-description">
                             {{ t(tk("seminarAbout.intro")) }}
                         </p>
 
@@ -252,67 +252,7 @@ const placeImage =
             sizes="100vw sm:100vw lg:40vw"
             class="landing-section-spaced aspect-video w-full object-cover" />
 
-        <UPageSection
-            :title="t(tk('organization.title'))"
-            class="landing-section-spaced"
-            :ui="{
-                container: 'px-0 sm:px-0 lg:px-0 py-0 sm:py-0 lg:py-0',
-                wrapper: 'mx-auto max-w-6xl'
-            }">
-            <div class="p-5 sm:p-6 lg:p-8">
-                <LandingInfoGrid :items="infoItems" />
-
-                <div class="border-default mt-6 flex gap-3 border-t pt-5 sm:mt-8 sm:pt-6">
-                    <UIcon
-                        name="i-lucide-info"
-                        class="text-primary mt-1 size-5 shrink-0" />
-                    <p class="text-muted text-sm leading-6 sm:text-base sm:leading-7">
-                        {{ t(tk("organization.note")) }}
-                    </p>
-                </div>
-            </div>
-        </UPageSection>
-
-        <UPageSection
-            :title="t(tk('seminarSchedule.title'))"
-            :links="seminarScheduleLinks"
-            class="landing-section"
-            :ui="{
-                container: 'py-8 sm:py-10 lg:py-12',
-                wrapper: 'text-center',
-                header: 'text-center',
-                title: 'landing-title-compact',
-                body: 'mt-8',
-                footer: 'mt-8'
-            }">
-            <template #body>
-                <div class="grid gap-4 sm:grid-cols-3">
-                    <UCard
-                        v-for="(card, index) in seminarSchedule"
-                        :key="index"
-                        variant="subtle"
-                        class="landing-item-card h-full text-center"
-                        :ui="{body: 'flex h-full flex-col items-center p-5 sm:p-6'}">
-                        <template #default>
-                            <div class="landing-icon landing-icon-secondary size-12">
-                                <UIcon
-                                    :name="card.icon"
-                                    class="size-6" />
-                            </div>
-
-                            <h3
-                                class="text-highlighted mt-4 text-2xl leading-tight font-semibold whitespace-pre-line">
-                                {{ card.title }}
-                            </h3>
-
-                            <p class="text-muted mt-3 leading-6 whitespace-pre-line">
-                                {{ card.description }}
-                            </p>
-                        </template>
-                    </UCard>
-                </div>
-            </template>
-        </UPageSection>
+        <LandingTakeaways :content-key="contentKey" />
 
         <LandingPageSection
             :eyebrow="t(tk('participants.eyebrow'))"
@@ -434,8 +374,6 @@ const placeImage =
             </div>
         </UPageSection>
 
-        <LandingTakeaways :content-key="contentKey" />
-
         <LandingPageSection
             :eyebrow="t(tk('whyDahab.eyebrow'))"
             :title="t(tk('whyDahab.title'))"
@@ -456,6 +394,68 @@ const placeImage =
                 sizes="100vw sm:100vw lg:40vw"
                 class="aspect-4/5 w-full object-cover" />
         </LandingPageSection>
+
+        <UPageSection
+            :title="t(tk('seminarSchedule.title'))"
+            :links="seminarScheduleLinks"
+            class="landing-section"
+            :ui="{
+                container: 'py-8 sm:py-10 lg:py-12',
+                wrapper: 'text-center',
+                header: 'text-center',
+                title: 'landing-title-compact',
+                body: 'mt-8',
+                footer: 'mt-8'
+            }">
+            <template #body>
+                <div class="grid gap-4 sm:grid-cols-3">
+                    <UCard
+                        v-for="(card, index) in seminarSchedule"
+                        :key="index"
+                        variant="subtle"
+                        class="landing-item-card h-full text-center"
+                        :ui="{body: 'flex h-full flex-col items-center p-5 sm:p-6'}">
+                        <template #default>
+                            <div class="landing-icon landing-icon-secondary size-12">
+                                <UIcon
+                                    :name="card.icon"
+                                    class="size-6" />
+                            </div>
+
+                            <h3
+                                class="text-highlighted mt-4 text-2xl leading-tight font-semibold whitespace-pre-line">
+                                {{ card.title }}
+                            </h3>
+
+                            <p class="text-muted mt-3 leading-6 whitespace-pre-line">
+                                {{ card.description }}
+                            </p>
+                        </template>
+                    </UCard>
+                </div>
+            </template>
+        </UPageSection>
+
+        <UPageSection
+            :title="t(tk('organization.title'))"
+            class="landing-section-spaced"
+            :ui="{
+                container: 'px-0 sm:px-0 lg:px-0 py-0 sm:py-0 lg:py-0',
+                wrapper: 'mx-auto max-w-6xl'
+            }">
+            <div class="p-5 sm:p-6 lg:p-8">
+                <LandingInfoGrid :items="infoItems" />
+
+                <div class="border-default mt-6 flex gap-3 border-t pt-5 sm:mt-8 sm:pt-6">
+                    <UIcon
+                        name="i-lucide-info"
+                        class="text-primary mt-1 size-5 shrink-0" />
+                    <p class="text-muted text-sm leading-6 sm:text-base sm:leading-7">
+                        {{ t(tk("organization.note")) }}
+                    </p>
+                </div>
+            </div>
+        </UPageSection>
 
         <UPageSection
             :title="t(tk('cta.title'))"
