@@ -45,10 +45,13 @@ export default defineNuxtConfig({
     },
     image: {
         format: ["webp"],
-        provider: "vercel",
         quality: 80,
         screens: {
+            1: 1,
+            2: 2,
             10: 10,
+            410: 410,
+            820: 820,
             icon: 20,
             icon2x: 40,
             lg: 1024,
