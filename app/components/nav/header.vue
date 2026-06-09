@@ -20,7 +20,7 @@ const title = computed(() => t("site.name"));
                 :placeholder="title"
                 tag="span">
                 <ClientOnly>
-                    <AppLogo class="h-10 w-auto" />
+                    <AppLogo class="h-12 w-auto" />
                 </ClientOnly>
             </ColorScheme>
         </template>
