@@ -15,7 +15,7 @@ export default defineNuxtConfig({
         }
     },
     i18n: {
-        baseUrl: "https://blue-desert.com",
+        baseUrl: "https://mindandtide.de",
         // Disable custom route with page components.
         customRoutes: "config",
         defaultLocale: DEFAULT_LOCALE,
@@ -89,9 +89,9 @@ export default defineNuxtConfig({
         }
     },
     site: {
-        description: "Welcome to Blue Desert.",
-        name: "Blue Desert",
-        url: "https://blue-desert.com"
+        description: "Welcome to Mind and Tide.",
+        name: "Mind and Tide",
+        url: "https://mindandtide.de"
     },
     sitemap: {
         zeroRuntime: true
