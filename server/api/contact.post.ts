@@ -4,8 +4,7 @@ import {contactFormSchema} from "~~/shared/utils/schemas";
 import {getPrettyPrintNow} from "#shared/utils/helpers";
 
 const subjectLabels: Record<ContactSubject, string> = {
-    educationalLeave: "Bildungsurlaub",
-    retreats: "Retreats",
+    seminars: "Seminars",
     groupOffers: "Group offers",
     general: "General enquiry"
 };

@@ -471,7 +471,6 @@ export default {
                 label: "Betreff",
                 placeholder: "Worum geht es?",
                 options: {
-                    educationalLeave: "Bildungsurlaub",
                     seminars: "Seminars",
                     groupOffers: "Gruppenangebote",
                     general: "Allgemeine Anfrage"

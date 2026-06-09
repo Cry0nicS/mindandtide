@@ -468,7 +468,6 @@ export default {
                 label: "Subject",
                 placeholder: "What is this about?",
                 options: {
-                    educationalLeave: "Educational leave",
                     seminars: "Seminar",
                     groupOffers: "Group offers",
                     general: "General enquiry"

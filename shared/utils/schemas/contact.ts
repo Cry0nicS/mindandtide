@@ -1,11 +1,6 @@
 import {z} from "zod";
 
-export const contactSubjectValues = [
-    "educationalLeave",
-    "retreats",
-    "groupOffers",
-    "general"
-] as const;
+export const contactSubjectValues = ["seminars", "groupOffers", "general"] as const;
 
 const requiredString = z.string().trim().min(1);
 
