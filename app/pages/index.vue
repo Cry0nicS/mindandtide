@@ -197,11 +197,11 @@ useSeoMeta({
     ogDescription: () => t(tk("seo.description"))
 });
 const heroImage =
-    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2400&q=80";
-const processImage =
-    "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1600&q=80";
+    "https://images.unsplash.com/photo-1628238452386-b916aa9e4443?auto=format&fit=crop&w=1216&q=80";
+const soloImage =
+    "https://images.unsplash.com/photo-1664230356137-aa946287917a?auto=format&fit=crop&w=1216&q=80";
 const placeImage =
-    "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80";
+    "https://images.unsplash.com/photo-1581180938640-edde9a09a38d?auto=format&fit=crop&w=600&q=80";
 </script>
 
 <template>
@@ -245,7 +245,7 @@ const placeImage =
         </UPageSection>
 
         <NuxtImg
-            :src="processImage"
+            :src="soloImage"
             :alt="t(tk('image.imageAlt'))"
             width="1216"
             height="684"
@@ -335,9 +335,9 @@ const placeImage =
             </template>
 
             <NuxtImg
-                :src="processImage"
+                src="/seminars/process_image.png"
                 :alt="t(tk('participants.imageAlt'))"
-                width="800"
+                width="600"
                 height="1000"
                 sizes="100vw sm:100vw lg:40vw"
                 class="aspect-4/5 w-full object-cover" />

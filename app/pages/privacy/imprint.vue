@@ -125,7 +125,7 @@ useSeoMeta({
 });
 
 const heroImage =
-    "https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=2400&q=80";
+    "https://images.unsplash.com/photo-1572422071265-8e53a20366da?auto=format&fit=crop&w=1200&q=80";
 const reviewImage =
     "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80";
 </script>

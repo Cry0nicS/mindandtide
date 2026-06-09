@@ -248,24 +248,6 @@ export default {
                         "\n\nI believe that learning is most powerful when it moves beyond classrooms and conference rooms, when it is connected to people, places, and lived experience."
                 },
                 imageAlt: "Calm Red Sea coastline with mountains in the background"
-            },
-            team: {
-                eyebrow: "The people behind Mind & Tide",
-                title: "Meet the team",
-                description:
-                    "Mind & Tide is shaped by people with different perspectives on learning, regulation, movement, place and hospitality.",
-                members: {
-                    silvia: {
-                        name: "Dr. Silvia-Lucretia Nicola",
-                        role: "Pedagogical and academic lead",
-                        imageAlt: "Portrait of Dr. Silvia-Lucretia Nicola"
-                    },
-                    marcus: {
-                        name: "Marcus Blacker",
-                        role: "Body- and breath-based stress regulation",
-                        imageAlt: "Portrait of Marcus Blacker"
-                    }
-                }
             }
         },
         privacyPage: {

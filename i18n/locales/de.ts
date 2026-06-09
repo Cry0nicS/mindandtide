@@ -250,24 +250,6 @@ export default {
                         "\n\nIch bin überzeugt, dass Lernen dann am wirkungsvollsten ist, wenn es über Klassenzimmer und Konferenzräume hinausgeht, wenn es mit Menschen, Orten und gelebten Erfahrungen verbunden ist."
                 },
                 imageAlt: "Ruhige Küste am Roten Meer mit Bergen im Hintergrund"
-            },
-            team: {
-                eyebrow: "Die Menschen hinter Mind & Tide",
-                title: "Lerne das Team kennen",
-                description:
-                    "Mind & Tide wird von Menschen geprägt, die unterschiedliche Perspektiven auf Lernen, Regulation, Bewegung, Ort und Gastfreundschaft einbringen.",
-                members: {
-                    silvia: {
-                        name: "Dr. Silvia-Lucretia Nicola",
-                        role: "Pädagogische und akademische Leitung",
-                        imageAlt: "Porträt von Dr. Silvia-Lucretia Nicola"
-                    },
-                    marcus: {
-                        name: "Marcus Blacker",
-                        role: "Körper- und atembasierte Stressregulation",
-                        imageAlt: "Porträt von Marcus Blacker"
-                    }
-                }
             }
         },
         privacyPage: {
