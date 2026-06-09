@@ -358,9 +358,9 @@ const placeImage =
                             </div>
 
                             <UButton
-                                to="/documents/sample.pdf"
+                                to="/documents/Wochenplanung.pdf"
                                 target="_blank"
-                                download="sample.pdf"
+                                download="Wochenplanung.pdf"
                                 icon="i-lucide-download"
                                 size="lg"
                                 color="primary"
