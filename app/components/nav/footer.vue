@@ -11,7 +11,7 @@ const copyright = computed(() => {
 </script>
 
 <template>
-    <UFooter>
+    <UFooter :ui="{container: 'lg:px-0'}">
         <template #left>
             <p class="text-muted text-sm">{{ copyright }}</p>
         </template>

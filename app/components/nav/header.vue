@@ -13,6 +13,7 @@ const title = computed(() => t("site.name"));
         :to="localePath('/')"
         :menu="{transition: true}"
         :ui="{
+            container: 'lg:px-0',
             body: 'flex justify-center text-2xl'
         }">
         <template #title>

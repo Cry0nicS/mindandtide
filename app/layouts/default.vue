@@ -8,7 +8,7 @@ const {footer: navItems} = useNavItems();
         <NavHeader />
 
         <UMain class="grow">
-            <UContainer>
+            <UContainer class="px-0 sm:px-0 lg:px-0">
                 <slot />
             </UContainer>
         </UMain>
