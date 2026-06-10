@@ -15,8 +15,6 @@ const heroImage =
     "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=2400&q=80";
 const desertImage =
     "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80";
-const roadImage =
-    "https://images.unsplash.com/photo-1556969061-34c2abcf2b93?auto=format&fit=crop&w=600&q=80";
 </script>
 
 <template>
@@ -32,7 +30,6 @@ const roadImage =
         <UPageSection
             :headline="t(tk('project.eyebrow'))"
             :title="t(tk('project.title'))"
-            :description="t(tk('project.description.intro'))"
             orientation="horizontal"
             reverse
             class="landing-section"
@@ -41,13 +38,24 @@ const roadImage =
                 wrapper: 'mx-auto max-w-5xl',
                 body: 'mt-0'
             }">
-            <NuxtImg
-                src="/about-us/silvia.png"
-                :alt="t(tk('project.imageAlt'))"
-                width="544"
-                height="435"
-                sizes="100vw sm:100vw lg:45vw"
-                class="aspect-5/4 w-full rounded-lg object-cover" />
+            <template #description>
+                <div class="space-y-6">
+                    <p class="landing-description">{{ t(tk("project.description.intro")) }}</p>
+
+                    <blockquote class="border-accented border-s-4 ps-4 italic">
+                        {{ t(tk("project.description.quote")) }}
+                    </blockquote>
+                </div>
+            </template>
+            <div>
+                <NuxtImg
+                    src="/about-us/silvia.png"
+                    :alt="t(tk('project.imageAlt'))"
+                    width="544"
+                    height="435"
+                    sizes="100vw sm:100vw lg:45vw"
+                    class="aspect-5/4 w-full rounded-lg object-cover" />
+            </div>
         </UPageSection>
 
         <UPageSection
@@ -60,8 +68,7 @@ const roadImage =
             <article class="space-y-14 sm:space-y-16 lg:space-y-20">
                 <section class="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
                     <div class="space-y-5">
-                        <p
-                            class="text-muted text-base leading-8 whitespace-pre-line sm:text-lg sm:leading-9">
+                        <p class="landing-description whitespace-pre-line">
                             {{ t(tk("project.description.turningPoint")) }}
                         </p>
                     </div>
@@ -74,35 +81,39 @@ const roadImage =
                             height="900"
                             sizes="100vw sm:100vw lg:35vw"
                             class="aspect-4/5 w-full rounded-lg object-cover" />
-
-                        <blockquote class="landing-panel p-6 text-center sm:p-8">
-                            <p
-                                class="text-highlighted text-2xl leading-tight font-semibold sm:text-3xl">
-                                {{ t(tk("project.description.statement")) }}
-                            </p>
-                        </blockquote>
                     </div>
                 </section>
-
-                <section class="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-                    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-1">
-                        <NuxtImg
-                            :src="roadImage"
-                            :alt="t(tk('project.imageAlt'))"
-                            width="900"
-                            height="640"
-                            sizes="100vw sm:50vw lg:40vw"
-                            class="aspect-4/3 w-full rounded-lg object-cover" />
-                    </div>
-
-                    <div class="space-y-5 lg:pl-6">
-                        <p
-                            class="text-muted text-base leading-8 whitespace-pre-line sm:text-lg sm:leading-9">
-                            {{ t(tk("project.description.closing")) }}
-                        </p>
-                    </div>
-                </section>
+                <blockquote class="landing-panel p-6 text-center sm:p-8">
+                    <p class="text-highlighted text-2xl leading-tight font-semibold sm:text-3xl">
+                        {{ t(tk("project.description.statement")) }}
+                    </p>
+                </blockquote>
             </article>
+        </UPageSection>
+        <UPageSection
+            :title="t(tk('team.title'))"
+            :description="t(tk('team.description'))"
+            :ui="{
+                title: 'text-left lg:text-center',
+                description: 'text-left lg:text-center'
+            }">
+            <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center">
+                <div class="space-y-4">
+                    <h2 class="landing-title mt-4">
+                        {{ t(tk("team.marcus.title")) }}
+                    </h2>
+                    <p class="landing-description whitespace-pre-line">
+                        {{ t(tk("team.marcus.description")) }}
+                    </p>
+                </div>
+                <NuxtImg
+                    src="/about-us/marcus.png"
+                    alt="Marcus Blacker"
+                    width="370"
+                    height="502"
+                    sizes="100vw sm:100vw lg:45vw"
+                    class="aspect-4/5 w-full rounded-lg object-cover" />
+            </div>
         </UPageSection>
     </div>
 </template>

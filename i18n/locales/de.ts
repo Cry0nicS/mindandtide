@@ -31,7 +31,9 @@ export default {
             },
             seminarAbout: {
                 eyebrow: "Warum dieses Seminar",
-                title: "Meistens wissen wir doch, was Stress ist.\nWieso vergessen wir aber so oft, wie er sich im eigenen Körper anfühlt?",
+                title: "Meistens wissen wir doch, was Stress ist.",
+                description:
+                    "Wieso vergessen wir aber so oft, wie er sich im eigenen Körper anfühlt?",
                 intro: "Die meisten von uns wissen, was Stress ist. Wir lesen darüber, sprechen darüber und erkennen ihn oft bei anderen Menschen. Gleichzeitig verlieren wir jedoch häufig den Kontakt dazu, wie sich Stress in unserem eigenen Körper, unseren Gedanken und unseren alltäglichen Routinen bemerkbar macht – bis er beginnt, unser Wohlbefinden zu beeinträchtigen. Das Berufsleben ist heute oft von ständigem Druck, wachsenden Verantwortlichkeiten und einem immer schnelleren Lebenstempo geprägt. Auch wenn es wichtig ist, Stress zu verstehen, reicht Wissen allein meist nicht aus.",
                 closing:
                     "Dieses Seminar schafft Raum, Stress über die Theorie hinaus zu erkunden. Durch Reflexion, angeleitete Übungen und gemeinsames Lernen erkennen die Teilnehmenden ihre eigenen Stressmuster und erproben praktische Ansätze zur Selbstregulation und Erholung. Ziel ist es nicht, Stress vollständig zu vermeiden, sondern einen bewussteren und nachhaltigeren Umgang mit ihm zu entwickeln."
@@ -110,7 +112,8 @@ export default {
             download: {
                 title: "Seminarübersicht als PDF herunterladen",
                 description: "Hier findest Du die Details zum Seminar....",
-                label: "Programmübersicht als PDF herunterladen"
+                label: "Programmübersicht als PDF herunterladen",
+                fileName: "wochenplanung.pdf"
             },
             organization: {
                 title: "Das Wichtigste auf einen Blick",
@@ -225,8 +228,9 @@ export default {
             },
             hero: {
                 eyebrow: "Über uns",
-                title: "Manchmal wissen wir, was Stress ist.",
-                subheadline: "Oft vergessen wir jedoch, wie er sich im eigenen Körper anfühlt.",
+                title: "Meistens wissen wir doch, was Stress ist.",
+                subheadline:
+                    "Wieso vergessen wir aber so oft, wie er sich im eigenen Körper anfühlt?",
                 supportingText:
                     "Mind & Tide entstand aus einer persönlichen Suche nach einem besseren Verständnis von Stress, Resilienz und Erholung. Auf diesem Weg wurde deutlich, dass Wissen allein nur ein Teil der Geschichte ist. Wir brauchen auch praktische und persönliche Instrumente, um bewusst mit Stress umzugehen.\n",
                 imageAlt: "Offene Wüstenberge im Südsinai in warmem Abendlicht"
@@ -238,18 +242,26 @@ export default {
                     intro:
                         "Ich bin Silvia und arbeite seit mehr als zehn Jahren als Sozialwissenschaftlerin. Einen Großteil meiner beruflichen Laufbahn habe ich in dynamischen und anspruchsvollen Umgebungen verbracht, in denen Stress, Verantwortung und ständige Entscheidungsfindung zum Alltag gehören. " +
                         "\n\nNeben meiner akademischen Arbeit habe ich mehr als ein Jahrzehnt lang Erwachsenenbildungsprogramme geleitet und Lernerfahrungen gestaltet, die Menschen dazu ermutigen, unbequeme Fragen zu stellen, Perspektiven auszutauschen und sich mit sich selbst und anderen zu verbinden.",
+                    quote: "Und obwohl ich mein Leben um Begegnungen und Verbindungen herum aufgebaut habe, trug ich eine erhebliche Entfremdung in mir.",
                     turningPoint:
-                        "Und obwohl ich mein Leben um Begegnungen und Verbindungen herum aufgebaut habe, trug ich eine erhebliche Entfremdung in mir." +
-                        "\n\nIm Jahr 2023, als ich in Dahab das Tauchen lernte, bat mich mein Tauchlehrer, mich zu entspannen, da ich nicht in der Lage war, unter Wasser abzutauchen. Ich war überrascht. In diesem Moment fühlte ich mich so ruhig wie seit Monaten nicht mehr. Doch mein Körper erzählte eine andere Geschichte. Diese Erfahrung machte mir klar, dass ich zwar intellektuell erklären konnte, was Entspannung ist, aber nicht wirklich wusste, wie sie sich in meinem Körper anfühlt." +
+                        "Im Jahr 2023, als ich in Dahab das Tauchen lernte, bat mich mein Tauchlehrer, mich zu entspannen, da ich nicht in der Lage war, unter Wasser abzutauchen. Ich war überrascht. In diesem Moment fühlte ich mich so ruhig wie seit Monaten nicht mehr. Doch mein Körper erzählte eine andere Geschichte. Diese Erfahrung machte mir klar, dass ich zwar intellektuell erklären konnte, was Entspannung ist, aber nicht wirklich wusste, wie sie sich in meinem Körper anfühlt." +
                         "\n\nSeitdem habe ich verschiedene Ansätze zur Stressbewältigung und Erholung erkundet und nach Wegen gesucht, ein Leben mit mehr Ausgeglichenheit, Ruhe und Achtsamkeit zu führen. Dabei habe ich entdeckt, dass es keine einzige Methode gibt, die für alle funktioniert. Entscheidend ist vielmehr, praktische Werkzeuge zu finden, die sich in den eigenen Alltag integrieren lassen." +
                         "\n\nDahab wurde zu einem wichtigen Teil dieser Reise. Nicht nur, weil dort diese Erkenntnis entstand, sondern auch, weil die Umgebung selbst eine andere Art des Lernens und Reflektierens ermöglicht. Zwischen Meer, Wüste und einem langsameren Lebensrhythmus fand ich den Raum, Dinge wahrzunehmen, die im Alltag oft unsichtbar bleiben. Die räumliche Distanz zu den üblichen Verpflichtungen und die Einfachheit der Umgebung schufen Platz für echte Reflexion und Veränderung.",
-                    statement: "Mind & Tide entstand aus dieser Erfahrung heraus.",
-                    closing:
-                        "Mit Mind & Tide lade ich Menschen dazu ein, praktische Ansätze zur Stressregulation und Resilienz kennenzulernen, außerhalb ihrer gewohnten Routinen und in einer Umgebung, die Lernen und Reflexion unterstützt. Das fünftägige Seminar verbindet wissenschaftlich fundierte Inhalte, Reflexion und praktische Erfahrungen, um die eigenen Stressmuster besser zu verstehen und nachhaltige Strategien für den Alltag zu entwickeln." +
-                        "\n\nDabei verbinde ich meine Erfahrungen in den Bereichen Bildung, Moderation und internationale Forschung, um Lernräume zu schaffen, die Wissen, persönliche Reflexion, bedeutsame Begegnungen und Entdeckergeist miteinander verbinden." +
-                        "\n\nIch bin überzeugt, dass Lernen dann am wirkungsvollsten ist, wenn es über Klassenzimmer und Konferenzräume hinausgeht, wenn es mit Menschen, Orten und gelebten Erfahrungen verbunden ist."
+                    statement: "Mind & Tide entstand aus dieser Erfahrung heraus."
                 },
                 imageAlt: "Ruhige Küste am Roten Meer mit Bergen im Hintergrund"
+            },
+            team: {
+                title: "Das Team",
+                description:
+                    "Auch wenn Mind & Tide aus meiner persönlichen Reise entstanden ist, vereint das Seminar unterschiedliche Perspektiven und Fachgebiete. Um eine ganzheitliche Lernerfahrung zu schaffen, arbeite ich mit Menschen zusammen, deren Arbeit die bildungsorientierten und reflexiven Elemente des Seminars sinnvoll ergänzt.",
+                marcus: {
+                    title: "Marcus Blacker",
+                    description:
+                        "Marcus ist auf körper- und atembasierte Ansätze der Stressregulation spezialisiert und verfügt über mehr als fünfzehn Jahre Erfahrung in den Bereichen Breathwork und Nervensystemregulation. Seine Arbeit verbindet Atemarbeit, neurogene Entspannungsverfahren, somatisches Coaching und traumasensible Ansätze, um Menschen dabei zu unterstützen, ein tieferes Bewusstsein für ihren Körper zu entwickeln und praktische Fähigkeiten zur Selbstregulation aufzubauen. Im Laufe der Jahre hat er zahlreiche Workshops, Trainings und Gruppenprogramme zu den Themen Stressbewältigung, Resilienz und persönliche Entwicklung begleitet." +
+                        "\n\nViele Jahre lang war Dahab sein Zuhause; heute lebt und arbeitet er überwiegend in Kairo. In dieser Zeit hat er zahlreiche Seminare, Trainings und Lernformate konzipiert und durchgeführt, die ortsbezogenes Lernen mit körperorientierten Ansätzen der persönlichen Entwicklung verbinden. Das Leben zwischen dem entschleunigten Rhythmus des Sinai und der Dynamik einer Großstadt hat ihm unmittelbare Einblicke in die Herausforderungen vermittelt, denen viele Menschen heute gegenüberstehen: den Spagat zwischen beruflichen Anforderungen, alltäglichen Verpflichtungen und persönlichem Wohlbefinden." +
+                        "\n\nMarcus ist maßgeblich für die praktische Durchführung des Seminars verantwortlich und bringt sich intensiv in dessen inhaltliche Gestaltung ein. Durch Atemarbeit, körperorientierte Übungen, angeleitete Reflexion und erfahrungsbasiertes Lernen unterstützt er die Teilnehmenden dabei, ihre Selbstwahrnehmung zu vertiefen und praktische Strategien für Stressregulation und Erholung zu entwickeln."
+                }
             }
         },
         privacyPage: {

@@ -108,7 +108,7 @@
     }
 
     .landing-title {
-        @apply font-heading text-highlighted text-3xl leading-tight font-semibold text-pretty sm:text-4xl lg:text-5xl;
+        @apply text-highlighted text-3xl leading-tight font-bold tracking-tight text-pretty sm:text-4xl lg:text-5xl;
     }
 
     .landing-title-compact {

@@ -230,6 +230,11 @@ const placeImage =
                         <h2 class="landing-title mt-4">
                             {{ t(tk("seminarAbout.title")) }}
                         </h2>
+
+                        <p
+                            class="text-secondary mt-4 text-xl leading-8 font-semibold sm:text-2xl lg:mt-10">
+                            {{ t(tk("seminarAbout.description")) }}
+                        </p>
                     </div>
 
                     <div class="border-default space-y-5 lg:border-l lg:pl-10">
@@ -358,9 +363,9 @@ const placeImage =
                             </div>
 
                             <UButton
-                                to="/documents/Wochenplanung.pdf"
+                                :to="`/documents/${t(tk('download.fileName'))}`"
                                 target="_blank"
-                                download="Wochenplanung.pdf"
+                                :download="t(tk('download.fileName'))"
                                 icon="i-lucide-download"
                                 size="lg"
                                 color="primary"

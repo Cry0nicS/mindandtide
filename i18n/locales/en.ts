@@ -31,7 +31,8 @@ export default {
             },
             seminarAbout: {
                 eyebrow: "Why this seminar",
-                title: "Most of Us Know What Stress Is.\nSo Why Do We So Often Lose Touch With How It Feels in Our Bodies?",
+                title: "Most of Us Know What Stress Is.",
+                description: "So Why Do We So Often Lose Touch With How It Feels in Our Bodies?",
                 intro: "Most of us know what stress is. We read about it, talk about it, and often recognize it in others. Yet we frequently lose touch with how stress shows up in our own bodies, thoughts, and daily routines—until it begins to affect our well-being. Professional life today is often shaped by constant pressure, growing responsibilities, and an accelerating pace of life. While understanding stress is important, knowledge alone is rarely enough.",
                 closing:
                     "This seminar creates space to explore stress beyond theory. Through reflection, guided practice, and shared learning, participants identify their own stress patterns and experiment with practical approaches to regulation and recovery. The goal is not to eliminate stress, but to develop a more conscious and sustainable way of relating to it."
@@ -109,7 +110,8 @@ export default {
             download: {
                 title: "Download the seminar overview as a PDF",
                 description: "Here you will be able to find the details of the seminar....",
-                label: "Download the program overview as a PDF"
+                label: "Download the program overview as a PDF",
+                fileName: "programme.pdf"
             },
             organization: {
                 title: "Essentials at a glance",
@@ -222,8 +224,8 @@ export default {
             },
             hero: {
                 eyebrow: "About us",
-                title: "Sometimes We Know What Stress Is.",
-                subheadline: "But We Don't Know What It Feels Like.",
+                title: "Most of Us Know What Stress Is.",
+                subheadline: "So Why Do We So Often Lose Touch With How It Feels in Our Bodies?",
                 supportingText:
                     "Mind & Tide grew out of a personal journey to better understand stress, resilience, and recovery. Along the way, we discovered that understanding stress is not enough—we need practical ways to work with it.\n",
                 imageAlt: "Open desert mountains in South Sinai with warm evening light"
@@ -235,18 +237,26 @@ export default {
                     intro:
                         "I am Silvia, and for more than ten years I have worked as a social sciences researcher. I have spent much of my career in dynamic and demanding environments, where stress, responsibility, and constant decision-making are part of everyday life. " +
                         "\n\nAlongside my academic work, I have spent more than a decade facilitating adult education programs, designing learning experiences that encourage people to ask uncomfortable questions, exchange perspectives, and connect with themselves and others.",
+                    quote: "And despite building my life around encounters and connections, I was carrying a significant disconnect inside myself.",
                     turningPoint:
-                        "And despite building my life around encounters and connections, I was carrying a significant disconnect inside myself." +
-                        "\n\nIn 2023, while learning to dive in Dahab, my instructor asked me to relax because I was unable to descend underwater. I was surprised. At that moment, I felt calmer than I had in months. Yet my body told a different story. That experience made me realize that while I could explain what relaxation was intellectually, I did not truly know what it felt like in my body." +
+                        "In 2023, while learning to dive in Dahab, my instructor asked me to relax because I was unable to descend underwater. I was surprised. At that moment, I felt calmer than I had in months. Yet my body told a different story. That experience made me realize that while I could explain what relaxation was intellectually, I did not truly know what it felt like in my body." +
                         "\n\nSince then, I have been exploring different approaches to stress regulation and recovery, searching for ways to live with greater balance, calmness, and intention. Along the way, I discovered that there is no single method that works for everyone. What matters is finding practical tools that fit into real lives and real routines." +
                         "\n\nDahab became an important part of that journey. Not only because it was where this realization happened, but because the environment itself seemed to support a different way of learning and reflecting. Between the sea, the desert, and a slower rhythm of life, I found space to notice things that had remained invisible in the routines of everyday life. The combination of physical distance from daily demands and the simplicity of the environment created room for genuine reflection and change.",
-                    statement: "Mind and Tide grew out of this experience.",
-                    closing:
-                        "Through Mind and Tide, I invite participants to explore practical approaches to stress regulation and resilience while stepping outside their usual routines. The five-day seminar combines evidence-based learning, reflection, and practical experience to help participants better understand their own stress patterns and develop sustainable strategies for everyday life." +
-                        "\n\nI bring together my background in education, facilitation, and international research to create learning experiences that combine knowledge, meaningful encounters, personal reflection, and a sense of exploration." +
-                        "\n\nI believe that learning is most powerful when it moves beyond classrooms and conference rooms, when it is connected to people, places, and lived experience."
+                    statement: "Mind and Tide grew out of this experience."
                 },
                 imageAlt: "Calm Red Sea coastline with mountains in the background"
+            },
+            team: {
+                title: "Meet the Team",
+                description:
+                    "While Mind & Tide grew out of my own journey, the seminar itself brings together different perspectives and areas of expertise. To create a meaningful learning experience, I work with practitioners whose work complements the educational and reflective dimensions of the programme.",
+                marcus: {
+                    title: "Marcus Blacker",
+                    description:
+                        "Marcus specializes in body-based and breath-based approaches to stress regulation and has more than fifteen years of experience working with breathwork and nervous system regulation. His work combines breathwork, neurogenic relaxation methods, somatic coaching, and trauma-informed approaches to help people develop a deeper awareness of their bodies and build practical skills for self-regulation. Over the years, he has facilitated workshops, trainings, and group programmes focused on stress management, resilience, and personal development." +
+                        "\n\nMarcus has called Dahab home for many years and now resides in Cairo. Over the years, he has designed and facilitated numerous seminars, trainings, and learning experiences, combining place-based learning with body-oriented approaches to personal development. Living between the slower rhythms of the Sinai and the intensity of a large city has given him first-hand experience of the challenges many people face in balancing professional demands, everyday responsibilities, and personal well-being." +
+                        "\n\nMarcus is responsible for the practical delivery of the seminar and contributes substantially to its content and design. Through breathwork, body-based practices, guided reflection, and experiential learning, he supports participants in developing greater self-awareness and practical skills for stress regulation and recovery."
+                }
             }
         },
         privacyPage: {
