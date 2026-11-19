@@ -1,7 +1,17 @@
 <!-- Homepage "Descent": the page is a dive. The ground deepens from sunlit shallows to the quiet bottom as you scroll, a depth ruler tracks it. Echoes the founder story. -->
 <script setup lang="ts">
+import {useLocale} from "@nuxt/ui/composables";
+
 const c = useHomeContent();
 const colorMode = useColorMode();
+const {headerDesktop, headerMobile, footer} = useNavItems();
+const {t: uiT} = useLocale();
+
+const menuOpen = ref(false);
+// close the menu even when the link points at the current page (Home)
+const menuItems = computed(() =>
+    headerMobile.value.map((item) => ({...item, onSelect: () => (menuOpen.value = false)}))
+);
 
 const root = ref<HTMLElement>();
 const depth = ref(0);
@@ -100,9 +110,15 @@ const methodIcons = [
 
         <!-- SURFACE -->
         <header class="vc-hero">
-            <img
+            <NuxtImg
+                provider="unsplash"
                 :src="c.img.hero"
-                :alt="c.hero.imageAlt" />
+                :alt="c.hero.imageAlt"
+                format="webp"
+                width="2400"
+                height="1400"
+                sizes="sm:100vw md:100vw lg:100vw xl:100vw"
+                fetchpriority="high" />
             <div class="vc-hero-sky" />
             <div class="vc-hero-water" />
             <nav
@@ -115,11 +131,38 @@ const methodIcons = [
                         class="vc-logo" />
                 </NuxtLink>
                 <div>
-                    <NuxtLink :to="c.to.home">{{ c.nav.home }}</NuxtLink>
-                    <NuxtLink :to="c.to.aboutUs">{{ c.nav.aboutUs }}</NuxtLink>
-                    <NuxtLink :to="c.to.contact">{{ c.nav.contact }}</NuxtLink>
+                    <NuxtLink
+                        v-for="item in headerDesktop"
+                        :key="item.label"
+                        :to="item.to"
+                        class="vc-nav-link">
+                        {{ item.label }}
+                    </NuxtLink>
                     <NavThemeToggle />
                     <NavLanguageSelector />
+                    <USlideover
+                        v-model:open="menuOpen"
+                        :ui="{body: 'flex justify-center text-2xl'}">
+                        <UButton
+                            class="vc-menu text-inherit"
+                            color="neutral"
+                            variant="ghost"
+                            icon="i-lucide-menu"
+                            :aria-label="uiT('header.open')" />
+                        <template #body>
+                            <UNavigationMenu
+                                color="secondary"
+                                :highlight="true"
+                                highlight-color="secondary"
+                                :items="menuItems"
+                                orientation="vertical"
+                                :ui="{
+                                    list: 'flex flex-col gap-4',
+                                    linkLabel: 'text-2xl',
+                                    linkLeadingIcon: 'size-6'
+                                }" />
+                        </template>
+                    </USlideover>
                 </div>
             </nav>
 
@@ -171,9 +214,14 @@ const methodIcons = [
             </section>
 
             <figure class="vc-wide">
-                <img
+                <NuxtImg
+                    provider="unsplash"
                     :src="c.img.solo"
                     :alt="c.about.imageAlt"
+                    format="webp"
+                    width="2400"
+                    height="1350"
+                    sizes="sm:100vw md:100vw lg:100vw xl:100vw"
                     loading="lazy" />
             </figure>
 
@@ -198,9 +246,13 @@ const methodIcons = [
                 <div class="vc-people-l">
                     <h2 class="vc-h2">{{ c.participants.title }}</h2>
                     <p class="vc-sentence">{{ c.participants.description }}</p>
-                    <img
+                    <NuxtImg
                         :src="c.img.process"
                         :alt="c.participants.imageAlt"
+                        format="webp"
+                        width="340"
+                        height="425"
+                        densities="x1 x2"
                         loading="lazy" />
                 </div>
                 <div class="vc-people-r">
@@ -282,9 +334,14 @@ const methodIcons = [
                         </NuxtLink>
                     </div>
                 </div>
-                <img
+                <NuxtImg
+                    provider="unsplash"
                     :src="c.img.place"
                     :alt="c.dahab.imageAlt"
+                    format="webp"
+                    width="1000"
+                    height="1250"
+                    sizes="sm:100vw md:100vw lg:45vw xl:45vw"
                     loading="lazy" />
             </section>
 
@@ -346,12 +403,14 @@ const methodIcons = [
         </main>
 
         <footer class="vc-foot">
-            <p>{{ c.nav.copyright }}</p>
+            <p>{{ c.copyright }}</p>
             <nav aria-label="Footer">
-                <NuxtLink :to="c.to.aboutUs">{{ c.nav.aboutUs }}</NuxtLink>
-                <NuxtLink :to="c.to.contact">{{ c.nav.contact }}</NuxtLink>
-                <NuxtLink :to="c.to.imprint">{{ c.nav.imprint }}</NuxtLink>
-                <NuxtLink :to="c.to.privacy">{{ c.nav.privacy }}</NuxtLink>
+                <NuxtLink
+                    v-for="item in footer"
+                    :key="item.label"
+                    :to="item.to">
+                    {{ item.label }}
+                </NuxtLink>
             </nav>
         </footer>
     </div>
@@ -505,6 +564,9 @@ const methodIcons = [
 .vc-nav a:hover {
     text-decoration: underline;
     text-underline-offset: 6px;
+}
+.vc-menu {
+    display: none;
 }
 .vc-logo {
     height: 46px;
@@ -1096,8 +1158,11 @@ const methodIcons = [
         padding-left: 0;
         border-left: 0;
     }
-    .vc-nav > div a {
+    .vc-nav-link {
         display: none;
+    }
+    .vc-menu {
+        display: inline-flex;
     }
 }
 @media (max-width: 560px) {

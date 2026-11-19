@@ -22,20 +22,11 @@ export function useHomeContent() {
         );
 
         return {
-            nav: {
-                home: t("pages.home"),
-                aboutUs: t("pages.aboutUs"),
-                contact: t("pages.contact"),
-                privacy: t("pages.privacy"),
-                imprint: t("pages.imprint"),
-                copyright: t("common.copyright", {year: new Date().getFullYear()})
-            },
+            // nav links come from useNavItems(); these are only for the logo and CTAs
+            copyright: t("common.copyright", {year: new Date().getFullYear()}),
             to: {
                 home: localePath("/"),
-                contact: localePath(i18nRouteNames.contact),
-                aboutUs: localePath(i18nRouteNames.aboutUs),
-                privacy: localePath(i18nRouteNames.privacy),
-                imprint: localePath(i18nRouteNames.imprint)
+                contact: localePath(i18nRouteNames.contact)
             },
             hero: {
                 title: s("hero.title"),
@@ -120,10 +111,11 @@ export function useHomeContent() {
                 description: s("cta.description"),
                 action: s("cta.action")
             },
+            // hero/solo/place are Unsplash photo ids, rendered with the NuxtImg "unsplash" provider
             img: {
-                hero: "https://images.unsplash.com/photo-1628238452386-b916aa9e4443?auto=format&fit=crop&w=2000&q=80",
-                solo: "https://images.unsplash.com/photo-1664230356137-aa946287917a?auto=format&fit=crop&w=2000&q=80",
-                place: "https://images.unsplash.com/photo-1581180938640-edde9a09a38d?auto=format&fit=crop&w=1000&q=80",
+                hero: "photo-1628238452386-b916aa9e4443",
+                solo: "photo-1664230356137-aa946287917a",
+                place: "photo-1581180938640-edde9a09a38d",
                 process: "/seminars/process_image.png"
             }
         };
