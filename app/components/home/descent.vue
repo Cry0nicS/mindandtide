@@ -372,6 +372,11 @@ const methodIcons = [
     line-height: 1.7;
     position: relative;
 }
+/* prerendered fallback until paint() runs; matches the first DARK stop */
+.dark .vc {
+    --bg: rgb(16 48 58);
+    --fg: #eef8f7;
+}
 .vc h1,
 .vc h2,
 .vc h3,
