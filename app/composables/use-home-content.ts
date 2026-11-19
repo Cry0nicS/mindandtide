@@ -111,7 +111,7 @@ export function useHomeContent() {
                 // status drives the visual state in every variant
                 items: [
                     {key: "october2026", status: "closed"},
-                    {key: "november2026", status: "open"},
+                    {key: "november2026", status: "closed"},
                     {key: "upcoming2027", status: "soon"}
                 ].map(({key, status}) => ({
                     status,
