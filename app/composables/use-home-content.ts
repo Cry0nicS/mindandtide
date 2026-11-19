@@ -38,14 +38,12 @@ export function useHomeContent() {
                 imprint: localePath(i18nRouteNames.imprint)
             },
             hero: {
-                eyebrow: s("hero.eyebrow"),
                 title: s("hero.title"),
                 supportingText: s("hero.supportingText"),
                 meta: s("hero.meta"),
                 imageAlt: s("hero.imageAlt")
             },
             about: {
-                eyebrow: s("seminarAbout.eyebrow"),
                 title: s("seminarAbout.title"),
                 description: s("seminarAbout.description"),
                 intro: s("seminarAbout.intro"),
@@ -65,7 +63,6 @@ export function useHomeContent() {
                 ])
             },
             participants: {
-                eyebrow: s("participants.eyebrow"),
                 title: s("participants.title"),
                 description: s("participants.description"),
                 closing: s("participants.closing"),
@@ -92,7 +89,6 @@ export function useHomeContent() {
                 fileName: s("download.fileName")
             },
             dahab: {
-                eyebrow: s("whyDahab.eyebrow"),
                 title: s("whyDahab.title"),
                 description: s("whyDahab.description"),
                 imageAlt: s("whyDahab.imageAlt"),
