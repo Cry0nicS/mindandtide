@@ -58,7 +58,8 @@ export default defineNuxtConfig({
             md: 768,
             sm: 640,
             xl: 1280
-        }
+        },
+        unsplash: {}
     },
     modules: [
         "@nuxt/eslint",

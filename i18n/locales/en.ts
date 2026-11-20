@@ -147,7 +147,7 @@ export default {
                     },
                     november2026: {
                         title: "9-13\nNovember 2026",
-                        description: "Open for registration\nApplication deadline: 10 October 2026"
+                        description: "Registration closed"
                     },
                     upcoming2027: {
                         title: "March-April\n2027",

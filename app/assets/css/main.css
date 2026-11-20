@@ -2,9 +2,9 @@
 @import "@nuxt/ui";
 
 @theme static {
-    --font-sans: "Cardo", serif;
-    --font-serif: "Cardo", serif;
-    --font-heading: "Playfair Display", serif;
+    --font-sans: "Literata", Georgia, serif;
+    --font-serif: "Literata", Georgia, serif;
+    --font-heading: "Bricolage Grotesque", system-ui, sans-serif;
 
     --color-ocean-50: #e8f8f6;
     --color-ocean-100: #ccefed;
